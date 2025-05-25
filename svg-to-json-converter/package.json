@@ -1,0 +1,36 @@
+{
+  "name": "svg-to-json-converter",
+  "version": "1.0.0",
+  "description": "Convert SVG floor plans to JSON format for 3D map visualization",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "lint": "eslint .",
+    "convert": "node index.js"
+  },
+  "keywords": [
+    "svg",
+    "json",
+    "converter",
+    "map",
+    "floor-plan"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "xpath": "^0.0.34",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "@types/node": "^20.10.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

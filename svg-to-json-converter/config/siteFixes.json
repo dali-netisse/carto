@@ -1,0 +1,149 @@
+{
+  "idFixes": {
+    "LYS-3": {
+      "AP335_1": "AP355"
+    },
+    "BRU-7": {
+      "Salle_de_réunion_des_Territoires": "Salle_de_réunion_Salle_des_territoires",
+      "Ascenseur": "Ascenseur_x-left",
+      "Sanitaires_1": "Sanitaires_1_x-offsetX_10_x-offsetY_25",
+      "Ascenseurs": "Ascenseurs_x-left_x-offsetY_25",
+      "Ascenseurs_3": "Ascenseurs_3_x-offsetY_25",
+      "Sanitaires_2": "Sanitaires_2_x-left_x-offsetX_-10_x-offsetY_25",
+      "Escalier_2": "Escalier_2_x-left_x-offsetX_5_x-offsetY_15"
+    },
+    "BRU-6": {
+      "Ascenseur": "Ascenseur_x-left",
+      "Sanitaires_1": "Sanitaires_1_x-offsetX_10_x-offsetY_25",
+      "Ascenseurs_3": "Ascenseurs_x-left_x-offsetY_25",
+      "Ascenseurs": "Ascenseurs_3_x-offsetY_25",
+      "Sanitaires_2": "Sanitaires_2_x-left_x-offsetX_-10_x-offsetY_25",
+      "Escalier_2": "Escalier_2_x-left_x-offsetX_5_x-offsetY_15"
+    },
+    "BRU-5": {
+      "Ascenseur": "Ascenseur_x-left",
+      "Sanitaires_1": "Sanitaires_1_x-offsetX_10_x-offsetY_25",
+      "Ascenseurs": "Ascenseurs_x-left_x-offsetY_25",
+      "Ascenseurs_3": "Ascenseurs_3_x-offsetY_25",
+      "Sanitaires_2": "Sanitaires_2_x-left_x-offsetX_-10_x-offsetY_25",
+      "Escalier_2": "Escalier_2_x-left_x-offsetX_5_x-offsetY_15",
+      "Escalier_4": "Bureau_C507"
+    },
+    "BRU-4": {
+      "Ascenseur": "Ascenseur_x-left",
+      "Sanitaires_1": "Sanitaires_1_x-offsetX_10_x-offsetY_25",
+      "Ascenseurs": "Ascenseurs_x-left_x-offsetY_25",
+      "Ascenseurs_3": "Ascenseurs_3_x-offsetY_25",
+      "Sanitaires_2": "Sanitaires_2_x-left_x-offsetX_-10_x-offsetY_25",
+      "Escalier_2": "Escalier_2_x-left_x-offsetX_5_x-offsetY_15",
+      "Salle_de_réunion_Zaïre": "Salle_de_réunion_Loire"
+    },
+    "BRU-2": {
+      "Ascenseur": "Ascenseur_x-left",
+      "Sanitaires_1": "Sanitaires_1_x-offsetX_10_x-offsetY_25",
+      "Ascenseurs": "Ascenseurs_x-left_x-offsetY_25",
+      "Ascenseurs_3": "Ascenseurs_3_x-offsetY_25",
+      "Sanitaires_2": "Sanitaires_2_x-left_x-offsetX_-10_x-offsetY_25",
+      "Escalier_2": "Escalier_2_x-left_x-offsetX_5_x-offsetY_15",
+      "Sanitaires": "Sanitaires_x-left_x-offsetX_-10"
+    },
+    "CRO-6": {
+      "Ascenseur": "Ascenseur_x-left",
+      "Ascenseur_1": "Ascenseur_1_x-left",
+      "Salle_de_réunion_Luxembourg": "Salle_de_réunion_S6_Luxembourg",
+      "Salle_de_réunion_Odéon": "Salle_de_réunion_S6_Odéon",
+      "Salle_de_réunion_Mabillon": "Salle_de_réunion_S6_Mabillon",
+      "Salle_de_réunion_Mazarine": "Salle_de_réunion_S6_Mazarine",
+      "Salle_de_réunion_Furstenberg": "Salle_de_réunion_G6_Furstenberg",
+      "Salle_de_réunion_Rennes": "Salle_de_réunion_G6_Rennes",
+      "Salle_du_conseil_6G-28": "Salle_de_réunion_G6_Salle_du_conseil",
+      "Digilab_6S-17_-_6S-45": "Service_Digilab"
+    },
+    "CRO-5": {
+      "Salle_de_réunion_Jussieu": "Salle_de_réunion_G5_Jussieu",
+      "Salle_de_réunion_Panthéon": "Salle_de_réunion_G5_Panthéon",
+      "Salle_de_réunion_Tournelle": "Salle_de_réunion_S5_Tournelle",
+      "Salle_de_réunion_Contreescarpe": "Salle_de_réunion_S5_Contrescarpe",
+      "Salle_de_réunion_Monge_5S-74_5S-80": "Salle_de_réunion_S5_Monge",
+      "salle_de_réunion_Cluny_5G-20_-_5G-26": "Salle_de_réunion_S5_Cluny",
+      "Ascenseur": "Ascenseur_x-left",
+      "Ascenseur_1": "Ascenseur_1_x-left"
+    },
+    "CRO-4": {
+      "Bureau_4G-62_4G-58_1": "Bureau_4G-62_-_4G-58",
+      "Tisannerie_1": "Tisannerie",
+      "Salle_de_réunion_Henri_IV_1": "Salle_de_réunion_S4_Henri_IV",
+      "Salle_de_réunion_Vosges_1": "Salle_de_réunion_S4_Vosges",
+      "Salle_de_réunion_Cités_4S-24_1": "Salle_de_réunion_S4_Cité",
+      "Salle_de_réunion_Notre_Dame_1": "Salle_de_réunion_G4_Notre_Dame",
+      "Salle_de_réunion_Célestins_1": "Salle_de_réunion_G4_Célestins",
+      "Ascenseur_2": "Ascenseur_2_x-left",
+      "Ascenseur_3": "Ascenseur_3_x-left"
+    },
+    "CRO-2": {
+      "Salle_de_réunion_Bourse": "Salle_de_réunion_S2_Bourse",
+      "Salle_de_réunion_Choiseul_2S-19": "Salle_de_réunion_S2_Choiseul",
+      "Salle_de_réunion_Sentier_2S-22_2S-24": "Salle_de_réunion_S2_Sentier",
+      "Salle_de_réunion_Quatre_Septembre_2S-28": "Service_Service_Logistique",
+      "Bureau_2S-15_Atelier_IT": "Service_Atelier_IT",
+      "Salle_de_réunion_Petits_Champs_2G-88": "Salle_de_réunion_G2_Petits_Champs",
+      "Salle_de_réunion_Victoires": "Salle_de_réunion_S2_Victoires_x-left",
+      "Ascenseur": "Ascenseur_x-left",
+      "Ascenseur_1": "Ascenseur_1_x-left"
+    },
+    "CRO-0": {
+      "Bureau_0G-058_1": "Service Espace CE",
+      "Bureau_0G-014": "Service Espace Courrier",
+      "Escalier_4": "Escalier_4_x-left",
+      "Ascenseur_2": "Ascenseur_2_x-left",
+      "Sanitaires:_H_x2F_F_x2F_PMR": "Sanitaires_x-offsetX_-30_x-offsetY_-30"
+    },
+    "CRO-1": {
+      "Salle_de_réunon_1S_Rivoli": "Salle_de_réunion_1S_Rivoli",
+      "Sallle_de_réunion_1G_Concorde": "Salle_de_réunion_1G_Concorde",
+      "Salle_de_réunion_1S_Salle_de_créativité": "Salle_de_réunion_1S_Salle_de_créativité_x-left",
+      "Salle_de_réunion_1S_Pyramides": "Salle_de_réunion_1S_Pyramides_x-left",
+      "Salle_de_réunion_1S_Louvre": "Salle_de_réunion_1S_Louvre_x-left",
+      "Escalier_3": "Escalier_3_x-left",
+      "Ascenseur_1": "Ascenseur_1_x-left"
+    },
+    "CRO-3": {
+      "Salle_de_réunion_3S_Turenne": "Salle_de_réunion_3S_Turenne_x-left",
+      "Escalier_2": "Escalier_2_x-left",
+      "Ascenseur_3": "Ascenseur_3_x-left"
+    }
+  },
+  "specialTransforms": {
+    "PCA-DRA-0": {
+      "type": "rotate",
+      "angle": 40,
+      "scale": 1.05,
+      "translate": [215, 65]
+    },
+    "PCA-00372-1": {
+      "type": "rotate",
+      "angle": 90
+    },
+    "PCA-00709-1": {
+      "type": "rotate",
+      "angle": -90,
+      "translate": [-200, 100]
+    },
+    "PCA-00391-3": {
+      "type": "scale",
+      "scale": 2
+    },
+    "VER-TUN-NEU": {
+      "type": "scale",
+      "scale": 0.3
+    },
+    "IFP-PAR-RAP-14": {
+      "type": "translate",
+      "translate": [-20, 15]
+    },
+    "IFP-PAR-RAP-15": {
+      "type": "translate",
+      "translate": [-20, 15]
+    }
+  }
+} 
