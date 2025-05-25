@@ -74,7 +74,10 @@ export function getCalibrationRect(xpathQuery, doc) {
   // Try different ways to find calibration rectangle
   const expressions = [
     '//svg:g[@id="Calage" or @inkscape:label="Calage"]//svg:rect',
-    '//svg:rect[@id="Calage"]'
+    '//svg:g[@id="Calage" or @inkscape:label="Calage"]//svg:path',
+    '//svg:rect[@id="Calage"]',
+    '//svg:rect[@inkscape:label="rect-2asc"]',
+    '//svg:path[@inkscape:label="rect-2asc"]'
   ];
   
   for (const expr of expressions) {

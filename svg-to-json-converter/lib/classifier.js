@@ -17,15 +17,19 @@ export function classifyObject(id, floor) {
   let name = null;
   let showBubble = false;
   
+  // Convert underscores to spaces for classification
+  // This matches the Perl script behavior
+  const classificationId = id.replace(/_/g, ' ');
+  
   // Terrasse
-  if (/^Terrasse/i.test(id)) {
+  if (/^Terrasse/i.test(classificationId)) {
     objectClass = 'terrace';
   }
   
   // Bureaux (Offices)
-  else if (/^Bureaux? (.*)$/i.test(id)) {
+  else if (/^Bureaux? (.*)$/i.test(classificationId)) {
     objectClass = 'office';
-    cleanId = id.replace(/^Bureaux? /i, '');
+    cleanId = classificationId.replace(/^Bureaux? /i, '');
     cleanId = cleanId.replace(/ 1 ?$/g, '');
     cleanId = cleanId.replace(/ +- +/g, ',');
     cleanId = cleanId.replace(/ +et +/g, ',');
@@ -34,9 +38,9 @@ export function classifyObject(id, floor) {
   }
   
   // Openspaces
-  else if (/^Openspaces? (.*)$/i.test(id)) {
+  else if (/^Openspaces? (.*)$/i.test(classificationId)) {
     objectClass = 'openspace';
-    cleanId = id.replace(/^Openspaces? /i, '');
+    cleanId = classificationId.replace(/^Openspaces? /i, '');
     cleanId = cleanId.replace(/ 1 ?$/g, '');
     cleanId = cleanId.replace(/ +- +/g, ',');
     cleanId = cleanId.replace(/ +et +/g, ',');
@@ -45,178 +49,180 @@ export function classifyObject(id, floor) {
   }
   
   // Bureau with floor code
-  else if (new RegExp(`^Bureau ([A-Z]) ?(${floor}[0-9]{2})$`, 'i').test(id)) {
+  else if (new RegExp(`^Bureau ([A-Z]) ?(${floor}[0-9]{2})$`, 'i').test(classificationId)) {
     objectClass = 'office';
-    const match = id.match(new RegExp(`^Bureau ([A-Z]) ?(${floor}[0-9]{2})$`, 'i'));
+    const match = classificationId.match(new RegExp(`^Bureau ([A-Z]) ?(${floor}[0-9]{2})$`, 'i'));
     cleanId = match[1] + match[2];
   }
   
   // Bureau with floor and section
-  else if (new RegExp(`^Bureau (${floor}[SG]-[0-9]{2,3})$`, 'i').test(id)) {
+  else if (new RegExp(`^Bureau (${floor}[SG]-[0-9]{2,3})$`, 'i').test(classificationId)) {
     objectClass = 'office';
-    const match = id.match(new RegExp(`^Bureau (${floor}[SG]-[0-9]{2,3})$`, 'i'));
+    const match = classificationId.match(new RegExp(`^Bureau (${floor}[SG]-[0-9]{2,3})$`, 'i'));
     cleanId = match[1];
     cleanId = cleanId.replace(/ - /g, ',');
   }
   
   // Openspace with floor code
-  else if (new RegExp(`^Openspace ([A-Z]) ?(${floor}[0-9]{2})$`, 'i').test(id)) {
+  else if (new RegExp(`^Openspace ([A-Z]) ?(${floor}[0-9]{2})$`, 'i').test(classificationId)) {
     objectClass = 'openspace';
-    const match = id.match(new RegExp(`^Openspace ([A-Z]) ?(${floor}[0-9]{2})$`, 'i'));
+    const match = classificationId.match(new RegExp(`^Openspace ([A-Z]) ?(${floor}[0-9]{2})$`, 'i'));
     cleanId = match[1] + match[2];
   }
   
   // Openspace with floor and section
-  else if (new RegExp(`^Openspace (${floor}[SG]-[0-9]{2,3})$`, 'i').test(id)) {
+  else if (new RegExp(`^Openspace (${floor}[SG]-[0-9]{2,3})$`, 'i').test(classificationId)) {
     objectClass = 'openspace';
-    const match = id.match(new RegExp(`^Openspace (${floor}[SG]-[0-9]{2,3})$`, 'i'));
+    const match = classificationId.match(new RegExp(`^Openspace (${floor}[SG]-[0-9]{2,3})$`, 'i'));
     cleanId = match[1];
     cleanId = cleanId.replace(/ - /g, ',');
   }
   
   // Office codes like AP301
-  else if (new RegExp(`^[A-C][IP]${floor}[0-9]{2}$`, 'i').test(id)) {
+  else if (new RegExp(`^[A-C][IP]${floor}[0-9]{2}$`, 'i').test(classificationId)) {
     objectClass = 'office';
   }
   
   // Parking
-  else if (/^parking\s*(.*)$/i.test(id)) {
+  else if (/^parking\s*(.*)$/i.test(classificationId)) {
     objectClass = 'parking';
-    cleanId = id.replace(/^parking\s*/i, '');
+    cleanId = classificationId.replace(/^parking\s*/i, '');
   }
   
   // Meeting rooms
-  else if (/^Salle de r(?:é|  )ui?nion ([-.\w''\/ ]+)$/i.test(id)) {
+  else if (/^Salle de r(?:é|  )ui?nion ([-.\w''\/ ]+)$/i.test(classificationId)) {
     objectClass = 'meeting-room';
-    const match = id.match(/^Salle de r(?:é|  )ui?nion ([-.\w''\/ ]+)$/i);
+    const match = classificationId.match(/^Salle de r(?:é|  )ui?nion ([-.\w''\/ ]+)$/i);
     name = match[1];
     cleanId = match[1];
   }
   
   // Meeting rooms with floor code
-  else if (new RegExp(`^[A-C]${floor} [A-Z ]+$`, 'i').test(id)) {
+  else if (new RegExp(`^[A-C]${floor} [A-Z ]+$`, 'i').test(classificationId)) {
     objectClass = 'meeting-room';
   }
   
   // Bulle
-  else if (/^Bulle ([-\w' ]+)$/i.test(id)) {
+  else if (/^Bulle ([-\w' ]+)$/i.test(classificationId)) {
     objectClass = 'bulle';
-    const match = id.match(/^Bulle ([-\w' ]+)$/i);
+    const match = classificationId.match(/^Bulle ([-\w' ]+)$/i);
     cleanId = match[1];
   }
   
   // Chat areas
-  else if (/^(?:(?:ESPACE (?:DE )?)?CONVIVIALIT(?:E|é|  )|ECHANGES INFORMELS|ECH.? INF.?|(?:Espace|Salle) (?:d')?[eé]changes?|Tisanerie|Tisannerie|Espace salon)/i.test(id)) {
+  else if (/^(?:(?:ESPACE (?:DE )?)?CONVIVIALIT(?:E|é|  )|ECHANGES INFORMELS|ECH.? INF.?|(?:Espace|Salle) (?:d')?[eé]changes?|Tisanerie|Tisannerie|Espace salon)/i.test(classificationId)) {
     objectClass = 'chat-area';
-    if (/^Tisan*erie$/i.test(id)) {
+    if (/^Tisan*erie$/i.test(classificationId)) {
       showBubble = true;
     }
   }
   
   // Stairs
-  else if (/^ESC(?:ALIER)?/i.test(id)) {
+  else if (/^ESC(?:ALIER)?/i.test(classificationId)) {
     objectClass = 'stairs';
+    // For stairs, preserve the original ID format
+    cleanId = id;
   }
   
   // Elevators
-  else if (/^ASCENSEUR/i.test(id)) {
+  else if (/^ASCENSEUR/i.test(classificationId)) {
     objectClass = 'elevator';
   }
   
   // Toilets
-  else if (/^WC|Sanitaires?/i.test(id)) {
+  else if (/^WC|Sanitaires?/i.test(classificationId)) {
     objectClass = 'toilets';
   }
   
   // Restaurant
-  else if (/^resto\s+(.*)$/i.test(id) || /^(restaurant.*)$/i.test(id)) {
+  else if (/^resto\s+(.*)$/i.test(classificationId) || /^(restaurant.*)$/i.test(classificationId)) {
     objectClass = 'resto';
-    const match = id.match(/^resto\s+(.*)$/i) || id.match(/^(restaurant.*)$/i);
+    const match = classificationId.match(/^resto\s+(.*)$/i) || classificationId.match(/^(restaurant.*)$/i);
     cleanId = match[1];
   }
   
   // Courrier
-  else if (/^(?:espace|service )?courrier/i.test(id)) {
+  else if (/^(?:espace|service )?courrier/i.test(classificationId)) {
     objectClass = 'courrier';
   }
   
   // Medical
-  else if (/^((?:espace|service )?m[eé]dical|infirmerie)/i.test(id)) {
+  else if (/^((?:espace|service )?m[eé]dical|infirmerie)/i.test(classificationId)) {
     objectClass = 'medical';
   }
   
   // Concierge
-  else if (/^(?:espace|service )?concierge(rie)?/i.test(id)) {
+  else if (/^(?:espace|service )?concierge(rie)?/i.test(classificationId)) {
     objectClass = 'concierge';
   }
   
   // Service
-  else if (/^service\s+(.*)/i.test(id)) {
+  else if (/^service\s+(.*)/i.test(classificationId)) {
     objectClass = 'service';
-    const match = id.match(/^service\s+(.*)/i);
+    const match = classificationId.match(/^service\s+(.*)/i);
     cleanId = match[1];
   }
   
   // PMR refuge (skip for now)
-  else if (/^Refuge PMR/i.test(id)) {
+  else if (/^Refuge PMR/i.test(classificationId)) {
     objectClass = 'pmr';
     return null; // Skip PMR for now as per Perl script
   }
   
   // Repro
-  else if (/^(?:TELECOPIEUR|Tri +\/ +Copie|Triu \/ Copie \/ Repro|Repro|Autre repro|Espace reprographie)/i.test(id)) {
+  else if (/^(?:TELECOPIEUR|Tri +\/ +Copie|Triu \/ Copie \/ Repro|Repro|Autre repro|Espace reprographie)/i.test(classificationId)) {
     objectClass = 'repro';
   }
   
   // Conference
-  else if (/^(?:auditorium|((espace|salle)( de))?conf[eé]rences?)/i.test(id)) {
+  else if (/^(?:auditorium|((espace|salle)( de))?conf[eé]rences?)/i.test(classificationId)) {
     objectClass = 'conference';
   }
   
   // Silence
-  else if (/^(?:Espace silence|Silence|Autre espace silence)/i.test(id)) {
+  else if (/^(?:Espace silence|Silence|Autre espace silence)/i.test(classificationId)) {
     objectClass = 'silence';
   }
   
   // Invisible
-  else if (/^Invisible (.*)$/i.test(id)) {
+  else if (/^Invisible (.*)$/i.test(classificationId)) {
     objectClass = 'invisible';
-    const match = id.match(/^Invisible (.*)$/i);
+    const match = classificationId.match(/^Invisible (.*)$/i);
     cleanId = match[1];
   }
   
   // Skip SAS
-  else if (/^Autre SAS/i.test(id)) {
+  else if (/^Autre SAS/i.test(classificationId)) {
     return null;
   }
   
   // Glass
-  else if (/^(Cloison vitr(e|é|  )e|Vitre)/i.test(id)) {
+  else if (/^(Cloison vitr(e|é|  )e|Vitre)/i.test(classificationId)) {
     objectClass = 'glass';
   }
   
   // Other
-  else if (/^(?:RANGEMENT|LOCAL VDI|COURRIER\/CASIER|TELECOPIEUR|Courrier|Tri +\/ +Copie|Archive|Local technique|Stock|Triu \/ Copie \/ Repro|Local IT|Repro|Cuisine|Local ménage|Autre)/i.test(id)) {
+  else if (/^(?:RANGEMENT|LOCAL VDI|COURRIER\/CASIER|TELECOPIEUR|Courrier|Tri +\/ +Copie|Archive|Local technique|Stock|Triu \/ Copie \/ Repro|Local IT|Repro|Cuisine|Local ménage|Autre)/i.test(classificationId)) {
     objectClass = 'other';
   }
   
   // Espace
-  else if (/^Espace ([-.\w' ]+)$/i.test(id)) {
+  else if (/^Espace ([-.\w' ]+)$/i.test(classificationId)) {
     objectClass = 'espace';
-    const match = id.match(/^Espace ([-.\w' ]+)$/i);
+    const match = classificationId.match(/^Espace ([-.\w' ]+)$/i);
     cleanId = match[1];
   }
   
   // Flat color
-  else if (/^(flat-[0-9a-f]{6}) (.*)/i.test(id)) {
-    const match = id.match(/^(flat-[0-9a-f]{6}) (.*)/i);
+  else if (/^(flat-[0-9a-f]{6}) (.*)/i.test(classificationId)) {
+    const match = classificationId.match(/^(flat-[0-9a-f]{6}) (.*)/i);
     objectClass = match[1];
     cleanId = match[2];
   }
   
   // Default to other
   else {
-    console.warn(`Unknown type: ${id}`);
+    console.warn(`Unknown type: ${classificationId}`);
     objectClass = 'other';
   }
   
@@ -245,9 +251,10 @@ export function mapRoomName(name, nameToIdMap) {
  * @returns {Object|null} Classification result or null to skip
  */
 export function classifyFurniture(id) {
-  // SDR (meeting room furniture)
-  if (/^(SDR|Postes?)\s+([-A-Z0-9. ]+):(?:I([-+]?\d(?:\.\d)?)([-+]?\d(?:\.\d)?)A(\d):)?(?:(\d+)x(\d+):)?\s*(.*)$/i.test(id)) {
-    const match = id.match(/^(SDR|Postes?)\s+([-A-Z0-9. ]+):(?:I([-+]?\d(?:\.\d)?)([-+]?\d(?:\.\d)?)A(\d):)?(?:(\d+)x(\d+):)?\s*(.*)$/i);
+  // SDR (meeting room furniture) or Poste/postes (desks)
+  // Handle both space and underscore separators
+  if (/^(SDR|Postes?|postes?)[\s_]+([-A-Z0-9. ]+):(?:I([-+]?\d(?:\.\d)?)([-+]?\d(?:\.\d)?)A(\d):)?(?:(\d+)x(\d+):)?\s*(.*)$/i.test(id)) {
+    const match = id.match(/^(SDR|Postes?|postes?)[\s_]+([-A-Z0-9. ]+):(?:I([-+]?\d(?:\.\d)?)([-+]?\d(?:\.\d)?)A(\d):)?(?:(\d+)x(\d+):)?\s*(.*)$/i);
     const [, what, office, indicatorX, indicatorY, indicatorA, width, depth, deskIds] = match;
     
     return {

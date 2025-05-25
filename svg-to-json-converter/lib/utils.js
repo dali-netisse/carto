@@ -20,7 +20,7 @@ export function normalizeText(text) {
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '') // Remove combining diacritical marks
     .toLowerCase()
-    .replace(/\W+/g, '_'); // Replace non-word characters with underscore
+    .replace(/\W/g, ''); // Remove all non-word characters (matches Perl's \W)
 }
 
 /**
