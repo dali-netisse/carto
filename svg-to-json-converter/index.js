@@ -19,6 +19,7 @@ import { classifyObject, classifyFurniture, parseDeskIds, mapRoomName } from './
 import { polygonArea, polygonPerimeter, isValidPolygon, polygonCentroid } from './lib/geometry.js';
 import { normalizeText, formatPoints, filterClosePoints, extractSpecialAttributes, toCanonicalJSON, ANSI, roundTo } from './lib/utils.js';
 import { resolveSite, getCalibrationRect as getCalibrationRectConfig, getIdFixes, getSpecialTransform, applyIdFix, loadMeetingRoomsMap } from './lib/calibration.js';
+import sortKeys from 'sort-keys';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -356,7 +357,8 @@ async function processFile(filename, options) {
   
   // Write output
   const outputFile = join(outputDir, `${site}-${floor}.json`);
-  await writeFile(outputFile, toCanonicalJSON(output), 'utf8');
+  const sortedOutput = sortKeys(output, {deep: true});
+  await writeFile(outputFile, toCanonicalJSON(sortedOutput), 'utf8');
   
   console.log(`Output written to ${outputFile}`);
 }
