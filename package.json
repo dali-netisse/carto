@@ -1,0 +1,24 @@
+{
+  "name": "svg-converter-js",
+  "version": "1.0.0",
+  "description": "JavaScript version of the SVG map to JSON converter.",
+  "main": "src/converter.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/converter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svg",
+    "json",
+    "converter",
+    "map"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.8",
+    "svg-pathdata": "^7.2.0",
+    "yargs": "^17.7.2"
+  }
+}

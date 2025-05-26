@@ -1,0 +1,34 @@
+{
+  "DEFAULT_SITE": {
+    "default": {
+      "x1": 10, "y1": 10, "x2": 100, "y2": 100,
+      "X1": 0,  "Y1": 0,  "X2": 1000, "Y2": 1000,
+      "width": 2000, "height": 1500,
+      "description": "Default calibration for DEFAULT_SITE"
+    },
+    "floor_specific": {
+      "0": {
+        "x1": 12, "y1": 12, "x2": 110, "y2": 110,
+        "X1": 0,  "Y1": 0,  "X2": 1200, "Y2": 1200,
+        "width": 2200, "height": 1600,
+        "description": "Calibration for DEFAULT_SITE, Floor 0"
+      }
+    }
+  },
+  "MYSITE": {
+    "default": {
+        "x1": 20, "y1": 20, "x2": 200, "y2": 200,
+        "X1": 0,  "Y1": 0,  "X2": 2000, "Y2": 2000,
+        "width": 4000, "height": 3000,
+        "description": "Default calibration for MYSITE"
+    },
+    "floor_specific": {
+        "1": {
+            "x1": 25, "y1": 25, "x2": 250, "y2": 250,
+            "X1": 0,  "Y1": 0,  "X2": 2500, "Y2": 2500,
+            "width": 5000, "height": 3500,
+            "description": "Calibration for MYSITE, Floor 1"
+        }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "DEFAULT_SITE-0": {
+    "old_svg_id_1": "corrected_id_1",
+    "another_id_to_fix": "fixed_id_A"
+  },
+  "MYSITE-1": {
+    "svg_elem_id_abc": "room_101",
+    "mobilier_001": "desk_001_corrected"
+  }
+}
