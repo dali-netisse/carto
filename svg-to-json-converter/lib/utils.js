@@ -2,6 +2,8 @@
  * Utility functions for SVG to JSON converter
  */
 
+import sortKeys from "sort-keys";
+
 // ANSI color codes for console output
 export const ANSI = {
   reverse: '\x1b[7;31m',
@@ -169,7 +171,8 @@ export function extractSpecialAttributes(id) {
  * @returns {string} JSON string
  */
 export function toCanonicalJSON(obj) {
-  return JSON.stringify(obj, null, 3);
+  const sortedOutput = sortKeys(obj, {deep: true});
+  return JSON.stringify(sortedOutput, null, 3);
 }
 
 /**
