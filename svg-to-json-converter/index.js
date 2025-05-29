@@ -39,9 +39,7 @@ import {
   pathToPoints,
 } from "./lib/pathParser.js";
 import {
-  classifyObject,
-  classifyFurniture,
-  parseDeskIds,
+  classifyObject, // Keep classifyObject for rooms
   mapRoomName,
 } from "./lib/classifier.js";
 import {
@@ -81,6 +79,195 @@ const NAMESPACES = {
   svg: "http://www.w3.org/2000/svg",
   inkscape: "http://www.inkscape.org/namespaces/inkscape",
 };
+
+// Helper function to process and classify IDs based on Perl script logic
+function processAndClassifyId(id, inkscapeLabel, getParentIdCallback) {
+  let processedId = id;
+
+  if (inkscapeLabel) {
+    const overrideMatch = inkscapeLabel.match(/^override\s+(.*)$/i);
+    if (overrideMatch) {
+      processedId = overrideMatch[1];
+    } else if (id && id.match(/^path[-_\s\d]+$/)) {
+      processedId = inkscapeLabel;
+    }
+  }
+
+  if (!processedId) return null;
+
+  if (processedId.match(/^line/i)) {
+    let currentParentId = getParentIdCallback();
+    let depth = 0; // Safety break for deep traversals
+    while (currentParentId && depth < 10) {
+      if (!currentParentId.match(/^(line|g)/i)) {
+        processedId = currentParentId;
+        break;
+      }
+      // As per Perl: die "Could not find named ancestor for $id" if $newid =~ /^mobilier$/i;
+      // This check is specific and might need context; for now, we just find non-line/g parent.
+      if (currentParentId.match(/^mobilier$/i)) {
+         console.warn(`Encountered 'mobilier' ID during parent lookup for ${id}. Stopping.`);
+         return null; // Or handle as an error
+      }
+      currentParentId = getParentIdCallback(true); // true to signal get next parent
+      depth++;
+    }
+    if (processedId.match(/^line/i) || processedId.match(/^g/i) && depth >=10) {
+        console.warn(`Could not find suitable named ancestor for ${id}`);
+        return null;
+    }
+  }
+
+  processedId = processedId.replace(/_$/, "");
+  processedId = processedId.replace(/_x([0-9a-f]{2})_/gi, (match, hex) =>
+    String.fromCharCode(parseInt(hex, 16))
+  );
+  processedId = processedId.replace(/_/g, " ");
+
+  // Regex-based classification from Perl
+  let match;
+
+  // Desk/Meeting room pattern
+  match = processedId.match(
+    /^(SDR|Postes?)\s+([-A-Z0-9. ]+):(?:I([-+]?\d(?:\.\d)?)([-+]?\d(?:\.\d)?)A(\d):)?(?:(\d+)x(\d+):)?\s*(.*)$/i
+  );
+  if (match) {
+    const [, what, office, indicatorX, indicatorY, indicatorA, width, depth, deskIdsString] = match;
+    return {
+      originalId: id,
+      processedId: processedId,
+      where: "desks", // Generic category for desks/meeting rooms
+      type: what.toUpperCase() === "SDR" ? "meeting" : "desks",
+      office: office.trim(),
+      indicatorX: indicatorX ? parseFloat(indicatorX) : undefined,
+      indicatorY: indicatorY ? parseFloat(indicatorY) : undefined,
+      indicatorA: indicatorA ? parseInt(indicatorA, 10) : undefined,
+      itemWidth: width ? parseInt(width, 10) : undefined,
+      itemDepth: depth ? parseInt(depth, 10) : undefined,
+      deskIdsString: deskIdsString.trim(),
+    };
+  }
+
+  // Furniture pattern
+  match = processedId.match(/^meuble\s+([-_\w]+)/i);
+  if (match) {
+    return {
+      originalId: id,
+      processedId: processedId,
+      where: "furniture",
+      type: match[1].toLowerCase(), // e.g., "armoire"
+    };
+  }
+
+  // Tag pattern (Perl: $data->{tag}{$class}{$id}) - currently not in JS output structure
+  match = processedId.match(/^tag\s+([-_\w]+)/i);
+  if (match) {
+    console.warn(`${ANSI.yellow}Warning: 'tag' type furniture "${processedId}" found, but not explicitly handled in current JSON structure. Skipping.${ANSI.normal}`);
+    return null;
+    // If to be handled as generic furniture:
+    // return { processedId, where: "furniture", type: `tag-${match[1].toLowerCase()}` };
+  }
+
+  // Text pattern (Perl: $data->{text}{$class}{$id}) - currently not in JS output structure
+  match = processedId.match(/^(r?text(-top)?)\s+(\S+)\s+(\d+(?:\.\d+)?)\s+(\S+)\s(.*)$/i);
+  if (match) {
+    console.warn(`${ANSI.yellow}Warning: 'text' type furniture "${processedId}" found, but not explicitly handled in current JSON structure. Skipping.${ANSI.normal}`);
+    return null;
+    // const [, text_type_full, top_modifier, text_class, size, color, text_content] = match;
+    // return {
+    //   processedId,
+    //   where: "text", // Needs a decision on where to store this
+    //   type: text_class,
+    //   textDetails: {
+    //     type: text_type_full,
+    //     isTop: !!(top_modifier && top_modifier === "-top"),
+    //     size: parseFloat(size),
+    //     color: color,
+    //     text: text_content.replace(/\\n/g, "\n"),
+    //   }
+    // };
+  }
+  
+  console.warn(`${ANSI.yellow}Warning: Unknown furniture ID pattern: "${processedId}" (original: "${id}")${ANSI.normal}`);
+  return null;
+}
+
+// Helper function to parse desk ID strings based on Perl script logic
+function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth) {
+  const objects = [];
+  if (deskIdsString.includes("=")) { // Format: 1G=A,1D=B
+    const deskIdEntries = deskIdsString.split(/\s*,\s*/);
+    for (const entry of deskIdEntries) {
+      const match = entry.match(/^(\d+)([GD]X?|C)=(.+)$/i);
+      if (match) {
+        const [, position, side, desk] = match;
+        const obj = {
+          position: parseInt(position, 10),
+          side: side.toUpperCase(),
+          office: office,
+          desk: desk,
+        };
+        if (itemWidth !== undefined && itemDepth !== undefined) {
+          obj.width = itemWidth;
+          obj.depth = itemDepth;
+        }
+        objects.push(obj);
+      } else {
+        console.error(`Could not match desk ID entry "${entry}" in "${deskIdsString}"`);
+        // Consider throwing an error like Perl's 'die'
+      }
+    }
+  } else { // Format: -Z4 or N4 or ABCD
+    let deskChars = [];
+    const layoutMatch = deskIdsString.match(/^(-?)([URNZ]?)(\d+)$/);
+    if (layoutMatch) {
+      const [, reverseStr, layoutChar, countStr] = layoutMatch;
+      const reverse = reverseStr === '-';
+      const layout = layoutChar || 'Z';
+      const count = parseInt(countStr, 10);
+      let currentDeskCharCode = 'A'.charCodeAt(0);
+
+      if (layout.toUpperCase() === 'Z') {
+        for (let i = 0; i < count; i++) deskChars.push(String.fromCharCode(currentDeskCharCode + i));
+      } else if (layout.toUpperCase() === 'N') {
+        for (let i = 0; i < count; i++) {
+          deskChars.push(String.fromCharCode('A'.charCodeAt(0) + (i % 2) * Math.floor(count / 2) + Math.floor(i / 2)));
+        }
+      } else if (layout.toUpperCase() === 'R') {
+         for (let i = 0; i < count; i++) {
+          deskChars.push(String.fromCharCode('A'.charCodeAt(0) + ((i + 1) % 2) * Math.floor(count / 2) + Math.floor(i / 2)));
+        }
+      } else { // Fallback to simple character split if layout is unknown but count is present
+         deskChars = deskIdsString.split('');
+      }
+      if (reverse) {
+        deskChars.reverse();
+      }
+    } else {
+      deskChars = deskIdsString.split('');
+    }
+
+    let index = 0;
+    for (const deskChar of deskChars) {
+      if (deskChar !== "-") { // Skip placeholders
+        const obj = {
+          position: Math.floor(index / 2) + 1,
+          side: (index % 2) ? "D" : "G",
+          office: office,
+          desk: deskChar,
+        };
+        if (itemWidth !== undefined && itemDepth !== undefined) {
+          obj.width = itemWidth;
+          obj.depth = itemDepth;
+        }
+        objects.push(obj);
+      }
+      index++;
+    }
+  }
+  return objects;
+}
+
 
 // Parse command line arguments
 program
@@ -340,159 +527,147 @@ async function processFile(filename, options) {
   const furnitureElements = getElementsByLayer(
     xpath,
     doc,
-    ["Mobilier", "mobilier"],
-    "rect|polygon|path|circle|line|polyline"
+    ["Mobilier", "mobilier", "MOBILIER", "MOBILIERS"], // Match Perl's group names
+    "path|line|polyline" // JS still broader, Perl was line|polyline|path within group
   );
   console.log(`Found ${furnitureElements.length} furniture elements`);
+  const processedFurnitureIds = new Set(); // To warn about duplicates like Perl
 
   for (const elem of furnitureElements) {
-    let id = getAttribute(elem, "id");
-    if (!id) continue;
+    const originalId = getAttribute(elem, "id");
+    const inkscapeLabel = elem.getAttributeNS(NAMESPACES.inkscape, "label");
 
-    // Check for inkscape:label if id is generic
-    const label = elem.getAttributeNS(NAMESPACES.inkscape, "label");
-    if (label && id.match(/^path[-_\s\d]+$/)) {
-      id = label;
-    }
+    let currentElemForParent = elem;
+    const getParentIdCallback = (getNextParent = false) => {
+        if (getNextParent && currentElemForParent) {
+            currentElemForParent = currentElemForParent.parentNode;
+        }
+        if (currentElemForParent && currentElemForParent.parentNode && currentElemForParent.parentNode.getAttribute) {
+            // Check if parentNode is an element node (type 1) before calling getAttribute
+            if (currentElemForParent.parentNode.nodeType === 1) {
+                 return currentElemForParent.parentNode.getAttribute("id");
+            }
+        }
+        return null;
+    };
+    
+    const classification = processAndClassifyId(originalId, inkscapeLabel, getParentIdCallback);
 
-    console.log(`Processing furniture: ${id}`);
-
-    const furniture = classifyFurniture(id);
-    if (!furniture) {
-      console.log(`  -> Not classified as furniture`);
+    if (!classification) {
+      // console.log(`  -> Element ${originalId || 'with no ID'} not classified as processable furniture/desk.`);
       continue;
     }
+    
+    const { processedId, where, type: classifiedType, ...params } = classification;
 
-    console.log(`  -> Classified as ${furniture.type}`);
-
-    if (furniture.type === "desks" || furniture.type === "meeting") {
-      console.log(`  -> Desk info: ${JSON.stringify(furniture)}`);
+    if (processedFurnitureIds.has(processedId)) {
+        console.warn(`${ANSI.yellow}Warning: Duplicate processed furniture ID "${processedId}" encountered.${ANSI.normal}`);
     }
+    processedFurnitureIds.add(processedId);
 
-    if (furniture.type === "desks" || furniture.type === "meeting") {
-      // Process desk/meeting furniture
-      const obj = processElement(elem, calibrationTransform);
-      if (!obj) continue;
-      console.log(`  -> Process element result: ${JSON.stringify(obj)}`);
+    console.log(`Processing furniture/desk: ${processedId} (original: ${originalId}), type: ${classifiedType}, where: ${where}`);
 
-      // Calculate point and direction using specialized desk utilities that match the Perl implementation
+    if (where === "desks") { // Covers "desks" and "meeting"
+      const baseObj = processElement(elem, calibrationTransform); // Get transformed basic geometry
+      if (!baseObj) {
+        console.warn(`  -> Could not process base geometry for desk: ${processedId}`);
+        continue;
+      }
+      console.log(`  -> Base element processed: ${JSON.stringify(baseObj)}`);
+
+      let calculatedPoint, calculatedDirection;
+
       const geometryResult = processDeskGeometry(elem, calibrationTransform);
-      let point, direction;
 
-      if (geometryResult) {
-        point = geometryResult.point;
-        direction = geometryResult.direction;
+      if (geometryResult && geometryResult.point && geometryResult.direction !== undefined) {
+        calculatedPoint = geometryResult.point;
+        calculatedDirection = geometryResult.direction;
+        console.log(`  -> Used processDeskGeometry: point ${JSON.stringify(calculatedPoint)}, direction ${calculatedDirection}`);
       } else {
-        // Fallback to original code for backward compatibility
-        if (obj.type === "polyline" && obj.points) {
-          const points = parsePolygonPoints(obj.points);
+        console.log(`  -> processDeskGeometry did not yield full result. Using fallback for ${processedId}.`);
+        // Fallback logic based on Perl snippet (point1 from a 2-point line, direction)
+        // Perl script expects line or 2-point polygon for desks.
+        // processElement converts SVG line to JSON polyline.
+        if (baseObj.type === "polyline") {
+          const points = parsePolygonPoints(baseObj.points); // Already transformed
           if (points.length === 2) {
-            // Midpoint
-            point = [
-              (points[0][0] + points[1][0]) / 2,
-              (points[0][1] + points[1][1]) / 2,
-            ];
-            // Direction from first to second point - matches Perl atan2($point2->[1] - $point1->[1], $point2->[0] - $point1->[0])
-            direction = Math.atan2(
-              points[1][1] - points[0][1],
-              points[1][0] - points[0][0]
-            );
+            calculatedPoint = points[0]; // Perl uses the first point
+            calculatedDirection = Math.atan2(points[1][1] - points[0][1], points[1][0] - points[0][0]);
+            console.log(`  -> Fallback: 2-point polyline. Point: ${JSON.stringify(calculatedPoint)}, Dir: ${calculatedDirection}`);
           } else {
-            point = polygonCentroid(points);
-            direction = 0;
+            console.warn(`  -> Fallback: Polyline desk "${processedId}" does not have 2 points (${points.length}). Using centroid.`);
+            calculatedPoint = polygonCentroid(points);
+            calculatedDirection = 0; // Default direction
           }
-        } else if (obj.type === "polygon") {
-          const points = parsePolygonPoints(obj.points);
-          point = polygonCentroid(points);
-
-          // Calculate direction from indicator if available
-          if (
-            furniture.indicatorX !== undefined &&
-            furniture.indicatorY !== undefined
-          ) {
-            const angle = Math.atan2(
-              furniture.indicatorY,
-              furniture.indicatorX
-            );
-            direction = angle + ((furniture.indicatorA || 0) * Math.PI) / 2;
-          } else {
-            direction = 0;
-          }
+        } else if (baseObj.type === "polygon" && params.indicatorX !== undefined) {
+            // This specific fallback for polygon + indicator was in original JS.
+            // Perl's main desk logic assumes line/2-point-polygon.
+            const points = parsePolygonPoints(baseObj.points);
+            calculatedPoint = polygonCentroid(points);
+            calculatedDirection = 0; // Direction will be overridden by indicator below.
+            console.log(`  -> Fallback: Polygon with indicator. Centroid: ${JSON.stringify(calculatedPoint)}`);
         } else {
-          // For other types, use center
-          point = [obj.x || 0, obj.y || 0];
-          direction = 0;
+          console.warn(`  -> Fallback: Desk "${processedId}" type "${baseObj.type}" not a 2-point polyline. Using default point/direction.`);
+          // Default for other types (e.g. circle, or if baseObj is just x,y)
+          calculatedPoint = [baseObj.x || 0, baseObj.y || 0];
+          calculatedDirection = 0;
         }
       }
 
-      // If indicator values are provided, override the direction calculation
-      if (
-        furniture.indicatorX !== undefined &&
-        furniture.indicatorY !== undefined
-      ) {
-        const angle = Math.atan2(furniture.indicatorY, furniture.indicatorX);
-        direction = angle + ((furniture.indicatorA || 0) * Math.PI) / 2;
+      // Indicator values from ID override calculated direction (matches Perl)
+      if (params.indicatorX !== undefined && params.indicatorY !== undefined) {
+        const angle = Math.atan2(params.indicatorY, params.indicatorX);
+        calculatedDirection = angle + ((params.indicatorA || 0) * Math.PI) / 2;
+        console.log(`  -> Direction overridden by indicator: ${calculatedDirection}`);
       }
 
-      // Parse desk IDs
-      const objects = parseDeskIds(
-        furniture.deskIds,
-        furniture.office,
-        furniture.width,
-        furniture.depth
+      const deskObjects = generateDeskObjectsInternal(
+        params.deskIdsString,
+        params.office,
+        params.itemWidth,
+        params.itemDepth
       );
-      console.log(`Desk ${id} has ${objects.length} desk objects`);
+      console.log(`  -> Generated ${deskObjects.length} desk objects for ${processedId}`);
 
-      // Create desk object
-      const deskObj = {
-        class: furniture.type,
-        id: id.toLowerCase(),
-        point: [roundTo(point[0]), roundTo(point[1])],
-        direction: roundTo(direction),
-        objects: objects,
+      const deskOutputObject = {
+        class: classifiedType, // "desks" or "meeting"
+        id: processedId, // Perl uses the processed ID as key, not lowercased
+        point: [roundTo(calculatedPoint[0]), roundTo(calculatedPoint[1])],
+        direction: roundTo(calculatedDirection),
+        objects: deskObjects,
       };
-      console.log(`  -> Desk objects: ${JSON.stringify(objects)}`);
 
-      // Add indicator info if available - match Perl property names and rounding
-      if (furniture.indicatorX !== undefined)
-        deskObj.indicator_x = roundTo(furniture.indicatorX);
-      if (furniture.indicatorY !== undefined)
-        deskObj.indicator_y = roundTo(furniture.indicatorY);
-      if (furniture.indicatorA !== undefined)
-        deskObj.indicator_a = furniture.indicatorA;
+      if (params.indicatorX !== undefined) deskOutputObject.indicator_x = roundTo(params.indicatorX);
+      if (params.indicatorY !== undefined) deskOutputObject.indicator_y = roundTo(params.indicatorY);
+      if (params.indicatorA !== undefined) deskOutputObject.indicator_a = params.indicatorA; // Integer
 
-      console.log(
-        `Adding desk to output.desks[${furniture.type}][${deskObj.id}]`
-      );
-      console.log(`Current output.desks: ${JSON.stringify(output.desks)}`);
-
-      output.desks[furniture.type][deskObj.id] = deskObj;
-
-      console.log(
-        `After adding: ${JSON.stringify(
-          output.desks[furniture.type][deskObj.id]
-        )}`
-      );
-      console.log(
-        `Keys in output.desks[${furniture.type}]: ${Object.keys(
-          output.desks[furniture.type]
-        )}`
-      );
-    } else {
-      // Other furniture types
-      const obj = processElement(elem, calibrationTransform);
-      if (!obj) continue;
-
-      obj.class = furniture.class || furniture.type;
-      obj.id = id;
-
-      console.log(
-        `Adding desk: ${furniture.type} - ${deskObj.id} with ${objects.length} objects`
-      );
-      if (!output.furniture[furniture.type]) {
-        output.furniture[furniture.type] = {};
+      // Ensure the category exists
+      if (!output.desks[classifiedType]) {
+        output.desks[classifiedType] = {};
       }
-      output.furniture[furniture.type][id] = obj;
+      output.desks[classifiedType][deskOutputObject.id] = deskOutputObject;
+      console.log(`  -> Added to output.desks.${classifiedType}.${deskOutputObject.id}`);
+
+    } else if (where === "furniture") {
+      const obj = processElement(elem, calibrationTransform);
+      if (!obj) {
+        console.warn(`  -> Could not process base geometry for furniture: ${processedId}`);
+        continue;
+      }
+
+      obj.class = classifiedType; // e.g., "armoire"
+      obj.id = processedId; // Already processed
+
+      if (!output.furniture[classifiedType]) {
+        output.furniture[classifiedType] = {};
+      }
+      output.furniture[classifiedType][processedId] = obj;
+      console.log(`  -> Added to output.furniture.${classifiedType}.${processedId}`);
+
+    } else {
+      // This case should ideally be handled by processAndClassifyId returning null
+      // or by specific handling for "tag", "text" if they were to be implemented.
+      console.log(`  -> Element ${processedId} classified as '${where}', type '${classifiedType}', but not stored.`);
     }
   }
 
@@ -520,7 +695,7 @@ async function processFile(filename, options) {
  */
 function processElement(elem, calibrationTransform) {
   const type = getElementType(elem);
-  const id = getAttribute(elem, "id");
+  const originalId = getAttribute(elem, "id"); // Use originalId for the object if not later overridden
 
   // Get element transforms
   const transforms = getNodeTransforms(elem);
@@ -637,8 +812,8 @@ function processElement(elem, calibrationTransform) {
       break;
   }
 
-  if (obj && id) {
-    obj.id = id;
+  if (obj && originalId) { // Changed id to originalId here
+    obj.id = originalId; // The ID set here is the raw one from SVG, can be overridden later
   }
 
   return obj;
