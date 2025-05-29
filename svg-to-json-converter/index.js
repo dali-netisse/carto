@@ -838,6 +838,17 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   const type = elem.tagName.toLowerCase();
   let point1, point2;
 
+  // Get element transforms including parent transforms
+  const transforms = getNodeTransforms(elem);
+  let transform = calibrationTransform;
+  if (transforms) {
+    if (transform) {
+      transform = multiplyMatrices(transform, transforms);
+    } else {
+      transform = transforms;
+    }
+  }
+
   if (type === "polygon") {
     const points = parsePoints(getAttribute(elem, "points"));
     if (points.length === 2) {
@@ -854,54 +865,54 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
     point2 = transformPoint(line.x2, line.y2, calibrationTransform);
   } else if (type === "path") {
     const d = getAttribute(elem, "d");
-    if (!d) {
-      console.warn(`Path desk has no 'd' attribute. Ignoring.`);
-      return null;
-    }
+    if (!d) return null;
 
     // Parse the path and convert to absolute coordinates
     const parsed = parsePath(d);
     const absolute = pathToAbsolute(parsed);
 
     // For desk paths, we expect simple lines (M + H/V/L)
-    // Extract start and end points
     if (absolute.commands.length >= 2) {
-      const start = absolute.commands[0]; // Should be a Move command
-      const end = absolute.commands[absolute.commands.length - 1];
+      const start = absolute.commands[0]; // Should be M
+      const end = absolute.commands[1]; // Should be H/V/L
       
       if (start.command === 'M') {
-        point1 = transformPoint(start.x, start.y, calibrationTransform);
+        point1 = transformPoint(start.x, start.y, transform);
         
-        // End point depends on the last command type
+        // Handle horizontal/vertical lines
         if (end.command === 'H') {
-          point2 = transformPoint(end.x, start.y, calibrationTransform);
+          point2 = transformPoint(end.x, start.y, transform);
         } else if (end.command === 'V') {
-          point2 = transformPoint(start.x, end.y, calibrationTransform);
+          point2 = transformPoint(start.x, end.y, transform);
         } else if (end.command === 'L') {
-          point2 = transformPoint(end.x, end.y, calibrationTransform);
+          point2 = transformPoint(end.x, end.y, transform);
         } else {
-          console.warn(`Unexpected end command ${end.command} in desk path. Using first two points.`);
-          const nextCmd = absolute.commands[1];
-          point2 = transformPoint(nextCmd.x, nextCmd.y, calibrationTransform);
+          console.warn(`Unexpected end command ${end.command} in desk path`);
+          return null;
         }
       } else {
-        console.warn(`Path desk doesn't start with Move command. Ignoring.`);
+        console.warn(`Path doesn't start with Move command`);
         return null;
       }
     } else {
-      console.warn(`Path desk has too few commands (${absolute.commands.length}). Ignoring.`);
+      console.warn(`Path has too few commands`);
       return null;
     }
   } else {
-    console.warn(`Unsupported desk type: ${type}. Ignoring.`);
+    console.warn(`Unsupported desk type: ${type}`);
     return null;
   }
 
-  if (point1 && point2) {
-    // Calculate direction from point1 to point2
-    const direction = Math.atan2(point2[1] - point1[1], point2[0] - point1[0]);
-    return { point: point1, direction };
+  if (!point1 || !point2) {
+    return null;
   }
 
-  return null;
+  // Calculate initial direction from the line
+  let direction = Math.atan2(point2[1] - point1[1], point2[0] - point1[0]);
+
+  // Return the desk geometry
+  return {
+    point: point1,
+    direction: direction
+  };
 }
