@@ -539,19 +539,26 @@ async function processFile(filename, options) {
 
     let currentElemForParent = elem;
     const getParentIdCallback = (getNextParent = false) => {
-        if (getNextParent && currentElemForParent) {
-            currentElemForParent = currentElemForParent.parentNode;
+      if (getNextParent && currentElemForParent) {
+        currentElemForParent = currentElemForParent.parentNode;
+      }
+      if (
+        currentElemForParent &&
+        currentElemForParent.parentNode &&
+        currentElemForParent.parentNode.getAttribute
+      ) {
+        if (currentElemForParent.parentNode.nodeType === 1) {
+          return currentElemForParent.parentNode.getAttribute("id");
         }
-        if (currentElemForParent && currentElemForParent.parentNode && currentElemForParent.parentNode.getAttribute) {
-            // Check if parentNode is an element node (type 1) before calling getAttribute
-            if (currentElemForParent.parentNode.nodeType === 1) {
-                 return currentElemForParent.parentNode.getAttribute("id");
-            }
-        }
-        return null;
+      }
+      return null;
     };
-    
-    const classification = processAndClassifyId(originalId, inkscapeLabel, getParentIdCallback);
+
+    const classification = processAndClassifyId(
+      originalId,
+      inkscapeLabel,
+      getParentIdCallback
+    );
 
     if (!classification) {
       // console.log(`  -> Element ${originalId || 'with no ID'} not classified as processable furniture/desk.`);
@@ -568,7 +575,7 @@ async function processFile(filename, options) {
     console.log(`Processing furniture/desk: ${processedId} (original: ${originalId}), type: ${classifiedType}, where: ${where}`);
 
     if (where === "desks") { // Covers "desks" and "meeting"
-      const baseObj = processElement(elem, calibrationTransform); // Get transformed basic geometry
+      const baseObj = processDeskGeometryPerl(elem, calibrationTransform); // Get transformed basic geometry
       if (!baseObj) {
         console.warn(`  -> Could not process base geometry for desk: ${processedId}`);
         continue;
@@ -821,4 +828,80 @@ function parsePolygonPoints(pointsStr) {
   }
 
   return points;
+}
+
+/**
+ * Extracts points and calculates direction for desks based on Perl logic.
+ * Handles specific cases like 2-point polygons or lines.
+ */
+function processDeskGeometryPerl(elem, calibrationTransform) {
+  const type = elem.tagName.toLowerCase();
+  let point1, point2;
+
+  if (type === "polygon") {
+    const points = parsePoints(getAttribute(elem, "points"));
+    if (points.length === 2) {
+      // Perl expects exactly 2 points for desks
+      point1 = transformPoint(points[0][0], points[0][1], calibrationTransform);
+      point2 = transformPoint(points[1][0], points[1][1], calibrationTransform);
+    } else {
+      console.warn(`Polygon desk does not have exactly 2 points. Ignoring.`);
+      return null;
+    }
+  } else if (type === "line") {
+    const line = getLineAttributes(elem);
+    point1 = transformPoint(line.x1, line.y1, calibrationTransform);
+    point2 = transformPoint(line.x2, line.y2, calibrationTransform);
+  } else if (type === "path") {
+    const d = getAttribute(elem, "d");
+    if (!d) {
+      console.warn(`Path desk has no 'd' attribute. Ignoring.`);
+      return null;
+    }
+
+    // Parse the path and convert to absolute coordinates
+    const parsed = parsePath(d);
+    const absolute = pathToAbsolute(parsed);
+
+    // For desk paths, we expect simple lines (M + H/V/L)
+    // Extract start and end points
+    if (absolute.commands.length >= 2) {
+      const start = absolute.commands[0]; // Should be a Move command
+      const end = absolute.commands[absolute.commands.length - 1];
+      
+      if (start.command === 'M') {
+        point1 = transformPoint(start.x, start.y, calibrationTransform);
+        
+        // End point depends on the last command type
+        if (end.command === 'H') {
+          point2 = transformPoint(end.x, start.y, calibrationTransform);
+        } else if (end.command === 'V') {
+          point2 = transformPoint(start.x, end.y, calibrationTransform);
+        } else if (end.command === 'L') {
+          point2 = transformPoint(end.x, end.y, calibrationTransform);
+        } else {
+          console.warn(`Unexpected end command ${end.command} in desk path. Using first two points.`);
+          const nextCmd = absolute.commands[1];
+          point2 = transformPoint(nextCmd.x, nextCmd.y, calibrationTransform);
+        }
+      } else {
+        console.warn(`Path desk doesn't start with Move command. Ignoring.`);
+        return null;
+      }
+    } else {
+      console.warn(`Path desk has too few commands (${absolute.commands.length}). Ignoring.`);
+      return null;
+    }
+  } else {
+    console.warn(`Unsupported desk type: ${type}. Ignoring.`);
+    return null;
+  }
+
+  if (point1 && point2) {
+    // Calculate direction from point1 to point2
+    const direction = Math.atan2(point2[1] - point1[1], point2[0] - point1[0]);
+    return { point: point1, direction };
+  }
+
+  return null;
 }

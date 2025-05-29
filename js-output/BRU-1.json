@@ -8,8 +8,115 @@
    ],
    "decor": [],
    "desks": {
-      "desks": {},
-      "meeting": {}
+      "desks": {
+         "poste B760:I-0.32A0:ECFD": {
+            "class": "desks",
+            "direction": 1.719686,
+            "id": "poste B760:I-0.32A0:ECFD",
+            "indicator_a": 0,
+            "indicator_x": -0.3,
+            "indicator_y": 2,
+            "objects": [
+               {
+                  "desk": "E",
+                  "office": "B760",
+                  "position": 1,
+                  "side": "G"
+               },
+               {
+                  "desk": "C",
+                  "office": "B760",
+                  "position": 1,
+                  "side": "D"
+               },
+               {
+                  "desk": "F",
+                  "office": "B760",
+                  "position": 2,
+                  "side": "G"
+               },
+               {
+                  "desk": "D",
+                  "office": "B760",
+                  "position": 2,
+                  "side": "D"
+               }
+            ],
+            "point": [
+               0,
+               0
+            ]
+         },
+         "poste B761:I1.2-3.6A2:A": {
+            "class": "desks",
+            "direction": 1.892547,
+            "id": "poste B761:I1.2-3.6A2:A",
+            "indicator_a": 2,
+            "indicator_x": 1.2,
+            "indicator_y": -3.6,
+            "objects": [
+               {
+                  "desk": "A",
+                  "office": "B761",
+                  "position": 1,
+                  "side": "G"
+               }
+            ],
+            "point": [
+               0,
+               0
+            ]
+         }
+      },
+      "meeting": {
+         "sdr B7 CLEOPATRE:6": {
+            "class": "meeting",
+            "direction": 0,
+            "id": "sdr B7 CLEOPATRE:6",
+            "objects": [
+               {
+                  "desk": "A",
+                  "office": "B7 CLEOPATRE",
+                  "position": 1,
+                  "side": "G"
+               },
+               {
+                  "desk": "B",
+                  "office": "B7 CLEOPATRE",
+                  "position": 1,
+                  "side": "D"
+               },
+               {
+                  "desk": "C",
+                  "office": "B7 CLEOPATRE",
+                  "position": 2,
+                  "side": "G"
+               },
+               {
+                  "desk": "D",
+                  "office": "B7 CLEOPATRE",
+                  "position": 2,
+                  "side": "D"
+               },
+               {
+                  "desk": "E",
+                  "office": "B7 CLEOPATRE",
+                  "position": 3,
+                  "side": "G"
+               },
+               {
+                  "desk": "F",
+                  "office": "B7 CLEOPATRE",
+                  "position": 3,
+                  "side": "D"
+               }
+            ],
+            "point": [
+               0,
+               0
+            ]
+         }
+      }
    },
    "furniture": {},
    "itineraries": [],
