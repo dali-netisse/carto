@@ -608,7 +608,7 @@ async function processFile(filename, options) {
             console.log(`  -> Fallback: Polygon with indicator. Centroid: ${JSON.stringify(calculatedPoint)}`);
         } else {
           console.warn(`  -> Fallback: Desk "${processedId}" type "${baseObj.type}" not a 2-point polyline. Using default point/direction.`);
-          // Default for other types (e.g. circle, or if baseObj is just x,y)
+          // Default for other types 
           calculatedPoint = [baseObj.x || 0, baseObj.y || 0];
           calculatedDirection = 0;
         }
@@ -796,20 +796,7 @@ function processElement(elem, calibrationTransform) {
       }
       break;
 
-    case "circle":
-      const cx = parseFloat(getAttribute(elem, "cx", "0"));
-      const cy = parseFloat(getAttribute(elem, "cy", "0"));
-      const r = parseFloat(getAttribute(elem, "r", "0"));
-      if (r > 0) {
-        const center = transformPoint(cx, cy, transform);
-        obj = {
-          type: "circle",
-          x: roundTo(center[0]),
-          y: roundTo(center[1]),
-          r: roundTo(r),
-        };
-      }
-      break;
+
   }
 
   if (obj && originalId) { // Changed id to originalId here
