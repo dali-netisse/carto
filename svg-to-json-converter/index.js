@@ -56,6 +56,7 @@ import {
   toCanonicalJSON,
   ANSI,
   roundTo,
+  toPerlPrecision,
 } from "./lib/utils.js";
 import {
   resolveSite,
@@ -602,14 +603,14 @@ async function processFile(filename, options) {
       const deskOutputObject = {
         class: classifiedType, // "desks" or "meeting"
         id: processedId, // Perl uses the processed ID as key, not lowercased
-        point: [roundTo(calculatedPoint[0]), roundTo(calculatedPoint[1])],
-        direction: roundTo(calculatedDirection),
+        point: [calculatedPoint[0], calculatedPoint[1]], // Remove roundTo for full precision
+        direction: toPerlPrecision(calculatedDirection), // Use Perl-like precision for direction
         objects: deskObjects,
       };
 
-      if (params.indicatorX !== undefined) deskOutputObject.indicator_x = roundTo(params.indicatorX);
-      if (params.indicatorY !== undefined) deskOutputObject.indicator_y = roundTo(params.indicatorY);
-      if (params.indicatorA !== undefined) deskOutputObject.indicator_a = params.indicatorA; // Integer
+      if (params.indicatorX !== undefined) deskOutputObject.indicator_x = params.indicatorX; // Remove roundTo
+      if (params.indicatorY !== undefined) deskOutputObject.indicator_y = params.indicatorY; // Remove roundTo
+      if (params.indicatorA !== undefined && params.indicatorA !== 0) deskOutputObject.indicator_a = params.indicatorA; // Only include if non-zero
 
       // Ensure the category exists
       if (!output.desks[classifiedType]) {
