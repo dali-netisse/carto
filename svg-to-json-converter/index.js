@@ -450,18 +450,18 @@ async function processFile(filename, options) {
   }
 
   // Process itineraries
-  const itineraryElements = getElementsByLayer(
-    xpath,
-    doc,
-    ["Lignes de couloir", "lignes de couloir"],
-    "polyline|path"
-  );
-  for (const elem of itineraryElements) {
-    const obj = processElement(elem, calibrationTransform);
-    if (obj && obj.type === "polyline") {
-      output.itineraries.push(obj);
-    }
-  }
+  // const itineraryElements = getElementsByLayer(
+  //   xpath,
+  //   doc,
+  //   ["Lignes de couloir", "lignes de couloir"],
+  //   "polyline|path"
+  // );
+  // for (const elem of itineraryElements) {
+  //   const obj = processElement(elem, calibrationTransform);
+  //   if (obj && obj.type === "polyline") {
+  //     output.itineraries.push(obj);
+  //   }
+  // }
 
   // Process rooms
   const roomElements = getElementsByLayer(
@@ -527,8 +527,8 @@ async function processFile(filename, options) {
   const furnitureElements = getElementsByLayer(
     xpath,
     doc,
-    ["Mobilier", "mobilier", "MOBILIER", "MOBILIERS"], // Match Perl's group names
-    "path|line|polyline" // JS still broader, Perl was line|polyline|path within group
+    ["Mobilier", "mobilier", "MOBILIER", "MOBILIERS"], // 
+    "path|line|polyline" //  
   );
   console.log(`Found ${furnitureElements.length} furniture elements`);
   const processedFurnitureIds = new Set(); // To warn about duplicates like Perl
@@ -582,51 +582,14 @@ async function processFile(filename, options) {
       }
       console.log(`  -> Base element processed: ${JSON.stringify(baseObj)}`);
 
-      let calculatedPoint, calculatedDirection;
+      // Use the result from processDeskGeometryPerl directly - it already matches Perl logic
+      let calculatedPoint = baseObj.point;
+      let calculatedDirection = baseObj.direction;
+      console.log(`  -> Using Perl-style geometry: point ${JSON.stringify(calculatedPoint)}, direction ${calculatedDirection}`);
 
-      const geometryResult = processDeskGeometry(elem, calibrationTransform);
-
-      if (geometryResult && geometryResult.point && geometryResult.direction !== undefined) {
-        calculatedPoint = geometryResult.point;
-        calculatedDirection = geometryResult.direction;
-        console.log(`  -> Used processDeskGeometry: point ${JSON.stringify(calculatedPoint)}, direction ${calculatedDirection}`);
-      } else {
-        console.log(`  -> processDeskGeometry did not yield full result. Using fallback for ${processedId}.`);
-        // Fallback logic based on Perl snippet (point1 from a 2-point line, direction)
-        // Perl script expects line or 2-point polygon for desks.
-        // processElement converts SVG line to JSON polyline.
-        if (baseObj.type === "polyline") {
-          const points = parsePolygonPoints(baseObj.points); // Already transformed
-          if (points.length === 2) {
-            calculatedPoint = points[0]; // Perl uses the first point
-            calculatedDirection = Math.atan2(points[1][1] - points[0][1], points[1][0] - points[0][0]);
-            console.log(`  -> Fallback: 2-point polyline. Point: ${JSON.stringify(calculatedPoint)}, Dir: ${calculatedDirection}`);
-          } else {
-            console.warn(`  -> Fallback: Polyline desk "${processedId}" does not have 2 points (${points.length}). Using centroid.`);
-            calculatedPoint = polygonCentroid(points);
-            calculatedDirection = 0; // Default direction
-          }
-        } else if (baseObj.type === "polygon" && params.indicatorX !== undefined) {
-            // This specific fallback for polygon + indicator was in original JS.
-            // Perl's main desk logic assumes line/2-point-polygon.
-            const points = parsePolygonPoints(baseObj.points);
-            calculatedPoint = polygonCentroid(points);
-            calculatedDirection = 0; // Direction will be overridden by indicator below.
-            console.log(`  -> Fallback: Polygon with indicator. Centroid: ${JSON.stringify(calculatedPoint)}`);
-        } else {
-          console.warn(`  -> Fallback: Desk "${processedId}" type "${baseObj.type}" not a 2-point polyline. Using default point/direction.`);
-          // Default for other types 
-          calculatedPoint = [baseObj.x || 0, baseObj.y || 0];
-          calculatedDirection = 0;
-        }
-      }
-
-      // Indicator values from ID override calculated direction (matches Perl)
-      if (params.indicatorX !== undefined && params.indicatorY !== undefined) {
-        const angle = Math.atan2(params.indicatorY, params.indicatorX);
-        calculatedDirection = angle + ((params.indicatorA || 0) * Math.PI) / 2;
-        console.log(`  -> Direction overridden by indicator: ${calculatedDirection}`);
-      }
+      // Indicator values from ID are stored as metadata only - they do NOT override the direction
+      // The direction should come purely from the geometry (atan2 calculation)
+      console.log(`  -> Direction from geometry preserved: ${calculatedDirection}`);
 
       const deskObjects = generateDeskObjectsInternal(
         params.deskIdsString,
@@ -838,12 +801,18 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   const type = elem.tagName.toLowerCase();
   let point1, point2;
 
+  console.log(`\nProcessing desk geometry for element type: ${type}`);
+  console.log(`Element ID: ${elem.getAttribute('id')}`);
+  console.log(`Calibration transform: ${JSON.stringify(calibrationTransform)}`);
+
   // Get element transforms including parent transforms
   const transforms = getNodeTransforms(elem);
   let transform = calibrationTransform;
   if (transforms) {
+    console.log(`Element transforms: ${JSON.stringify(transforms)}`);
     if (transform) {
       transform = multiplyMatrices(transform, transforms);
+      console.log(`Combined transform: ${JSON.stringify(transform)}`);
     } else {
       transform = transforms;
     }
@@ -851,25 +820,34 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
 
   if (type === "polygon") {
     const points = parsePoints(getAttribute(elem, "points"));
+    console.log(`Polygon points before transform: ${JSON.stringify(points)}`);
     if (points.length === 2) {
       // Perl expects exactly 2 points for desks
-      point1 = transformPoint(points[0][0], points[0][1], calibrationTransform);
-      point2 = transformPoint(points[1][0], points[1][1], calibrationTransform);
+      point1 = transformPoint(points[0][0], points[0][1], transform);
+      point2 = transformPoint(points[1][0], points[1][1], transform);
+      console.log(`Transformed points: point1=${JSON.stringify(point1)}, point2=${JSON.stringify(point2)}`);
     } else {
-      console.warn(`Polygon desk does not have exactly 2 points. Ignoring.`);
+      console.warn(`Polygon desk does not have exactly 2 points (found ${points.length}). Ignoring.`);
       return null;
     }
   } else if (type === "line") {
     const line = getLineAttributes(elem);
-    point1 = transformPoint(line.x1, line.y1, calibrationTransform);
-    point2 = transformPoint(line.x2, line.y2, calibrationTransform);
+    console.log(`Line attributes before transform: ${JSON.stringify(line)}`);
+    point1 = transformPoint(line.x1, line.y1, transform);
+    point2 = transformPoint(line.x2, line.y2, transform);
+    console.log(`Transformed points: point1=${JSON.stringify(point1)}, point2=${JSON.stringify(point2)}`);
   } else if (type === "path") {
     const d = getAttribute(elem, "d");
-    if (!d) return null;
+    if (!d) {
+      console.warn("Path element has no 'd' attribute");
+      return null;
+    }
+    console.log(`Path data: ${d}`);
 
     // Parse the path and convert to absolute coordinates
     const parsed = parsePath(d);
     const absolute = pathToAbsolute(parsed);
+    console.log(`Parsed path commands: ${JSON.stringify(absolute.commands)}`);
 
     // For desk paths, we expect simple lines (M + H/V/L)
     if (absolute.commands.length >= 2) {
@@ -877,25 +855,36 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
       const end = absolute.commands[1]; // Should be H/V/L
       
       if (start.command === 'M') {
-        point1 = transformPoint(start.x, start.y, transform);
+        // Extract coordinates from params array
+        const [startX, startY] = start.params;
+        console.log(`Path start point before transform: [${startX},${startY}]`);
+        
+        point1 = transformPoint(startX, startY, transform);
+        console.log(`Path start point after transform: ${JSON.stringify(point1)}`);
         
         // Handle horizontal/vertical lines
         if (end.command === 'H') {
-          point2 = transformPoint(end.x, start.y, transform);
+          const [endX] = end.params;
+          point2 = transformPoint(endX, startY, transform);
+          console.log(`Horizontal line end point: ${JSON.stringify(point2)}`);
         } else if (end.command === 'V') {
-          point2 = transformPoint(start.x, end.y, transform);
+          const [endY] = end.params;
+          point2 = transformPoint(startX, endY, transform);
+          console.log(`Vertical line end point: ${JSON.stringify(point2)}`);
         } else if (end.command === 'L') {
-          point2 = transformPoint(end.x, end.y, transform);
+          const [endX, endY] = end.params;
+          point2 = transformPoint(endX, endY, transform);
+          console.log(`Line end point: ${JSON.stringify(point2)}`);
         } else {
           console.warn(`Unexpected end command ${end.command} in desk path`);
           return null;
         }
       } else {
-        console.warn(`Path doesn't start with Move command`);
+        console.warn(`Path doesn't start with Move command (found ${start.command})`);
         return null;
       }
     } else {
-      console.warn(`Path has too few commands`);
+      console.warn(`Path has too few commands (found ${absolute.commands.length})`);
       return null;
     }
   } else {
@@ -904,15 +893,19 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   }
 
   if (!point1 || !point2) {
+    console.warn("Failed to calculate points");
     return null;
   }
 
   // Calculate initial direction from the line
   let direction = Math.atan2(point2[1] - point1[1], point2[0] - point1[0]);
+  console.log(`Calculated direction: ${direction}`);
 
   // Return the desk geometry
-  return {
+  const result = {
     point: point1,
     direction: direction
   };
+  console.log(`Final desk geometry: ${JSON.stringify(result)}`);
+  return result;
 }
