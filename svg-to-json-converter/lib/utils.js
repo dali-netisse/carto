@@ -175,7 +175,9 @@ export function toCanonicalJSON(obj) {
   const jsonString = JSON.stringify(sortedOutput, null, 3);
   // Match Perl's JSON formatting: add space before colon to match "key" : value format
   // Handle all types of keys including those with special characters
-  return jsonString.replace(/"([^"]+)":/g, '"$1" :');
+  const formattedJson = jsonString.replace(/"([^"]+)":/g, '"$1" :');
+  // Add newline at the end to match Perl's output exactly
+  return formattedJson + '\n';
 }
 
 /**
