@@ -649,7 +649,7 @@ async function processFile(filename, options) {
       const textOutputObject = {
         class: classifiedType,
         id: processedId,
-        point: [baseObj.point[0], baseObj.point[1]],
+        point: [toPerlCoordinatePrecision(baseObj.point[0]), toPerlCoordinatePrecision(baseObj.point[1])],
         direction: toPerlPrecision(baseObj.direction),
         objects: [], // Text elements have empty objects array like in Perl
         text_type: textDetails.text_type,
