@@ -60,7 +60,24 @@ export function parsePath(pathData) {
     commands.push({ command: currentCommand, params: currentParams });
   }
   
-  return commands;
+  // Post-process to split move commands with multiple coordinate pairs
+  const processedCommands = [];
+  for (const { command, params } of commands) {
+    if ((command === 'M' || command === 'm') && params.length > 2) {
+      // First pair is move command
+      processedCommands.push({ command, params: [params[0], params[1]] });
+      // Subsequent pairs are line commands
+      const lineCommand = command === 'M' ? 'L' : 'l';
+      const lineParams = params.slice(2);
+      if (lineParams.length > 0) {
+        processedCommands.push({ command: lineCommand, params: lineParams });
+      }
+    } else {
+      processedCommands.push({ command, params });
+    }
+  }
+  
+  return processedCommands;
 }
 
 /**
@@ -341,18 +358,29 @@ export function isPolygonPath(commands) {
 /**
  * Extract points from a path that contains only straight lines
  * @param {Array} commands - Absolute path commands
+ * @param {boolean} itineraryMode - If true, handle Z commands like itinerary mode in Perl
  * @returns {Array} Array of [x, y] points
  */
-export function pathToPoints(commands) {
+export function pathToPoints(commands, itineraryMode = false) {
   const points = [];
+  let startPoint = null;
   
   for (const { command, params } of commands) {
-    if (command === 'M' || command === 'L') {
+    if (command === 'M') {
+      for (let i = 0; i < params.length; i += 2) {
+        const point = [params[i], params[i + 1]];
+        points.push(point);
+        if (i === 0) startPoint = point; // Remember start point for Z command
+      }
+    } else if (command === 'L') {
       for (let i = 0; i < params.length; i += 2) {
         points.push([params[i], params[i + 1]]);
       }
+    } else if (command === 'Z' && itineraryMode && startPoint) {
+      // In itinerary mode, Z command adds explicit line back to start point
+      points.push([startPoint[0], startPoint[1]]);
     }
-    // Z command doesn't add points
+    // Regular mode: Z command doesn't add points
   }
   
   return points;

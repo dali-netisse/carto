@@ -451,18 +451,20 @@ async function processFile(filename, options) {
   }
 
   // Process itineraries
-  // const itineraryElements = getElementsByLayer(
-  //   xpath,
-  //   doc,
-  //   ["Lignes de couloir", "lignes de couloir"],
-  //   "polyline|path"
-  // );
-  // for (const elem of itineraryElements) {
-  //   const obj = processElement(elem, calibrationTransform);
-  //   if (obj && obj.type === "polyline") {
-  //     output.itineraries.push(obj);
-  //   }
-  // }
+  const itineraryElements = getElementsByLayer(
+    xpath,
+    doc,
+    ["Lignes de couloir", "lignes de couloir"],
+    "line|polyline|polygon|path"
+  );
+  for (const elem of itineraryElements) {
+    const obj = processElementItinerary(elem, calibrationTransform);
+    if (obj) {
+      // Remove class attribute as per Perl logic: delete $_->{"class"}
+      delete obj.class;
+      output.itineraries.push(obj);
+    }
+  }
 
   // Process rooms
   const roomElements = getElementsByLayer(
@@ -877,4 +879,117 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   };
   console.log(`Final desk geometry: ${JSON.stringify(result)}`);
   return result;
+}
+
+/**
+ * Process an SVG itinerary element
+ */
+function processElementItinerary(elem, calibrationTransform) {
+  const type = getElementType(elem);
+  const originalId = getAttribute(elem, "id");
+
+  // Get element transforms
+  const transforms = getNodeTransforms(elem);
+  let transform = calibrationTransform;
+
+  if (transforms) {
+    if (transform) {
+      transform = multiplyMatrices(transform, transforms);
+    } else {
+      transform = transforms;
+    }
+  }
+
+  // Create base object
+  const obj = {
+    id: originalId,
+    type: type,
+  };
+
+  // Copy relevant attributes
+  const classList = getAttribute(elem, "class");
+  if (classList) {
+    obj.class = classList;
+  }
+
+  // Process by type with itinerary-specific logic
+  if (type === "line") {
+    const { x1, y1, x2, y2 } = getLineAttributes(elem);
+    if (transform) {
+      const [tx1, ty1] = transformPoint(x1, y1, transform);
+      const [tx2, ty2] = transformPoint(x2, y2, transform);
+      obj.x1 = tx1;
+      obj.y1 = ty1;
+      obj.x2 = tx2;
+      obj.y2 = ty2;
+    } else {
+      obj.x1 = x1;
+      obj.y1 = y1;
+      obj.x2 = x2;
+      obj.y2 = y2;
+    }
+  } else if (type === "polyline" || type === "polygon") {
+    const points = parsePoints(getAttribute(elem, "points"));
+    if (!points || points.length < 2) {
+      console.error(`Skipping ${elem.toString()}: single point or less`);
+      return null;
+    }
+
+    let transformedPoints = transform ? transformPoints(points, transform) : points;
+    
+    // In itinerary mode, if original was polygon, convert to polyline and duplicate first point
+    if (type === "polygon") {
+      // Add first point to end to close the path (as polyline)
+      transformedPoints.push(transformedPoints[0]);
+      obj.type = "polyline";
+    }
+
+    obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
+  } else if (type === "path") {
+    const d = getAttribute(elem, "d");
+    if (!d) return null;
+
+    try {
+      // Parse and convert path to points with itinerary-specific logic
+      const pathData = parsePath(d);
+      const absoluteData = pathToAbsolute(pathData);
+      let points = pathToPoints(absoluteData.commands, true); // true = itinerary mode
+
+      if (!points || points.length < 2) {
+        console.error(`Skipping ${elem.toString()}: single point or less`);
+        return null;
+      }
+
+      // Transform points
+      let transformedPoints = transform ? transformPoints(points, transform) : points;
+
+      // If original path was a polygon-like path, convert to polyline
+      if (isPolygonPath(absoluteData.commands)) {
+        // In itinerary mode, don't auto-close, but add explicit line to start if needed
+        const first = transformedPoints[0];
+        const last = transformedPoints[transformedPoints.length - 1];
+        const threshold = 0.4;
+        
+        // If path was closed (last point near first), add explicit line to first point
+        if (Math.abs(last[0] - first[0]) <= threshold && Math.abs(last[1] - first[1]) <= threshold) {
+          // Remove the duplicate close point and add explicit first point 
+          transformedPoints.pop();
+          transformedPoints.push(first);
+        }
+        obj.type = "polyline";
+      } else {
+        obj.type = "polyline";
+      }
+
+      obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
+    } catch (error) {
+      console.error(`Error processing path ${originalId}:`, error);
+      return null;
+    }
+  } else {
+    // Unsupported type for itineraries
+    return null;
+  }
+
+  return obj;
 }
