@@ -169,24 +169,22 @@ function processAndClassifyId(id, inkscapeLabel, getParentIdCallback) {
     // return { processedId, where: "furniture", type: `tag-${match[1].toLowerCase()}` };
   }
 
-  // Text pattern (Perl: $data->{text}{$class}{$id}) - currently not in JS output structure
+  // Text pattern (Perl: $data->{text}{$class}{$id})
   match = processedId.match(/^(r?text(-top)?)\s+(\S+)\s+(\d+(?:\.\d+)?)\s+(\S+)\s(.*)$/i);
   if (match) {
-    console.warn(`${ANSI.yellow}Warning: 'text' type furniture "${processedId}" found, but not explicitly handled in current JSON structure. Skipping.${ANSI.normal}`);
-    return null;
-    // const [, text_type_full, top_modifier, text_class, size, color, text_content] = match;
-    // return {
-    //   processedId,
-    //   where: "text", // Needs a decision on where to store this
-    //   type: text_class,
-    //   textDetails: {
-    //     type: text_type_full,
-    //     isTop: !!(top_modifier && top_modifier === "-top"),
-    //     size: parseFloat(size),
-    //     color: color,
-    //     text: text_content.replace(/\\n/g, "\n"),
-    //   }
-    // };
+    const [, text_type_full, top_modifier, text_class, size, color, text_content] = match;
+    return {
+      processedId,
+      where: "text",
+      type: text_class,
+      textDetails: {
+        text_type: text_type_full,
+        isTop: !!(top_modifier && top_modifier === "-top"),
+        size: size,
+        color: color,
+        text: text_content.replace(/\\n/g, "\n"),
+      }
+    };
   }
   
   console.warn(`${ANSI.yellow}Warning: Unknown furniture ID pattern: "${processedId}" (original: "${id}")${ANSI.normal}`);
@@ -420,6 +418,7 @@ async function processFile(filename, options) {
       meeting: {},
     },
     furniture: {},
+    text: {},
   };
 
   // Process background
@@ -637,9 +636,42 @@ async function processFile(filename, options) {
       output.furniture[classifiedType][processedId] = obj;
       console.log(`  -> Added to output.furniture.${classifiedType}.${processedId}`);
 
+    } else if (where === "text") {
+      // Process text elements exactly like Perl
+      const baseObj = processDeskGeometryPerl(elem, calibrationTransform);
+      if (!baseObj) {
+        console.warn(`  -> Could not process base geometry for text: ${processedId}`);
+        continue;
+      }
+      
+      const textDetails = params.textDetails;
+      const textOutputObject = {
+        class: classifiedType,
+        id: processedId,
+        point: [baseObj.point[0], baseObj.point[1]],
+        direction: toPerlPrecision(baseObj.direction),
+        objects: [], // Text elements have empty objects array like in Perl
+        text_type: textDetails.text_type,
+        text: textDetails.text,
+        size: textDetails.size,
+        color: textDetails.color,
+      };
+
+      // Add height field if it's a "top" text variant
+      if (textDetails.isTop) {
+        textOutputObject.height = 1;
+      }
+
+      // Ensure the category exists
+      if (!output.text[classifiedType]) {
+        output.text[classifiedType] = {};
+      }
+      output.text[classifiedType][processedId] = textOutputObject;
+      console.log(`  -> Added to output.text.${classifiedType}.${processedId}`);
+
     } else {
       // This case should ideally be handled by processAndClassifyId returning null
-      // or by specific handling for "tag", "text" if they were to be implemented.
+      // or by specific handling for "tag" if they were to be implemented.
       console.log(`  -> Element ${processedId} classified as '${where}', type '${classifiedType}', but not stored.`);
     }
   }

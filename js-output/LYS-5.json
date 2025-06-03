@@ -121,5 +121,37 @@
             "type" : "polygon"
          }
       }
+   },
+   "text" : {
+      "Barlow-Regular" : {
+         "rtext Barlow-Regular 8 #000011 Aile ISSY" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000011",
+            "direction" : 2.6788460451684624,
+            "id" : "rtext Barlow-Regular 8 #000011 Aile ISSY",
+            "objects" : [],
+            "point" : [
+               1402.490633,
+               466.640459
+            ],
+            "size" : "8",
+            "text" : "Aile ISSY",
+            "text_type" : "rtext"
+         },
+         "rtext Barlow-Regular 8 #000011 Aile PARIS" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000011",
+            "direction" : 3.0951589492224056,
+            "id" : "rtext Barlow-Regular 8 #000011 Aile PARIS",
+            "objects" : [],
+            "point" : [
+               1352.665861,
+               110.228678
+            ],
+            "size" : "8",
+            "text" : "Aile PARIS",
+            "text_type" : "rtext"
+         }
+      }
    }
 }
