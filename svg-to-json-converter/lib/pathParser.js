@@ -347,8 +347,18 @@ export function pathToAbsolute(commands) {
  * @returns {boolean} True if path is a polygon
  */
 export function isPolygonPath(commands) {
+  let moveCount = 0;
+  
   for (const { command } of commands) {
-    if (!['M', 'L', 'Z'].includes(command)) {
+    if (command === 'M') {
+      moveCount++;
+      // Multiple subpaths (multiple M commands) disqualify from being a polygon
+      if (moveCount > 1) {
+        return false;
+      }
+    } else if (!['L', 'Z'].includes(command)) {
+      // Any command other than M, L, Z disqualifies from being a polygon
+      // This includes curves (C, S, Q, T), arcs (A), etc.
       return false;
     }
   }
@@ -405,4 +415,116 @@ export function pathToAbsoluteString(pathData) {
   }
   
   return result;
-} 
+}
+
+/**
+ * Transform path data by converting to absolute coordinates and applying transforms
+ * @param {string} pathData - SVG path data string
+ * @param {number[]|null} transform - Transformation matrix [a, b, c, d, e, f]
+ * @returns {string} Transformed path string with absolute coordinates
+ */
+export function transformPathData(pathData, transform) {
+  const parsed = parsePath(pathData);
+  const { commands } = pathToAbsolute(parsed);
+  
+  let result = '';
+  for (const { command, params } of commands) {
+    result += command;
+    
+    if (command === 'M' || command === 'L') {
+      // Transform coordinate pairs
+      for (let i = 0; i < params.length; i += 2) {
+        const x = params[i];
+        const y = params[i + 1];
+        
+        if (transform) {
+          const [a, b, c, d, e, f] = transform;
+          const transformedX = x * a + y * c + e;
+          const transformedY = x * b + y * d + f;
+          result += transformedX + ',' + transformedY;
+        } else {
+          result += x + ',' + y;
+        }
+        
+        if (i < params.length - 2) result += 'L';
+      }
+    } else if (command === 'C') {
+      // Transform cubic bezier control points and end point
+      for (let i = 0; i < params.length; i += 6) {
+        const points = [
+          [params[i], params[i + 1]],     // first control point
+          [params[i + 2], params[i + 3]], // second control point  
+          [params[i + 4], params[i + 5]]  // end point
+        ];
+        
+        const transformedPoints = [];
+        for (const [x, y] of points) {
+          if (transform) {
+            const [a, b, c, d, e, f] = transform;
+            const transformedX = x * a + y * c + e;
+            const transformedY = x * b + y * d + f;
+            transformedPoints.push([transformedX, transformedY]);
+          } else {
+            transformedPoints.push([x, y]);
+          }
+        }
+        
+        result += transformedPoints.map(p => p.join(',')).join(',');
+        if (i < params.length - 6) result += ',';
+      }
+    } else if (command === 'Q') {
+      // Transform quadratic bezier control point and end point
+      for (let i = 0; i < params.length; i += 4) {
+        const points = [
+          [params[i], params[i + 1]],     // control point
+          [params[i + 2], params[i + 3]]  // end point
+        ];
+        
+        const transformedPoints = [];
+        for (const [x, y] of points) {
+          if (transform) {
+            const [a, b, c, d, e, f] = transform;
+            const transformedX = x * a + y * c + e;
+            const transformedY = x * b + y * d + f;
+            transformedPoints.push([transformedX, transformedY]);
+          } else {
+            transformedPoints.push([x, y]);
+          }
+        }
+        
+        result += transformedPoints.map(p => p.join(',')).join(',');
+        if (i < params.length - 4) result += ',';
+      }
+    } else if (command === 'A') {
+      // Transform arc end point (note: proper arc transformation would need more complex math)
+      for (let i = 0; i < params.length; i += 7) {
+        const rx = params[i];
+        const ry = params[i + 1];
+        const rotation = params[i + 2];
+        const largeArc = params[i + 3];
+        const sweep = params[i + 4];
+        const x = params[i + 5];
+        const y = params[i + 6];
+        
+        let transformedX = x;
+        let transformedY = y;
+        if (transform) {
+          const [a, b, c, d, e, f] = transform;
+          transformedX = x * a + y * c + e;
+          transformedY = x * b + y * d + f;
+        }
+        
+        result += `${rx},${ry},${rotation},${largeArc},${sweep},${transformedX},${transformedY}`;
+        if (i < params.length - 7) result += ',';
+      }
+    } else if (command === 'Z') {
+      // Z command has no parameters
+      // result already has 'Z'
+    } else {
+      // For other commands, just append parameters as-is (shouldn't happen with our current parser)
+      result += params.join(',');
+    }
+  }
+  
+  return result;
+}

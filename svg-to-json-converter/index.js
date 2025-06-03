@@ -37,6 +37,7 @@ import {
   pathToAbsolute,
   isPolygonPath,
   pathToPoints,
+  transformPathData,
 } from "./lib/pathParser.js";
 import {
   classifyObject, // Keep classifyObject for rooms
@@ -808,10 +809,11 @@ function processElement(elem, calibrationTransform) {
             }
           }
         } else {
-          // For non-polygon paths, keep as path
+          // For non-polygon paths, transform path data to absolute coordinates and apply transforms
+          const transformedPathData = transformPathData(d, transform);
           obj = {
             type: "path",
-            d: d,
+            d: transformedPathData,
           };
         }
       }
