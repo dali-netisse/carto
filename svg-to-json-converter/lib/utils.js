@@ -51,12 +51,32 @@ export function roundTo(num, decimals = 6) {
 }
 
 /**
+ * Match Perl's coordinate precision by truncating to 11 decimal places
+ * instead of rounding to 6. This matches Perl's output format exactly.
+ * @param {number} num - Number to format
+ * @returns {number} Number with Perl-like precision
+ */
+export function toPerlCoordinatePrecision(num) {
+  // Convert to string to check current precision
+  const str = num.toString();
+  
+  // If it's an integer or has few decimal places, return as-is
+  if (!str.includes('.') || str.split('.')[1].length <= 11) {
+    return num;
+  }
+  
+  // Truncate to 11 decimal places (not round - truncate like Perl does)
+  const factor = Math.pow(10, 11);
+  return Math.floor(num * factor) / factor;
+}
+
+/**
  * Format a point for output
  * @param {number[]} point - [x, y] coordinates
  * @returns {string} Formatted point string "x,y"
  */
 export function formatPoint(point) {
-  return `${roundTo(point[0])},${roundTo(point[1])}`;
+  return `${toPerlCoordinatePrecision(point[0])},${toPerlCoordinatePrecision(point[1])}`;
 }
 
 /**

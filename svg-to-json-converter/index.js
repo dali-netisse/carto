@@ -57,6 +57,7 @@ import {
   ANSI,
   roundTo,
   toPerlPrecision,
+  toPerlCoordinatePrecision,
 } from "./lib/utils.js";
 import {
   resolveSite,
@@ -950,15 +951,15 @@ function processElementItinerary(elem, calibrationTransform) {
     if (transform) {
       const [tx1, ty1] = transformPoint(x1, y1, transform);
       const [tx2, ty2] = transformPoint(x2, y2, transform);
-      obj.x1 = tx1;
-      obj.y1 = ty1;
-      obj.x2 = tx2;
-      obj.y2 = ty2;
+      obj.x1 = toPerlCoordinatePrecision(tx1);
+      obj.y1 = toPerlCoordinatePrecision(ty1);
+      obj.x2 = toPerlCoordinatePrecision(tx2);
+      obj.y2 = toPerlCoordinatePrecision(ty2);
     } else {
-      obj.x1 = x1;
-      obj.y1 = y1;
-      obj.x2 = x2;
-      obj.y2 = y2;
+      obj.x1 = toPerlCoordinatePrecision(x1);
+      obj.y1 = toPerlCoordinatePrecision(y1);
+      obj.x2 = toPerlCoordinatePrecision(x2);
+      obj.y2 = toPerlCoordinatePrecision(y2);
     }
   } else if (type === "polyline" || type === "polygon") {
     const points = parsePoints(getAttribute(elem, "points"));
@@ -976,7 +977,7 @@ function processElementItinerary(elem, calibrationTransform) {
       obj.type = "polyline";
     }
 
-    obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
+    obj.points = transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ");
   } else if (type === "path") {
     const d = getAttribute(elem, "d");
     if (!d) return null;
@@ -1013,7 +1014,7 @@ function processElementItinerary(elem, calibrationTransform) {
         obj.type = "polyline";
       }
 
-      obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
+      obj.points = transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ");
     } catch (error) {
       console.error(`Error processing path ${originalId}:`, error);
       return null;
