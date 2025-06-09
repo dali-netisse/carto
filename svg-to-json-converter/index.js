@@ -431,9 +431,14 @@ async function processFile(filename, options) {
     "rect|polygon|path"
   );
   for (const elem of backgroundElements) {
+    const currentId = getAttribute(elem, "id");
     const obj = processElement(elem, calibrationTransform);
     if (obj) {
       output.background.push(obj);
+    } else {
+      console.warn(
+        `${ANSI.reverse}Warning: Element with id "${currentId}" could not be processed as background.${ANSI.normal}`
+      );
     }
   }
 
@@ -735,30 +740,25 @@ function processElement(elem, calibrationTransform) {
       break;
 
     case "polygon":
-      const polygonPoints = parsePoints(getAttribute(elem, "points"));
-      if (polygonPoints.length >= 3) {
-        const transformed = transformPoints(polygonPoints, transform);
-        const filtered = filterClosePoints(transformed);
-        if (filtered.length >= 3 && isValidPolygon(filtered)) {
-          obj = {
-            type: "polygon",
-            points: formatPoints(filtered),
-          };
-        }
-      }
-      break;
-
     case "polyline":
-      const polylinePoints = parsePoints(getAttribute(elem, "points"));
-      if (polylinePoints.length >= 2) {
-        const transformed = transformPoints(polylinePoints, transform);
-        const filtered = filterClosePoints(transformed, 0.4, false);
-        if (filtered.length >= 2) {
-          obj = {
-            type: "polyline",
-            points: formatPoints(filtered),
-          };
+      const pointsStr = getAttribute(elem, "points");
+      if (pointsStr) {
+        let points = parsePolygonPoints(pointsStr);
+        if (transform) {
+          points = transformPoints(points, transform);
         }
+
+
+        if (isValidPolygon(points, type === "polygon")) {
+          obj = {
+            type: type,
+            points: points.map(p => `${toPerlPrecision(p[0])},${toPerlPrecision(p[1])}`).join(" ")
+          };
+        } else {
+
+        }
+      } else {
+
       }
       break;
 
@@ -822,8 +822,10 @@ function processElement(elem, calibrationTransform) {
 
   }
 
-  if (obj && originalId) { // Changed id to originalId here
-    obj.id = originalId; // The ID set here is the raw one from SVG, can be overridden later
+  if (obj && originalId) {
+    obj.id = originalId;
+  } else if (!obj && originalId === "polygon190") {
+      console.log(`DEBUG: polygon190 resulted in a null object at the end of processElement. Type was: ${type}. Object was: ${JSON.stringify(obj)}`);
   }
 
   return obj;
