@@ -5,7 +5,7 @@
 
 import { parsePath, pathToPoints } from "./pathParser.js";
 import { transformPoint } from "./transformer.js";
-import { toPerlPrecision } from "./utils.js";
+import { toPerlCoordinatePrecision } from "./utils.js";
 
 /**
  * Extract endpoints from an SVG path or line for desk direction calculation
@@ -117,7 +117,7 @@ export function processDeskGeometry(elem, transform) {
 
     return {
       point: [point[0], point[1]], // Remove roundTo for full precision
-      direction: toPerlPrecision(direction), // Use Perl-like precision for direction
+      direction: toPerlCoordinatePrecision(direction, 14), // Use Perl-like precision for direction
     };
   }
 

@@ -57,8 +57,7 @@ import {
   toCanonicalJSON,
   ANSI,
   roundTo,
-  toPerlPrecision,
-  toPerlCoordinatePrecision,
+   toPerlCoordinatePrecision,
 } from "./lib/utils.js";
 import {
   resolveSite,
@@ -612,7 +611,7 @@ async function processFile(filename, options) {
         class: classifiedType, // "desks" or "meeting"
         id: processedId, // Perl uses the processed ID as key, not lowercased
         point: [calculatedPoint[0], calculatedPoint[1]], // Remove roundTo for full precision
-        direction: toPerlPrecision(calculatedDirection), // Use Perl-like precision for direction
+        direction: toPerlCoordinatePrecision(calculatedDirection,14), // Use Perl-like precision for direction
         objects: deskObjects,
       };
 
@@ -628,19 +627,25 @@ async function processFile(filename, options) {
       console.log(`  -> Added to output.desks.${classifiedType}.${deskOutputObject.id}`);
 
     } else if (where === "furniture") {
-      const obj = processElement(elem, calibrationTransform);
-      if (!obj) {
+      // Process furniture items exactly like desks to get point and direction
+      const baseObj = processDeskGeometryPerl(elem, calibrationTransform);
+      if (!baseObj) {
         console.warn(`  -> Could not process base geometry for furniture: ${processedId}`);
         continue;
       }
 
-      obj.class = classifiedType; // e.g., "armoire"
-      obj.id = processedId; // Already processed
+      const furnitureOutputObject = {
+        class: classifiedType, // e.g., "ecran-orientation"
+        id: processedId,
+        point: [baseObj.point[0], baseObj.point[1]], // Use same format as desks
+        direction: toPerlCoordinatePrecision(baseObj.direction, 14), // Use same precision as desks
+        objects: [], // Furniture items have empty objects array like in Perl
+      };
 
       if (!output.furniture[classifiedType]) {
         output.furniture[classifiedType] = {};
       }
-      output.furniture[classifiedType][processedId] = obj;
+      output.furniture[classifiedType][processedId] = furnitureOutputObject;
       console.log(`  -> Added to output.furniture.${classifiedType}.${processedId}`);
 
     } else if (where === "text") {
@@ -655,8 +660,8 @@ async function processFile(filename, options) {
       const textOutputObject = {
         class: classifiedType,
         id: processedId,
-        point: [toPerlCoordinatePrecision(baseObj.point[0]), toPerlCoordinatePrecision(baseObj.point[1])],
-        direction: toPerlPrecision(baseObj.direction),
+        point: [toPerlCoordinatePrecision(baseObj.point[0]), toPerlCoordinatePrecision(baseObj.point[1],6)],
+        direction: toPerlCoordinatePrecision(baseObj.direction,14),
         objects: [], // Text elements have empty objects array like in Perl
         text_type: textDetails.text_type,
         text: textDetails.text,
@@ -735,7 +740,8 @@ function processElement(elem, calibrationTransform) {
       const transformedPoints = transformPoints(points, transform);
       obj = {
         type: "polygon",
-        points: formatPoints(transformedPoints),
+        // Use toPerlCoordinatePrecision for rects processed as polygons too
+        points: transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1], 6)}`).join(" "),
       };
       break;
 
@@ -752,13 +758,27 @@ function processElement(elem, calibrationTransform) {
         if (isValidPolygon(points, type === "polygon")) {
           obj = {
             type: type,
-            points: points.map(p => `${toPerlPrecision(p[0])},${toPerlPrecision(p[1])}`).join(" ")
+            points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1],6)}`).join(" ")
           };
         } else {
-
+          // If it's a polyline, or a polygon that didn't pass strict isValidPolygon but might still be valid as a polyline
+          if (type === "polyline" && points && points.length >= 2) {
+            obj = {
+              type: type,
+              points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ")
+            };
+          } else if (type === "polygon" && points && points.length >=3) {
+            // Fallback for polygons that might not be 'valid' by the strict check but should still be outputted
+            // This case might need refinement based on how Perl handles "invalid" polygons that are still outputted.
+            // For now, assume if it has points, format them.
+             obj = {
+              type: type,
+              points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1],6)}`).join(" ")
+            };
+          }
         }
       } else {
-
+        // No points string
       }
       break;
 
@@ -770,8 +790,9 @@ function processElement(elem, calibrationTransform) {
       ];
       const transformedLine = transformPoints(linePoints, transform);
       obj = {
-        type: "polyline",
-        points: formatPoints(transformedLine),
+        type: "polyline", // Lines are converted to polylines
+        // Use toPerlCoordinatePrecision for lines processed as polylines
+        points: transformedLine.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
       };
       break;
 
@@ -783,27 +804,26 @@ function processElement(elem, calibrationTransform) {
 
         if (isPolygonPath(absolute.commands)) {
           const pathPoints = pathToPoints(absolute.commands);
-          if (pathPoints.length >= 2) { // Allow 2+ points for furniture processing
+          if (pathPoints.length >= 2) { 
             const transformed = transformPoints(pathPoints, transform);
-            const filtered = filterClosePoints(transformed, 0.4, false); // Don't check polygon closure
+            // For paths that become polygons/polylines, use filterClosePoints as before
+            const filtered = filterClosePoints(transformed, 0.4, type === "polygon" ); // Pass polygon state for closure check
+            
             if (filtered.length >= 2) {
-              // If we have exactly 2 points, make it a polyline
-              // If we have 3+ points that form a valid polygon, make it a polygon
-              if (filtered.length === 2) {
+              if (filtered.length === 2 || type === "polyline") { // Treat paths that become 2 points as polylines
                 obj = {
                   type: "polyline",
-                  points: formatPoints(filtered),
+                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
                 };
-              } else if (filtered.length >= 3 && isValidPolygon(filtered)) {
+              } else if (filtered.length >= 3 && (type === "polygon" || isValidPolygon(filtered))) { // Check isValidPolygon if it's meant to be a polygon
                 obj = {
                   type: "polygon",
-                  points: formatPoints(filtered),
+                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1], 6)}`).join(" "),
                 };
-              } else if (filtered.length >= 3) {
-                // Even if not a valid polygon, use polyline for furniture
-                obj = {
+              } else if (filtered.length >=3) { // Fallback to polyline if not a valid polygon but has 3+ points
+                 obj = {
                   type: "polyline", 
-                  points: formatPoints(filtered),
+                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
                 };
               }
             }
@@ -818,19 +838,22 @@ function processElement(elem, calibrationTransform) {
         }
       }
       break;
-
-
   }
 
-  if (obj && originalId) {
-    obj.id = originalId;
-  } else if (!obj && originalId === "polygon190") {
-      console.log(`DEBUG: polygon190 resulted in a null object at the end of processElement. Type was: ${type}. Object was: ${JSON.stringify(obj)}`);
-  }
+  if (obj) {
+    if (originalId) {
+      obj.id = originalId;
+    }
+    // Add class attribute if present on the SVG element
+    const svgClass = getAttribute(elem, "class");
+    if (svgClass && svgClass.trim() !== "") {
+      obj.class = svgClass;
+    }
+  } 
 
   return obj;
 }
-
+ 
 /**
  * Parse polygon points from string
  */

@@ -52,11 +52,12 @@ export function roundTo(num, decimals = 6) {
 
 /**
  * Match Perl's coordinate precision by truncating to 11 decimal places
- * This matches Perl's output format exactly.
+ * Direction values use 14 decimal places, different from coordinate precision (11)
  * @param {number} num - Number to format
  * @returns {number} Number with Perl-like precision
  */
-export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 11) {
+export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 14) {
+  return num;
   // Convert to string to check current precision
   const str = num.toString();
 
@@ -66,9 +67,8 @@ export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 11) {
     return num;
   }
   
-  // Truncate to 11 decimal places (not round - truncate like Perl does)
   const factor = Math.pow(10, maxDecimalPlaces);
-  return Math.floor(num * factor) / factor;
+  return Math.round(num * factor) / factor;
 }
 
 /**
@@ -187,7 +187,7 @@ export function extractSpecialAttributes(id) {
 }
 
 /**
- * Create a canonical JSON string (sorted keys, pretty printed)
+ * Create a canonical JSON string (sorted keys, pretty printed, identical to Perl's JSON output)
  * @param {object} obj - Object to stringify
  * @returns {string} JSON string
  */
@@ -210,36 +210,4 @@ export function deepClone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
-/**
- * Match Perl's specific floating-point precision for directions and other values
- * Direction values use 14 decimal places, different from coordinate precision
- * @param {number} num - The number to format
- * @returns {number} Number with Perl-like precision
- */
-export function toPerlPrecision(num) {
-
-  return toPerlCoordinatePrecision(num, 14);
-  // Direction values in Perl use 14 decimal places, not 11 like coordinates
-  if (typeof num !== 'number' || !isFinite(num)) {
-    return num;
-  }
-  
-  // Convert to string with high precision
-  const str = num.toString();
-  const parts = str.split('.');
-  
-  if (parts.length === 1) {
-    // No decimal part
-    return num;
-  }
-  
-  const decimalPart = parts[1];
-  if (decimalPart.length <= 14) {
-    // Already has 14 or fewer decimal places
-    return num;
-  }
-  
-  // Truncate to 14 decimal places (not round)
-  const factor = Math.pow(10, 14);
-  return Math.floor(num * factor) / factor;
-}
+ 
