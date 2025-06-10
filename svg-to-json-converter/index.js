@@ -58,6 +58,7 @@ import {
   ANSI,
   roundTo,
    toPerlCoordinatePrecision,
+   toPerlDirectionPrecision,
 } from "./lib/utils.js";
 import {
   resolveSite,
@@ -660,8 +661,8 @@ async function processFile(filename, options) {
       const textOutputObject = {
         class: classifiedType,
         id: processedId,
-        point: [toPerlCoordinatePrecision(baseObj.point[0]), toPerlCoordinatePrecision(baseObj.point[1],6)],
-        direction: toPerlCoordinatePrecision(baseObj.direction,14),
+        point: [baseObj.point[0], baseObj.point[1]], // baseObj.point already has correct precision
+        direction: baseObj.direction, // baseObj.direction already has correct precision
         objects: [], // Text elements have empty objects array like in Perl
         text_type: textDetails.text_type,
         text: textDetails.text,
@@ -929,12 +930,18 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   console.log(`Extracted points: point1=${JSON.stringify(point1)}, point2=${JSON.stringify(point2)}`);
 
   // Calculate direction exactly like Perl: atan2($point2->[1] - $point1->[1], $point2->[0] - $point1->[0])
-  const direction = Math.atan2(point2[1] - point1[1], point2[0] - point1[0]);
+  const direction = toPerlDirectionPrecision(point2[1] - point1[1], point2[0] - point1[0]);
   console.log(`Calculated direction: ${direction}`);
+
+  // Apply coordinate precision to point1 like Perl
+  const precisePoint = [
+    toPerlCoordinatePrecision(point1[0], 12),
+    toPerlCoordinatePrecision(point1[1], 12)
+  ];
 
   // Return the desk geometry - use point1 exactly like Perl
   const result = {
-    point: point1,
+    point: precisePoint,
     direction: direction
   };
   console.log(`Final desk geometry: ${JSON.stringify(result)}`);

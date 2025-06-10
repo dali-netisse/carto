@@ -51,24 +51,60 @@ export function roundTo(num, decimals = 6) {
 }
 
 /**
- * Match Perl's coordinate precision by truncating to 11 decimal places
- * Direction values use 14 decimal places, different from coordinate precision (11)
+ * Match Perl's floating-point precision exactly
+ * Perl uses different precision for different types of values:
+ * - Direction values: 14 decimal places (from atan2 output)
+ * - Coordinate values: 12 decimal places (from transform calculations)
  * @param {number} num - Number to format
+ * @param {number} maxDecimalPlaces - Maximum decimal places (12 for coordinates, 14 for directions)
  * @returns {number} Number with Perl-like precision
  */
-export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 14) {
-  return num;
-  // Convert to string to check current precision
-  const str = num.toString();
-
+export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 12) {
+  if (!isFinite(num)) return num;
   
-  // If it's an integer or has few decimal places, return as-is
-  if (!str.includes('.') || str.split('.')[1].length <= maxDecimalPlaces) {
+  // For special direction values like π/2, handle exactly as Perl does
+  if (maxDecimalPlaces === 14) {
+    // For direction values, use string truncation to match Perl's atan2 behavior
+    const str = num.toString();
+    if (str.includes('.')) {
+      const parts = str.split('.');
+      if (parts[1].length > 13) {
+        // Truncate to 13 decimal places to match Perl's atan2 output
+        return parseFloat(parts[0] + '.' + parts[1].substring(0, 13));
+      }
+    }
     return num;
   }
   
-  const factor = Math.pow(10, maxDecimalPlaces);
-  return Math.round(num * factor) / factor;
+  // For coordinate values, truncate to maxDecimalPlaces
+  const str = num.toString();
+  
+  // Handle scientific notation
+  if (str.includes('e')) {
+    return num;
+  }
+  
+  // If it has a decimal point, truncate to the specified precision
+  if (str.includes('.')) {
+    const parts = str.split('.');
+    if (parts[1].length > maxDecimalPlaces) {
+      return parseFloat(parts[0] + '.' + parts[1].substring(0, maxDecimalPlaces));
+    }
+  }
+  
+  return num;
+}
+
+/**
+ * Match Perl's direction calculation precision exactly
+ * Perl's atan2 outputs 14 decimal places
+ * @param {number} y - Y component
+ * @param {number} x - X component  
+ * @returns {number} Direction angle in radians with Perl-like precision
+ */
+export function toPerlDirectionPrecision(y, x) {
+  const direction = Math.atan2(y, x);
+  return toPerlCoordinatePrecision(direction, 14);
 }
 
 /**
