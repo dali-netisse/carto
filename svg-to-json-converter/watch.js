@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const fs = require("fs");
-const path = require("path");
-const chokidar = require("chokidar");
-const { execSync } = require("child_process");
-const glob = require("glob");
+import fs from "fs";
+import path from "path";
+import chokidar from "chokidar";
+import { execSync } from "child_process";
+import {glob} from "glob";
 
 // Define directories to monitor with their destination settings
 const dirs = {
@@ -45,8 +45,11 @@ function doActions(filename, actions) {
 
   for (const dest of actions.dests) {
     try {
+    //   execSync(
+    //     `bash -c 'map-converter/svg-to-json-converter.pl -d "borne-${dest}/public/data" "${filename}"'`
+    //   );
       execSync(
-        `bash -c 'map-converter/svg-to-json-converter.pl -d "borne-${dest}/public/data" "${filename}"'`
+        `bash -c 'node svg-to-json-converter/index.js "${filename}" -d js-output'`
       );
     } catch (err) {
       console.error(`Error processing ${filename} for ${dest}:`, err.message);

@@ -1,635 +1,3680 @@
 {
-   "background": [
+   "background" : [
       {
-         "id": "path223",
-         "points": "2174.46226,1965.63197 1234.72746,1965.63197 1234.71746,2001.63197 1153.11718,2001.63197 1153.11718,2084.38817 1235.11726,2084.33617 1235.11726,2153.07787 1950.89446,2153.07787 1950.89446,2176.45897 2152.52366,2176.45897 2152.88676,2156.45897 2359.11726,2156.45897 2359.11726,1213.57617 2327.70316,1213.47467 2327.70316,1135.63197 2240.12446,1135.63197 2240.23716,1209.63197 2038.71866,1209.63197 2039.29696,1134.52769 1848.56486,1134.68051 1849.11726,1281.73247 1805.11726,1282.37307 1805.11726,1378.46687 1848.31286,1378.04617 1848.67976,1397.63197 2174.46226,1397.63197",
-         "type": "polygon"
+         "id" : "path223",
+         "points" : "2174.46226,1965.63197 1234.72746,1965.63197 1234.71746,2001.63197 1153.11718,2001.63197 1153.11718,2084.38817 1235.11726,2084.33617 1235.11726,2153.07787 1950.89446,2153.07787 1950.89446,2176.45897 2152.52366,2176.45897 2152.88676,2156.45897 2359.11726,2156.45897 2359.11726,1213.57617 2327.70316,1213.47467 2327.70316,1135.63197 2240.12446,1135.63197 2240.23716,1209.63197 2038.71866,1209.63197 2039.29696,1134.52769 1848.56486,1134.68051 1849.11726,1281.73247 1805.11726,1282.37307 1805.11726,1378.46687 1848.31286,1378.04617 1848.67976,1397.63197 2174.46226,1397.63197",
+         "type" : "polygon"
       }
    ],
-   "decor": [],
-   "desks": {
-      "desks": {},
-      "meeting": {}
+   "decor" : [],
+   "desks" : {
+      "desks" : {
+         "poste B720:I-0.3-3A0:CADB" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B720:I-0.3-3A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : -3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1851.51783,
+               2143.48299
+            ]
+         },
+         "poste B720:I-0.3-3A0:NPMO" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B720:I-0.3-3A0:NPMO",
+            "indicator_x" : -0.3,
+            "indicator_y" : -3,
+            "objects" : [
+               {
+                  "desk" : "N",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1810.30533,
+               1975.67815
+            ]
+         },
+         "poste B720:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B720:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1808.22763,
+               2144.12445
+            ]
+         },
+         "poste B720:I00A9:JLIK" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B720:I00A9:JLIK",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "J",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "B720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "B720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1853.59553,
+               1975.03669
+            ]
+         },
+         "poste B730:I-0.3-2.7A0:CADB" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B730:I-0.3-2.7A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : -2.7,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1742.16263,
+               2144.96499
+            ]
+         },
+         "poste B730:I-0.3-2.7A0:NPMO" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B730:I-0.3-2.7A0:NPMO",
+            "indicator_x" : -0.3,
+            "indicator_y" : -2.7,
+            "objects" : [
+               {
+                  "desk" : "N",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1704.12973,
+               1976.31961
+            ]
+         },
+         "poste B730:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B730:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1698.87243,
+               2144.12445
+            ]
+         },
+         "poste B730:I00A9:JLIK" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B730:I00A9:JLIK",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "J",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "B730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "B730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1747.41993,
+               1975.67815
+            ]
+         },
+         "poste B740:I-0.3-2.7A0:CADB" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B740:I-0.3-2.7A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : -2.7,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1644.50633,
+               2144.12445
+            ]
+         },
+         "poste B740:I-0.3-3A0:LNKM" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B740:I-0.3-3A0:LNKM",
+            "indicator_x" : -0.3,
+            "indicator_y" : -3,
+            "objects" : [
+               {
+                  "desk" : "L",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1602.61733,
+               1976.31961
+            ]
+         },
+         "poste B740:I00A9:E-F" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B740:I00A9:E-F",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1601.21613,
+               2144.76591
+            ]
+         },
+         "poste B740:I00A9:HJGI" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B740:I00A9:HJGI",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "H",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "B740",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "B740",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1648.39343,
+               1976.31961
+            ]
+         },
+         "poste B750:I-0.3-2A0:CADB" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B750:I-0.3-2A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : -2,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B750",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1503.45941,
+               2144.60031
+            ]
+         },
+         "poste B750:I-0.32A0:HJGI" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B750:I-0.32A0:HJGI",
+            "indicator_x" : -0.3,
+            "indicator_y" : 2,
+            "objects" : [
+               {
+                  "desk" : "H",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "B750",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "B750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1542.82892,
+               1976.31961
+            ]
+         },
+         "poste B750:I00A9:-E-F" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B750:I00A9:-E-F",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1458.51857,
+               2141.24177
+            ]
+         },
+         "poste B750:I00A9:KL" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste B750:I00A9:KL",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "K",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "B750",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1510.39274,
+               1976.24697
+            ]
+         },
+         "poste B760:I-0.32A0:ECFD" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B760:I-0.32A0:ECFD",
+            "indicator_x" : -0.3,
+            "indicator_y" : 2,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "B760",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "B760",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B760",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B760",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1408.03207,
+               2144.60031
+            ]
+         },
+         "poste B760:I00A9:A-B" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B760:I00A9:A-B",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B760",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B760",
+                  "position" : 2,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1451.32235,
+               2141.24177
+            ]
+         },
+         "poste B761:I1.2-3.6A2:A" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste B761:I1.2-3.6A2:A",
+            "indicator_a" : 2,
+            "indicator_x" : 1.2,
+            "indicator_y" : -3.6,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B761",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1382.70577,
+               2119.18915
+            ]
+         },
+         "poste B762:I10.5A6:A" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste B762:I10.5A6:A",
+            "indicator_a" : 6,
+            "indicator_x" : 1,
+            "indicator_y" : 0.5,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B762",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1395.01918,
+               1973.92937
+            ]
+         },
+         "poste B770:I-0.20A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste B770:I-0.20A0:DCEBFA",
+            "indicator_x" : -0.2,
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "B770",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "B770",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B770",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B770",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B770",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "B770",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1267.23068,
+               2144.60031
+            ]
+         },
+         "poste C720:I-0.30A0:CADB" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C720:I-0.30A0:CADB",
+            "indicator_x" : -0.3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2348.55893,
+               1867.28513
+            ]
+         },
+         "poste C720:I-0.33A0:NKOLPM" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C720:I-0.33A0:NKOLPM",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "N",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "C720",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "C720",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.22113,
+               1820.03738
+            ]
+         },
+         "poste C720:I00A9:EF" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C720:I00A9:EF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2249.78373,
+               1869.98626
+            ]
+         },
+         "poste C720:I00A9:IGJH" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C720:I00A9:IGJH",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "I",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "C720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.22113,
+               1870.14359
+            ]
+         },
+         "poste C730:I-0.33A0:CADB" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C730:I-0.33A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2348.55893,
+               1763.302851
+            ]
+         },
+         "poste C730:I-0.33A0:OMPN" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C730:I-0.33A0:OMPN",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "O",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.22113,
+               1717.176801
+            ]
+         },
+         "poste C730:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C730:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2348.24933,
+               1718.927056
+            ]
+         },
+         "poste C730:I00A9:KILJ" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C730:I00A9:KILJ",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "K",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.22113,
+               1764.703136
+            ]
+         },
+         "poste C740:I-0.30A0:CADB" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C740:I-0.30A0:CADB",
+            "indicator_x" : -0.3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C740",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C740",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C740",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C740",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.05923,
+               1652.498279
+            ]
+         },
+         "poste C741:I2-3.5A2:A" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste C741:I2-3.5A2:A",
+            "indicator_a" : 2,
+            "indicator_x" : 2,
+            "indicator_y" : -3.5,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C741",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               2327.00523,
+               1645.332944
+            ]
+         },
+         "poste C742:I-0.30A0:CADB" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C742:I-0.30A0:CADB",
+            "indicator_x" : -0.3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C742",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C742",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C742",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C742",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.05923,
+               1602.018348
+            ]
+         },
+         "poste C750:I-0.30A0:CADB" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C750:I-0.30A0:CADB",
+            "indicator_x" : -0.3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2347.76013,
+               1491.63358
+            ]
+         },
+         "poste C750:I-0.33A0:KILJ" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C750:I-0.33A0:KILJ",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "K",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.29033,
+               1495.25832
+            ]
+         },
+         "poste C750:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C750:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C750",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C750",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.29033,
+               1541.89998
+            ]
+         },
+         "poste C760:I-0.3-1A0:HEIFJG" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste C760:I-0.3-1A0:HEIFJG",
+            "indicator_x" : -0.3,
+            "indicator_y" : -1,
+            "objects" : [
+               {
+                  "desk" : "H",
+                  "office" : "C760",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C760",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C760",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C760",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C760",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "C760",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2186.29033,
+               1439.95299
+            ]
+         },
+         "poste C760:I-0.30A0:CADB" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C760:I-0.30A0:CADB",
+            "indicator_x" : -0.3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C760",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C760",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C760",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C760",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2347.76013,
+               1385.7599
+            ]
+         },
+         "poste C770:I-0.33A0:CADB" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C770:I-0.33A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "C770",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "C770",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C770",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C770",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2347.76013,
+               1331.3159
+            ]
+         },
+         "poste C770:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste C770:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "C770",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C770",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C770",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C770",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2347.45053,
+               1285.57293
+            ]
+         },
+         "poste D710:I-0.33A0:CADB" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste D710:I-0.33A0:CADB",
+            "indicator_x" : -0.3,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "D710",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "D710",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D710",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D710",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2173.12183,
+               1219.7554
+            ]
+         },
+         "poste D710:I00A9:GEHF" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste D710:I00A9:GEHF",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "G",
+                  "office" : "D710",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "D710",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "D710",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "D710",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2129.84343,
+               1219.7554
+            ]
+         },
+         "poste D720:I-0.22.5A0:IGJH" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste D720:I-0.22.5A0:IGJH",
+            "indicator_x" : -0.2,
+            "indicator_y" : 2.5,
+            "objects" : [
+               {
+                  "desk" : "I",
+                  "office" : "D720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "D720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "D720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "D720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2028.67803,
+               1389.37539
+            ]
+         },
+         "poste D720:I-0.32A0:-A-B" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste D720:I-0.32A0:-A-B",
+            "indicator_x" : -0.3,
+            "indicator_y" : 2,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2102.01793,
+               1219.26712
+            ]
+         },
+         "poste D720:I00A9:ECFD" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste D720:I00A9:ECFD",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "D720",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D720",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "D720",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D720",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2070.49283,
+               1389.92782
+            ]
+         },
+         "poste D721:I-0.3-0.1A0:A" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste D721:I-0.3-0.1A0:A",
+            "indicator_x" : -0.3,
+            "indicator_y" : -0.1,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D721",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               2045.75253,
+               1219.26712
+            ]
+         },
+         "poste D722:I00A9:-E" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste D722:I00A9:-E",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "E",
+                  "office" : "D722",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1966.78673,
+               1189.89474
+            ]
+         },
+         "poste D722:I22.5A6:ABCD" : {
+            "class" : "desks",
+            "direction" : 3.1415926535897,
+            "id" : "poste D722:I22.5A6:ABCD",
+            "indicator_a" : 6,
+            "indicator_x" : 2,
+            "indicator_y" : 2.5,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D722",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D722",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D722",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D722",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2028.80163,
+               1165.25399
+            ]
+         },
+         "poste D730:I-0.51A0:FE" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste D730:I-0.51A0:FE",
+            "indicator_x" : -0.5,
+            "indicator_y" : 1,
+            "objects" : [
+               {
+                  "desk" : "F",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1908.73103,
+               1387.48699
+            ]
+         },
+         "poste D730:I00A9:BA" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste D730:I00A9:BA",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "B",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1974.42753,
+               1386.70575
+            ]
+         },
+         "poste D730:I00A9:DC" : {
+            "class" : "desks",
+            "direction" : -1.5707963267948,
+            "id" : "poste D730:I00A9:DC",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1941.56673,
+               1387.09637
+            ]
+         },
+         "poste D730:I00A9:HIGJ-K" : {
+            "class" : "desks",
+            "direction" : 1.5707963267948,
+            "id" : "poste D730:I00A9:HIGJ-K",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "H",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "D730",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1875.55743,
+               1340.72992
+            ]
+         },
+         "poste D730:I00A9:PSQTRU" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste D730:I00A9:PSQTRU",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "P",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "S",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "Q",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "T",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "R",
+                  "office" : "D730",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "U",
+                  "office" : "D730",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1857.81153,
+               1258.8983
+            ]
+         },
+         "poste D730:I1-1.8A2:LNMO" : {
+            "class" : "desks",
+            "direction" : 0,
+            "id" : "poste D730:I1-1.8A2:LNMO",
+            "indicator_a" : 2,
+            "indicator_x" : 1,
+            "indicator_y" : -1.8,
+            "objects" : [
+               {
+                  "desk" : "L",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "D730",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "D730",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1857.81153,
+               1185.92393
+            ]
+         }
+      },
+      "meeting" : {
+         "sdr B7 CLEOPATRE:6" : {
+            "class" : "meeting",
+            "direction" : 3.1415926535897,
+            "id" : "sdr B7 CLEOPATRE:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B7 CLEOPATRE",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1341.52214,
+               2119.88351
+            ]
+         },
+         "sdr B7 PARKS:6" : {
+            "class" : "meeting",
+            "direction" : 3.1415926535897,
+            "id" : "sdr B7 PARKS:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B7 PARKS",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B7 PARKS",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "B7 PARKS",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B7 PARKS",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B7 PARKS",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B7 PARKS",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1941.35383,
+               2128.79523
+            ]
+         },
+         "sdr B7 VEIL:12" : {
+            "class" : "meeting",
+            "direction" : 3.1415926535897,
+            "id" : "sdr B7 VEIL:12",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "B7 VEIL",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "B7 VEIL",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "B7 VEIL",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "B7 VEIL",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "B7 VEIL",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "B7 VEIL",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "B7 VEIL",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "B7 VEIL",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "B7 VEIL",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "B7 VEIL",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "B7 VEIL",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "B7 VEIL",
+                  "position" : 6,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1852.23093,
+               2058.73299
+            ]
+         },
+         "sdr C7 CHARLEMAGNE:16" : {
+            "class" : "meeting",
+            "direction" : -1.5707963267948,
+            "id" : "sdr C7 CHARLEMAGNE:16",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 6,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 7,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 7,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 8,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "C7 CHARLEMAGNE",
+                  "position" : 8,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2248.41753,
+               2102.09198
+            ]
+         },
+         "sdr C7 CLOVIS:6" : {
+            "class" : "meeting",
+            "direction" : -1.5707963267948,
+            "id" : "sdr C7 CLOVIS:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C7 CLOVIS",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C7 CLOVIS",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "C7 CLOVIS",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C7 CLOVIS",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C7 CLOVIS",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C7 CLOVIS",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2328.43993,
+               1831.53993
+            ]
+         },
+         "sdr C7 DE GAULLE:12" : {
+            "class" : "meeting",
+            "direction" : -1.5707963267948,
+            "id" : "sdr C7 DE GAULLE:12",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C7 DE GAULLE",
+                  "position" : 6,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2327.88453,
+               1637.952643
+            ]
+         },
+         "sdr C7 LOUIS XIV:6" : {
+            "class" : "meeting",
+            "direction" : -1.5707963267948,
+            "id" : "sdr C7 LOUIS XIV:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C7 LOUIS XIV",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2326.87703,
+               1455.58616
+            ]
+         },
+         "sdr C7 MANDELA:20" : {
+            "class" : "meeting",
+            "direction" : 0,
+            "id" : "sdr C7 MANDELA:20",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "C7 MANDELA",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "C7 MANDELA",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "C7 MANDELA",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "C7 MANDELA",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "C7 MANDELA",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "C7 MANDELA",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "C7 MANDELA",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "C7 MANDELA",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "C7 MANDELA",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "C7 MANDELA",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "C7 MANDELA",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "C7 MANDELA",
+                  "position" : 6,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "C7 MANDELA",
+                  "position" : 7,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "C7 MANDELA",
+                  "position" : 7,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "C7 MANDELA",
+                  "position" : 8,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "C7 MANDELA",
+                  "position" : 8,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "Q",
+                  "office" : "C7 MANDELA",
+                  "position" : 9,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "R",
+                  "office" : "C7 MANDELA",
+                  "position" : 9,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "S",
+                  "office" : "C7 MANDELA",
+                  "position" : 10,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "T",
+                  "office" : "C7 MANDELA",
+                  "position" : 10,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2184.60923,
+               1937.44083
+            ]
+         },
+         "sdr D7 BONAPARTE:12" : {
+            "class" : "meeting",
+            "direction" : 1.5707963267948,
+            "id" : "sdr D7 BONAPARTE:12",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "D7 BONAPARTE",
+                  "position" : 6,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1939.70643,
+               1149.02628
+            ]
+         },
+         "sdr D7 CHURCHILL:6" : {
+            "class" : "meeting",
+            "direction" : 0,
+            "id" : "sdr D7 CHURCHILL:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "D7 CHURCHILL",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1946.54553,
+               1329.46556
+            ]
+         },
+         "sdr D7 RAMSES:6" : {
+            "class" : "meeting",
+            "direction" : 1.5707963267948,
+            "id" : "sdr D7 RAMSES:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "D7 RAMSES",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "D7 RAMSES",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "D7 RAMSES",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "D7 RAMSES",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "D7 RAMSES",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "D7 RAMSES",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               2221.22683,
+               1224.42213
+            ]
+         }
+      }
    },
-   "furniture": {},
-   "itineraries": [],
-   "pois": {
-      "bulle": {
-         "B7 Bulle 1-1": {
-            "class": "bulle",
-            "id": "B7 Bulle 1-1",
-            "points": "1893.1863,2033.0054 1935.6863,2033.0054 1935.6863,2073.5054 1892.9433,2073.8547",
-            "type": "polygon"
+   "furniture" : {
+      "borne-orientation" : {
+         "meuble borne-orientation B7" : {
+            "class" : "borne-orientation",
+            "direction" : 3.1415926535897,
+            "id" : "meuble borne-orientation B7",
+            "objects" : [],
+            "point" : [
+               1351.31315,
+               2012.25001
+            ]
          },
-         "B7 Bulle 1-2": {
-            "class": "bulle",
-            "id": "B7 Bulle 1-2",
-            "points": "1892.966,1972.344 1938.2003,1972.354 1938.2003,2007.671 1892.672,2007.671",
-            "type": "polygon"
+         "meuble borne-orientation C7" : {
+            "class" : "borne-orientation",
+            "direction" : 3.1415926535897,
+            "id" : "meuble borne-orientation C7",
+            "objects" : [],
+            "point" : [
+               2074.11033,
+               2041.63895
+            ]
          },
-         "B7 Bulle 3-1": {
-            "class": "bulle",
-            "id": "B7 Bulle 3-1",
-            "points": "1676.3673,2046.4314 1722.1232,2046.4804 1722.1232,2077.2809 1685.3343,2077.2139 1685.3033,2064.4877 1676.2246,2064.4537",
-            "type": "polygon"
+         "meuble borne-orientation D7" : {
+            "class" : "borne-orientation",
+            "direction" : -1.5707963267948,
+            "id" : "meuble borne-orientation D7",
+            "objects" : [],
+            "point" : [
+               2238.24413,
+               1313.09492
+            ]
+         }
+      }
+   },
+   "itineraries" : [
+      {
+         "id" : "path-001",
+         "points" : "2051.9655,2022.9313 2051.9555,2067.4221",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-102-7",
+         "points" : "1720.7267,2240.7623 1670.2098,2240.7623",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-9",
+         "points" : "2290.966,1306.5647 2312.8024,1306.5027",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4-0",
+         "points" : "2221.8001,1723.2621 2240.7284,1723.2621",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-7-3",
+         "points" : "2269.8298,1856.5 2290.3206,1856.5",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-102-7-8",
+         "points" : "2290.3116,2022.9313 2290.3276,1587.9622 2241.0821,1587.9002 2241.0821,1520.3818 2290.9663,1520.1501 2290.9663,1291.8936",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-5",
+         "points" : "1853.5975,1297.8931 2005.5603,1297.8931 2005.5423,1265.186 2168.4565,1265.186 2168.4995,1291.8931 2290.9657,1291.8931",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-5-4",
+         "points" : "2077.8301,1248.3156 2077.8301,1265.8931",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9",
+         "points" : "2005.5603,1297.8931 2005.5603,1360.7375",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-0",
+         "points" : "1928.9407,1298.2298 1928.9407,1216.0013",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9",
+         "points" : "1948.8987,1249.1783 1928.2825,1249.1783",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-6",
+         "points" : "1961.5373,1298.6003 1961.5373,1279.756",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-6-3",
+         "points" : "1975.7498,1298.6003 1975.7498,1279.756",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7",
+         "points" : "1897.1915,1318.0589 1897.1915,1279.2146",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5",
+         "points" : "2074.2025,1313.6768 2074.2025,1264.4789",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-7",
+         "points" : "2061.7047,1313.6768 2061.7047,1264.4789",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-7-0",
+         "points" : "2005.5422,1265.186 2005.5422,1210.6969",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-8",
+         "points" : "2028.8982,1265.6545 2028.8982,1248.8102",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6",
+         "points" : "2201.5146,1271.4023 2201.5146,1291.8931",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7",
+         "points" : "2150.3882,1248.7836 2150.3882,1265.9815",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-0",
+         "points" : "2168.4997,1291.8931 2136.0089,1291.8931",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-0-0",
+         "points" : "2154.0241,1368.3839 2154.0241,1291.8931",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-0-3",
+         "points" : "2290.9663,1291.8931 2290.9663,1263.4023",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-0",
+         "points" : "2290.9663,1263.4023 2329.4571,1263.4023",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-0-0",
+         "points" : "2329.457,1242.9115 2329.457,1263.4023",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-3",
+         "points" : "2242.4759,1411.6093 2290.9667,1411.6093",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-3-5",
+         "points" : "2290.9667,1423.6525 2309.4575,1423.6525",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-3-5-8",
+         "points" : "2270.3795,1438.1187 2290.8703,1438.1187",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1",
+         "points" : "2290.3116,1393.6237 2312.8024,1393.6237",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6",
+         "points" : "2290.9667,1492.7702 2311.4575,1492.7702",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-3",
+         "points" : "2220.5913,1520.3813 2241.0821,1520.3813",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-3-4",
+         "points" : "2220.5913,1578.125 2241.0821,1578.125",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-3-4-3",
+         "points" : "2290.3449,1578.0052 2290.3449,1588.0983",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-3-4-4",
+         "points" : "2241.082,1562.875 2261.5728,1562.875",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5",
+         "points" : "2241.082,1578.125 2309.5728,1578.125",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5",
+         "points" : "2272.274,1658.9749 2290.7648,1658.9749",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-53",
+         "points" : "2272.274,1608.375 2290.7648,1608.375",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-9",
+         "points" : "2272.274,1632.875 2290.7648,1632.875",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4",
+         "points" : "2220.5913,1653.6157 2241.0821,1653.6157",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4-4",
+         "points" : "2241.082,1587.8997 2241.082,1723.6157",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5",
+         "points" : "2290.1111,1671.6925 2310.602,1671.6925",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-9",
+         "points" : "2221.6704,1723.2485 2290.4112,1723.2485",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-9-7",
+         "points" : "2380.73,1367.4668 2380.73,1381.9576",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4-3",
+         "points" : "2290.2399,1955.0278 2310.7307,1955.0278",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4-3-7",
+         "points" : "2290.2399,1924.5 2310.7452,1924.5",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-4-3-6",
+         "points" : "2272.2704,1963.9738 2272.2704,2022.9479",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9",
+         "points" : "1764.0405,2087.7731 1589.5497,2087.7731",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-102",
+         "points" : "2311.8116,2022.9313 1901.4178,2022.9313 1901.5247,2025.1431 1507.7496,2025.2021 1507.7496,2088.2194 1287.5014,2088.2194",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7",
+         "points" : "2241.6333,1834.6472 2290.1241,1834.6472",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9",
+         "points" : "2290.1241,1819.824 2312.6149,1819.824",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-7",
+         "points" : "2290.3206,1870.5094 2312.8114,1870.5094",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0",
+         "points" : "2290.1241,1744.5363 2312.6149,1744.5363",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-7",
+         "points" : "2193.1241,2049.4221 2218.3046,2049.4221",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2",
+         "points" : "2193.1241,2022.9313 2193.1241,2049.4221",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-4",
+         "points" : "1901.4144,1998.4405 1901.4144,2022.9313",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-4-5",
+         "points" : "1968.6283,2004.4405 1968.6283,2022.9313",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-4-5-8",
+         "points" : "2146.0084,2004.4405 2146.0084,2022.9313",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-4-5-8-8",
+         "points" : "2217.813,2004.4405 2217.813,2022.9313",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-0",
+         "points" : "1897.8275,2067.6868 1873.3367,2067.6868",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-0-2",
+         "points" : "1897.8275,2118.4215 1873.3367,2118.4215",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-0-1",
+         "points" : "1873.3367,2040.3594 1848.8459,2040.3594",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-2",
+         "points" : "1873.3367,2118.4746 1873.3367,2024.6909",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5",
+         "points" : "1764.0405,2025.1638 1764.0405,2105.6546",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-8",
+         "points" : "1728.1726,2067.2509 1728.1726,2087.7731",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-8-1",
+         "points" : "1690.052,2067.2509 1690.052,2087.7731",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-7",
+         "points" : "1652.1126,2105.6715 1652.1126,2025.1807",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-5",
+         "points" : "1589.5497,2087.7731 1589.5497,2067.2823",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-5-9",
+         "points" : "1614.7667,2087.7731 1614.7667,2067.2823",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-5-9-5",
+         "points" : "1625.3291,2087.7731 1625.3291,2067.2823",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53",
+         "points" : "1622.4587,2025.1851 1622.4587,2008.6943",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-4",
+         "points" : "1555.3634,2025.527 1555.3634,2009.0362",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-1",
+         "points" : "1831.2791,2025.1638 1831.2791,2008.673",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-7",
+         "points" : "1721.8526,2025.2521 1721.8526,2008.7613",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6",
+         "points" : "1507.7496,2104.7105 1507.7496,2088.2197",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-9",
+         "points" : "1507.7496,2041.2076 1534.2405,2041.2076",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-9-4",
+         "points" : "1409.8794,1997.125 1500.9998,1997.125 1501.1211,2025.186 1507.7496,2025.202",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-6",
+         "points" : "1418.3123,2104.6793 1418.3123,2088.1885",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-6-6",
+         "points" : "1356.2974,2104.3257 1356.2974,2087.8349",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-6-3",
+         "points" : "1303.7279,2105.0641 1303.7279,2088.1358",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path-001-9-4-7-9-7-5-6-7-1-6-5-5-5-7-9-0-2-5-9-53-6-6-3-1",
+         "points" : "1330.0126,2088.5733 1330.0126,1996.0825",
+         "type" : "polyline"
+      }
+   ],
+   "pois" : {
+      "bulle" : {
+         "B7 Bulle 1-1" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 1-1",
+            "points" : "1893.1863,2033.0054 1935.6863,2033.0054 1935.6863,2073.5054 1892.9433,2073.8547",
+            "type" : "polygon"
          },
-         "B7 Bulle 3-2": {
-            "class": "bulle",
-            "id": "B7 Bulle 3-2",
-            "points": "1722.1232,2046.4802 1748.8673,2046.4312 1748.8673,2076.9312 1723.4197,2077.2636 1722.1243,2077.2806",
-            "type": "polygon"
+         "B7 Bulle 1-2" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 1-2",
+            "points" : "1892.966,1972.344 1938.2003,1972.354 1938.2003,2007.671 1892.672,2007.671",
+            "type" : "polygon"
          },
-         "B7 Bulle 4-1": {
-            "class": "bulle",
-            "id": "B7 Bulle 4-1",
-            "points": "1569.1591,2034.7928 1599.9032,2034.7438 1600.0671,2075.36 1569.2765,2075.36",
-            "type": "polygon"
+         "B7 Bulle 3-1" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 3-1",
+            "points" : "1676.3673,2046.4314 1722.1232,2046.4804 1722.1232,2077.2809 1685.3343,2077.2139 1685.3033,2064.4877 1676.2246,2064.4537",
+            "type" : "polygon"
          },
-         "B7 Bulle 4-2": {
-            "class": "bulle",
-            "id": "B7 Bulle 4-2",
-            "points": "1599.9265,2034.7683 1620.6706,2034.7193 1620.8577,2075.36 1600.0671,2075.36",
-            "type": "polygon"
+         "B7 Bulle 3-2" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 3-2",
+            "points" : "1722.1232,2046.4802 1748.8673,2046.4312 1748.8673,2076.9312 1723.4197,2077.2636 1722.1243,2077.2806",
+            "type" : "polygon"
          },
-         "B7 Bulle 4-3": {
-            "class": "bulle",
-            "id": "B7 Bulle 4-3",
-            "points": "1620.6938,2034.7438 1643.4379,2034.6948 1643.6483,2075.36 1620.8577,2075.36",
-            "type": "polygon"
+         "B7 Bulle 4-1" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 4-1",
+            "points" : "1569.1591,2034.7928 1599.9032,2034.7438 1600.0671,2075.36 1569.2765,2075.36",
+            "type" : "polygon"
          },
-         "B7 Bulle 7-1": {
-            "class": "bulle",
-            "id": "B7 Bulle 7-1",
-            "points": "1241.9003,2007.619 1269.8193,2007.619 1269.8193,1996.956 1309.0703,1996.956 1309.0702,2004.456 1351.9372,2004.456 1351.9373,1972.354 1241.9003,1972.354",
-            "type": "polygon"
+         "B7 Bulle 4-2" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 4-2",
+            "points" : "1599.9265,2034.7683 1620.6706,2034.7193 1620.8577,2075.36 1600.0671,2075.36",
+            "type" : "polygon"
          },
-         "C7 Bulle 1-1": {
-            "class": "bulle",
-            "id": "C7 Bulle 1-1",
-            "points": "2302.0418,1948.0006 2352.3972,1948.0106 2352.3972,1972.4995 2302.0408,1972.4995",
-            "type": "polygon"
+         "B7 Bulle 4-3" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 4-3",
+            "points" : "1620.6938,2034.7438 1643.4379,2034.6948 1643.6483,2075.36 1620.8577,2075.36",
+            "type" : "polygon"
          },
-         "C7 Bulle 2-1": {
-            "class": "bulle",
-            "id": "C7 Bulle 2-1",
-            "points": "2252.1609,1849.0181 2281.1932,1849.0281 2281.1932,1896.2075 2252.1599,1896.2075",
-            "type": "polygon"
+         "B7 Bulle 7-1" : {
+            "class" : "bulle",
+            "id" : "B7 Bulle 7-1",
+            "points" : "1241.9003,2007.619 1269.8193,2007.619 1269.8193,1996.956 1309.0703,1996.956 1309.0702,2004.456 1351.9372,2004.456 1351.9373,1972.354 1241.9003,1972.354",
+            "type" : "polygon"
          },
-         "C7 Bulle 2-2": {
-            "class": "bulle",
-            "id": "C7 Bulle 2-2",
-            "points": "2252.0739,1790.493 2281.1062,1790.503 2281.1932,1818.5513 2252.1599,1818.5513",
-            "type": "polygon"
+         "C7 Bulle 1-1" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 1-1",
+            "points" : "2302.0418,1948.0006 2352.3972,1948.0106 2352.3972,1972.4995 2302.0408,1972.4995",
+            "type" : "polygon"
          },
-         "C7 Bulle 4-1": {
-            "class": "bulle",
-            "id": "C7 Bulle 4-1",
-            "points": "2252.0419,1652.2816 2281.0742,1652.2916 2281.1612,1680.3399 2252.1279,1680.3399",
-            "type": "polygon"
+         "C7 Bulle 2-1" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 2-1",
+            "points" : "2252.1609,1849.0181 2281.1932,1849.0281 2281.1932,1896.2075 2252.1599,1896.2075",
+            "type" : "polygon"
          },
-         "C7 Bulle 4-2": {
-            "class": "bulle",
-            "id": "C7 Bulle 4-2",
-            "points": "2251.9549,1624.2333 2280.9872,1624.2433 2281.0742,1652.2916 2252.0409,1652.2916",
-            "type": "polygon"
+         "C7 Bulle 2-2" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 2-2",
+            "points" : "2252.0739,1790.493 2281.1062,1790.503 2281.1932,1818.5513 2252.1599,1818.5513",
+            "type" : "polygon"
          },
-         "C7 Bulle 4-3": {
-            "class": "bulle",
-            "id": "C7 Bulle 4-3",
-            "points": "2251.8689,1596.175 2280.9012,1596.185 2280.9882,1624.2333 2251.9549,1624.2333",
-            "type": "polygon"
+         "C7 Bulle 4-1" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 4-1",
+            "points" : "2252.0419,1652.2816 2281.0742,1652.2916 2281.1612,1680.3399 2252.1279,1680.3399",
+            "type" : "polygon"
          },
-         "C7 Bulle 6-1": {
-            "class": "bulle",
-            "id": "C7 Bulle 6-1",
-            "points": "2251.6424,1430.6628 2280.9684,1430.4525 2281.0544,1466.167 2251.7031,1466.148",
-            "type": "polygon"
+         "C7 Bulle 4-2" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 4-2",
+            "points" : "2251.9549,1624.2333 2280.9872,1624.2433 2281.0742,1652.2916 2252.0409,1652.2916",
+            "type" : "polygon"
          },
-         "C7 Bulle 7-1": {
-            "class": "bulle",
-            "id": "C7 Bulle 7-1",
-            "points": "2322.514,1218.80397 2351.84,1218.59367 2351.926,1251.275 2322.5747,1251.256",
-            "type": "polygon"
+         "C7 Bulle 4-3" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 4-3",
+            "points" : "2251.8689,1596.175 2280.9012,1596.185 2280.9882,1624.2333 2251.9549,1624.2333",
+            "type" : "polygon"
          },
-         "D7 Bulle 3-1": {
-            "class": "bulle",
-            "id": "D7 Bulle 3-1",
-            "points": "1941.0157,1214.55082 1969.4204,1214.54582 1969.4684,1255.3213 1941.0764,1255.3023",
-            "type": "polygon"
+         "C7 Bulle 6-1" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 6-1",
+            "points" : "2251.6424,1430.6628 2280.9684,1430.4525 2281.0544,1466.167 2251.7031,1466.148",
+            "type" : "polygon"
          },
-         "D7 Bulle 3-2": {
-            "class": "bulle",
-            "id": "D7 Bulle 3-2",
-            "points": "1941.0891,1255.4174 1969.4558,1255.2072 1969.5418,1286.3145 1941.1498,1286.2955",
-            "type": "polygon"
+         "C7 Bulle 7-1" : {
+            "class" : "bulle",
+            "id" : "C7 Bulle 7-1",
+            "points" : "2322.514,1218.80397 2351.84,1218.59367 2351.926,1251.275 2322.5747,1251.256",
+            "type" : "polygon"
          },
-         "D7 Bulle 3-3": {
-            "class": "bulle",
-            "id": "D7 Bulle 3-3",
-            "points": "1969.4811,1255.4364 1997.8478,1255.2262 1997.9338,1286.3335 1969.5418,1286.3145",
-            "type": "polygon"
+         "D7 Bulle 3-1" : {
+            "class" : "bulle",
+            "id" : "D7 Bulle 3-1",
+            "points" : "1941.0157,1214.55082 1969.4204,1214.54582 1969.4684,1255.3213 1941.0764,1255.3023",
+            "type" : "polygon"
          },
-         "d7 Bulle 2-1": {
-            "class": "bulle",
-            "id": "d7 Bulle 2-1",
-            "points": "2068.7159,1305.7788 2104.0419,1305.5685 2104.1279,1330.8712 2068.7766,1330.8522",
-            "type": "polygon"
+         "D7 Bulle 3-2" : {
+            "class" : "bulle",
+            "id" : "D7 Bulle 3-2",
+            "points" : "1941.0891,1255.4174 1969.4558,1255.2072 1969.5418,1286.3145 1941.1498,1286.2955",
+            "type" : "polygon"
          },
-         "d7 Bulle 2-2": {
-            "class": "bulle",
-            "id": "d7 Bulle 2-2",
-            "points": "2038.8249,1305.8745 2068.7033,1305.6642 2068.7893,1330.9669 2038.8856,1330.9479",
-            "type": "polygon"
+         "D7 Bulle 3-3" : {
+            "class" : "bulle",
+            "id" : "D7 Bulle 3-3",
+            "points" : "1969.4811,1255.4364 1997.8478,1255.2262 1997.9338,1286.3335 1969.5418,1286.3145",
+            "type" : "polygon"
+         },
+         "d7 Bulle 2-1" : {
+            "class" : "bulle",
+            "id" : "d7 Bulle 2-1",
+            "points" : "2068.7159,1305.7788 2104.0419,1305.5685 2104.1279,1330.8712 2068.7766,1330.8522",
+            "type" : "polygon"
+         },
+         "d7 Bulle 2-2" : {
+            "class" : "bulle",
+            "id" : "d7 Bulle 2-2",
+            "points" : "2038.8249,1305.8745 2068.7033,1305.6642 2068.7893,1330.9669 2038.8856,1330.9479",
+            "type" : "polygon"
          }
       },
-      "chat-area": {
-         "Espace_de_convivialité_B700": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_B700",
-            "points": "2000.9503,1972.354 2105.7003,1972.354 2105.7003,2012.237 2000.9503,2012.237",
-            "type": "polygon"
+      "chat-area" : {
+         "Espace de convivialité B700" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité B700",
+            "points" : "2000.9503,1972.354 2105.7003,1972.354 2105.7003,2012.237 2000.9503,2012.237",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_B710": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_B710",
-            "points": "1938.2003,1972.354 2000.9503,1972.354 2000.9503,2012.237 1938.2003,2012.237",
-            "type": "polygon"
+         "Espace de convivialité B710" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité B710",
+            "points" : "1938.2003,1972.354 2000.9503,1972.354 2000.9503,2012.237 1938.2003,2012.237",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_B760": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_B760",
-            "points": "1420.3563,2004.456 1455.7508,2004.456 1455.7509,1972.354 1420.3549,1972.38",
-            "type": "polygon"
+         "Espace de convivialité B760" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité B760",
+            "points" : "1420.3563,2004.456 1455.7508,2004.456 1455.7509,1972.354 1420.3549,1972.38",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_C370-3": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_C370-3",
-            "points": "2182.4503,1972.354 2255.2003,1972.354 2255.2003,2012.237 2182.4503,2012.237",
-            "type": "polygon"
+         "Espace de convivialité C370-3" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité C370-3",
+            "points" : "2182.4503,1972.354 2255.2003,1972.354 2255.2003,2012.237 2182.4503,2012.237",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_C7 Espace personnalisable": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_C7 Espace personnalisable",
-            "points": "2105.7003,1972.354 2182.4503,1972.354 2182.4503,2012.237 2105.7003,2012.237",
-            "type": "polygon"
+         "Espace de convivialité C7 Espace personnalisable" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité C7 Espace personnalisable",
+            "points" : "2105.7003,1972.354 2182.4503,1972.354 2182.4503,2012.237 2105.7003,2012.237",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_C700-1": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_C700-1",
-            "points": "2147.5023,2111.126 2283.0157,2111.126 2283.1137,2032.9795 2301.8081,2032.4795 2302.0408,1972.4995 2352.3972,1972.4995 2352.2526,2149.009 2147.5026,2149.009",
-            "type": "polygon"
+         "Espace de convivialité C700-1" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité C700-1",
+            "points" : "2147.5023,2111.126 2283.0157,2111.126 2283.1137,2032.9795 2301.8081,2032.4795 2302.0408,1972.4995 2352.3972,1972.4995 2352.2526,2149.009 2147.5026,2149.009",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_C710": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_C710",
-            "points": "2302.0418,1898.1176 2352.3972,1898.1276 2352.3972,1948.0106 2302.0418,1948.0006",
-            "type": "polygon"
+         "Espace de convivialité C710" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité C710",
+            "points" : "2302.0418,1898.1176 2352.3972,1898.1276 2352.3972,1948.0106 2302.0418,1948.0006",
+            "type" : "polygon"
          },
-         "Espace_de_convivialité_D710": {
-            "class": "chat-area",
-            "id": "Espace_de_convivialité_D710",
-            "points": "2104.0419,1359.6112 2216.8856,1359.6212 2216.8856,1392.7046 2104.0419,1392.6946",
-            "type": "polygon"
+         "Espace de convivialité D710" : {
+            "class" : "chat-area",
+            "id" : "Espace de convivialité D710",
+            "points" : "2104.0419,1359.6112 2216.8856,1359.6212 2216.8856,1392.7046 2104.0419,1392.6946",
+            "type" : "polygon"
          }
       },
-      "courrier": {
-         "Courrier_1_7": {
-            "class": "courrier",
-            "id": "Courrier_1_7",
-            "offsetX": 0,
-            "offsetY": 0,
-            "points": "2201.4114,2054.854 2211.0854,2054.854 2211.0854,2080.253 2201.4114,2080.253",
-            "scale": 0.3,
-            "type": "polygon"
+      "courrier" : {
+         "Courrier 1 7" : {
+            "class" : "courrier",
+            "id" : "Courrier 1 7",
+            "offsetX" : "0",
+            "offsetY" : "0",
+            "points" : "2201.4114,2054.854 2211.0854,2054.854 2211.0854,2080.253 2201.4114,2080.253",
+            "scale" : "0.3",
+            "type" : "polygon"
          }
       },
-      "elevator": {
-         "Ascenseurs_0770": {
-            "class": "elevator",
-            "id": "Ascenseurs_0770",
-            "points": "1269.8193,1996.956 1309.0703,1996.956 1309.0703,2078.171 1269.8193,2078.171",
-            "type": "polygon"
+      "elevator" : {
+         "Ascenseurs 0770" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs 0770",
+            "points" : "1269.8193,1996.956 1309.0703,1996.956 1309.0703,2078.171 1269.8193,2078.171",
+            "type" : "polygon"
          },
-         "Ascenseurs_B700-2": {
-            "class": "elevator",
-            "id": "Ascenseurs_B700-2",
-            "points": "2075.2132,2032.103 2121.4492,2032.103 2121.4492,2111.127 2075.2132,2111.127",
-            "type": "polygon"
+         "Ascenseurs B700-2" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs B700-2",
+            "points" : "2075.2132,2032.103 2121.4492,2032.103 2121.4492,2111.127 2075.2132,2111.127",
+            "type" : "polygon"
          },
-         "Ascenseurs_B760": {
-            "class": "elevator",
-            "id": "Ascenseurs_B760",
-            "points": "1351.9372,2004.456 1386.6823,2004.2109 1386.6823,2078.171 1351.9372,2078.171",
-            "type": "polygon"
+         "Ascenseurs B760" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs B760",
+            "points" : "1351.9372,2004.456 1386.6823,2004.2109 1386.6823,2078.171 1351.9372,2078.171",
+            "type" : "polygon"
          },
-         "Ascenseurs_C700": {
-            "class": "elevator",
-            "id": "Ascenseurs_C700",
-            "points": "2246.0159,1251.201 2280.9079,1251.201 2280.9509,1280.3386 2246.0589,1280.3386",
-            "type": "polygon"
+         "Ascenseurs C700" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs C700",
+            "points" : "2246.0159,1251.201 2280.9079,1251.201 2280.9509,1280.3386 2246.0589,1280.3386",
+            "type" : "polygon"
          },
-         "Ascenseurs_D710": {
-            "class": "elevator",
-            "id": "Ascenseurs_D710",
-            "points": "2164.7749,1305.8759 2213.8185,1305.8759 2213.965,1313.6806 2216.8856,1313.6806 2216.8856,1359.6212 2164.7749,1359.6212",
-            "type": "polygon"
+         "Ascenseurs D710" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs D710",
+            "points" : "2164.7749,1305.8759 2213.8185,1305.8759 2213.965,1313.6806 2216.8856,1313.6806 2216.8856,1359.6212 2164.7749,1359.6212",
+            "type" : "polygon"
          },
-         "Ascenseurs_x-left_x-offsetY_25": {
-            "class": "elevator",
-            "id": "Ascenseurs_x-left_x-offsetY_25",
-            "points": "1997.0483,2032.103 2029.7213,2032.103 2029.7213,2111.127 1997.0483,2111.127",
-            "type": "polygon"
+         "Ascenseurs x-left x-offsetY 25" : {
+            "class" : "elevator",
+            "id" : "Ascenseurs x-left x-offsetY 25",
+            "points" : "1997.0483,2032.103 2029.7213,2032.103 2029.7213,2111.127 1997.0483,2111.127",
+            "type" : "polygon"
          }
       },
-      "meeting-room": {
-         "09c0ec33-420d-4d9c-b5df-c11a5e8cb789": {
-            "class": "meeting-room",
-            "id": "09c0ec33-420d-4d9c-b5df-c11a5e8cb789",
-            "name": "C7 LOUIS XIV",
-            "points": "2301.6994,1416.6752 2351.9683,1416.7772 2352.0543,1466.3902 2301.6989,1466.3802",
-            "type": "polygon"
+      "meeting-room" : {
+         "09c0ec33-420d-4d9c-b5df-c11a5e8cb789" : {
+            "class" : "meeting-room",
+            "id" : "09c0ec33-420d-4d9c-b5df-c11a5e8cb789",
+            "name" : "C7 LOUIS XIV",
+            "points" : "2301.6994,1416.6752 2351.9683,1416.7772 2352.0543,1466.3902 2301.6989,1466.3802",
+            "type" : "polygon"
          },
-         "0a0103c0-7c3e-49f3-b016-b3695d4ab903": {
-            "class": "meeting-room",
-            "id": "0a0103c0-7c3e-49f3-b016-b3695d4ab903",
-            "name": "C7 Espace personnalisable",
-            "points": "2251.7849,1524.2004 2352.1403,1524.2104 2352.1403,1572.0934 2251.7849,1572.0834",
-            "type": "polygon"
+         "0a0103c0-7c3e-49f3-b016-b3695d4ab903" : {
+            "class" : "meeting-room",
+            "id" : "0a0103c0-7c3e-49f3-b016-b3695d4ab903",
+            "name" : "C7 Espace personnalisable",
+            "points" : "2251.7849,1524.2004 2352.1403,1524.2104 2352.1403,1572.0934 2251.7849,1572.0834",
+            "type" : "polygon"
          },
-         "266cfdc2-731a-4308-a60e-e280bd183027": {
-            "class": "meeting-room",
-            "id": "266cfdc2-731a-4308-a60e-e280bd183027",
-            "name": "B7 VEIL",
-            "points": "1860.5004,2032.0635 1860.5004,2085.8275 1783.9064,2085.8275 1783.9064,2031.6415",
-            "type": "polygon"
+         "266cfdc2-731a-4308-a60e-e280bd183027" : {
+            "class" : "meeting-room",
+            "id" : "266cfdc2-731a-4308-a60e-e280bd183027",
+            "name" : "B7 VEIL",
+            "points" : "1860.5004,2032.0635 1860.5004,2085.8275 1783.9064,2085.8275 1783.9064,2031.6415",
+            "type" : "polygon"
          },
-         "4701b138-3095-420d-8da8-1e749e2fa502": {
-            "class": "meeting-room",
-            "id": "4701b138-3095-420d-8da8-1e749e2fa502",
-            "name": "D7 BONAPARTE",
-            "points": "1914.8741,1142.01377 1964.4525,1142.11577 1964.5385,1214.55482 1941.0157,1214.61992 1940.9177,1224.6197 1914.8732,1224.6097",
-            "type": "polygon"
+         "4701b138-3095-420d-8da8-1e749e2fa502" : {
+            "class" : "meeting-room",
+            "id" : "4701b138-3095-420d-8da8-1e749e2fa502",
+            "name" : "D7 BONAPARTE",
+            "points" : "1914.8741,1142.01377 1964.4525,1142.11577 1964.5385,1214.55482 1941.0157,1214.61992 1940.9177,1224.6197 1914.8732,1224.6097",
+            "type" : "polygon"
          },
-         "4f6c70ca-a4a5-41d5-a2fb-a86ed642ce39": {
-            "class": "meeting-room",
-            "id": "4f6c70ca-a4a5-41d5-a2fb-a86ed642ce39",
-            "name": "C7 DE GAULLE",
-            "points": "2301.8281,1572.0374 2352.097,1572.1394 2352.183,1645.3381 2301.8276,1645.3281",
-            "type": "polygon"
+         "4f6c70ca-a4a5-41d5-a2fb-a86ed642ce39" : {
+            "class" : "meeting-room",
+            "id" : "4f6c70ca-a4a5-41d5-a2fb-a86ed642ce39",
+            "name" : "C7 DE GAULLE",
+            "points" : "2301.8281,1572.0374 2352.097,1572.1394 2352.183,1645.3381 2301.8276,1645.3281",
+            "type" : "polygon"
          },
-         "56495cb0-264f-4108-b292-705c8b01e6c2": {
-            "class": "meeting-room",
-            "id": "56495cb0-264f-4108-b292-705c8b01e6c2",
-            "name": "D7 Espace personnalisable",
-            "points": "2083.456,1273.9754 2145.6161,1273.9854 2145.6161,1359.6212 2104.0419,1359.6112 2104.0419,1305.5685 2083.456,1305.5685",
-            "type": "polygon"
+         "56495cb0-264f-4108-b292-705c8b01e6c2" : {
+            "class" : "meeting-room",
+            "id" : "56495cb0-264f-4108-b292-705c8b01e6c2",
+            "name" : "D7 Espace personnalisable",
+            "points" : "2083.456,1273.9754 2145.6161,1273.9854 2145.6161,1359.6212 2104.0419,1359.6112 2104.0419,1305.5685 2083.456,1305.5685",
+            "type" : "polygon"
          },
-         "74ef1a1c-359b-4ff4-895e-14871b07651f": {
-            "class": "meeting-room",
-            "id": "74ef1a1c-359b-4ff4-895e-14871b07651f",
-            "name": "B7 CLEOPATRE",
-            "points": "1298.0366,2096.704 1351.6936,2096.704 1351.6936,2146.89 1298.0366,2146.89",
-            "type": "polygon"
+         "74ef1a1c-359b-4ff4-895e-14871b07651f" : {
+            "class" : "meeting-room",
+            "id" : "74ef1a1c-359b-4ff4-895e-14871b07651f",
+            "name" : "B7 CLEOPATRE",
+            "points" : "1298.0366,2096.704 1351.6936,2096.704 1351.6936,2146.89 1298.0366,2146.89",
+            "type" : "polygon"
          },
-         "7fe9eb1e-a70e-405e-9fdc-e48dfcd9aba2": {
-            "class": "meeting-room",
-            "id": "7fe9eb1e-a70e-405e-9fdc-e48dfcd9aba2",
-            "name": "C7 MANDELA",
-            "points": "2281.1932,1896.2075 2281.1928,1972.354 2182.4503,1972.354 2182.5934,1896.2075",
-            "type": "polygon"
+         "7fe9eb1e-a70e-405e-9fdc-e48dfcd9aba2" : {
+            "class" : "meeting-room",
+            "id" : "7fe9eb1e-a70e-405e-9fdc-e48dfcd9aba2",
+            "name" : "C7 MANDELA",
+            "points" : "2281.1932,1896.2075 2281.1928,1972.354 2182.4503,1972.354 2182.5934,1896.2075",
+            "type" : "polygon"
          },
-         "97a64b82-2945-4357-802a-986e090c680d": {
-            "class": "meeting-room",
-            "id": "97a64b82-2945-4357-802a-986e090c680d",
-            "name": "B7 PARKS",
-            "points": "1957.2943,2111.126 1957.2943,2146.89 1892.7003,2146.89 1892.7003,2110.704",
-            "type": "polygon"
+         "97a64b82-2945-4357-802a-986e090c680d" : {
+            "class" : "meeting-room",
+            "id" : "97a64b82-2945-4357-802a-986e090c680d",
+            "name" : "B7 PARKS",
+            "points" : "1957.2943,2111.126 1957.2943,2146.89 1892.7003,2146.89 1892.7003,2110.704",
+            "type" : "polygon"
          },
-         "9d2949e8-b7a8-4162-a74a-0d0f29973514": {
-            "class": "meeting-room",
-            "id": "9d2949e8-b7a8-4162-a74a-0d0f29973514",
-            "name": "D7 RAMSES",
-            "points": "2196.3945,1215.72842 2245.9729,1215.83042 2246.0589,1280.3386 2196.394,1280.3286",
-            "type": "polygon"
+         "9d2949e8-b7a8-4162-a74a-0d0f29973514" : {
+            "class" : "meeting-room",
+            "id" : "9d2949e8-b7a8-4162-a74a-0d0f29973514",
+            "name" : "D7 RAMSES",
+            "points" : "2196.3945,1215.72842 2245.9729,1215.83042 2246.0589,1280.3386 2196.394,1280.3286",
+            "type" : "polygon"
          },
-         "B7 Espace personnalisable": {
-            "class": "meeting-room",
-            "id": "B7 Espace personnalisable",
-            "name": "B7 Espace personnalisable",
-            "points": "1527.2386,2034.704 1569.3045,2034.694 1569.2765,2075.36 1581.2696,2075.419 1581.2696,2146.8883 1527.2386,2146.8883",
-            "type": "polygon"
+         "B7 Espace personnalisable" : {
+            "class" : "meeting-room",
+            "id" : "B7 Espace personnalisable",
+            "name" : "B7 Espace personnalisable",
+            "points" : "1527.2386,2034.704 1569.3045,2034.694 1569.2765,2075.36 1581.2696,2075.419 1581.2696,2146.8883 1527.2386,2146.8883",
+            "type" : "polygon"
          },
-         "a14cc0cd-1908-43de-983f-45071323313f": {
-            "class": "meeting-room",
-            "id": "a14cc0cd-1908-43de-983f-45071323313f",
-            "name": "C7 CLOVIS",
-            "points": "2301.9994,1790.3444 2352.2684,1790.4464 2352.3544,1840.264 2301.999,1840.254",
-            "type": "polygon"
+         "a14cc0cd-1908-43de-983f-45071323313f" : {
+            "class" : "meeting-room",
+            "id" : "a14cc0cd-1908-43de-983f-45071323313f",
+            "name" : "C7 CLOVIS",
+            "points" : "2301.9994,1790.3444 2352.2684,1790.4464 2352.3544,1840.264 2301.999,1840.254",
+            "type" : "polygon"
          },
-         "c3a3540f-5d44-410a-a89f-83149137c639": {
-            "class": "meeting-room",
-            "id": "c3a3540f-5d44-410a-a89f-83149137c639",
-            "name": "D7 CHURCHILL",
-            "points": "1940.5979,1307.82 1993.3477,1307.922 1993.4337,1352.4301 1940.5974,1352.4201",
-            "type": "polygon"
+         "c3a3540f-5d44-410a-a89f-83149137c639" : {
+            "class" : "meeting-room",
+            "id" : "c3a3540f-5d44-410a-a89f-83149137c639",
+            "name" : "D7 CHURCHILL",
+            "points" : "1940.5979,1307.82 1993.3477,1307.922 1993.4337,1352.4301 1940.5974,1352.4201",
+            "type" : "polygon"
          },
-         "c8186216-c5d8-4513-8f3b-41b8d6a4c861": {
-            "class": "meeting-room",
-            "id": "c8186216-c5d8-4513-8f3b-41b8d6a4c861",
-            "name": "C7 CHARLEMAGNE",
-            "points": "2283.1137,2032.9795 2283.0157,2111.126 2211.0056,2111.126 2211.1487,2032.9795",
-            "type": "polygon"
+         "c8186216-c5d8-4513-8f3b-41b8d6a4c861" : {
+            "class" : "meeting-room",
+            "id" : "c8186216-c5d8-4513-8f3b-41b8d6a4c861",
+            "name" : "C7 CHARLEMAGNE",
+            "points" : "2283.1137,2032.9795 2283.0157,2111.126 2211.0056,2111.126 2211.1487,2032.9795",
+            "type" : "polygon"
          }
       },
-      "office": {
-         "B761": {
-            "class": "office",
-            "id": "B761",
-            "points": "1351.6936,2096.704 1384.7036,2096.704 1384.7036,2146.89 1351.6936,2146.89",
-            "type": "polygon"
+      "office" : {
+         "B761" : {
+            "class" : "office",
+            "id" : "B761",
+            "points" : "1351.6936,2096.704 1384.7036,2096.704 1384.7036,2146.89 1351.6936,2146.89",
+            "type" : "polygon"
          },
-         "B762": {
-            "class": "office",
-            "id": "B762",
-            "points": "1351.9373,1972.354 1420.3549,1972.38 1420.3549,2004.4557 1351.9358,2004.4557",
-            "type": "polygon"
+         "B762" : {
+            "class" : "office",
+            "id" : "B762",
+            "points" : "1351.9373,1972.354 1420.3549,1972.38 1420.3549,2004.4557 1351.9358,2004.4557",
+            "type" : "polygon"
          },
-         "B770": {
-            "class": "office",
-            "id": "B770",
-            "points": "1241.2698,2078.171 1298.3688,2078.171 1298.3688,2146.89 1241.2698,2146.89",
-            "type": "polygon"
+         "B770" : {
+            "class" : "office",
+            "id" : "B770",
+            "points" : "1241.2698,2078.171 1298.3688,2078.171 1298.3688,2146.89 1241.2698,2146.89",
+            "type" : "polygon"
          },
-         "C740-1": {
-            "class": "office",
-            "id": "C740-1",
-            "points": "2301.8708,1645.2821 2352.1397,1645.3841 2352.2257,1682.5828 2301.8703,1682.5728",
-            "type": "polygon"
+         "C740-1" : {
+            "class" : "office",
+            "id" : "C740-1",
+            "points" : "2301.8708,1645.2821 2352.1397,1645.3841 2352.2257,1682.5828 2301.8703,1682.5728",
+            "type" : "polygon"
          },
-         "C7420-2": {
-            "class": "office",
-            "id": "C7420-2",
-            "points": "2182.3006,1571.2537 2231.8418,1571.2437 2231.9278,1624.9582 2182.3613,1624.9582",
-            "type": "polygon"
+         "C7420-2" : {
+            "class" : "office",
+            "id" : "C7420-2",
+            "points" : "2182.3006,1571.2537 2231.8418,1571.2437 2231.9278,1624.9582 2182.3613,1624.9582",
+            "type" : "polygon"
          },
-         "D720-2": {
-            "class": "office",
-            "id": "D720-2",
-            "points": "2023.9783,1215.73472 2067.8567,1215.52442 2067.7697,1254.2166 2023.866,1254.1976",
-            "type": "polygon"
+         "D720-2" : {
+            "class" : "office",
+            "id" : "D720-2",
+            "points" : "2023.9783,1215.73472 2067.8567,1215.52442 2067.7697,1254.2166 2023.866,1254.1976",
+            "type" : "polygon"
          }
       },
-      "openspace": {
-         "B720-1": {
-            "class": "openspace",
-            "id": "B720-1",
-            "points": "1779.5524,2096.704 1892.966,2096.796 1893.052,2146.8898 1779.552,2146.8898",
-            "type": "polygon"
+      "openspace" : {
+         "B720-1" : {
+            "class" : "openspace",
+            "id" : "B720-1",
+            "points" : "1779.5524,2096.704 1892.966,2096.796 1893.052,2146.8898 1779.552,2146.8898",
+            "type" : "polygon"
          },
-         "B720-2": {
-            "class": "openspace",
-            "id": "B720-2",
-            "points": "1779.4913,1972.354 1892.966,1972.344 1893.052,2016.8866 1779.552,2016.8866",
-            "type": "polygon"
+         "B720-2" : {
+            "class" : "openspace",
+            "id" : "B720-2",
+            "points" : "1779.4913,1972.354 1892.966,1972.344 1893.052,2016.8866 1779.552,2016.8866",
+            "type" : "polygon"
          },
-         "B730-1": {
-            "class": "openspace",
-            "id": "B730-1",
-            "points": "1672.0777,2096.714 1779.4913,2096.806 1779.5773,2146.8998 1672.0773,2146.8998",
-            "type": "polygon"
+         "B730-1" : {
+            "class" : "openspace",
+            "id" : "B730-1",
+            "points" : "1672.0777,2096.714 1779.4913,2096.806 1779.5773,2146.8998 1672.0773,2146.8998",
+            "type" : "polygon"
          },
-         "B730-2": {
-            "class": "openspace",
-            "id": "B730-2",
-            "points": "1672.0166,1972.364 1779.4913,1972.354 1779.5773,2016.8966 1672.0773,2016.8966",
-            "type": "polygon"
+         "B730-2" : {
+            "class" : "openspace",
+            "id" : "B730-2",
+            "points" : "1672.0166,1972.364 1779.4913,1972.354 1779.5773,2016.8966 1672.0773,2016.8966",
+            "type" : "polygon"
          },
-         "B740-1": {
-            "class": "openspace",
-            "id": "B740-1",
-            "points": "1581.27,2096.7025 1671.5204,2096.7965 1671.6064,2146.8903 1581.2696,2146.8903",
-            "type": "polygon"
+         "B740-1" : {
+            "class" : "openspace",
+            "id" : "B740-1",
+            "points" : "1581.27,2096.7025 1671.5204,2096.7965 1671.6064,2146.8903 1581.2696,2146.8903",
+            "type" : "polygon"
          },
-         "B740-2": {
-            "class": "openspace",
-            "id": "B740-2",
-            "points": "1567.6857,1972.5394 1671.1604,1972.5294 1671.2464,2017.072 1567.7464,2017.072",
-            "type": "polygon"
+         "B740-2" : {
+            "class" : "openspace",
+            "id" : "B740-2",
+            "points" : "1567.6857,1972.5394 1671.1604,1972.5294 1671.2464,2017.072 1567.7464,2017.072",
+            "type" : "polygon"
          },
-         "B750-1": {
-            "class": "openspace",
-            "id": "B750-1",
-            "points": "1454.7036,2096.704 1526.9409,2096.9751 1527.2386,2146.89 1454.7036,2146.89",
-            "type": "polygon"
+         "B750-1" : {
+            "class" : "openspace",
+            "id" : "B750-1",
+            "points" : "1454.7036,2096.704 1526.9409,2096.9751 1527.2386,2146.89 1454.7036,2146.89",
+            "type" : "polygon"
          },
-         "B750-2": {
-            "class": "openspace",
-            "id": "B750-2",
-            "points": "1493.839,1972.5474 1568.0763,1972.5344 1568.1373,2017.067 1513.8479,2017.067 1513.8479,2002.1957 1493.8479,2002.1957",
-            "type": "polygon"
+         "B750-2" : {
+            "class" : "openspace",
+            "id" : "B750-2",
+            "points" : "1493.839,1972.5474 1568.0763,1972.5344 1568.1373,2017.067 1513.8479,2017.067 1513.8479,2002.1957 1493.8479,2002.1957",
+            "type" : "polygon"
          },
-         "B760": {
-            "class": "openspace",
-            "id": "B760",
-            "points": "1384.7036,2096.704 1454.7036,2096.704 1454.7036,2146.89 1384.7036,2146.89",
-            "type": "polygon"
+         "B760" : {
+            "class" : "openspace",
+            "id" : "B760",
+            "points" : "1384.7036,2096.704 1454.7036,2096.704 1454.7036,2146.89 1384.7036,2146.89",
+            "type" : "polygon"
          },
-         "C720-1": {
-            "class": "openspace",
-            "id": "C720-1",
-            "points": "2302.0422,1840.208 2352.3112,1840.31 2352.3972,1898.1276 2302.0418,1898.1176",
-            "type": "polygon"
+         "C720-1" : {
+            "class" : "openspace",
+            "id" : "C720-1",
+            "points" : "2302.0422,1840.208 2352.3112,1840.31 2352.3972,1898.1276 2302.0418,1898.1176",
+            "type" : "polygon"
          },
-         "C720-2": {
-            "class": "openspace",
-            "id": "C720-2",
-            "points": "2182.5327,1790.503 2252.0739,1790.493 2252.1599,1896.2075 2182.5934,1896.2075",
-            "type": "polygon"
+         "C720-2" : {
+            "class" : "openspace",
+            "id" : "C720-2",
+            "points" : "2182.5327,1790.503 2252.0739,1790.493 2252.1599,1896.2075 2182.5934,1896.2075",
+            "type" : "polygon"
          },
-         "C730-1": {
-            "class": "openspace",
-            "id": "C730-1",
-            "points": "2301.9135,1682.5268 2352.1824,1682.6288 2352.2684,1790.4464 2301.913,1790.4364",
-            "type": "polygon"
+         "C730-1" : {
+            "class" : "openspace",
+            "id" : "C730-1",
+            "points" : "2301.9135,1682.5268 2352.1824,1682.6288 2352.2684,1790.4464 2301.913,1790.4364",
+            "type" : "polygon"
          },
-         "C730-2": {
-            "class": "openspace",
-            "id": "C730-2",
-            "points": "2182.404,1682.8218 2231.9452,1682.8118 2232.0312,1790.5263 2182.4648,1790.5263",
-            "type": "polygon"
+         "C730-2" : {
+            "class" : "openspace",
+            "id" : "C730-2",
+            "points" : "2182.404,1682.8218 2231.9452,1682.8118 2232.0312,1790.5263 2182.4648,1790.5263",
+            "type" : "polygon"
          },
-         "C740": {
-            "class": "openspace",
-            "id": "C740",
-            "points": "2182.3613,1624.9582 2231.9025,1624.9482 2231.9885,1682.6627 2182.422,1682.6627",
-            "type": "polygon"
+         "C740" : {
+            "class" : "openspace",
+            "id" : "C740",
+            "points" : "2182.3613,1624.9582 2231.9025,1624.9482 2231.9885,1682.6627 2182.422,1682.6627",
+            "type" : "polygon"
          },
-         "C750-1": {
-            "class": "openspace",
-            "id": "C750-1",
-            "points": "2301.7854,1466.2882 2352.0543,1466.3902 2352.1403,1524.2104 2301.7849,1524.2004",
-            "type": "polygon"
+         "C750-1" : {
+            "class" : "openspace",
+            "id" : "C750-1",
+            "points" : "2301.7854,1466.2882 2352.0543,1466.3902 2352.1403,1524.2104 2301.7849,1524.2004",
+            "type" : "polygon"
          },
-         "C750-2": {
-            "class": "openspace",
-            "id": "C750-2",
-            "points": "2182.2147,1466.123 2231.7685,1466.3623 2231.8545,1571.2487 2182.288,1571.2487",
-            "type": "polygon"
+         "C750-2" : {
+            "class" : "openspace",
+            "id" : "C750-2",
+            "points" : "2182.2147,1466.123 2231.7685,1466.3623 2231.8545,1571.2487 2182.288,1571.2487",
+            "type" : "polygon"
          },
-         "C760-1": {
-            "class": "openspace",
-            "id": "C760-1",
-            "points": "2301.6567,1358.809 2351.9256,1358.911 2352.0116,1416.7312 2301.6563,1416.7212",
-            "type": "polygon"
+         "C760-1" : {
+            "class" : "openspace",
+            "id" : "C760-1",
+            "points" : "2301.6567,1358.809 2351.9256,1358.911 2352.0116,1416.7312 2301.6563,1416.7212",
+            "type" : "polygon"
          },
-         "C760-2": {
-            "class": "openspace",
-            "id": "C760-2",
-            "points": "2182.154,1392.7096 2251.6171,1392.6996 2251.7031,1466.148 2182.2147,1466.123",
-            "type": "polygon"
+         "C760-2" : {
+            "class" : "openspace",
+            "id" : "C760-2",
+            "points" : "2182.154,1392.7096 2251.6171,1392.6996 2251.7031,1466.148 2182.2147,1466.123",
+            "type" : "polygon"
          },
-         "C770-1": {
-            "class": "openspace",
-            "id": "C770-1",
-            "points": "2301.6571,1251.173 2351.926,1251.275 2352.012,1358.819 2301.6567,1358.809",
-            "type": "polygon"
+         "C770-1" : {
+            "class" : "openspace",
+            "id" : "C770-1",
+            "points" : "2301.6571,1251.173 2351.926,1251.275 2352.012,1358.819 2301.6567,1358.809",
+            "type" : "polygon"
          },
-         "D710": {
-            "class": "openspace",
-            "id": "D710",
-            "points": "2104.1256,1215.62642 2196.3945,1215.72842 2196.394,1254.3286 2104.0387,1254.3186",
-            "type": "polygon"
+         "D710" : {
+            "class" : "openspace",
+            "id" : "D710",
+            "points" : "2104.1256,1215.62642 2196.3945,1215.72842 2196.394,1254.3286 2104.0387,1254.3186",
+            "type" : "polygon"
          },
-         "D720": {
-            "class": "openspace",
-            "id": "D720",
-            "points": "1993.4337,1352.4301 2104.0424,1352.5321 2104.0419,1392.6946 1993.3468,1392.6846",
-            "type": "polygon"
+         "D720" : {
+            "class" : "openspace",
+            "id" : "D720",
+            "points" : "1993.4337,1352.4301 2104.0424,1352.5321 2104.0419,1392.6946 1993.3468,1392.6846",
+            "type" : "polygon"
          },
-         "D720-1": {
-            "class": "openspace",
-            "id": "D720-1",
-            "points": "2067.8567,1215.52442 2104.1256,1215.62642 2104.1251,1254.2266 2067.7698,1254.2166",
-            "type": "polygon"
+         "D720-1" : {
+            "class" : "openspace",
+            "id" : "D720-1",
+            "points" : "2067.8567,1215.52442 2104.1256,1215.62642 2104.1251,1254.2266 2067.7698,1254.2166",
+            "type" : "polygon"
          },
-         "D720-3": {
-            "class": "openspace",
-            "id": "D720-3",
-            "points": "1964.6218,1142.03173 2032.1424,1142.12583 2032.1419,1215.69627 1997.7907,1215.68727 1997.7907,1214.54292 1964.5385,1214.55482",
-            "type": "polygon"
+         "D720-3" : {
+            "class" : "openspace",
+            "id" : "D720-3",
+            "points" : "1964.6218,1142.03173 2032.1424,1142.12583 2032.1419,1215.69627 1997.7907,1215.68727 1997.7907,1214.54292 1964.5385,1214.55482",
+            "type" : "polygon"
          },
-         "D730-1": {
-            "class": "openspace",
-            "id": "D730-1",
-            "points": "1854.7253,1307.791 1940.5979,1307.82 1940.5974,1352.4201 1993.4337,1352.4301 1993.3467,1392.6846 1854.6984,1392.6746",
-            "type": "polygon"
+         "D730-1" : {
+            "class" : "openspace",
+            "id" : "D730-1",
+            "points" : "1854.7253,1307.791 1940.5979,1307.82 1940.5974,1352.4201 1993.4337,1352.4301 1993.3467,1392.6846 1854.6984,1392.6746",
+            "type" : "polygon"
          },
-         "D730-2": {
-            "class": "openspace",
-            "id": "D730-2",
-            "points": "1854.8718,1142.92357 1892.8119,1142.96527 1893.124,1237.0024 1917.4337,1237.0254 1917.3467,1287.2799 1854.6984,1287.2699",
-            "type": "polygon"
+         "D730-2" : {
+            "class" : "openspace",
+            "id" : "D730-2",
+            "points" : "1854.8718,1142.92357 1892.8119,1142.96527 1893.124,1237.0024 1917.4337,1237.0254 1917.3467,1287.2799 1854.6984,1287.2699",
+            "type" : "polygon"
          }
       },
-      "other": {
-         "LOCAL_C750": {
-            "class": "other",
-            "id": "LOCAL_C750",
-            "points": "2241.2239,1466.167 2281.0544,1466.167 2281.0544,1476.0707 2241.2244,1476.2331",
-            "type": "polygon"
+      "other" : {
+         "LOCAL C750" : {
+            "class" : "other",
+            "id" : "LOCAL C750",
+            "points" : "2241.2239,1466.167 2281.0544,1466.167 2281.0544,1476.0707 2241.2244,1476.2331",
+            "type" : "polygon"
          },
-         "Local-VDI_B760": {
-            "class": "other",
-            "id": "Local-VDI_B760",
-            "points": "1386.6823,2026.456 1420.3563,2026.456 1420.3563,2078.171 1386.6823,2078.171",
-            "type": "polygon"
+         "Local-VDI B760" : {
+            "class" : "other",
+            "id" : "Local-VDI B760",
+            "points" : "1386.6823,2026.456 1420.3563,2026.456 1420.3563,2078.171 1386.6823,2078.171",
+            "type" : "polygon"
          },
-         "Local-VDI_B760-1": {
-            "class": "other",
-            "id": "Local-VDI_B760-1",
-            "points": "1386.6823,2004.2109 1420.3563,2004.2109 1420.3563,2026.456 1386.6823,2026.456",
-            "type": "polygon"
+         "Local-VDI B760-1" : {
+            "class" : "other",
+            "id" : "Local-VDI B760-1",
+            "points" : "1386.6823,2004.2109 1420.3563,2004.2109 1420.3563,2026.456 1386.6823,2026.456",
+            "type" : "polygon"
          },
-         "Local-VDI_C730": {
-            "class": "other",
-            "id": "Local-VDI_C730",
-            "points": "2252.0322,1731.3369 2281.0644,1731.3469 2281.0644,1790.5263 2252.0311,1790.5263",
-            "type": "polygon"
+         "Local-VDI C730" : {
+            "class" : "other",
+            "id" : "Local-VDI C730",
+            "points" : "2252.0322,1731.3369 2281.0644,1731.3469 2281.0644,1790.5263 2252.0311,1790.5263",
+            "type" : "polygon"
          }
       },
-      "repro": {
-         "TELECOPIEUR_B710": {
-            "class": "repro",
-            "id": "TELECOPIEUR_B710",
-            "points": "1892.9433,2073.8547 1935.4433,2073.8547 1935.4433,2110.3547 1892.7003,2110.704",
-            "type": "polygon"
+      "repro" : {
+         "TELECOPIEUR B710" : {
+            "class" : "repro",
+            "id" : "TELECOPIEUR B710",
+            "points" : "1892.9433,2073.8547 1935.4433,2073.8547 1935.4433,2110.3547 1892.7003,2110.704",
+            "type" : "polygon"
          },
-         "TELECOPIEUR_C750": {
-            "class": "repro",
-            "id": "TELECOPIEUR_C750",
-            "points": "2241.2244,1476.2331 2280.9329,1476.2451 2280.9329,1505.1846 2241.2133,1505.5339",
-            "type": "polygon"
+         "TELECOPIEUR C750" : {
+            "class" : "repro",
+            "id" : "TELECOPIEUR C750",
+            "points" : "2241.2244,1476.2331 2280.9329,1476.2451 2280.9329,1505.1846 2241.2133,1505.5339",
+            "type" : "polygon"
          },
-         "TELECOPIEUR_D730": {
-            "class": "repro",
-            "id": "TELECOPIEUR_D730",
-            "points": "1969.4204,1214.54631 1997.7871,1214.54331 1997.8731,1255.4555 1969.4811,1255.4365",
-            "type": "polygon"
+         "TELECOPIEUR D730" : {
+            "class" : "repro",
+            "id" : "TELECOPIEUR D730",
+            "points" : "1969.4204,1214.54631 1997.7871,1214.54331 1997.8731,1255.4555 1969.4811,1255.4365",
+            "type" : "polygon"
          }
       },
-      "stairs": {
-         "Escalier_770": {
-            "class": "stairs",
-            "id": "Escalier_770",
-            "points": "1158.7073,2007.619 1269.8193,2007.619 1269.8193,2078.171 1158.7073,2078.171",
-            "type": "polygon"
+      "stairs" : {
+         "Escalier 770" : {
+            "class" : "stairs",
+            "id" : "Escalier 770",
+            "points" : "1158.7073,2007.619 1269.8193,2007.619 1269.8193,2078.171 1158.7073,2078.171",
+            "type" : "polygon"
          },
-         "Escalier_B700": {
-            "class": "stairs",
-            "id": "Escalier_B700",
-            "points": "2147.5023,2170.275 1957.2943,2170.319 1957.2943,2111.126 2147.5023,2111.126",
-            "type": "polygon"
+         "Escalier B700" : {
+            "class" : "stairs",
+            "id" : "Escalier B700",
+            "points" : "2147.5023,2170.275 1957.2943,2170.319 1957.2943,2111.126 2147.5023,2111.126",
+            "type" : "polygon"
          },
-         "Escalier_C700-2": {
-            "class": "stairs",
-            "id": "Escalier_C700-2",
-            "points": "2322.5747,1251.256 2246.0159,1251.201 2246.0159,1142.00739 2322.5747,1142.10689",
-            "type": "polygon"
+         "Escalier C700-2" : {
+            "class" : "stairs",
+            "id" : "Escalier C700-2",
+            "points" : "2322.5747,1251.256 2246.0159,1251.201 2246.0159,1142.00739 2322.5747,1142.10689",
+            "type" : "polygon"
          },
-         "Escalier_D700": {
-            "class": "stairs",
-            "id": "Escalier_D700",
-            "points": "1854.7203,1372.1549 1810.1615,1372.0999 1810.1395,1287.292 1854.6983,1287.27",
-            "type": "polygon"
+         "Escalier D700" : {
+            "class" : "stairs",
+            "id" : "Escalier D700",
+            "points" : "1854.7203,1372.1549 1810.1615,1372.0999 1810.1395,1287.292 1854.6983,1287.27",
+            "type" : "polygon"
          }
       },
-      "toilets": {
-         "Sanitaires_3_": {
-            "class": "toilets",
-            "id": "Sanitaires_3_",
-            "points": "1438.2703,2004.456 1492.5083,2004.456 1492.5083,2078.17 1438.2703,2078.17",
-            "type": "polygon"
+      "toilets" : {
+         "Sanitaires 3" : {
+            "class" : "toilets",
+            "id" : "Sanitaires 3",
+            "points" : "1438.2703,2004.456 1492.5083,2004.456 1492.5083,2078.17 1438.2703,2078.17",
+            "type" : "polygon"
          },
-         "Sanitaires_700-2_x2F_F_1": {
-            "bubbleSide": "left",
-            "class": "toilets",
-            "id": "Sanitaires_700-2_x2F_F_1",
-            "points": "2121.4493,2032.103 2161.4763,2032.103 2161.4763,2111.127 2121.4493,2111.127",
-            "type": "polygon"
+         "Sanitaires 700-2/F 1" : {
+            "bubbleSide" : "left",
+            "class" : "toilets",
+            "id" : "Sanitaires 700-2/F 1",
+            "points" : "2121.4493,2032.103 2161.4763,2032.103 2161.4763,2111.127 2121.4493,2111.127",
+            "type" : "polygon"
          },
-         "Sanitaires_B710_x2F_F_1": {
-            "bubbleSide": "left",
-            "class": "toilets",
-            "id": "Sanitaires_B710_x2F_F_1",
-            "points": "1953.2943,2032.103 1997.0483,2032.103 1997.0483,2111.127 1953.2943,2111.127",
-            "type": "polygon"
+         "Sanitaires B710/F 1" : {
+            "bubbleSide" : "left",
+            "class" : "toilets",
+            "id" : "Sanitaires B710/F 1",
+            "points" : "1953.2943,2032.103 1997.0483,2032.103 1997.0483,2111.127 1953.2943,2111.127",
+            "type" : "polygon"
          },
-         "Sanitaires_C700_x2F_F_1": {
-            "bubbleSide": "left",
-            "class": "toilets",
-            "id": "Sanitaires_C700_x2F_F_1",
-            "points": "2216.8856,1313.6806 2280.9126,1313.6806 2280.9126,1392.7046 2216.8856,1392.7046 2216.8856,1359.6212 2204.1043,1359.5722 2204.1043,1346.1933 2216.8856,1346.1443",
-            "type": "polygon"
+         "Sanitaires C700/F 1" : {
+            "bubbleSide" : "left",
+            "class" : "toilets",
+            "id" : "Sanitaires C700/F 1",
+            "points" : "2216.8856,1313.6806 2280.9126,1313.6806 2280.9126,1392.7046 2216.8856,1392.7046 2216.8856,1359.6212 2204.1043,1359.5722 2204.1043,1346.1933 2216.8856,1346.1443",
+            "type" : "polygon"
+         }
+      }
+   },
+   "text" : {
+      "Barlow-Regular" : {
+         "rtext Barlow-Regular 14 #000010 Aile CHATILLON" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000010",
+            "direction" : 3.141592653589793,
+            "id" : "rtext Barlow-Regular 14 #000010 Aile CHATILLON",
+            "objects" : [],
+            "point" : [
+               2054.63463,
+               1683.1449
+            ],
+            "size" : "14",
+            "text" : "Aile CHATILLON",
+            "text_type" : "rtext"
+         },
+         "text Barlow-Regular 14 #000010 Aile BRUNE" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000010",
+            "direction" : 3.141592653589793,
+            "id" : "text Barlow-Regular 14 #000010 Aile BRUNE",
+            "objects" : [],
+            "point" : [
+               1515.67544,
+               1910.89293
+            ],
+            "size" : "14",
+            "text" : "Aile BRUNE",
+            "text_type" : "text"
+         },
+         "text Barlow-Regular 14 #000010 Aile DIDOT" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000010",
+            "direction" : 3.141592653589793,
+            "id" : "text Barlow-Regular 14 #000010 Aile DIDOT",
+            "objects" : [],
+            "point" : [
+               1743.12933,
+               1270.74139
+            ],
+            "size" : "14",
+            "text" : "Aile DIDOT",
+            "text_type" : "text"
          }
       }
    }

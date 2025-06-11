@@ -1,0 +1,2922 @@
+{
+   "background" : [
+      {
+         "class" : "st13",
+         "id" : "polygon72",
+         "points" : "1567.3430181175447,270.5252647822744 1570.755433866398,345.6724897423694 1222.5575697272109,507.2364835462887 1222.612568970179,387.35860544869365 1389.4825113026172,309.7836956240499 1375.7402574206071,253.60762842437651 1222.7412232745257,260.5552749098278 1222.845635135237,151.73758693328386 1519.9994554619932,138.24390897019003 1551.623328420607,206.41711051250002",
+         "type" : "polygon"
+      }
+   ],
+   "decor" : [],
+   "desks" : {
+      "desks" : {
+         "Poste DI811:I13A6:AB" : {
+            "class" : "desks",
+            "direction" : 2.708785074606,
+            "id" : "Poste DI811:I13A6:AB",
+            "indicator_a" : 6,
+            "indicator_x" : 1,
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI811",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI811",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1349.115272447992,
+               343.94609245843236
+            ]
+         },
+         "Poste DI814:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.1383833034488,
+            "id" : "Poste DI814:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI814",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI814",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI814",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI814",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1309.7978522738267,
+               352.7736316508314
+            ]
+         },
+         "Poste DI819:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.1383861290222,
+            "id" : "Poste DI819:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI819",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI819",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI819",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI819",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1283.2906251330428,
+               364.89852535629456
+            ]
+         },
+         "Poste DI822:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.1383834313522,
+            "id" : "Poste DI822:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI822",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI822",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI822",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI822",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1254.8718493710694,
+               378.01531989311167
+            ]
+         },
+         "Poste DI827:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : -0.0214299176149,
+            "id" : "Poste DI827:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI827",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI827",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI827",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI827",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1228.0145612723754,
+               400.3924552850357
+            ]
+         },
+         "Poste DI832:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -0.0214298382923,
+            "id" : "Poste DI832:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DI832",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI832",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI832",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI832",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI832",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI832",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1227.263288896952,
+               439.1076476840856
+            ]
+         },
+         "Poste DI836:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : -0.0214299176149,
+            "id" : "Poste DI836:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI836",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI836",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI836",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI836",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1230.005133357523,
+               474.46824507125893
+            ]
+         },
+         "Poste DI846:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : -2.0032063966647,
+            "id" : "Poste DI846:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI846",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI846",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI846",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI846",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1275.9832025399128,
+               476.95622755344425
+            ]
+         },
+         "Poste DI850:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : -2.0032093501409,
+            "id" : "Poste DI850:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI850",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI850",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI850",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI850",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1308.4675407111758,
+               462.0663590855107
+            ]
+         },
+         "Poste DI850:I00A9:-@" : {
+            "class" : "desks",
+            "direction" : 3.1262004518273,
+            "id" : "Poste DI850:I00A9:-@",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "@",
+                  "office" : "DI850",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1295.5624395984519,
+               464.0188166270784
+            ]
+         },
+         "Poste DI857:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : -2.0032065245675,
+            "id" : "Poste DI857:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DI857",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI857",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI857",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI857",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1352.3266621432026,
+               441.68010938242287
+            ]
+         },
+         "Poste DI860:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -2.0032065245675,
+            "id" : "Poste DI860:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DI860",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI860",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI860",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI860",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI860",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI860",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1383.0829739477504,
+               427.6345823634204
+            ]
+         },
+         "Poste DI864:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -2.0032093501408,
+            "id" : "Poste DI864:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DI864",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI864",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI864",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI864",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI864",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI864",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1411.6062485002417,
+               414.4867670427554
+            ]
+         },
+         "Poste DI868:I00A9:BA" : {
+            "class" : "desks",
+            "direction" : 2.7092681675743,
+            "id" : "Poste DI868:I00A9:BA",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "B",
+                  "office" : "DI868",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI868",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1449.690363159168,
+               384.28633889548695
+            ]
+         },
+         "Poste DI868:I03A0:FCED" : {
+            "class" : "desks",
+            "direction" : -2.0032065245675,
+            "id" : "Poste DI868:I03A0:FCED",
+            "indicator_y" : 3,
+            "objects" : [
+               {
+                  "desk" : "F",
+                  "office" : "DI868",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI868",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI868",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI868",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1432.8501732704403,
+               404.5261951900238
+            ]
+         },
+         "Poste DI873:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -2.0032065245675,
+            "id" : "Poste DI873:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DI873",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI873",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI873",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI873",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI873",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI873",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1482.5239630624092,
+               381.82045112826603
+            ]
+         },
+         "Poste DI877:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : -2.0032065245675,
+            "id" : "Poste DI877:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DI877",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI877",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI877",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI877",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI877",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI877",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1505.765253338171,
+               371.0276678741093
+            ]
+         },
+         "Poste DI879:I2.1-1A4:1GX=A,2C=B" : {
+            "class" : "desks",
+            "direction" : 1.1384062080219,
+            "id" : "Poste DI879:I2.1-1A4:1GX=A,2C=B",
+            "indicator_a" : 4,
+            "indicator_x" : 2.1,
+            "indicator_y" : -1,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI879",
+                  "position" : 1,
+                  "side" : "GX"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI879",
+                  "position" : 2,
+                  "side" : "C"
+               }
+            ],
+            "point" : [
+               1513.968808006773,
+               348.3794876484561
+            ]
+         },
+         "Poste DI884:I-0.82.3A0:FCED" : {
+            "class" : "desks",
+            "direction" : -1.9884709622655,
+            "id" : "Poste DI884:I-0.82.3A0:FCED",
+            "indicator_x" : -0.8,
+            "indicator_y" : 2.3,
+            "objects" : [
+               {
+                  "desk" : "F",
+                  "office" : "DI884",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI884",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI884",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI884",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1541.2745617561682,
+               347.4384389548694
+            ]
+         },
+         "Poste DI884:I00A9:BA" : {
+            "class" : "desks",
+            "direction" : 3.1001572417826,
+            "id" : "Poste DI884:I00A9:BA",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "B",
+                  "office" : "DI884",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DI884",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1565.1711173923559,
+               330.16475160332544
+            ]
+         },
+         "Poste DI889:I2-3A2:A" : {
+            "class" : "desks",
+            "direction" : 1.5277163512209,
+            "id" : "Poste DI889:I2-3A2:A",
+            "indicator_a" : 2,
+            "indicator_x" : 2,
+            "indicator_y" : -3,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI889",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1553.9701657716496,
+               305.6668175178147
+            ]
+         },
+         "Poste DP838:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : 1.5335252873516,
+            "id" : "Poste DP838:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DP838",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP838",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP838",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP838",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP838",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP838",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1244.00237670537,
+               156.85729162707838
+            ]
+         },
+         "Poste DP844:I30A4:1DX=A,2C=B" : {
+            "class" : "desks",
+            "direction" : -1.5867982926741,
+            "id" : "Poste DP844:I30A4:1DX=A,2C=B",
+            "indicator_a" : 4,
+            "indicator_x" : 3,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP844",
+                  "position" : 1,
+                  "side" : "DX"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP844",
+                  "position" : 2,
+                  "side" : "C"
+               }
+            ],
+            "point" : [
+               1270.3260815916788,
+               174.7250220902613
+            ]
+         },
+         "Poste DP846:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.5315146227453,
+            "id" : "Poste DP846:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DP846",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP846",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP846",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP846",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1298.4999945089503,
+               153.36603761876484
+            ]
+         },
+         "Poste DP849:I14A6:-A" : {
+            "class" : "desks",
+            "direction" : 3.1262004518273,
+            "id" : "Poste DP849:I14A6:-A",
+            "indicator_a" : 6,
+            "indicator_x" : 1,
+            "indicator_y" : 4,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP849",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1328.210119569424,
+               163.53413714370546
+            ]
+         },
+         "Poste DP852:I00A0:A" : {
+            "class" : "desks",
+            "direction" : 1.5547943549814,
+            "id" : "Poste DP852:I00A0:A",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP852",
+                  "position" : 1,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1341.4808665457185,
+               151.23522722684086
+            ]
+         },
+         "Poste DP854:I00A0:1G=C,1D=B,2G=D,2D=A,3G=E" : {
+            "class" : "desks",
+            "direction" : 1.5254183078246,
+            "id" : "Poste DP854:I00A0:1G=C,1D=B,2G=D,2D=A,3G=E",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DP854",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP854",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP854",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP854",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP854",
+                  "position" : 3,
+                  "side" : "G"
+               }
+            ],
+            "point" : [
+               1364.00714932269,
+               149.7912685273159
+            ]
+         },
+         "Poste DP857:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.5254183064065,
+            "id" : "Poste DP857:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DP857",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP857",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP857",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP857",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1384.6652414852442,
+               148.85318963776723
+            ]
+         },
+         "Poste DP862:I00A0:CBDA" : {
+            "class" : "desks",
+            "direction" : 1.5254182978982,
+            "id" : "Poste DP862:I00A0:CBDA",
+            "objects" : [
+               {
+                  "desk" : "C",
+                  "office" : "DP862",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP862",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP862",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP862",
+                  "position" : 2,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1428.4465382922108,
+               146.55163168052258
+            ]
+         },
+         "Poste DP865:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : 1.5254183120787,
+            "id" : "Poste DP865:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DP865",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP865",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP865",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP865",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP865",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP865",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1456.587483139816,
+               145.3413508016627
+            ]
+         },
+         "Poste DP869:I00A0:DCEBFA" : {
+            "class" : "desks",
+            "direction" : 1.5254151180778,
+            "id" : "Poste DP869:I00A0:DCEBFA",
+            "objects" : [
+               {
+                  "desk" : "D",
+                  "office" : "DP869",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP869",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP869",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP869",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP869",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP869",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1486.5039083938073,
+               143.9352715558195
+            ]
+         },
+         "Poste DP872:I00A9:-@" : {
+            "class" : "desks",
+            "direction" : 3.1262004518273,
+            "id" : "Poste DP872:I00A9:-@",
+            "indicator_a" : 9,
+            "objects" : [
+               {
+                  "desk" : "@",
+                  "office" : "DP872",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1517.2198592888244,
+               152.9082302256532
+            ]
+         },
+         "Poste DP878:I00A0:BA" : {
+            "class" : "desks",
+            "direction" : 2.7302301587105,
+            "id" : "Poste DP878:I00A0:BA",
+            "objects" : [
+               {
+                  "desk" : "B",
+                  "office" : "DP878",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "A",
+                  "office" : "DP878",
+                  "position" : 1,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1526.9593263909046,
+               165.85771633016628
+            ]
+         },
+         "Poste DP879:I30A4:1GX=A,2C=B" : {
+            "class" : "desks",
+            "direction" : -0.4369315024334,
+            "id" : "Poste DP879:I30A4:1GX=A,2C=B",
+            "indicator_a" : 4,
+            "indicator_x" : 3,
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP879",
+                  "position" : 1,
+                  "side" : "GX"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP879",
+                  "position" : 2,
+                  "side" : "C"
+               }
+            ],
+            "point" : [
+               1520.5221609337204,
+               197.43608652019003
+            ]
+         }
+      },
+      "meeting" : {
+         "SDR DI8 CORDOUE:10" : {
+            "class" : "meeting",
+            "direction" : -0.4340191837761,
+            "id" : "SDR DI8 CORDOUE:10",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DI8 CORDOUE",
+                  "position" : 5,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1377.6463394533139,
+               335.5824149049882
+            ]
+         },
+         "SDR DI856:10" : {
+            "class" : "meeting",
+            "direction" : -0.4340191837761,
+            "id" : "SDR DI856:10",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI856",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI856",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI856",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI856",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI856",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI856",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DI856",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DI856",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DI856",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DI856",
+                  "position" : 5,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1307.849539259797,
+               407.462195783848
+            ]
+         },
+         "SDR DI893:6" : {
+            "class" : "meeting",
+            "direction" : 1.3957181780796,
+            "id" : "SDR DI893:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI893",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI893",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI893",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI893",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI893",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI893",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1513.1330174891145,
+               289.3229992280285
+            ]
+         },
+         "SDR DI895:20" : {
+            "class" : "meeting",
+            "direction" : 1.3411014021747,
+            "id" : "SDR DI895:20",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DI895",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DI895",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DI895",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DI895",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DI895",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DI895",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DI895",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DI895",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DI895",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DI895",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "DI895",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "DI895",
+                  "position" : 6,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "DI895",
+                  "position" : 7,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "DI895",
+                  "position" : 7,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "DI895",
+                  "position" : 8,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "DI895",
+                  "position" : 8,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "Q",
+                  "office" : "DI895",
+                  "position" : 9,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "R",
+                  "office" : "DI895",
+                  "position" : 9,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "S",
+                  "office" : "DI895",
+                  "position" : 10,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "T",
+                  "office" : "DI895",
+                  "position" : 10,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1545.4109555636187,
+               245.20235195962
+            ]
+         },
+         "SDR DP8 DORTMUND:10" : {
+            "class" : "meeting",
+            "direction" : -0.0538535139232,
+            "id" : "SDR DP8 DORTMUND:10",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DP8 DORTMUND",
+                  "position" : 5,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1354.7289354862119,
+               239.5997789192399
+            ]
+         },
+         "SDR DP8 ESSEN:12" : {
+            "class" : "meeting",
+            "direction" : -1.586791895384,
+            "id" : "SDR DP8 ESSEN:12",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP8 ESSEN",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP8 ESSEN",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP8 ESSEN",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP8 ESSEN",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP8 ESSEN",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP8 ESSEN",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP8 ESSEN",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP8 ESSEN",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DP8 ESSEN",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DP8 ESSEN",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "DP8 ESSEN",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "DP8 ESSEN",
+                  "position" : 6,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1239.729015553943,
+               228.94815688836104
+            ]
+         },
+         "SDR DP8 GRONINGUE:12" : {
+            "class" : "meeting",
+            "direction" : -0.0403685897786,
+            "id" : "SDR DP8 GRONINGUE:12",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "DP8 GRONINGUE",
+                  "position" : 6,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1229.220293492985,
+               245.00677209026128
+            ]
+         },
+         "SDR DP8 KATOWICE:24" : {
+            "class" : "meeting",
+            "direction" : -0.0452891674746,
+            "id" : "SDR DP8 KATOWICE:24",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 5,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "K",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 6,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "L",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 6,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "M",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 7,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "N",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 7,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "O",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 8,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "P",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 8,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "Q",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 9,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "R",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 9,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "S",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 10,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "T",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 10,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "U",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 11,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "V",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 11,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "W",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 12,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "X",
+                  "office" : "DP8 KATOWICE",
+                  "position" : 12,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1272.9749161344944,
+               242.20923824228032
+            ]
+         },
+         "SDR DP881:6" : {
+            "class" : "meeting",
+            "direction" : -1.7458706602614,
+            "id" : "SDR DP881:6",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP881",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP881",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP881",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP881",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP881",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP881",
+                  "position" : 3,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1494.2615948959847,
+               215.36176882422802
+            ]
+         },
+         "SDR DP883:10" : {
+            "class" : "meeting",
+            "direction" : -1.793760181289,
+            "id" : "SDR DP883:10",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP883",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP883",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP883",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP883",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP883",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP883",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP883",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP883",
+                  "position" : 4,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "I",
+                  "office" : "DP883",
+                  "position" : 5,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "J",
+                  "office" : "DP883",
+                  "position" : 5,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1538.2193208272856,
+               225.43729198337292
+            ]
+         },
+         "SDR DP886:8" : {
+            "class" : "meeting",
+            "direction" : 2.9027784763144,
+            "id" : "SDR DP886:8",
+            "objects" : [
+               {
+                  "desk" : "A",
+                  "office" : "DP886",
+                  "position" : 1,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "B",
+                  "office" : "DP886",
+                  "position" : 1,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "C",
+                  "office" : "DP886",
+                  "position" : 2,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "D",
+                  "office" : "DP886",
+                  "position" : 2,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "E",
+                  "office" : "DP886",
+                  "position" : 3,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "F",
+                  "office" : "DP886",
+                  "position" : 3,
+                  "side" : "D"
+               },
+               {
+                  "desk" : "G",
+                  "office" : "DP886",
+                  "position" : 4,
+                  "side" : "G"
+               },
+               {
+                  "desk" : "H",
+                  "office" : "DP886",
+                  "position" : 4,
+                  "side" : "D"
+               }
+            ],
+            "point" : [
+               1552.9011011852926,
+               232.53587808788598
+            ]
+         }
+      }
+   },
+   "furniture" : {
+      "borne-orientation" : {
+         "Meuble borne-orientation 1" : {
+            "class" : "borne-orientation",
+            "direction" : -0.0538535139232,
+            "id" : "Meuble borne-orientation 1",
+            "objects" : [],
+            "point" : [
+               1402.2712896226412,
+               221.6588997624703
+            ]
+         },
+         "Meuble borne-orientation 2" : {
+            "class" : "borne-orientation",
+            "direction" : -0.41779359198,
+            "id" : "Meuble borne-orientation 2",
+            "objects" : [],
+            "point" : [
+               1428.2067705128206,
+               326.25356573634207
+            ]
+         }
+      },
+      "ecran-orientation" : {
+         "Meuble ecran-orientation 1" : {
+            "class" : "ecran-orientation",
+            "direction" : -1.6100781571969,
+            "id" : "Meuble ecran-orientation 1",
+            "objects" : [],
+            "point" : [
+               1422.105579656507,
+               186.55201437054632
+            ]
+         },
+         "Meuble ecran-orientation 2" : {
+            "class" : "ecran-orientation",
+            "direction" : 1.5144950671963,
+            "id" : "Meuble ecran-orientation 2",
+            "objects" : [],
+            "point" : [
+               1306.046585462022,
+               212.78143925178148
+            ]
+         },
+         "Meuble ecran-orientation 3" : {
+            "class" : "ecran-orientation",
+            "direction" : -2.004684736081,
+            "id" : "Meuble ecran-orientation 3",
+            "objects" : [],
+            "point" : [
+               1354.136109651669,
+               374.98193598574824
+            ]
+         },
+         "Meuble ecran-orientation 4" : {
+            "class" : "ecran-orientation",
+            "direction" : 1.1370353019353,
+            "id" : "Meuble ecran-orientation 4",
+            "objects" : [],
+            "point" : [
+               1461.273045065312,
+               347.9703973871734
+            ]
+         }
+      },
+      "table-basse-1" : {
+         "Meuble table-basse-1" : {
+            "class" : "table-basse-1",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-basse-1",
+            "objects" : [],
+            "point" : [
+               1438.5085929608126,
+               260.99952446555824
+            ]
+         },
+         "Meuble table-basse-1 4" : {
+            "class" : "table-basse-1",
+            "direction" : 1.3668632689025,
+            "id" : "Meuble table-basse-1 4",
+            "objects" : [],
+            "point" : [
+               1441.2081783502658,
+               263.4646381828979
+            ]
+         },
+         "Meuble table-basse-1 5" : {
+            "class" : "table-basse-1",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-basse-1 5",
+            "objects" : [],
+            "point" : [
+               1437.3347298742137,
+               263.64053366983376
+            ]
+         },
+         "Meuble table-basse-1 6" : {
+            "class" : "table-basse-1",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-basse-1 6",
+            "objects" : [],
+            "point" : [
+               1462.3218292936622,
+               255.27820825415677
+            ]
+         },
+         "Meuble table-basse-1 7" : {
+            "class" : "table-basse-1",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-basse-1 7",
+            "objects" : [],
+            "point" : [
+               1458.7328053459119,
+               256.94132790973873
+            ]
+         }
+      },
+      "table-basse-2" : {
+         "Meuble table-basse-2" : {
+            "class" : "table-basse-2",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-basse-2",
+            "objects" : [],
+            "point" : [
+               1461.052059095307,
+               258.84370736342044
+            ]
+         }
+      },
+      "table-co-working" : {
+         "Meuble table-co-working" : {
+            "class" : "table-co-working",
+            "direction" : 1.3668593153987,
+            "id" : "Meuble table-co-working",
+            "objects" : [],
+            "point" : [
+               1481.3920593372036,
+               249.19934958432304
+            ]
+         }
+      }
+   },
+   "itineraries" : [
+      {
+         "id" : "polygon75",
+         "points" : "1261.718029089533,412.30087883464967 1443.1017125648234,328.11518494412115 1417.7040386062602,273.11531331033257 1414.9571025610062,212.62308840688837 1261.8964434890831,219.63822586036224 1261.932958965005,189.10166233702495 1495.5631296716158,178.4925768387767 1514.5644487200411,219.42114895424584 1528.4592687402371,276.10782893402614 1530.5084771667393,321.23489959305226 1261.696050308488,446.00671945994657 1261.718029089533,412.30087883464967",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line77",
+         "points" : "1443.1017443880019,328.1151850950119 1456.1377187469766,355.75479168646086",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line81",
+         "points" : "1413.5600561925494,180.1378255344418 1414.9571031204646,212.62309216152016",
+         "type" : "polyline"
+      },
+      {
+         "id" : "polyline85",
+         "points" : "1414.0071883858973,246.15254768677403 1465.864381137374,243.88684005570366 1517.4279034739052,231.19453849293643",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line87",
+         "type" : "line",
+         "x1" : 1321.7123128447024,
+         "x2" : 1323.0960726415092,
+         "y1" : 186.38710255344418,
+         "y2" : 216.8591732185273
+      },
+      {
+         "id" : "line89",
+         "type" : "line",
+         "x1" : 1334.6388931543302,
+         "x2" : 1347.4756604499275,
+         "y1" : 378.4546666864608,
+         "y2" : 406.142401543943
+      },
+      {
+         "id" : "line91",
+         "type" : "line",
+         "x1" : 1306.6135363570393,
+         "x2" : 1293.7739717706822,
+         "y1" : 425.1414656769596,
+         "y2" : 397.3891809382423
+      },
+      {
+         "id" : "polyline93",
+         "points" : "1483.2897112765825,239.5976316586781 1478.7003207089815,221.69665567289195 1476.9970444632052,184.18760266445963",
+         "type" : "polyline"
+      },
+      {
+         "id" : "polyline10790",
+         "points" : "1489.7444698355102,193.94337749406174 1477.4653624334783,194.50096775534445",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path10795",
+         "points" : "1465.477073367199,193.75150130641333 1477.4067192307693,193.2097741686461",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path10797",
+         "points" : "1468.9307284228348,230.63118628266034 1480.3491694000963,228.12783058194776",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path10799",
+         "points" : "1482.8373595307207,287.5760960213777 1494.1394132317369,284.90320380047507",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path10801",
+         "points" : "1498.3220622399613,322.29213521377676 1508.0188706579584,317.6136111638955",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path10803",
+         "points" : "1515.2832349540395,311.1711156175772 1506.7968542089984,314.97359156769596",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line12659",
+         "points" : "1261.91482808418,204.28906365795723 1248.9674679003388,204.8769986342043",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line12659-8",
+         "points" : "1261.9329105708757,189.10166609263658 1262.0452018142237,182.86572428741093 1236.1126181180457,182.99134572446553",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line12662",
+         "points" : "1472.7747054426704,179.52739412114016 1472.3848829946783,167.3828846199525",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line12665",
+         "points" : "1249.6643929124334,428.21270944180526 1261.7078285679731,427.9877352731592",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path17097",
+         "points" : "1430.2365046686018,325.352503087886 1439.9334129898402,320.673969239905",
+         "type" : "polyline"
+      },
+      {
+         "id" : "path17099",
+         "points" : "1403.4057908321238,221.49638847980998 1415.3354366956942,220.95467114014252",
+         "type" : "polyline"
+      },
+      {
+         "id" : "line17101",
+         "points" : "1333.4798157474602,398.12772250593827 1338.9738946057087,410.13747874109265",
+         "type" : "polyline"
+      }
+   ],
+   "pois" : {
+      "bulle" : {
+         "DI808" : {
+            "class" : "bulle",
+            "id" : "DI808",
+            "points" : "1359.6842361635222,344.1512548693587 1374.6040859458153,337.19878782660334 1368.049534179971,323.07047666270785 1353.0981149733916,330.03731751781476",
+            "type" : "polygon"
+         },
+         "DI829" : {
+            "class" : "bulle",
+            "id" : "DI829",
+            "points" : "1239.3337983309143,414.25452268408554 1231.2219548379294,414.270591567696 1231.2319451620706,426.07005118764846 1239.3171144895987,426.12785997624707",
+            "type" : "polygon"
+         },
+         "DI848" : {
+            "class" : "bulle",
+            "id" : "DI848",
+            "points" : "1289.1517485002419,447.6576459026129 1285.6030854620221,440.2868783847982 1275.0521043299464,445.1901414489312 1278.4984664489593,452.5795743467934",
+            "type" : "polygon"
+         },
+         "DI849" : {
+            "class" : "bulle",
+            "id" : "DI849",
+            "points" : "1266.5879939275665,438.344929015202 1289.3944725044605,427.73478850950124 1280.6449475186696,408.85370852986944 1266.5831022572618,415.4439721209027",
+            "type" : "polygon"
+         },
+         "DI854" : {
+            "class" : "bulle",
+            "id" : "DI854",
+            "points" : "1329.9930927189162,436.8249647862233 1315.067148838897,443.784182719715 1321.6215007982582,457.90604673396683 1336.5728201015963,450.93919608076015",
+            "type" : "polygon"
+         },
+         "DI855" : {
+            "class" : "bulle",
+            "id" : "DI855",
+            "points" : "1345.1146471456218,421.6556447149644 1341.565984107402,414.2848771971497 1331.0150029753263,419.1881402612827 1334.4613650943393,426.57757315914495",
+            "type" : "polygon"
+         },
+         "DI869" : {
+            "class" : "bulle",
+            "id" : "DI869",
+            "points" : "1431.2981764150945,381.6371482779098 1427.7495133768743,374.26638076009505 1417.198532244799,379.16964382422805 1420.644894363812,386.5590767220903",
+            "type" : "polygon"
+         },
+         "DI872" : {
+            "class" : "bulle",
+            "id" : "DI872",
+            "points" : "1464.6289947508467,374.2935704869359 1449.7030508708272,381.2527884204276 1456.2574028301888,395.3746524346794 1471.2087221335269,388.4078017814727",
+            "type" : "polygon"
+         },
+         "DI891" : {
+            "class" : "bulle",
+            "id" : "DI891",
+            "points" : "1564.9559258103532,287.02804910926363 1565.6798246976296,304.0903816508314 1534.5937322931786,305.47483355106885 1533.869733502661,288.41250100950117",
+            "type" : "polygon"
+         },
+         "DP809" : {
+            "class" : "bulle",
+            "id" : "DP809",
+            "points" : "1349.9771377116595,236.14659542755345 1334.5461829462993,236.8932988123516 1335.2203300193519,252.45306336104517 1350.68365343493,251.70490005938245",
+            "type" : "polygon"
+         },
+         "DP832" : {
+            "class" : "bulle",
+            "id" : "DP832",
+            "points" : "1242.6923455007254,197.1389101543943 1242.6763609820996,185.93320558194773 1255.7926575471697,185.93320558194773 1255.8346169085626,197.1389101543943",
+            "type" : "polygon"
+         },
+         "DP833" : {
+            "class" : "bulle",
+            "id" : "DP833",
+            "points" : "1242.6763609820996,185.93320558194773 1242.6923455007259,196.95656751781473 1229.5760489356558,196.95656751781473 1229.5340895742625,185.93320558194773",
+            "type" : "polygon"
+         },
+         "DP845" : {
+            "class" : "bulle",
+            "id" : "DP845",
+            "points" : "1272.675485685535,193.4658034052191 1285.5222392981686,192.88243571485214 1286.463291998627,213.60602578612566 1273.6165383859934,214.18939347649268",
+            "type" : "polygon"
+         },
+         "DP851" : {
+            "class" : "bulle",
+            "id" : "DP851",
+            "points" : "1330.2082258846444,165.49375867749603 1346.8638172040855,164.7374326722893 1347.570339679858,180.29626604784613 1330.914748360417,181.05259205305288",
+            "type" : "polygon"
+         },
+         "DP860" : {
+            "class" : "bulle",
+            "id" : "DP860",
+            "points" : "1411.9404248427672,146.19139180522566 1395.4968508224479,146.93809225059383 1396.1709978955005,162.49786169833732 1412.6469405660378,161.74969447743467",
+            "type" : "polygon"
+         },
+         "DP876" : {
+            "class" : "bulle",
+            "id" : "DP876",
+            "points" : "1515.5001248911467,178.48668895486935 1510.2176410982097,167.14923913301664 1502.7944306482823,170.74957048693585 1508.0743169569423,182.14976733966745",
+            "type" : "polygon"
+         }
+      },
+      "chat-area" : {
+         "Convivialité 1" : {
+            "class" : "chat-area",
+            "id" : "Convivialité 1",
+            "points" : "1430.9072550314463,289.9380945368171 1471.850300749879,271.01184988123515 1494.3453138122886,265.395422327791 1488.9291594823417,243.22714323040384 1466.6009848330918,248.70510403800478 1421.959820827286,250.73224269596204 1422.9660462747943,272.09380504750595",
+            "type" : "polygon"
+         },
+         "Convivialité 2" : {
+            "class" : "chat-area",
+            "id" : "Convivialité 2",
+            "points" : "1411.7921684325106,251.19395855106887 1403.5940085389452,251.56623735154398 1403.4914079100145,249.30664857482185 1378.184518214804,250.45582850356294 1393.1213515481372,311.5589831947744 1416.1177789791968,300.8752723871734 1415.185481930334,298.8479475653207 1422.565334373488,295.4420399049881 1412.9358607402032,274.51202505938244",
+            "type" : "polygon"
+         },
+         "Convivialité-1" : {
+            "class" : "chat-area",
+            "id" : "Convivialité-1",
+            "points" : "1517.2198592888244,152.7953169239905 1517.070004426705,154.2718905581948 1516.6304301644896,155.64852357482187 1515.951088122883,156.89386205463182 1515.0319783018863,157.9804713182898 1513.933042646347,158.87797725653206 1512.6642714804061,159.55698557007125 1511.2656261006287,159.98810195961994 1509.757087155297,160.14291193586698 1508.248548209966,159.99985967933492 1506.8399125060469,159.57854138954866 1505.571141340106,158.90933117577197 1504.4622153604255,158.01966371733965 1503.5431055394288,156.9399131235154 1502.8437828495398,155.69947369358667 1502.3942182631827,154.3267599168646 1502.2343730769226,152.8501862826603 1502.3742376149003,151.37263283847977 1502.803821552975,149.99306039192396 1503.47317327044,148.7418430522565 1504.3822927672954,147.64837511876482 1505.4812284228346,146.74303070071255 1506.7400092646344,146.05422428741088 1508.1386546444119,145.61232998812346 1509.6471935897434,145.447721912114 1511.1457422109333,145.5790164489311 1512.5543779148525,145.98955682897858 1513.8331394049346,146.64994875296907 1514.9520557087562,147.53079792161518 1515.8811558538941,148.6036898456057 1516.5904688679243,149.83923022565318 1517.0400334542815,151.20900457244653",
+            "type" : "polygon"
+         },
+         "Convivialité-3" : {
+            "class" : "chat-area",
+            "id" : "Convivialité-3",
+            "points" : "1296.3922359216253,464.1792017220903 1296.2589649975807,465.5010731591449 1295.865346226415,466.7334683491687 1295.2572351959361,467.8483255344418 1294.4343321964197,468.82109067695967 1293.4506848814708,469.62455445368175 1292.3146851233673,470.2324285629454 1291.062597798742,470.6183757125891 1289.7121057813256,470.75696003562945 1288.3613140541847,470.628898871734 1287.1004352443156,470.2517210213777 1285.9648350991774,469.65261621140144 1284.9720965892598,468.8561678741093 1284.1489937832607,467.88954614014256 1283.52309997581,466.77907850356297 1283.1206897194002,465.5501910332542 1282.9792267295597,464.2283195961996 1283.1042056845668,462.90558592636586 1283.4886333575228,461.670555047506 1284.0880528059988,460.5504362826604 1284.9018646105465,459.5715277315916 1285.8857117319785,458.7610387173398 1287.012520391872,458.1443953087887 1288.2646077164973,457.74880682897873 1289.6150997339137,457.6014434085512 1290.9568002660858,457.7189814133018 1292.217878882438,458.086508135392 1293.3626701257858,458.67770587885997 1294.364100217707,459.4662667458433 1295.1959945089502,460.426745071259 1295.8309795113692,461.53283295724475 1296.2332898645382,462.75908473871743",
+            "type" : "polygon"
+         },
+         "Espace échange-2" : {
+            "class" : "chat-area",
+            "id" : "Espace échange-2",
+            "points" : "1458.0765409530723,360.16643509501193 1443.1451023947752,367.121096912114 1449.6417102806,381.18441728028506 1464.5863360667636,374.21140362232785",
+            "type" : "polygon"
+         },
+         "Espace échange-2-4" : {
+            "class" : "chat-area",
+            "id" : "Espace échange-2-4",
+            "points" : "1323.413365336236,422.7107334916865 1308.4939151669087,429.6696574821853 1315.048466932753,443.79797844418056 1329.9930927189162,436.8249647862233",
+            "type" : "polygon"
+         },
+         "Espace échange-3" : {
+            "class" : "chat-area",
+            "id" : "Espace échange-3",
+            "points" : "1366.3003283260764,358.3479469714964 1381.219578688921,351.3890229809976 1374.6651268263186,337.2607118171021 1359.7204011369136,344.2337156769596",
+            "type" : "polygon"
+         },
+         "Espace échange-5" : {
+            "class" : "chat-area",
+            "id" : "Espace échange-5",
+            "points" : "1412.6469405660378,161.75075463182898 1396.2033665457184,162.49745507719717 1396.877513618771,178.0572284441805 1413.3534562893083,177.30905534441806",
+            "type" : "polygon"
+         },
+         "Espace échange-5-8" : {
+            "class" : "chat-area",
+            "id" : "Espace échange-5-8",
+            "points" : "1349.3029906386068,220.5868210807601 1333.8720358732462,221.33352446555818 1334.5461829462993,236.8932988123516 1350.0095063618774,236.1451257125891",
+            "type" : "polygon"
+         }
+      },
+      "elevator" : {
+         "Ascenseur" : {
+            "class" : "elevator",
+            "id" : "Ascenseur",
+            "points" : "1418.5088060934372,186.8435384095309 1441.4263829381034,185.8028571849169 1443.1091377833284,222.85999389204278 1443.8889510042864,240.0328133416865 1420.9713741596202,241.0734945663005",
+            "type" : "polygon"
+         },
+         "Ascenseur 1" : {
+            "class" : "elevator",
+            "id" : "Ascenseur 1",
+            "points" : "1458.297976665491,349.3559166120547 1456.073919698822,344.54027315792763 1435.4940485044606,300.18998249619955 1456.272828510063,290.5129230065321 1463.446732978568,306.03684391152024 1479.0767566710933,339.6788571223872",
+            "type" : "polygon"
+         }
+      },
+      "flat-cccccc" : {
+         "A-D" : {
+            "class" : "flat-cccccc",
+            "id" : "A-D",
+            "points" : "962.4906273101113,266.2405378266033 962.4906273101113,411.21473081947744 1007.0256940735363,337.7983139548694",
+            "type" : "polygon"
+         },
+         "B-D" : {
+            "class" : "flat-cccccc",
+            "id" : "B-D",
+            "points" : "668.5012627721335,266.2405378266033 668.5012627721335,411.21473081947744 713.0363295355588,337.7983139548694",
+            "type" : "polygon"
+         },
+         "C-D" : {
+            "class" : "flat-cccccc",
+            "id" : "C-D",
+            "points" : "297.65872230285436,266.2405378266033 297.65872230285436,411.21473081947744 342.1937890662797,337.7983139548694",
+            "type" : "polygon"
+         }
+      },
+      "glass" : {
+         "Cloison vitrée 2" : {
+            "class" : "glass",
+            "id" : "Cloison vitrée 2",
+            "points" : "1506.2911440009675,325.4863843230404 1515.1904248427672,321.3546922209026 1515.807926777939,322.6848332541568 1506.9086459361392,326.8165155581948",
+            "type" : "polygon"
+         },
+         "Vitre 1" : {
+            "class" : "glass",
+            "id" : "Vitre 1",
+            "points" : "1472.0261395031398,184.4133428383441 1481.8387435811683,183.96775507741316 1481.9193633634054,185.7431405769839 1472.1067592853774,186.18872833791485",
+            "type" : "polygon"
+         }
+      },
+      "invisible" : {
+         "DI814,DI819,DI822,DI827,DI832,DI836,DI846,DI850" : {
+            "class" : "invisible",
+            "id" : "DI814,DI819,DI822,DI827,DI832,DI836,DI846,DI850",
+            "points" : "1256.8041066894098,453.6685097087293 1256.8529559218046,409.1577853524347 1336.4261996089162,372.2276979829573 1323.2402872043879,343.97356898153214 1225.6759825936188,389.2896595096794 1225.5743201889961,502.44162657366394 1321.6215154071092,457.90604614706064 1308.500159557073,429.6489856492281",
+            "type" : "polygon"
+         },
+         "DI857,DI860" : {
+            "class" : "invisible",
+            "id" : "DI857,DI860",
+            "points" : "1323.4517378575665,422.6947010158552 1383.3231415648886,394.9399213958136 1396.379940860433,423.1999133900535 1336.5730937076028,450.9517615136877",
+            "type" : "polygon"
+         },
+         "DI864,DI868" : {
+            "class" : "invisible",
+            "id" : "DI864,DI868",
+            "points" : "1383.2980722809798,394.8983044909827 1443.144461732828,367.1208930600079 1456.2573202216668,395.37487327088866 1396.4109307698186,423.15228470186344",
+            "type" : "polygon"
+         },
+         "DI873,DI877" : {
+            "class" : "invisible",
+            "id" : "DI873,DI877",
+            "points" : "1458.1354838655056,360.2935360451306 1504.203266158684,338.8420565320665 1517.1602170537008,367.24880534441803 1471.2479841074019,388.5468074228029",
+            "type" : "polygon"
+         },
+         "DI884,DI887" : {
+            "class" : "invisible",
+            "id" : "DI884,DI887",
+            "points" : "1565.6798246976296,304.0903816508314 1567.5629008950168,343.7472988123516 1531.9953488872761,360.2148377078385 1518.792136502177,332.0208840261283 1535.49975478955,324.3075749406176 1534.5937322931786,305.47483355106885",
+            "type" : "polygon"
+         },
+         "DP852,DP854,DP857" : {
+            "class" : "invisible",
+            "id" : "DP852,DP854,DP857",
+            "points" : "1395.6075484902105,146.93307295353327 1346.157227749325,149.17859920157363 1329.5016366903847,149.9349252746734 1330.208159195087,165.49375793393708 1346.8637502540275,164.73743186083732 1347.57027275873,180.29626452010098 1397.0205934996154,178.05073827206058",
+            "type" : "polygon"
+         },
+         "DP862,DP865,DP869,DP872,DP878" : {
+            "class" : "invisible",
+            "id" : "DP862,DP865,DP869,DP872,DP878",
+            "points" : "1507.2823839622642,192.08508948931114 1498.6326614175132,173.4365523752969 1413.3534562893083,177.3090651425178 1411.9404248427672,146.1913937648456 1518.0714345186261,141.37201321258908 1535.4242279390423,178.7358252375297",
+            "type" : "polygon"
+         }
+      },
+      "meeting-room" : {
+         "067dff11-1839-43c7-a2a5-601fb405d7b6" : {
+            "class" : "meeting-room",
+            "id" : "067dff11-1839-43c7-a2a5-601fb405d7b6",
+            "name" : "DP8 GRONINGUE",
+            "points" : "1258.12709658926,223.7626497624703 1258.12709658926,230.66533266033252 1250.9152813981614,230.68443895486934 1250.9152813981614,230.68443895486934 1226.7550811078854,230.67101555819474 1226.8409978955005,256.8637171615202 1251.5768406627963,256.0599594418052 1270.363245597484,255.39973408551063 1269.069598524431,223.77790540380045",
+            "type" : "polygon"
+         },
+         "0b5e2238-ff1d-4cc7-92ac-15fe03b060f3" : {
+            "class" : "meeting-room",
+            "id" : "0b5e2238-ff1d-4cc7-92ac-15fe03b060f3",
+            "name" : "DP881",
+            "points" : "1506.7650750378566,214.34113841823046 1483.477566465578,220.05648506680524 1481.8387860501064,183.9677404339074 1492.4906175412893,183.48404352669243",
+            "type" : "polygon"
+         },
+         "32e64c8c-b2b9-4be0-9912-7fabcee36d5c" : {
+            "class" : "meeting-room",
+            "id" : "32e64c8c-b2b9-4be0-9912-7fabcee36d5c",
+            "name" : "DP8 KATOWICE",
+            "points" : "1270.757763497823,254.88328604513066 1335.2203300193519,252.4530633610451 1333.8720358732462,221.33352446555818 1269.0678002660861,223.7781895486936",
+            "type" : "polygon"
+         },
+         "3b85a0d7-bb4b-4fa0-83bf-4675516d43b7" : {
+            "class" : "meeting-room",
+            "id" : "3b85a0d7-bb4b-4fa0-83bf-4675516d43b7",
+            "name" : "DP8 DORTMUND",
+            "points" : "1349.2706559831709,220.58723231020247 1380.1932463972757,219.1830456421947 1381.606291304372,250.30071141446876 1350.6837008902671,251.70489808247652",
+            "type" : "polygon"
+         },
+         "4a66eef8-709d-4ee8-a9f9-1a1bf295c056" : {
+            "class" : "meeting-room",
+            "id" : "4a66eef8-709d-4ee8-a9f9-1a1bf295c056",
+            "name" : "DI895",
+            "points" : "1564.258961645179,270.98877396790385 1564.986005550433,286.99952292847394 1533.8697462852806,288.4125041968231 1533.2804889265867,275.4360504021675 1526.5636554329585,247.82116529448166 1556.8020860893257,240.4239037920509",
+            "type" : "polygon"
+         },
+         "4e374729-57a6-4fc7-a3cf-0df3670329ba" : {
+            "class" : "meeting-room",
+            "id" : "4e374729-57a6-4fc7-a3cf-0df3670329ba",
+            "name" : "DI8 CORDOUE",
+            "points" : "1368.10674542977,323.134999361944 1396.0663211898764,310.157697866607 1409.1791796787152,338.41167807748764 1381.2196039186088,351.3889795728246",
+            "type" : "polygon"
+         },
+         "82917662-efd2-4743-8ce3-b602426ecd21" : {
+            "class" : "meeting-room",
+            "id" : "82917662-efd2-4743-8ce3-b602426ecd21",
+            "name" : "DP886",
+            "points" : "1522.3183321261167,230.46600294203665 1552.556748036327,223.0687442965709 1556.8020428416944,240.42389381608973 1526.5636269314837,247.82115246155547",
+            "type" : "polygon"
+         },
+         "9a581ef9-2672-489e-8204-ff1294cca40c" : {
+            "class" : "meeting-room",
+            "id" : "9a581ef9-2672-489e-8204-ff1294cca40c",
+            "name" : "DI893",
+            "points" : "1525.4526659641847,318.1651602676366 1515.7602057318697,322.68092592972096 1500.5614957960497,289.9897158146378 1523.9135609228204,284.27143766965565",
+            "type" : "polygon"
+         },
+         "aff19365-b338-4370-b9b0-824a1115215a" : {
+            "class" : "meeting-room",
+            "id" : "aff19365-b338-4370-b9b0-824a1115215a",
+            "name" : "DI856",
+            "points" : "1301.6004352140408,399.16034207388407 1330.9667832288,385.5300940588809 1339.6996194375201,404.3465391258393 1310.3332714227608,417.9767871408425",
+            "type" : "polygon"
+         },
+         "c951b8ce-8059-47e8-ae74-7aaf296d993a" : {
+            "class" : "meeting-room",
+            "id" : "c951b8ce-8059-47e8-ae74-7aaf296d993a",
+            "name" : "DP883",
+            "points" : "1514.6786624330043,208.02761377397246 1542.8544547771298,194.73498908017854 1548.7593262695693,207.4528604534442 1552.5733582758394,223.0646597 1522.3183581575713,230.4659988168413 1519.2125813676535,217.78684134097392",
+            "type" : "polygon"
+         },
+         "f8fca2f6-ff5a-41bf-a4d5-45b216537928" : {
+            "class" : "meeting-room",
+            "id" : "f8fca2f6-ff5a-41bf-a4d5-45b216537928",
+            "name" : "DP8 ESSEN",
+            "points" : "1258.1267968795355,230.6653718527316 1258.0468742864055,197.16960760095014 1226.9285131349784,196.73785433491685 1226.7534826560236,230.67056484560567",
+            "type" : "polygon"
+         }
+      },
+      "office" : {
+         "DI879" : {
+            "class" : "office",
+            "id" : "DI879",
+            "points" : "1504.1441776244637,338.71495763238227 1518.7923019768587,332.0212374838334 1531.9955058643532,360.21519013150487 1517.0995713998004,367.11822713817946",
+            "type" : "polygon"
+         },
+         "DP844" : {
+            "class" : "office",
+            "id" : "DP844",
+            "points" : "1263.6539896235645,152.92506241156127 1280.1159111952702,152.17753089847577 1281.5289561023665,183.29519667074982 1265.0670345306603,184.04272818383532",
+            "type" : "polygon"
+         },
+         "DP849" : {
+            "class" : "office",
+            "id" : "DP849",
+            "points" : "1313.1043684704773,150.67953376163626 1329.5662900421835,149.93200224855076 1330.9793349492793,181.0496680208248 1314.5174133775736,181.79719953391032",
+            "type" : "polygon"
+         },
+         "DP879" : {
+            "class" : "office",
+            "id" : "DP879",
+            "points" : "1535.4242624872325,178.7358231911324 1542.8544547771298,194.73498908017854 1514.6786624330043,208.02761377397246 1507.2823842074033,192.08508590774053",
+            "type" : "polygon"
+         }
+      },
+      "openspace" : {
+         "DI811" : {
+            "class" : "openspace",
+            "id" : "DI811",
+            "points" : "1366.3310889996565,358.3840538529098 1336.4261996089162,372.2276981789193 1323.2402872043879,343.97356917749414 1353.2097331496202,330.1269933550772",
+            "type" : "polygon"
+         },
+         "DI814,DI819,DI822,DI827,DI832,DI836,DI846,DI850" : {
+            "class" : "openspace",
+            "d" : "M1323.2397335026608,343.9730862232779L1225.6760261973873,389.28929762470307L1225.5746244073534,502.4420452494062L1321.622200120948,457.906615023753L1308.500109167876,429.64905207838484L1285.6238653362357,440.2776877672209L1289.2199824141267,447.62435195961996L1278.5681989114655,452.5463685866983L1275.0521043299464,445.1901414489311L1256.8040779632315,453.6677904988123L1256.8530305515237,409.1572474465558L1336.426361949685,372.22682790973863ZM1239.3346974600872,414.2553163301663L1239.316714876633,426.12785997624707L1231.230846226415,426.07044311163895L1231.2208559022738,414.270630760095ZM1289.6141007014999,457.6023448337292L1290.9566004596031,457.7190793942993L1292.217079656507,458.08650813539197L1293.3624703193036,458.67783325415684L1294.363400895017,459.466276543943L1295.194695766812,460.42695083135396L1295.8307797048865,461.53305831353924L1296.2326904450897,462.7597412114015L1296.392735437833,464.08018212589076L1296.392735437833,464.17970142517817L1296.2600639332368,465.5020627672209L1295.8659456458636,466.7344775534442L1295.2591333575228,467.8482471496437L1294.4357308417993,468.82231543943L1293.452283333333,469.6241527315915L1292.3166831881954,470.23270290973875L1291.0639964441216,470.61926733966743L1289.7137042331883,470.75705801662707L1288.3634120222546,470.6288400831354L1287.101034663764,470.2518385985748L1285.9653346153846,469.6528513657957L1284.9740946540883,468.856755760095L1284.1506921383648,467.890349584323L1283.5243987179488,466.7784906175772L1283.1223880745042,465.54989709026125L1282.9800259554913,464.229456175772L1283.104905007257,462.9051744061758L1283.4892327769717,461.67084899049877L1284.0902506773105,460.55133770783846L1284.903862675375,459.5715277315914L1285.8873101838417,458.7620381235154L1287.0132197145622,458.14391520190026L1288.265906458636,457.74969845605705Z",
+            "id" : "DI814,DI819,DI822,DI827,DI832,DI836,DI846,DI850",
+            "type" : "path"
+         },
+         "DI857,DI860" : {
+            "class" : "openspace",
+            "id" : "DI857,DI860",
+            "points" : "1383.3222422109338,394.94043004750597 1341.5696805273342,414.29550813539197 1345.1150467585876,421.6555663301663 1334.4613650943397,426.57757315914495 1331.015402588292,419.18881633016633 1323.4505293420416,422.69469400237534 1336.5725203918723,450.9522667458433 1396.3798955732946,423.1999134204276",
+            "type" : "polygon"
+         },
+         "DI864,DI868" : {
+            "class" : "openspace",
+            "id" : "DI864,DI868",
+            "points" : "1443.1451023947752,367.121096912114 1427.7495133768748,374.26638076009505 1431.2948796081278,381.6321806413302 1420.6463929124338,386.55841045130643 1417.1985322447995,379.16964382422805 1383.298764949202,394.8983276128266 1396.4110653846155,423.15206929928746 1456.2574028301888,395.37483859857485",
+            "type" : "polygon"
+         },
+         "DI873,DI877" : {
+            "class" : "openspace",
+            "id" : "DI873,DI877",
+            "points" : "1458.076462115227,360.1664322797885 1504.1441776244633,338.7149576323824 1517.1011855247002,367.1217050566685 1471.1889919847918,388.41970442213585",
+            "type" : "polygon"
+         },
+         "DI884,DI887" : {
+            "class" : "openspace",
+            "id" : "DI884,DI887",
+            "points" : "1566.394631291913,319.37093735968176 1567.5629071339742,343.74729847823636 1531.9953409330187,360.2148362422471 1518.792139509976,332.0208801339027 1535.4997318148016,324.3075704148754 1535.3085416371582,320.7553906819943",
+            "type" : "polygon"
+         },
+         "DI884,DI889" : {
+            "class" : "openspace",
+            "id" : "DI884,DI889",
+            "points" : "1565.6798246976296,304.0903816508314 1566.3946323899372,319.3709395486936 1535.3085399854863,320.7553914489311 1534.5937322931786,305.47483355106885",
+            "type" : "polygon"
+         },
+         "DP838" : {
+            "class" : "openspace",
+            "id" : "DP838",
+            "points" : "1263.6542434204162,152.92601181710214 1249.1155245041123,153.45801923990498 1226.9514908805031,154.4646172209026 1226.9275141025641,196.73841282660334 1229.5760489356558,196.95656751781473 1229.5340895742625,185.93320558194773 1242.6759613691343,186.20159513064132 1242.6759613691343,186.226482304038 1255.7926575471702,185.93320558194773 1255.8346169085635,197.1389101543943 1258.0458752539917,197.17085195961994 1258.0598617077894,184.23395053444182 1265.0666754475087,184.042583847981",
+            "type" : "polygon"
+         },
+         "DP846" : {
+            "class" : "openspace",
+            "id" : "DP846",
+            "points" : "1280.1159930282606,152.17752718246126 1313.0398351737094,150.6824642016075 1314.4528800808057,181.80012997388155 1281.5290379353569,183.2951929547353",
+            "type" : "polygon"
+         },
+         "DP852,DP854,DP857" : {
+            "class" : "openspace",
+            "id" : "DP852,DP854,DP857",
+            "points" : "1395.6075484902105,146.93307295353327 1346.157227749325,149.17859920157363 1329.5016366903847,149.9349252746734 1330.208159195087,165.49375793393708 1346.8637502540275,164.73743186083732 1347.57027275873,180.29626452010098 1397.0205934996154,178.05073827206058",
+            "type" : "polygon"
+         },
+         "DP862,DP865,DP869,DP872,DP878" : {
+            "class" : "openspace",
+            "d" : "M1518.0706352926945,141.37249625890738L1411.940924358974,146.19117232779098L1413.353656095791,177.30971181710214L1498.6323617077887,173.43639560570074L1507.2821841557811,192.08531484560572L1535.4249272617317,178.7354039192399ZM1509.647093686502,145.5596554038005L1511.145642307692,145.69169459619954L1512.5544778180938,146.10122577197149L1513.8325399854857,146.76145112826603L1514.9525552249634,147.6436622327791L1515.8813556603768,148.7153293942993L1516.5895697387514,149.95157523752968L1517.0403331640055,151.32178070071257L1517.219859288824,152.79531692399047L1517.219859288824,152.90823022565317L1517.0696048137393,154.38368687648455L1516.6306299709722,155.76154465558193L1515.9515876390901,157.00544281472682L1515.0325777213347,158.092414608076L1513.9339417755195,158.9899401425178L1512.663771964199,159.66930118764847L1511.2666251330425,160.0998786817102L1509.7563878326073,160.25489441805226L1508.2480486937584,160.11136205463183L1506.8393130865984,159.69034750593826L1505.5710414368646,159.02246983372925L1504.4627148766322,158.1326064133017L1503.5437049588768,157.05136650831355L1502.8431834300914,155.81129940617578L1502.3944180696653,154.43918331353922L1502.234373076922,152.96181603325417L1502.3748370343483,151.48443895486938L1502.8041212626986,150.10467054631832L1503.4733730769221,148.8550307007126L1504.3826923802603,147.7603967933492L1505.4812284228342,146.8552189429929L1506.7398094581513,146.16629495249407L1508.138854450894,145.72423408551072ZM1510.2168418722786,167.149925L1515.5008242138365,178.48663016627077L1508.0744168601836,182.14943420427554L1502.7944306482823,170.74957048693585Z",
+            "id" : "DP862,DP865,DP869,DP872,DP878",
+            "type" : "path"
+         }
+      },
+      "other" : {
+         "Autre VDI" : {
+            "class" : "other",
+            "id" : "Autre VDI",
+            "points" : "1285.5223038398815,192.88242100869957 1286.4662882652515,213.67057086879458 1317.388877866928,212.2663840896675 1316.4448934415577,191.47823422957248",
+            "type" : "polygon"
+         },
+         "Autre VDI 1" : {
+            "class" : "other",
+            "id" : "Autre VDI 1",
+            "points" : "1387.7833541803748,382.05779116998224 1351.1028367482486,399.1202818342637 1342.3533117624577,380.23920185463186 1379.036760823234,363.24127066196564",
+            "type" : "polygon"
+         },
+         "Autre cloison" : {
+            "class" : "other",
+            "id" : "Autre cloison",
+            "points" : "1430.9072550314463,289.9380945368171 1471.850300749879,271.01184988123515 1494.3453138122886,265.395422327791 1494.728942259313,266.9652346793349 1472.60636848089,272.6921260095012 1431.6143701741657,291.59406157957244",
+            "type" : "polygon"
+         },
+         "Autre gaine" : {
+            "class" : "other",
+            "id" : "Autre gaine",
+            "points" : "1272.67554949597,193.4657887937649 1273.61953392134,214.2539386538599 1266.7765391451862,214.5646772730404 1266.8009030371963,193.73255496683493",
+            "type" : "polygon"
+         },
+         "Autre gaine 1" : {
+            "class" : "other",
+            "id" : "Autre gaine 1",
+            "points" : "1328.3634921305709,211.7680297004157 1327.422439333851,191.0444393119359 1341.2991669209846,190.34960811273754 1342.2431513463546,211.13775797283256",
+            "type" : "polygon"
+         },
+         "Autre gaine 2" : {
+            "class" : "other",
+            "id" : "Autre gaine 2",
+            "points" : "1483.2868284307522,220.12983902764256 1507.1494827361587,214.25898996817102 1509.5143793264126,219.32700831594423 1509.7608183055927,220.48028431579576 1484.8740540142646,226.5917157326307",
+            "type" : "polygon"
+         },
+         "Autre gaine 3" : {
+            "class" : "other",
+            "id" : "Autre gaine 3",
+            "points" : "1500.3678261325738,289.9985103038599 1524.2334120666303,284.1922207160036 1523.9754287454111,278.51098721386586 1523.6644332117392,277.36064271042164 1498.777668920411,283.4720741272566",
+            "type" : "polygon"
+         },
+         "Autre gaine 4" : {
+            "class" : "other",
+            "id" : "Autre gaine 4",
+            "points" : "1280.655645608741,408.87775426258577 1290.0927350661618,404.49757495735616 1298.825571274882,423.31402002431446 1289.388481817461,427.69419932954406",
+            "type" : "polygon"
+         },
+         "Autre ménage" : {
+            "class" : "other",
+            "id" : "Autre ménage",
+            "points" : "1511.5094049132413,227.64645221573636 1486.555152438771,233.69625565736345 1484.8740540142646,226.5917157326307 1509.7608183055927,220.48028431579576",
+            "type" : "polygon"
+         },
+         "Autre ménage 1" : {
+            "class" : "other",
+            "id" : "Autre ménage 1",
+            "points" : "1523.6644332117392,277.36064271042164 1498.777668920411,283.4720741272566 1497.0290823127625,276.305906227316 1521.9187782327406,270.25903428209625",
+            "type" : "polygon"
+         },
+         "Autre rangement" : {
+            "class" : "other",
+            "id" : "Autre rangement",
+            "points" : "1519.680245295382,260.85087385406774 1494.728924449562,266.96523676731 1488.928661742414,243.22767203580764 1513.8799825882343,237.11330912256534",
+            "type" : "polygon"
+         }
+      },
+      "repro" : {
+         "Autre repro" : {
+            "class" : "repro",
+            "id" : "Autre repro",
+            "points" : "1396.0542073956567,310.2132295223547 1416.103005873958,300.91085581288166 1429.2128936729282,329.16808796691635 1409.164095194627,338.4704616763894",
+            "type" : "polygon"
+         },
+         "Autre repro 1" : {
+            "class" : "repro",
+            "id" : "Autre repro 1",
+            "points" : "1403.4909024145984,249.30692681048106 1381.5416738873125,250.3036355889846 1380.1286288779074,219.1859702704573 1402.0749257765433,218.12470202033853",
+            "type" : "polygon"
+         }
+      },
+      "stairs" : {
+         "Escalier A B" : {
+            "class" : "stairs",
+            "id" : "Escalier A B",
+            "points" : "1341.2991346294675,190.3496216213941 1400.69116498705,187.65264520068686 1401.6322176875083,208.3762352719604 1342.240187329926,211.07321169266766",
+            "type" : "polygon"
+         },
+         "Escalier C D" : {
+            "class" : "stairs",
+            "id" : "Escalier C D",
+            "points" : "1442.0793197238074,356.88512421193593 1387.7833541803748,382.05779116998224 1379.036760823234,363.24127066196564 1433.3297947380163,338.00404423230407",
+            "type" : "polygon"
+         }
+      },
+      "toilets" : {
+         "Sanitaires F" : {
+            "class" : "toilets",
+            "id" : "Sanitaires F",
+            "points" : "1443.8889510042864,240.0328133416865 1442.6605985998451,212.9823947349169 1473.3249619835533,211.58993394141925 1473.81747559679,222.43592517277318 1477.088731233459,236.06690127410928 1464.996012694526,239.00965454486345",
+            "type" : "polygon"
+         },
+         "Sanitaires F 1" : {
+            "class" : "toilets",
+            "id" : "Sanitaires F 1",
+            "points" : "1490.9630298531035,292.30166495258317 1495.5519834100264,302.1853267544834 1467.6747925905781,315.0958900644597 1456.272828510063,290.5129230065321 1475.4699425685171,281.619305114816 1487.5626611074504,278.6765518440618",
+            "type" : "polygon"
+         },
+         "Sanitaires H" : {
+            "class" : "toilets",
+            "id" : "Sanitaires H",
+            "points" : "1473.3249619835533,211.58993394141925 1472.0261897673197,184.41332788782665 1441.4263829381034,185.8028571849169 1442.6605985998451,212.9823947349169",
+            "type" : "polygon"
+         },
+         "Sanitaires H 1" : {
+            "class" : "toilets",
+            "id" : "Sanitaires H 1",
+            "points" : "1479.0767566710933,339.6788571223872 1467.6747925905781,315.0958900644597 1495.5519834100264,302.1853267544834 1506.8893909360497,326.7712253088183",
+            "type" : "polygon"
+         }
+      }
+   },
+   "text" : {
+      "Barlow-Regular" : {
+         "rtext Barlow-Regular 8 #000011 Aile ISSY" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000011",
+            "direction" : 2.6867535920008616,
+            "id" : "rtext Barlow-Regular 8 #000011 Aile ISSY",
+            "objects" : [],
+            "point" : [
+               1371.300285752298,
+               472.8825304038005
+            ],
+            "size" : "8",
+            "text" : "Aile ISSY",
+            "text_type" : "rtext"
+         },
+         "rtext Barlow-Regular 8 #000011 Aile PARIS" : {
+            "class" : "Barlow-Regular",
+            "color" : "#000011",
+            "direction" : 3.141592653589793,
+            "id" : "rtext Barlow-Regular 8 #000011 Aile PARIS",
+            "objects" : [],
+            "point" : [
+               1376.031203749395,
+               105.57345056413303
+            ],
+            "size" : "8",
+            "text" : "Aile PARIS",
+            "text_type" : "rtext"
+         },
+         "text Barlow-Regular 12 #444444 Bâtiment D" : {
+            "class" : "Barlow-Regular",
+            "color" : "#444444",
+            "direction" : -1.5707963267948966,
+            "id" : "text Barlow-Regular 12 #444444 Bâtiment D",
+            "objects" : [],
+            "point" : [
+               935.9591236816642,
+               337.79832375296917
+            ],
+            "size" : "12",
+            "text" : "Bâtiment D",
+            "text_type" : "text"
+         },
+         "text Barlow-Regular 12 #444445 Bâtiment D" : {
+            "class" : "Barlow-Regular",
+            "color" : "#444445",
+            "direction" : -1.5707963267948966,
+            "id" : "text Barlow-Regular 12 #444445 Bâtiment D",
+            "objects" : [],
+            "point" : [
+               641.96971918239,
+               337.79832375296917
+            ],
+            "size" : "12",
+            "text" : "Bâtiment D",
+            "text_type" : "text"
+         },
+         "text Barlow-Regular 12 #444544 Bâtiment D" : {
+            "class" : "Barlow-Regular",
+            "color" : "#444544",
+            "direction" : -1.5707963267948966,
+            "id" : "text Barlow-Regular 12 #444544 Bâtiment D",
+            "objects" : [],
+            "point" : [
+               271.12721867440735,
+               337.79832375296917
+            ],
+            "size" : "12",
+            "text" : "Bâtiment D",
+            "text_type" : "text"
+         }
+      }
+   }
+}

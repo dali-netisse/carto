@@ -3757,56 +3757,56 @@
                374.0393213150628
             ]
          },
-         "sdr CI1 AMSTERDAM:8" : {
+         "sdr CI1 CHSCT:8" : {
             "class" : "meeting",
             "direction" : 3.1415926535897,
-            "id" : "sdr CI1 AMSTERDAM:8",
+            "id" : "sdr CI1 CHSCT:8",
             "objects" : [
                {
                   "desk" : "A",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
-                  "office" : "CI1 AMSTERDAM",
+                  "office" : "CI1 CHSCT",
                   "position" : 4,
                   "side" : "D"
                }
@@ -5600,10 +5600,10 @@
             "points" : "286.3234622423863,359.6835265302435 320.31318678621756,359.6835265302435 320.31318678621756,449.38225106449164 286.3234622423863,449.38225106449164",
             "type" : "polygon"
          },
-         "CI1 AMSTERDAM" : {
+         "CI1 CHSCT" : {
             "class" : "meeting-room",
-            "id" : "CI1 AMSTERDAM",
-            "name" : "CI1 AMSTERDAM",
+            "id" : "CI1 CHSCT",
+            "name" : "CI1 CHSCT",
             "points" : "192.29200416800506,449.38225106449164 226.89232049404185,449.38226108669545 226.89232049404185,483.25730010647584 192.29200416800506,483.257290084272",
             "type" : "polygon"
          },
