@@ -807,7 +807,24 @@ function processElement(elem, calibrationTransform) {
           const pathPoints = pathToPoints(absolute.commands);
           if (pathPoints.length >= 2) { 
             const transformed = transformPoints(pathPoints, transform);
+            // Debug: Check for closing point issue
+            if (transformed.length > 14 && transformed[0][0] === 71.4375) {
+              console.log('CLOSE DEBUG: First point:', transformed[0]);
+              console.log('CLOSE DEBUG: Last point:', transformed[transformed.length - 1]);
+              console.log('CLOSE DEBUG: Second to last:', transformed[transformed.length - 2]);
+            }
             // Perl doesn't apply filtering to path-derived polygons, only to original polygon/polyline elements
+            // But it does remove redundant closing points that are too close to the first point
+            if (transformed.length >= 2) {
+              const first = transformed[0];
+              const last = transformed[transformed.length - 1];
+              const threshold = 0.4;
+              const dx = Math.abs(last[0] - first[0]);
+              const dy = Math.abs(last[1] - first[1]);
+              if (dx <= threshold && dy <= threshold) {
+                transformed.pop(); // Remove redundant closing point
+              }
+            }
             
             if (transformed.length >= 2) {
               if (transformed.length === 2 || type === "polyline") { // Treat paths that become 2 points as polylines
