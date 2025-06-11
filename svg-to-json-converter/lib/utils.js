@@ -249,10 +249,11 @@ export function extractSpecialAttributes(id) {
   }
   
   // Extract offset and scale attributes
+  // Keep these as strings to match Perl behavior - only x,y,width,height,x1,x2,y1,y2 get converted to numbers in Perl
   let match;
   while ((match = cleanId.match(/ +x-(offset[XY]|scale) (-?\d+(?:\.\d+)?)/i))) {
     const [fullMatch, attrName, value] = match;
-    attributes[attrName] = parseNumber(value);
+    attributes[attrName] = value; // Keep as string to match Perl
     cleanId = cleanId.replace(fullMatch, '');
   }
   
