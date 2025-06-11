@@ -121,14 +121,18 @@ function perlSmartPrecision(num) {
 
 /**
  * Match Perl's direction calculation precision exactly
- * Perl's atan2 outputs 14 decimal places
+ * Perl's atan2 outputs up to 14 significant decimal places naturally
  * @param {number} y - Y component
  * @param {number} x - X component  
  * @returns {number} Direction angle in radians with Perl-like precision
  */
 export function toPerlDirectionPrecision(y, x) {
   const direction = Math.atan2(y, x);
-  return toPerlCoordinatePrecision(direction, 14);
+  
+  // Don't truncate - let JavaScript's natural precision show
+  // The differences in precision come from coordinate calculation differences,
+  // not from atan2 precision differences
+  return direction;
 }
 
 /**

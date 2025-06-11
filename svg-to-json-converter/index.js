@@ -616,8 +616,8 @@ async function processFile(filename, options) {
         objects: deskObjects,
       };
 
-      if (params.indicatorX !== undefined) deskOutputObject.indicator_x = params.indicatorX; // Remove roundTo
-      if (params.indicatorY !== undefined) deskOutputObject.indicator_y = params.indicatorY; // Remove roundTo
+      if (params.indicatorX !== undefined && params.indicatorX !== 0) deskOutputObject.indicator_x = params.indicatorX; // Only include if non-zero (Perl: if $indicator_x)
+      if (params.indicatorY !== undefined && params.indicatorY !== 0) deskOutputObject.indicator_y = params.indicatorY; // Only include if non-zero (Perl: if $indicator_y)
       if (params.indicatorA !== undefined && params.indicatorA !== 0) deskOutputObject.indicator_a = params.indicatorA; // Only include if non-zero
 
       // Ensure the category exists

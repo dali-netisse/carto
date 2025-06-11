@@ -74,7 +74,6 @@
             "direction" : 0,
             "id" : "poste B106:I-10A0:A",
             "indicator_x" : -1,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -94,7 +93,6 @@
             "id" : "poste B107:I40A4:-A",
             "indicator_a" : 4,
             "indicator_x" : 4,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -114,7 +112,6 @@
             "id" : "poste B108:I40A4:A",
             "indicator_a" : 4,
             "indicator_x" : 4,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -153,7 +150,6 @@
             "direction" : 0,
             "id" : "poste B111:I-10A0:AB",
             "indicator_x" : -1,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -217,8 +213,6 @@
             "class" : "desks",
             "direction" : 1.5707963267948,
             "id" : "poste B114:I00A0:A",
-            "indicator_x" : 0,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -238,7 +232,6 @@
             "id" : "poste B115:I20A4:-A",
             "indicator_a" : 4,
             "indicator_x" : 2,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -276,7 +269,6 @@
             "class" : "desks",
             "direction" : -2.4668525963289,
             "id" : "poste B117:I01A0:-A",
-            "indicator_x" : 0,
             "indicator_y" : 1,
             "objects" : [
                {
@@ -297,7 +289,6 @@
             "id" : "poste BM101:I40A4:A",
             "indicator_a" : 4,
             "indicator_x" : 4,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "A",
@@ -316,7 +307,6 @@
             "direction" : -1.5707963267948,
             "id" : "poste EC:I-10A0:DBCA",
             "indicator_x" : -1,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "D",
@@ -353,8 +343,6 @@
             "direction" : 0,
             "id" : "poste EC:I00A9:-E",
             "indicator_a" : 9,
-            "indicator_x" : 0,
-            "indicator_y" : 0,
             "objects" : [
                {
                   "desk" : "E",
