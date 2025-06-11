@@ -460,7 +460,7 @@ async function processFile(filename, options) {
   const itineraryElements = getElementsByLayer(
     xpath,
     doc,
-    ["Lignes de couloir", "lignes de couloir"],
+    ["Lignes de couloir", "lignes de couloir", "Lignes_de_couloir"],
     "line|polyline|polygon|path"
   );
   for (const elem of itineraryElements) {
@@ -523,7 +523,7 @@ async function processFile(filename, options) {
     if (attributes.offsetX !== undefined) obj.offsetX = attributes.offsetX;
     if (attributes.offsetY !== undefined) obj.offsetY = attributes.offsetY;
     if (attributes.scale !== undefined) obj.scale = attributes.scale;
-    if (classification.showBubble) obj.showBubble = true;
+    if (classification.showBubble) obj.showBubble = "1";
 
     // Add to appropriate category
     if (!output.pois[classification.class]) {

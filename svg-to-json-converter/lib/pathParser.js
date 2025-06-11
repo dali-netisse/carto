@@ -66,11 +66,10 @@ export function parsePath(pathData) {
     if ((command === 'M' || command === 'm') && params.length > 2) {
       // First pair is move command
       processedCommands.push({ command, params: [params[0], params[1]] });
-      // Subsequent pairs are line commands
+      // Subsequent pairs are line commands - create individual L commands for each pair
       const lineCommand = command === 'M' ? 'L' : 'l';
-      const lineParams = params.slice(2);
-      if (lineParams.length > 0) {
-        processedCommands.push({ command: lineCommand, params: lineParams });
+      for (let i = 2; i < params.length; i += 2) {
+        processedCommands.push({ command: lineCommand, params: [params[i], params[i + 1]] });
       }
     } else {
       processedCommands.push({ command, params });
@@ -99,84 +98,78 @@ export function pathToAbsolute(commands) {
     
     switch (command) {
       case 'm': // relative moveto
-        for (let i = 0; i < params.length; i += 2) {
-          currentX += params[i];
-          currentY += params[i + 1];
-          absCommand.params.push(currentX, currentY);
-          if (i === 0) {
-            startX = currentX;
-            startY = currentY;
-          }
-        }
-        // Subsequent pairs are treated as lineto
-        if (params.length > 2) {
-          absCommand.command = 'L';
-        }
+        // Since post-processing splits M commands, each should have exactly 2 params
+        currentX += params[0];
+        currentY += params[1];
+        absCommand.params.push(currentX, currentY);
+        startX = currentX;
+        startY = currentY;
         break;
         
       case 'M': // absolute moveto
-        for (let i = 0; i < params.length; i += 2) {
-          currentX = params[i];
-          currentY = params[i + 1];
-          absCommand.params.push(currentX, currentY);
-          if (i === 0) {
-            startX = currentX;
-            startY = currentY;
-          }
-        }
-        // Subsequent pairs are treated as lineto
-        if (params.length > 2) {
-          absCommand.command = 'L';
-        }
+        // Since post-processing splits M commands, each should have exactly 2 params
+        currentX = params[0];
+        currentY = params[1];
+        absCommand.params.push(currentX, currentY);
+        startX = currentX;
+        startY = currentY;
         break;
         
       case 'l': // relative lineto
         for (let i = 0; i < params.length; i += 2) {
           currentX += params[i];
           currentY += params[i + 1];
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each coordinate pair to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        break;
+        // Skip the general processing since we've handled each pair individually
+        continue;
         
       case 'L': // absolute lineto
         for (let i = 0; i < params.length; i += 2) {
           currentX = params[i];
           currentY = params[i + 1];
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each coordinate pair to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        break;
+        // Skip the general processing since we've handled each pair individually
+        continue;
         
       case 'h': // relative horizontal lineto
         for (const dx of params) {
           currentX += dx;
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each horizontal move to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        absCommand.command = 'L';
-        break;
+        // Skip the general processing since we've handled each parameter individually
+        continue;
         
       case 'H': // absolute horizontal lineto
         for (const x of params) {
           currentX = x;
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each horizontal move to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        absCommand.command = 'L';
-        break;
+        // Skip the general processing since we've handled each parameter individually
+        continue;
         
       case 'v': // relative vertical lineto
         for (const dy of params) {
           currentY += dy;
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each vertical move to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        absCommand.command = 'L';
-        break;
+        // Skip the general processing since we've handled each parameter individually
+        continue;
         
       case 'V': // absolute vertical lineto
         for (const y of params) {
           currentY = y;
-          absCommand.params.push(currentX, currentY);
+          // Create separate L command for each vertical move to match Perl behavior
+          absoluteCommands.push({ command: 'L', params: [currentX, currentY] });
         }
-        absCommand.command = 'L';
-        break;
+        // Skip the general processing since we've handled each parameter individually
+        continue;
         
       case 'c': // relative cubic bezier
         for (let i = 0; i < params.length; i += 6) {
@@ -329,6 +322,7 @@ export function pathToAbsolute(commands) {
       lastControlY = currentY;
     }
     
+    // Only push absCommand if we haven't already handled the command with "continue"
     absoluteCommands.push(absCommand);
   }
   

@@ -5,6 +5,14 @@
 
 import { normalizeText } from "./utils.js";
 
+ 
+function convertHexToChar(id) {
+  // Convert hex sequences like _xXX_ to characters
+  return id.replace(/_x([0-9a-f]{2})_/gi, (match, hex) =>
+    String.fromCharCode(parseInt(hex, 16))
+  );
+}
+
 /**
  * Classify an object based on its ID
  * @param {string} id - Object ID
@@ -13,13 +21,13 @@ import { normalizeText } from "./utils.js";
  */
 export function classifyObject(id, floor) {
   let objectClass = null;
+  id = convertHexToChar(id); // Convert hex sequences to characters
+  id = id.replace(/_/g, " ").trim() // Replace underscores with spaces for readability
   let cleanId = id;
   let name = null;
-  let showBubble = false;
+  let showBubble = undefined;
 
-  // Convert underscores to spaces for classification
-  // This matches the Perl script behavior
-  const classificationId = id.replace(/_/g, " ");
+  let classificationId = id;
 
   // Terrasse
   if (/^Terrasse/i.test(classificationId)) {
@@ -145,7 +153,7 @@ export function classifyObject(id, floor) {
   ) {
     objectClass = "chat-area";
     if (/^Tisan*erie$/i.test(classificationId)) {
-      showBubble = true;
+      showBubble = "1";
     }
   }
 

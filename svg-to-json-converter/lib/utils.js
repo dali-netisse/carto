@@ -54,12 +54,12 @@ export function roundTo(num, decimals = 6) {
  * Match Perl's floating-point precision exactly
  * Perl uses different precision for different types of values:
  * - Direction values: 14 decimal places (from atan2 output)
- * - Coordinate values: 12 decimal places (from transform calculations)
+ * - Coordinate values: typically 4 decimal places for final output
  * @param {number} num - Number to format
- * @param {number} maxDecimalPlaces - Maximum decimal places (12 for coordinates, 14 for directions)
+ * @param {number} maxDecimalPlaces - Maximum decimal places (4 for coordinates, 14 for directions)
  * @returns {number} Number with Perl-like precision
  */
-export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 12) {
+export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 4) {
   if (!isFinite(num)) return num;
   
   // For special direction values like π/2, handle exactly as Perl does
@@ -76,23 +76,9 @@ export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 12) {
     return num;
   }
   
-  // For coordinate values, truncate to maxDecimalPlaces
-  const str = num.toString();
-  
-  // Handle scientific notation
-  if (str.includes('e')) {
-    return num;
-  }
-  
-  // If it has a decimal point, truncate to the specified precision
-  if (str.includes('.')) {
-    const parts = str.split('.');
-    if (parts[1].length > maxDecimalPlaces) {
-      return parseFloat(parts[0] + '.' + parts[1].substring(0, maxDecimalPlaces));
-    }
-  }
-  
-  return num;
+  // For coordinate values, round to maxDecimalPlaces to match Perl's output
+  const factor = Math.pow(10, maxDecimalPlaces);
+  return Math.round(num * factor) / factor;
 }
 
 /**
