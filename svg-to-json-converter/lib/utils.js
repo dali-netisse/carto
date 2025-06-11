@@ -124,21 +124,31 @@ export function distance(p1, p2) {
 }
 
 /**
- * Check if two points are within a threshold distance
- * @param {number[]} p1 - First point [x, y]
+ * Check if two points are within a threshold distance (Perl-compatible)
+ * @param {number[]} p1 - First point [x, y] 
  * @param {number[]} p2 - Second point [x, y]
  * @param {number} threshold - Distance threshold
- * @returns {boolean} True if points are within threshold
+ * @returns {boolean} True if points should be filtered (too close)
  */
 export function pointsAreClose(p1, p2, threshold = 0.4) {
-  return Math.abs(p1[0] - p2[0]) <= threshold && 
-         Math.abs(p1[1] - p2[1]) <= threshold;
+  // Perl logic: filter if dx <= threshold AND dy <= threshold
+  // Keep if dx > threshold OR dy > threshold
+  const dx = Math.abs(p1[0] - p2[0]);
+  const dy = Math.abs(p1[1] - p2[1]);
+  return dx <= threshold && dy <= threshold;
 }
 
 /**
- * Remove duplicate or too-close points from a polygon
+ * Remove duplicate or too-close points from a polygon (Perl-compatible)
  * @param {number[][]} points - Array of points
- * @param {number} threshold - Distance threshold
+ * @param {number} threshold - Distance threshold  
+ * @param {boolean} isPolygon - Whether to check first/last point
+ * @returns {number[][]} Filtered points
+ */
+/**
+ * Remove duplicate or too-close points from a polygon (Perl-compatible)
+ * @param {number[][]} points - Array of points
+ * @param {number} threshold - Distance threshold  
  * @param {boolean} isPolygon - Whether to check first/last point
  * @returns {number[][]} Filtered points
  */
@@ -148,14 +158,16 @@ export function filterClosePoints(points, threshold = 0.4, isPolygon = true) {
   const filtered = [];
   let lastPoint = null;
   
+  // Apply Perl filtering logic: keep point if no last point OR dx > threshold OR dy > threshold
   for (const point of points) {
     if (!lastPoint || !pointsAreClose(point, lastPoint, threshold)) {
       filtered.push(point);
       lastPoint = point;
     }
+    // If pointsAreClose returns true, the point is filtered (not added)
   }
   
-  // For polygons, check if last point is too close to first
+  // For polygons, check if last point is too close to first (remove redundant closing point)
   if (isPolygon && filtered.length >= 2) {
     const first = filtered[0];
     const last = filtered[filtered.length - 1];

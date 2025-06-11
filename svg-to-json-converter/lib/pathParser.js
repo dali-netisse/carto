@@ -60,7 +60,7 @@ export function parsePath(pathData) {
     commands.push({ command: currentCommand, params: currentParams });
   }
   
-  // Post-process to split move commands with multiple coordinate pairs
+  // Post-process to split commands with multiple coordinate pairs
   const processedCommands = [];
   for (const { command, params } of commands) {
     if ((command === 'M' || command === 'm') && params.length > 2) {
@@ -71,11 +71,25 @@ export function parsePath(pathData) {
       for (let i = 2; i < params.length; i += 2) {
         processedCommands.push({ command: lineCommand, params: [params[i], params[i + 1]] });
       }
+    } else if ((command === 'l' || command === 'L') && params.length > 2) {
+      // Split multiple coordinate pairs into individual line commands
+      for (let i = 0; i < params.length; i += 2) {
+        processedCommands.push({ command, params: [params[i], params[i + 1]] });
+      }
+    } else if ((command === 'h' || command === 'H') && params.length > 1) {
+      // Split multiple horizontal moves into individual commands
+      for (const param of params) {
+        processedCommands.push({ command, params: [param] });
+      }
+    } else if ((command === 'v' || command === 'V') && params.length > 1) {
+      // Split multiple vertical moves into individual commands
+      for (const param of params) {
+        processedCommands.push({ command, params: [param] });
+      }
     } else {
-      processedCommands.push({ command, params });
-    }
+      processedCommands.push({ command, params });    }
   }
-  
+
   return processedCommands;
 }
 

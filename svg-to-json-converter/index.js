@@ -807,24 +807,23 @@ function processElement(elem, calibrationTransform) {
           const pathPoints = pathToPoints(absolute.commands);
           if (pathPoints.length >= 2) { 
             const transformed = transformPoints(pathPoints, transform);
-            // For paths that become polygons/polylines, use filterClosePoints as before
-            const filtered = filterClosePoints(transformed, 0.4, type === "polygon" ); // Pass polygon state for closure check
+            // Perl doesn't apply filtering to path-derived polygons, only to original polygon/polyline elements
             
-            if (filtered.length >= 2) {
-              if (filtered.length === 2 || type === "polyline") { // Treat paths that become 2 points as polylines
+            if (transformed.length >= 2) {
+              if (transformed.length === 2 || type === "polyline") { // Treat paths that become 2 points as polylines
                 obj = {
                   type: "polyline",
-                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
                 };
-              } else if (filtered.length >= 3 && (type === "polygon" || isValidPolygon(filtered))) { // Check isValidPolygon if it's meant to be a polygon
+              } else if (transformed.length >= 3 && (type === "polygon" || isValidPolygon(transformed))) { // Check isValidPolygon if it's meant to be a polygon
                 obj = {
                   type: "polygon",
-                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1], 6)}`).join(" "),
+                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
                 };
-              } else if (filtered.length >=3) { // Fallback to polyline if not a valid polygon but has 3+ points
+              } else if (transformed.length >=3) { // Fallback to polyline if not a valid polygon but has 3+ points
                  obj = {
                   type: "polyline", 
-                  points: filtered.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
                 };
               }
             }
