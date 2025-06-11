@@ -52,17 +52,16 @@ export function roundTo(num, decimals = 6) {
 
 /**
  * Match Perl's floating-point precision exactly
- * Perl uses different precision for different types of values:
- * - Direction values: 14 decimal places (from atan2 output)
- * - Coordinate values: typically 4 decimal places for final output
+ * Perl's JSON encoder uses smart precision that removes trailing floating-point noise
+ * while preserving significant digits. This mimics Perl's JSON encoding behavior.
  * @param {number} num - Number to format
- * @param {number} maxDecimalPlaces - Maximum decimal places (4 for coordinates, 14 for directions)
- * @returns {number} Number with Perl-like precision
+ * @param {number} maxDecimalPlaces - For compatibility, 14 for direction values
+ * @returns {number} Number with Perl JSON-like precision
  */
-export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 4) {
+export function toPerlCoordinatePrecision(num, maxDecimalPlaces = null) {
   if (!isFinite(num)) return num;
   
-  // For special direction values like π/2, handle exactly as Perl does
+  // For direction values, handle truncation to match Perl's atan2 output
   if (maxDecimalPlaces === 14) {
     // For direction values, use string truncation to match Perl's atan2 behavior
     const str = num.toString();
@@ -76,9 +75,48 @@ export function toPerlCoordinatePrecision(num, maxDecimalPlaces = 4) {
     return num;
   }
   
-  // For coordinate values, round to maxDecimalPlaces to match Perl's output
-  const factor = Math.pow(10, maxDecimalPlaces);
-  return Math.round(num * factor) / factor;
+  // For coordinate values, emulate Perl's JSON smart precision
+  // This removes trailing floating-point noise that results from IEEE 754 arithmetic
+  // by finding the shortest accurate representation
+  return perlSmartPrecision(num);
+}
+
+/**
+ * Emulate Perl's JSON smart precision algorithm
+ * Removes trailing floating-point noise while preserving significant digits
+ * @param {number} num - Number to process
+ * @returns {number} Number with smart precision like Perl's JSON encoder
+ */
+function perlSmartPrecision(num) {
+  // Handle integers
+  if (Number.isInteger(num)) return num;
+  
+  // Perl automatically rounds very long decimal representations to avoid
+  // displaying floating-point arithmetic noise. We emulate this by parsing
+  // the number as a string and reparsing it, which triggers JavaScript's
+  // own smart precision logic similar to Perl.
+  
+  // Convert to string and back to number to trigger smart precision
+  const str = num.toString();
+  const reparsed = parseFloat(str);
+  
+  // If the string representation has lots of trailing 9s or 0s (floating-point noise),
+  // try to find a cleaner representation by rounding to reasonable precision
+  if (str.includes('.') && /(99999|00000)/.test(str)) {
+    // Try different precision levels to find the cleanest representation
+    for (let decimals = 6; decimals <= 12; decimals++) {
+      const rounded = parseFloat(num.toFixed(decimals));
+      const roundedStr = rounded.toString();
+      
+      // If rounding produces a cleaner result and is still accurate, use it
+      if (!/(99999|00000)/.test(roundedStr) && 
+          Math.abs(rounded - num) < Math.abs(num) * 1e-12) {
+        return rounded;
+      }
+    }
+  }
+  
+  return reparsed;
 }
 
 /**
