@@ -23,7 +23,9 @@
   "license": "ISC",
   "dependencies": {
     "@xmldom/xmldom": "^0.8.10",
+    "chokidar": "^4.0.3",
     "commander": "^11.1.0",
+    "glob": "^11.0.2",
     "sort-keys": "^5.1.0",
     "xpath": "^0.0.34"
   },
