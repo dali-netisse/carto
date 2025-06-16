@@ -202,7 +202,7 @@ function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth
       if (match) {
         const [, position, side, desk] = match;
         const obj = {
-          position: parseInt(position, 10),
+          position: position, // Keep as string to match Perl output
           side: side.toUpperCase(),
           office: office,
           desk: desk,
@@ -251,7 +251,7 @@ function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth
     for (const deskChar of deskChars) {
       if (deskChar !== "-") { // Skip placeholders
         const obj = {
-          position: Math.floor(index / 2) + 1,
+          position: (Math.floor(index / 2) + 1).toString(), // Convert to string to match Perl output
           side: (index % 2) ? "D" : "G",
           office: office,
           desk: deskChar,
