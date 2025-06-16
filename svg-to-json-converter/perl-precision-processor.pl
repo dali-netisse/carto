@@ -5,8 +5,8 @@ use warnings;
 use JSON;
 use Math::Trig;
 
-# Post-process JSON files to apply Perl's native precision and formatting
-# This ensures 100% compatibility with Perl's JSON output
+# Post-process JSON files to exactly match Perl's JSON encoding behavior
+# This eliminates tiny floating-point precision differences between JS and Perl
 
 sub process_value {
     my $value = shift;
@@ -16,8 +16,9 @@ sub process_value {
     } elsif (ref($value) eq 'ARRAY') {
         return process_array($value);
     } elsif (looks_like_number($value)) {
-        # Let Perl handle the precision naturally - no manual rounding
-        return $value + 0;  # Force numeric context to clean up precision
+        # Let Perl re-encode the number exactly as it would naturally
+        # This eliminates tiny JavaScript vs Perl floating-point differences
+        return $value + 0.0;  # Force numeric context and Perl's precision
     } else {
         return $value;
     }
@@ -66,10 +67,10 @@ close $fh;
 my $json = JSON->new->allow_nonref;
 my $data = $json->decode($json_text);
 
-# Process the data to apply Perl precision
+# Process the data with Perl's natural number handling
 my $processed_data = process_value($data);
 
-# Output with Perl's natural JSON formatting
+# Output with exactly the same JSON formatting as the original Perl script
 my $output_json = JSON->new->pretty->space_before(1)->canonical->encode($processed_data);
 
 # Write the output

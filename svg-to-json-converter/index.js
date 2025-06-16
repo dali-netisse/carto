@@ -58,9 +58,7 @@ import {
   ANSI,
   calculateDirection,
 } from "./lib/utils.js";
-import {
-  abs
-} from "./lib/perlMath.js";
+import { abs } from "./lib/perlMath.js";
 import {
   resolveSite,
   getCalibrationRect as getCalibrationRectConfig,
@@ -492,7 +490,11 @@ async function processFile(filename, options) {
 
     // Apply ID fixes
     const fixedId = applyIdFix(id, idFixes);
-    const { id: cleanId, attributes } = extractSpecialAttributes(fixedId);
+    
+    // Normalize underscores to spaces before special attribute extraction
+    const normalizedId = fixedId.replace(/_/g, " ");
+    
+    const { id: cleanId, attributes } = extractSpecialAttributes(normalizedId);
 
     // Classify object
     const classification = classifyObject(cleanId, floor);
@@ -530,7 +532,8 @@ async function processFile(filename, options) {
     if (!output.pois[classification.class]) {
       output.pois[classification.class] = {};
     }
-    output.pois[classification.class][obj.id] = obj;
+    // Use cleanId (without special attributes) as the key, like Perl does
+    output.pois[classification.class][cleanId] = obj;
   }
 
   // Process furniture
@@ -733,18 +736,38 @@ function processElement(elem, calibrationTransform) {
   switch (type) {
     case "rect":
       const rect = getRectAttributes(elem);
-      const points = [
-        [rect.x, rect.y],
-        [rect.x + rect.width, rect.y],
-        [rect.x + rect.width, rect.y + rect.height],
-        [rect.x, rect.y + rect.height],
-      ];
-      const transformedPoints = transformPoints(points, transform);
-      obj = {
-        type: "polygon",
-        // Let Perl handle precision for rects processed as polygons
-        points: transformedPoints.map(p => `${p[0]},${p[1]}`).join(" "),
-      };
+      
+      // Check if transform is simple (only translation/scaling, no rotation/shear) like Perl
+      // Use small tolerance for floating-point comparisons
+      const isSimpleTransform = !transform || (abs(transform[1]) < 1e-10 && abs(transform[2]) < 1e-10);
+      
+      if (isSimpleTransform) {
+        // Simple transform: keep as rectangle with x, y, width, height
+        const p1 = transform ? transformPoint(rect.x, rect.y, transform) : [rect.x, rect.y];
+        const p2 = transform ? transformPoint(rect.x + rect.width, rect.y + rect.height, transform) : [rect.x + rect.width, rect.y + rect.height];
+        
+        obj = {
+          type: "rect",
+          x: p1[0],
+          y: p1[1],
+          width: p2[0] - p1[0],
+          height: p2[1] - p1[1]
+        };
+      } else {
+        // Complex transform: convert to polygon like Perl does
+        const points = [
+          [rect.x, rect.y],
+          [rect.x + rect.width, rect.y],
+          [rect.x + rect.width, rect.y + rect.height],
+          [rect.x, rect.y + rect.height],
+        ];
+        const transformedPoints = transformPoints(points, transform);
+        
+        obj = {
+          type: "polygon",
+          points: transformedPoints.map(p => `${p[0]},${p[1]}`).join(" "),
+        };
+      }
       break;
 
     case "polygon":
