@@ -2,6 +2,8 @@
  * Coordinate transformation module for SVG to JSON converter
  */
 
+import { PerlMath } from './perlMath.js';
+
 /**
  * Transform a point using a transformation matrix
  * @param {number} x - X coordinate
@@ -55,17 +57,17 @@ export function parseTransform(transformStr) {
       case 'rotate':
         if (params.length === 1) {
           // Rotate around origin
-          const angle = params[0] * Math.PI / 180;
-          const cos = Math.cos(angle);
-          const sin = Math.sin(angle);
+          const angle = params[0] * PerlMath.PI / 180;
+          const cos = PerlMath.cos(angle);
+          const sin = PerlMath.sin(angle);
           matrix = [cos, sin, -sin, cos, 0, 0];
         } else if (params.length === 3) {
           // Rotate around a point
-          const angle = params[0] * Math.PI / 180;
+          const angle = params[0] * PerlMath.PI / 180;
           const cx = params[1];
           const cy = params[2];
-          const cos = Math.cos(angle);
-          const sin = Math.sin(angle);
+          const cos = PerlMath.cos(angle);
+          const sin = PerlMath.sin(angle);
           
           // Equivalent to translate(-cx,-cy), rotate, translate(cx,cy)
           matrix = [
@@ -77,12 +79,12 @@ export function parseTransform(transformStr) {
         break;
         
       case 'skewX':
-        const tanX = Math.tan(params[0] * Math.PI / 180);
+        const tanX = PerlMath.tan(params[0] * PerlMath.PI / 180);
         matrix = [1, 0, tanX, 1, 0, 0];
         break;
         
       case 'skewY':
-        const tanY = Math.tan(params[0] * Math.PI / 180);
+        const tanY = PerlMath.tan(params[0] * PerlMath.PI / 180);
         matrix = [1, tanY, 0, 1, 0, 0];
         break;
     }
@@ -151,9 +153,9 @@ export function createSpecialTransform(config) {
   let matrix = [1, 0, 0, 1, 0, 0]; // Identity matrix
   
   if (config.type === 'rotate') {
-    const angle = (config.angle || 0) * Math.PI / 180;
-    const cos = Math.cos(angle);
-    const sin = Math.sin(angle);
+    const angle = (config.angle || 0) * PerlMath.PI / 180;
+    const cos = PerlMath.cos(angle);
+    const sin = PerlMath.sin(angle);
     const scale = config.scale || 1;
     
     matrix = [scale * cos, scale * sin, -scale * sin, scale * cos, 0, 0];

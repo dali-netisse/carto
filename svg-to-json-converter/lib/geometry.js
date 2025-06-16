@@ -2,6 +2,8 @@
  * Geometry calculations for SVG to JSON converter
  */
 
+import { sqrt, abs } from './perlMath.js';
+
 /**
  * Calculate the perimeter of a polygon
  * @param {number[][]} points - Array of [x, y] coordinates
@@ -18,7 +20,7 @@ export function polygonPerimeter(points) {
     const v2 = points[(i + 1) % n];
     const dx = v2[0] - v1[0];
     const dy = v2[1] - v1[1];
-    length += Math.sqrt(dx * dx + dy * dy);
+    length += sqrt(dx * dx + dy * dy);
   }
   
   return length;
@@ -41,7 +43,7 @@ export function polygonArea(points) {
     area += v1[0] * v2[1] - v2[0] * v1[1];
   }
   
-  return Math.abs(area) / 2;
+  return abs(area) / 2;
 }
 
 /**
@@ -85,7 +87,7 @@ export function polygonCentroid(points) {
   }
   
   area = area / 2;
-  if (Math.abs(area) < 1e-10) {
+  if (abs(area) < 1e-10) {
     // Degenerate polygon, return average of points
     const sumX = points.reduce((sum, p) => sum + p[0], 0);
     const sumY = points.reduce((sum, p) => sum + p[1], 0);

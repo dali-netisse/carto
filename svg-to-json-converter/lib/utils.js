@@ -3,6 +3,7 @@
  */
 
 import sortKeys from "sort-keys";
+import { atan2, sqrt, abs } from './perlMath.js';
 
 // ANSI color codes for console output
 export const ANSI = {
@@ -40,99 +41,13 @@ export function parseNumber(value, defaultValue = 0) {
 }
 
 /**
- * Round a number to a specified number of decimal places
- * @param {number} num - Number to round
- * @param {number} decimals - Number of decimal places
- * @returns {number} Rounded number
- */
-export function roundTo(num, decimals = 6) {
-  const factor = Math.pow(10, decimals);
-  return Math.round(num * factor) / factor;
-}
-
-/**
- * Match Perl's floating-point precision exactly
- * Perl's JSON encoder uses smart precision that removes trailing floating-point noise
- * while preserving significant digits. This mimics Perl's JSON encoding behavior.
- * @param {number} num - Number to format
- * @param {number} maxDecimalPlaces - For compatibility, 14 for direction values
- * @returns {number} Number with Perl JSON-like precision
- */
-export function toPerlCoordinatePrecision(num, maxDecimalPlaces = null) {
-  if (!isFinite(num)) return num;
-  
-  // For direction values, handle truncation to match Perl's atan2 output
-  if (maxDecimalPlaces === 14) {
-    // For direction values, use string truncation to match Perl's atan2 behavior
-    const str = num.toString();
-    if (str.includes('.')) {
-      const parts = str.split('.');
-      if (parts[1].length > 13) {
-        // Truncate to 13 decimal places to match Perl's atan2 output
-        return parseFloat(parts[0] + '.' + parts[1].substring(0, 13));
-      }
-    }
-    return num;
-  }
-  
-  // For coordinate values, emulate Perl's JSON smart precision
-  // This removes trailing floating-point noise that results from IEEE 754 arithmetic
-  // by finding the shortest accurate representation
-  return perlSmartPrecision(num);
-}
-
-/**
- * Emulate Perl's JSON smart precision algorithm
- * Removes trailing floating-point noise while preserving significant digits
- * @param {number} num - Number to process
- * @returns {number} Number with smart precision like Perl's JSON encoder
- */
-function perlSmartPrecision(num) {
-  // Handle integers
-  if (Number.isInteger(num)) return num;
-  
-  // Perl automatically rounds very long decimal representations to avoid
-  // displaying floating-point arithmetic noise. We emulate this by parsing
-  // the number as a string and reparsing it, which triggers JavaScript's
-  // own smart precision logic similar to Perl.
-  
-  // Convert to string and back to number to trigger smart precision
-  const str = num.toString();
-  const reparsed = parseFloat(str);
-  
-  // If the string representation has lots of trailing 9s or 0s (floating-point noise),
-  // try to find a cleaner representation by rounding to reasonable precision
-  if (str.includes('.') && /(99999|00000)/.test(str)) {
-    // Try different precision levels to find the cleanest representation
-    for (let decimals = 6; decimals <= 12; decimals++) {
-      const rounded = parseFloat(num.toFixed(decimals));
-      const roundedStr = rounded.toString();
-      
-      // If rounding produces a cleaner result and is still accurate, use it
-      if (!/(99999|00000)/.test(roundedStr) && 
-          Math.abs(rounded - num) < Math.abs(num) * 1e-12) {
-        return rounded;
-      }
-    }
-  }
-  
-  return reparsed;
-}
-
-/**
- * Match Perl's direction calculation precision exactly
- * Perl's atan2 outputs up to 14 significant decimal places naturally
+ * Calculate direction using Perl-compatible atan2
  * @param {number} y - Y component
  * @param {number} x - X component  
- * @returns {number} Direction angle in radians with Perl-like precision
+ * @returns {number} Direction angle in radians with Perl precision
  */
-export function toPerlDirectionPrecision(y, x) {
-  const direction = Math.atan2(y, x);
-  
-  // Don't truncate - let JavaScript's natural precision show
-  // The differences in precision come from coordinate calculation differences,
-  // not from atan2 precision differences
-  return direction;
+export function calculateDirection(y, x) {
+  return atan2(y, x);
 }
 
 /**
@@ -141,7 +56,7 @@ export function toPerlDirectionPrecision(y, x) {
  * @returns {string} Formatted point string "x,y"
  */
 export function formatPoint(point) {
-  return `${toPerlCoordinatePrecision(point[0])},${toPerlCoordinatePrecision(point[1])}`;
+  return `${point[0]},${point[1]}`;
 }
 
 /**
@@ -162,7 +77,7 @@ export function formatPoints(points) {
 export function distance(p1, p2) {
   const dx = p2[0] - p1[0];
   const dy = p2[1] - p1[1];
-  return Math.sqrt(dx * dx + dy * dy);
+  return sqrt(dx * dx + dy * dy);
 }
 
 /**
@@ -175,8 +90,8 @@ export function distance(p1, p2) {
 export function pointsAreClose(p1, p2, threshold = 0.4) {
   // Perl logic: filter if dx <= threshold AND dy <= threshold
   // Keep if dx > threshold OR dy > threshold
-  const dx = Math.abs(p1[0] - p2[0]);
-  const dy = Math.abs(p1[1] - p2[1]);
+  const dx = abs(p1[0] - p2[0]);
+  const dy = abs(p1[1] - p2[1]);
   return dx <= threshold && dy <= threshold;
 }
 

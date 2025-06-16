@@ -56,10 +56,11 @@ import {
   extractSpecialAttributes,
   toCanonicalJSON,
   ANSI,
-  roundTo,
-   toPerlCoordinatePrecision,
-   toPerlDirectionPrecision,
+  calculateDirection,
 } from "./lib/utils.js";
+import {
+  abs
+} from "./lib/perlMath.js";
 import {
   resolveSite,
   getCalibrationRect as getCalibrationRectConfig,
@@ -612,7 +613,7 @@ async function processFile(filename, options) {
         class: classifiedType, // "desks" or "meeting"
         id: processedId, // Perl uses the processed ID as key, not lowercased
         point: [calculatedPoint[0], calculatedPoint[1]], // Remove roundTo for full precision
-        direction: toPerlCoordinatePrecision(calculatedDirection,14), // Use Perl-like precision for direction
+        direction: calculatedDirection, // Let Perl handle precision during JSON processing
         objects: deskObjects,
       };
 
@@ -639,7 +640,7 @@ async function processFile(filename, options) {
         class: classifiedType, // e.g., "ecran-orientation"
         id: processedId,
         point: [baseObj.point[0], baseObj.point[1]], // Use same format as desks
-        direction: toPerlCoordinatePrecision(baseObj.direction, 14), // Use same precision as desks
+        direction: baseObj.direction, // Let Perl handle precision
         objects: [], // Furniture items have empty objects array like in Perl
       };
 
@@ -741,8 +742,8 @@ function processElement(elem, calibrationTransform) {
       const transformedPoints = transformPoints(points, transform);
       obj = {
         type: "polygon",
-        // Use toPerlCoordinatePrecision for rects processed as polygons too
-        points: transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1], 6)}`).join(" "),
+        // Let Perl handle precision for rects processed as polygons
+        points: transformedPoints.map(p => `${p[0]},${p[1]}`).join(" "),
       };
       break;
 
@@ -759,14 +760,14 @@ function processElement(elem, calibrationTransform) {
         if (isValidPolygon(points, type === "polygon")) {
           obj = {
             type: type,
-            points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1],6)}`).join(" ")
+            points: points.map(p => `${p[0]},${p[1]}`).join(" ")
           };
         } else {
           // If it's a polyline, or a polygon that didn't pass strict isValidPolygon but might still be valid as a polyline
           if (type === "polyline" && points && points.length >= 2) {
             obj = {
               type: type,
-              points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ")
+              points: points.map(p => `${p[0]},${p[1]}`).join(" ")
             };
           } else if (type === "polygon" && points && points.length >=3) {
             // Fallback for polygons that might not be 'valid' by the strict check but should still be outputted
@@ -774,7 +775,7 @@ function processElement(elem, calibrationTransform) {
             // For now, assume if it has points, format them.
              obj = {
               type: type,
-              points: points.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1],6)}`).join(" ")
+              points: points.map(p => `${p[0]},${p[1]}`).join(" ")
             };
           }
         }
@@ -792,8 +793,8 @@ function processElement(elem, calibrationTransform) {
       const transformedLine = transformPoints(linePoints, transform);
       obj = {
         type: "polyline", // Lines are converted to polylines
-        // Use toPerlCoordinatePrecision for lines processed as polylines
-        points: transformedLine.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+        // Let Perl handle precision for lines processed as polylines
+        points: transformedLine.map(p => `${p[0]},${p[1]}`).join(" "),
       };
       break;
 
@@ -814,8 +815,8 @@ function processElement(elem, calibrationTransform) {
               const first = transformed[0];
               const last = transformed[transformed.length - 1];
               const threshold = 0.4;
-              const dx = Math.abs(last[0] - first[0]);
-              const dy = Math.abs(last[1] - first[1]);
+              const dx = abs(last[0] - first[0]);
+              const dy = abs(last[1] - first[1]);
               if (dx <= threshold && dy <= threshold) {
                 transformed.pop(); // Remove redundant closing point
               }
@@ -825,17 +826,17 @@ function processElement(elem, calibrationTransform) {
               if (transformed.length === 2 || type === "polyline") { // Treat paths that become 2 points as polylines
                 obj = {
                   type: "polyline",
-                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+                  points: transformed.map(p => `${p[0]},${p[1]}`).join(" "),
                 };
               } else if (transformed.length >= 3 && (type === "polygon" || isValidPolygon(transformed))) { // Check isValidPolygon if it's meant to be a polygon
                 obj = {
                   type: "polygon",
-                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+                  points: transformed.map(p => `${p[0]},${p[1]}`).join(" "),
                 };
               } else if (transformed.length >=3) { // Fallback to polyline if not a valid polygon but has 3+ points
                  obj = {
                   type: "polyline", 
-                  points: transformed.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" "),
+                  points: transformed.map(p => `${p[0]},${p[1]}`).join(" "),
                 };
               }
             }
@@ -941,14 +942,11 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
   console.log(`Extracted points: point1=${JSON.stringify(point1)}, point2=${JSON.stringify(point2)}`);
 
   // Calculate direction exactly like Perl: atan2($point2->[1] - $point1->[1], $point2->[0] - $point1->[0])
-  const direction = toPerlDirectionPrecision(point2[1] - point1[1], point2[0] - point1[0]);
+  const direction = calculateDirection(point2[1] - point1[1], point2[0] - point1[0]);
   console.log(`Calculated direction: ${direction}`);
 
-  // Apply coordinate precision to point1 like Perl
-  const precisePoint = [
-    toPerlCoordinatePrecision(point1[0], 12),
-    toPerlCoordinatePrecision(point1[1], 12)
-  ];
+  // Let Perl handle coordinate precision during JSON encoding
+  const precisePoint = [point1[0], point1[1]];
 
   // Return the desk geometry - use point1 exactly like Perl
   const result = {
@@ -996,15 +994,15 @@ function processElementItinerary(elem, calibrationTransform) {
     if (transform) {
       const [tx1, ty1] = transformPoint(x1, y1, transform);
       const [tx2, ty2] = transformPoint(x2, y2, transform);
-      obj.x1 = toPerlCoordinatePrecision(tx1);
-      obj.y1 = toPerlCoordinatePrecision(ty1);
-      obj.x2 = toPerlCoordinatePrecision(tx2);
-      obj.y2 = toPerlCoordinatePrecision(ty2);
+      obj.x1 = tx1;
+      obj.y1 = ty1;
+      obj.x2 = tx2;
+      obj.y2 = ty2;
     } else {
-      obj.x1 = toPerlCoordinatePrecision(x1);
-      obj.y1 = toPerlCoordinatePrecision(y1);
-      obj.x2 = toPerlCoordinatePrecision(x2);
-      obj.y2 = toPerlCoordinatePrecision(y2);
+      obj.x1 = x1;
+      obj.y1 = y1;
+      obj.x2 = x2;
+      obj.y2 = y2;
     }
   } else if (type === "polyline" || type === "polygon") {
     const points = parsePoints(getAttribute(elem, "points"));
@@ -1022,7 +1020,7 @@ function processElementItinerary(elem, calibrationTransform) {
       obj.type = "polyline";
     }
 
-    obj.points = transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ");
+    obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
   } else if (type === "path") {
     const d = getAttribute(elem, "d");
     if (!d) return null;
@@ -1049,7 +1047,7 @@ function processElementItinerary(elem, calibrationTransform) {
         const threshold = 0.4;
         
         // If path was closed (last point near first), add explicit line to first point
-        if (Math.abs(last[0] - first[0]) <= threshold && Math.abs(last[1] - first[1]) <= threshold) {
+        if (abs(last[0] - first[0]) <= threshold && abs(last[1] - first[1]) <= threshold) {
           // Remove the duplicate close point and add explicit first point 
           transformedPoints.pop();
           transformedPoints.push(first);
@@ -1059,7 +1057,7 @@ function processElementItinerary(elem, calibrationTransform) {
         obj.type = "polyline";
       }
 
-      obj.points = transformedPoints.map(p => `${toPerlCoordinatePrecision(p[0])},${toPerlCoordinatePrecision(p[1])}`).join(" ");
+      obj.points = transformedPoints.map(p => `${p[0]},${p[1]}`).join(" ");
     } catch (error) {
       console.error(`Error processing path ${originalId}:`, error);
       return null;
