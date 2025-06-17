@@ -7,6 +7,8 @@
 
 import { execSync } from 'child_process';
 
+const usePerl = false; // Set to true if you want to use Perl for math operations
+
 /**
  * Call Perl for mathematical operations to match precision exactly
  * @param {string} operation - Perl mathematical expression
@@ -14,9 +16,9 @@ import { execSync } from 'child_process';
  */
 function callPerl(operation) {
   try {
-    const result = execSync(`perl -e "use Math::Trig; print ${operation};"`, { 
+    const result = execSync(`perl -e "use Math::Trig; print ${operation};"`, {
       encoding: 'utf8',
-      timeout: 1000 
+      timeout: 1000
     });
     return parseFloat(result.trim());
   } catch (error) {
@@ -32,7 +34,7 @@ function callPerl(operation) {
  * @returns {number} Angle in radians
  */
 export function atan2(y, x) {
-  return callPerl(`atan2(${y}, ${x})`);
+  return usePerl ? callPerl(`atan2(${y}, ${x})`) : Math.atan2(y, x);
 }
 
 /**
@@ -40,7 +42,7 @@ export function atan2(y, x) {
  * @returns {number} PI value from Perl
  */
 export function PI() {
-  return callPerl('pi');
+  return usePerl ? callPerl('pi') : Math.PI;
 }
 
 /**
@@ -48,7 +50,7 @@ export function PI() {
  * @returns {number} PI/2 value from Perl
  */
 export function PI_2() {
-  return callPerl('pi/2');
+  return usePerl ? callPerl('pi/2') : Math.PI / 2;
 }
 
 /**
@@ -57,7 +59,7 @@ export function PI_2() {
  * @returns {number} Sine value
  */
 export function sin(x) {
-  return callPerl(`sin(${x})`);
+  return usePerl ? callPerl(`sin(${x})`) : Math.sin(x);
 }
 
 /**
@@ -66,7 +68,7 @@ export function sin(x) {
  * @returns {number} Cosine value
  */
 export function cos(x) {
-  return callPerl(`cos(${x})`);
+  return usePerl ? callPerl(`cos(${x})`) : Math.cos(x);
 }
 
 /**
@@ -75,7 +77,7 @@ export function cos(x) {
  * @returns {number} Tangent value
  */
 export function tan(x) {
-  return callPerl(`tan(${x})`);
+  return usePerl ? callPerl(`tan(${x})`) : Math.tan(x);
 }
 
 /**
@@ -84,7 +86,7 @@ export function tan(x) {
  * @returns {number} Square root
  */
 export function sqrt(x) {
-  return callPerl(`sqrt(${x})`);
+  return usePerl ? callPerl(`sqrt(${x})`) : Math.sqrt(x);
 }
 
 /**
@@ -93,7 +95,7 @@ export function sqrt(x) {
  * @returns {number} Absolute value
  */
 export function abs(x) {
-  return callPerl(`abs(${x})`);
+  return usePerl ? callPerl(`abs(${x})`) : Math.abs(x);
 }
 
 // For convenience, export constants as values
@@ -104,13 +106,13 @@ export const PI_2_VALUE = PI_2();
 export const PerlMath = {
   atan2,
   sin,
-  cos, 
+  cos,
   tan,
   sqrt,
   abs,
   PI: PI_VALUE,
   PI_2: PI_2_VALUE,
-  
+
   // For operations that don't need Perl precision, use native JS
   floor: Math.floor,
   ceil: Math.ceil,

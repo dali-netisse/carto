@@ -11,7 +11,7 @@
       "desks" : {
          "Poste Acc:I1-3A2:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "Poste Acc:I1-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -31,7 +31,7 @@
          },
          "poste Acc1:I11A6:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste Acc1:I11A6:A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -51,7 +51,7 @@
          },
          "poste Acc2:I11A6:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste Acc2:I11A6:A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -71,7 +71,7 @@
          },
          "poste B002:I2-3A2:A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste B002:I2-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 2,
@@ -91,7 +91,7 @@
          },
          "poste B004:I1-4A2:AB" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste B004:I1-4A2:AB",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -117,7 +117,7 @@
          },
          "poste B006:I23A6:A" : {
             "class" : "desks",
-            "direction" : -1.05165009625527,
+            "direction" : -1.0516500962552673,
             "id" : "poste B006:I23A6:A",
             "indicator_a" : 6,
             "indicator_x" : 2,
@@ -137,7 +137,7 @@
          },
          "poste B007:I3-2A4:A" : {
             "class" : "desks",
-            "direction" : 2.07789461725169,
+            "direction" : 2.0778946172516854,
             "id" : "poste B007:I3-2A4:A",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -157,7 +157,7 @@
          },
          "poste B008:I-10A0:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste B008:I-10A0:A",
             "indicator_x" : -1,
             "objects" : [
@@ -175,7 +175,7 @@
          },
          "poste B009:I31A5:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste B009:I31A5:A",
             "indicator_a" : 5,
             "indicator_x" : 3,
@@ -195,7 +195,7 @@
          },
          "poste B010:I00A0:BA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste B010:I00A0:BA",
             "objects" : [
                {
@@ -218,7 +218,7 @@
          },
          "poste B011:I00A0:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste B011:I00A0:A",
             "objects" : [
                {
@@ -235,7 +235,7 @@
          },
          "poste B012:I30A4:A" : {
             "class" : "desks",
-            "direction" : 1.36348609777585,
+            "direction" : 1.3634860977758534,
             "id" : "poste B012:I30A4:A",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -254,7 +254,7 @@
          },
          "poste B013:I11A6:A" : {
             "class" : "desks",
-            "direction" : 0.519145556039216,
+            "direction" : 0.5191455560392162,
             "id" : "poste B013:I11A6:A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -274,7 +274,7 @@
          },
          "poste B014:I1-3A2:A" : {
             "class" : "desks",
-            "direction" : 0.519145556039218,
+            "direction" : 0.5191455560392182,
             "id" : "poste B014:I1-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -294,7 +294,7 @@
          },
          "poste B015:I1-3A2:A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste B015:I1-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -314,7 +314,7 @@
          },
          "poste BM001:I23A6:-A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BM001:I23A6:-A",
             "indicator_a" : 6,
             "indicator_x" : 2,
@@ -336,7 +336,7 @@
       "meeting" : {
          "SDR 005:4" : {
             "class" : "meeting",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "SDR 005:4",
             "objects" : [
                {
@@ -375,7 +375,7 @@
       "accueil-capca-1" : {
          "meuble accueil-capca-1" : {
             "class" : "accueil-capca-1",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble accueil-capca-1",
             "objects" : [],
             "point" : [
@@ -583,7 +583,7 @@
          "text Barlow-Regular 4 #000000 Entrée" : {
             "class" : "Barlow-Regular",
             "color" : "#000000",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "text Barlow-Regular 4 #000000 Entrée",
             "objects" : [],
             "point" : [

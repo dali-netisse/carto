@@ -43,7 +43,7 @@
       "borne-orientation" : {
          "meuble borne-orientation A0" : {
             "class" : "borne-orientation",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble borne-orientation A0",
             "objects" : [],
             "point" : [
@@ -63,7 +63,7 @@
          },
          "meuble borne-orientation C0" : {
             "class" : "borne-orientation",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble borne-orientation C0",
             "objects" : [],
             "point" : [
@@ -75,7 +75,7 @@
       "controle-acces" : {
          "meuble controle-acces A1" : {
             "class" : "controle-acces",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "meuble controle-acces A1",
             "objects" : [],
             "point" : [
@@ -87,7 +87,7 @@
       "tree" : {
          "meuble tree 1" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 1",
             "objects" : [],
             "point" : [
@@ -97,7 +97,7 @@
          },
          "meuble tree 10" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 10",
             "objects" : [],
             "point" : [
@@ -107,7 +107,7 @@
          },
          "meuble tree 11" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 11",
             "objects" : [],
             "point" : [
@@ -117,7 +117,7 @@
          },
          "meuble tree 12" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 12",
             "objects" : [],
             "point" : [
@@ -127,7 +127,7 @@
          },
          "meuble tree 13" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 13",
             "objects" : [],
             "point" : [
@@ -137,7 +137,7 @@
          },
          "meuble tree 2" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 2",
             "objects" : [],
             "point" : [
@@ -147,7 +147,7 @@
          },
          "meuble tree 3" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 3",
             "objects" : [],
             "point" : [
@@ -157,7 +157,7 @@
          },
          "meuble tree 4" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 4",
             "objects" : [],
             "point" : [
@@ -167,7 +167,7 @@
          },
          "meuble tree 5" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 5",
             "objects" : [],
             "point" : [
@@ -177,7 +177,7 @@
          },
          "meuble tree 6" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 6",
             "objects" : [],
             "point" : [
@@ -187,7 +187,7 @@
          },
          "meuble tree 7" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 7",
             "objects" : [],
             "point" : [
@@ -197,7 +197,7 @@
          },
          "meuble tree 8" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 8",
             "objects" : [],
             "point" : [
@@ -207,7 +207,7 @@
          },
          "meuble tree 9" : {
             "class" : "tree",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble tree 9",
             "objects" : [],
             "point" : [
@@ -1311,7 +1311,7 @@
          "rtext Barlow-Regular 8 #000000 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000000",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000000 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -1325,7 +1325,7 @@
          "rtext Barlow-Regular 8 #000000 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000000",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000000 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -1339,7 +1339,7 @@
          "rtext Barlow-Regular 8 #000001 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000001",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000001 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -1353,7 +1353,7 @@
          "rtext Barlow-Regular 8 #000001 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000001",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000001 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -1367,7 +1367,7 @@
          "rtext Barlow-Regular 8 #000010 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000010",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000010 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -1381,7 +1381,7 @@
          "rtext Barlow-Regular 8 #000010 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000010",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000010 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -1395,7 +1395,7 @@
          "rtext Barlow-Regular 8 #000011 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000011",
-            "direction" : 2.68680465526716,
+            "direction" : 2.6868046552671556,
             "id" : "rtext Barlow-Regular 8 #000011 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -1409,7 +1409,7 @@
          "rtext Barlow-Regular 8 #000011 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000011",
-            "direction" : 3.09607910128152,
+            "direction" : 3.0960791012815214,
             "id" : "rtext Barlow-Regular 8 #000011 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -1437,7 +1437,7 @@
          "text Barlow-Regular 4 #ffffff PC Sécurité" : {
             "class" : "Barlow-Regular",
             "color" : "#ffffff",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "text Barlow-Regular 4 #ffffff PC Sécurité",
             "objects" : [],
             "point" : [

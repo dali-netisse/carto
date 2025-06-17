@@ -1,3 +1,6 @@
 # ignore node_modules recursively
 **/node_modules/
 *.svg
+*.json
+**/*.json
+js-output/*

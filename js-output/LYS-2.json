@@ -17,7 +17,7 @@
       "desks" : {
          "Poste CI204:I00A9:@-@-@-@" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "Poste CI204:I00A9:@-@-@-@",
             "indicator_a" : 9,
             "objects" : [
@@ -53,7 +53,7 @@
          },
          "Poste DI208:I2-3A2:A" : {
             "class" : "desks",
-            "direction" : -0.397369438603005,
+            "direction" : -0.3973694386030049,
             "id" : "Poste DI208:I2-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 2,
@@ -73,7 +73,7 @@
          },
          "Poste DI210:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : 1.13853930316576,
+            "direction" : 1.1385393031657551,
             "id" : "Poste DI210:I00A0:CBDA",
             "objects" : [
                {
@@ -108,7 +108,7 @@
          },
          "Poste DI214:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : 1.16891892730976,
+            "direction" : 1.168918927309758,
             "id" : "Poste DI214:I00A0:CBDA",
             "objects" : [
                {
@@ -143,7 +143,7 @@
          },
          "Poste DI218:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : 1.13936361241883,
+            "direction" : 1.1393636124188278,
             "id" : "Poste DI218:I00A0:CBDA",
             "objects" : [
                {
@@ -178,7 +178,7 @@
          },
          "Poste DI228:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : -0.00633634647106936,
+            "direction" : -0.006336346471069358,
             "id" : "Poste DI228:I00A0:CBDA",
             "objects" : [
                {
@@ -213,7 +213,7 @@
          },
          "Poste DI228:I00A9:FE" : {
             "class" : "desks",
-            "direction" : 1.10982187320923,
+            "direction" : 1.1098218732092255,
             "id" : "Poste DI228:I00A9:FE",
             "indicator_a" : 9,
             "objects" : [
@@ -237,7 +237,7 @@
          },
          "Poste DI232:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 0.00433538507877356,
+            "direction" : 0.004335385078773556,
             "id" : "Poste DI232:I00A0:DCEBFA",
             "objects" : [
                {
@@ -360,7 +360,7 @@
          },
          "Poste DI244:I00A0:BA" : {
             "class" : "desks",
-            "direction" : -1.99124310792533,
+            "direction" : -1.9912431079253328,
             "id" : "Poste DI244:I00A0:BA",
             "objects" : [
                {
@@ -383,7 +383,7 @@
          },
          "Poste DI256:I00A0:CBDAEF" : {
             "class" : "desks",
-            "direction" : -1.99675828961148,
+            "direction" : -1.996758289611477,
             "id" : "Poste DI256:I00A0:CBDAEF",
             "objects" : [
                {
@@ -430,7 +430,7 @@
          },
          "Poste DI258:I00A0:1G=C,1D=B,2G=D,2D=A,3C=E" : {
             "class" : "desks",
-            "direction" : -1.98502526031807,
+            "direction" : -1.985025260318067,
             "id" : "Poste DI258:I00A0:1G=C,1D=B,2G=D,2D=A,3C=E",
             "objects" : [
                {
@@ -471,7 +471,7 @@
          },
          "Poste DI264:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.99945504752809,
+            "direction" : -1.9994550475280888,
             "id" : "Poste DI264:I00A0:DCEBFA",
             "objects" : [
                {
@@ -518,7 +518,7 @@
          },
          "Poste DI268:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -2.00994285093707,
+            "direction" : -2.009942850937072,
             "id" : "Poste DI268:I00A0:DCEBFA",
             "objects" : [
                {
@@ -565,7 +565,7 @@
          },
          "Poste DI273:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.99124287873545,
+            "direction" : -1.9912428787354515,
             "id" : "Poste DI273:I00A0:DCEBFA",
             "objects" : [
                {
@@ -659,7 +659,7 @@
          },
          "Poste DI288:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : 3.0962129001969,
+            "direction" : 3.0962129001969037,
             "id" : "Poste DI288:I00A0:CBDA",
             "objects" : [
                {
@@ -694,7 +694,7 @@
          },
          "Poste DI291:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.09807992152025,
+            "direction" : 3.0980799215202506,
             "id" : "Poste DI291:I00A0:DCEBFA",
             "objects" : [
                {
@@ -741,7 +741,7 @@
          },
          "Poste DP211:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.61617441506786,
+            "direction" : -1.6161744150678579,
             "id" : "Poste DP211:I00A0:DCEBFA",
             "objects" : [
                {
@@ -788,7 +788,7 @@
          },
          "Poste DP214:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.61617212611963,
+            "direction" : -1.6161721261196338,
             "id" : "Poste DP214:I00A0:DCEBFA",
             "objects" : [
                {
@@ -835,7 +835,7 @@
          },
          "Poste DP217:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.60268547598358,
+            "direction" : -1.6026854759835807,
             "id" : "Poste DP217:I00A0:DCEBFA",
             "objects" : [
                {
@@ -882,7 +882,7 @@
          },
          "Poste DP225:I00A0:AB" : {
             "class" : "desks",
-            "direction" : -0.0160705582642117,
+            "direction" : -0.01607055826421171,
             "id" : "Poste DP225:I00A0:AB",
             "objects" : [
                {
@@ -905,7 +905,7 @@
          },
          "Poste DP228:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 0.000951560883938959,
+            "direction" : 0.0009515608839389589,
             "id" : "Poste DP228:I00A0:DCEBFA",
             "objects" : [
                {
@@ -952,7 +952,7 @@
          },
          "Poste DP232:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 0.00653923497138896,
+            "direction" : 0.006539234971388962,
             "id" : "Poste DP232:I00A0:DCEBFA",
             "objects" : [
                {
@@ -999,7 +999,7 @@
          },
          "Poste DP242:I-0.22A0:FEGDHC" : {
             "class" : "desks",
-            "direction" : 1.52542130200153,
+            "direction" : 1.5254213020015284,
             "id" : "Poste DP242:I-0.22A0:FEGDHC",
             "indicator_x" : -0.2,
             "indicator_y" : 2,
@@ -1048,7 +1048,7 @@
          },
          "Poste DP245:I-0.20A0:DCEB-A" : {
             "class" : "desks",
-            "direction" : 1.52542263029138,
+            "direction" : 1.525422630291378,
             "id" : "Poste DP245:I-0.20A0:DCEB-A",
             "indicator_x" : -0.2,
             "objects" : [
@@ -1090,7 +1090,7 @@
          },
          "Poste DP248:I1-3A2:A" : {
             "class" : "desks",
-            "direction" : -0.050757655474744,
+            "direction" : -0.05075765547474396,
             "id" : "Poste DP248:I1-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -1110,7 +1110,7 @@
          },
          "Poste DP256:I-0.20A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.52542005982408,
+            "direction" : 1.5254200598240812,
             "id" : "Poste DP256:I-0.20A0:DCEBFA",
             "indicator_x" : -0.2,
             "objects" : [
@@ -1158,7 +1158,7 @@
          },
          "Poste DP264:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.52541389329931,
+            "direction" : 1.5254138932993113,
             "id" : "Poste DP264:I00A0:DCEBFA",
             "objects" : [
                {
@@ -1205,7 +1205,7 @@
          },
          "Poste DP267:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.52541391532297,
+            "direction" : 1.5254139153229673,
             "id" : "Poste DP267:I00A0:DCEBFA",
             "objects" : [
                {
@@ -1252,7 +1252,7 @@
          },
          "Poste DP270:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : 1.52541389329931,
+            "direction" : 1.5254138932993115,
             "id" : "Poste DP270:I00A0:CBDA",
             "objects" : [
                {
@@ -1287,7 +1287,7 @@
          },
          "Poste DP276:I00A0:1G=C,1D=B,2G=D,2D=A,3G=E" : {
             "class" : "desks",
-            "direction" : 2.70643599873222,
+            "direction" : 2.7064359987322173,
             "id" : "Poste DP276:I00A0:1G=C,1D=B,2G=D,2D=A,3G=E",
             "objects" : [
                {
@@ -1328,7 +1328,7 @@
          },
          "poste AI200:I1-3A2:A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AI200:I1-3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -1392,7 +1392,7 @@
          },
          "poste AI210:I-1.52A6:1GX=B,2C=A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI210:I-1.52A6:1GX=B,2C=A",
             "indicator_a" : 6,
             "indicator_x" : -1.5,
@@ -1418,7 +1418,7 @@
          },
          "poste AI215:I-0.83A0:-A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI215:I-0.83A0:-A",
             "indicator_x" : -0.8,
             "indicator_y" : 3,
@@ -1437,7 +1437,7 @@
          },
          "poste AI218:I1-2.5A2:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AI218:I1-2.5A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -1457,7 +1457,7 @@
          },
          "poste AI220:I1-2.5A2:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AI220:I1-2.5A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -1477,7 +1477,7 @@
          },
          "poste AI230:I-0.10.9A0:1G=C,1D=B,2G=D,2D=A,3C=E" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI230:I-0.10.9A0:1G=C,1D=B,2G=D,2D=A,3C=E",
             "indicator_x" : -0.1,
             "indicator_y" : 0.9,
@@ -1520,7 +1520,7 @@
          },
          "poste AI232:I-0.10A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI232:I-0.10A0:CBDA",
             "indicator_x" : -0.1,
             "objects" : [
@@ -1556,7 +1556,7 @@
          },
          "poste AI235:I-0.22A0:ED" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI235:I-0.22A0:ED",
             "indicator_x" : -0.2,
             "indicator_y" : 2,
@@ -1581,7 +1581,7 @@
          },
          "poste AI235:I00A9:1G=B,1D=A,2C=C" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AI235:I00A9:1G=B,1D=A,2C=C",
             "indicator_a" : 9,
             "objects" : [
@@ -1611,7 +1611,7 @@
          },
          "poste AI240:I00A9:BACD" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AI240:I00A9:BACD",
             "indicator_a" : 9,
             "objects" : [
@@ -1697,7 +1697,7 @@
          },
          "poste AI245:I-0.20A0:1G=C,1D=B,2G=D,2D=A,3C=E" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AI245:I-0.20A0:1G=C,1D=B,2G=D,2D=A,3C=E",
             "indicator_x" : -0.2,
             "objects" : [
@@ -1739,7 +1739,7 @@
          },
          "poste AI250:I-0.20A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AI250:I-0.20A0:DCEBFA",
             "indicator_x" : -0.2,
             "objects" : [
@@ -1813,7 +1813,7 @@
          },
          "poste AP200:I-1-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP200:I-1-2A0:DCEBFA",
             "indicator_x" : -1,
             "indicator_y" : -2,
@@ -1862,7 +1862,7 @@
          },
          "poste AP200:I00A9:IHJG" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP200:I00A9:IHJG",
             "indicator_a" : 9,
             "objects" : [
@@ -1898,7 +1898,7 @@
          },
          "poste AP205:I-0.50A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP205:I-0.50A0:DCEBFA",
             "indicator_x" : -0.5,
             "objects" : [
@@ -1946,7 +1946,7 @@
          },
          "poste AP206:I2-3A2:BACD" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP206:I2-3A2:BACD",
             "indicator_a" : 2,
             "indicator_x" : 2,
@@ -1984,7 +1984,7 @@
          },
          "poste AP210:I30A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AP210:I30A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -2009,7 +2009,7 @@
          },
          "poste AP215:I00A0:IHJG" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP215:I00A0:IHJG",
             "objects" : [
                {
@@ -2044,7 +2044,7 @@
          },
          "poste AP215:I00A9:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP215:I00A9:DCEBFA",
             "indicator_a" : 9,
             "objects" : [
@@ -2140,7 +2140,7 @@
          },
          "poste AP220:I0-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AP220:I0-2A0:DCEBFA",
             "indicator_y" : -2,
             "objects" : [
@@ -2188,7 +2188,7 @@
          },
          "poste AP220:I00A9:G" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AP220:I00A9:G",
             "indicator_a" : 9,
             "objects" : [
@@ -2206,7 +2206,7 @@
          },
          "poste AP220:I00A9:IH" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AP220:I00A9:IH",
             "indicator_a" : 9,
             "objects" : [
@@ -2274,7 +2274,7 @@
          },
          "poste AP225:I0-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AP225:I0-2A0:DCEBFA",
             "indicator_y" : -2,
             "objects" : [
@@ -2322,7 +2322,7 @@
          },
          "poste AP225:I00A9:1G=G,1D=K,2G=H,2D=J,3C=I" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AP225:I00A9:1G=G,1D=K,2G=H,2D=J,3C=I",
             "indicator_a" : 9,
             "objects" : [
@@ -2364,7 +2364,7 @@
          },
          "poste AP230:I14A6:1G=D,1D=C,2G=E,2D=B,3C=A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP230:I14A6:1G=D,1D=C,2G=E,2D=B,3C=A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -2458,7 +2458,7 @@
          },
          "poste AP245:I23A6:CBDA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste AP245:I23A6:CBDA",
             "indicator_a" : 6,
             "indicator_x" : 2,
@@ -2516,7 +2516,7 @@
          },
          "poste AP255:I30A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste AP255:I30A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -2541,7 +2541,7 @@
          },
          "poste AP256:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste AP256:I00A0:DCEBFA",
             "objects" : [
                {
@@ -2733,7 +2733,7 @@
          },
          "poste BI210:I0-3A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BI210:I0-3A0:CBDA",
             "indicator_y" : -3,
             "objects" : [
@@ -2769,7 +2769,7 @@
          },
          "poste BI210:I00A9:GFHE" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BI210:I00A9:GFHE",
             "indicator_a" : 9,
             "objects" : [
@@ -2805,7 +2805,7 @@
          },
          "poste BI212:I1-3A2:BA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BI212:I1-3A2:BA",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -2831,7 +2831,7 @@
          },
          "poste BI215:I1-3.3A2:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BI215:I1-3.3A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -2851,7 +2851,7 @@
          },
          "poste BI220:I30A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BI220:I30A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -2876,7 +2876,7 @@
          },
          "poste BI222:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BI222:I00A0:DCEBFA",
             "objects" : [
                {
@@ -2923,7 +2923,7 @@
          },
          "poste BI225:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BI225:I00A0:DCEBFA",
             "objects" : [
                {
@@ -2970,7 +2970,7 @@
          },
          "poste BI230:I1-3.2A2:AFBECD" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BI230:I1-3.2A2:AFBECD",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -3020,7 +3020,7 @@
          },
          "poste BI235:I1-3.2A2:AJBICHDGEF" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BI235:I1-3.2A2:AJBICHDGEF",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -3120,7 +3120,7 @@
          },
          "poste BI245:I00A9:AFBECD" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BI245:I00A9:AFBECD",
             "indicator_a" : 9,
             "objects" : [
@@ -3204,7 +3204,7 @@
          },
          "poste BP200:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BP200:I00A0:DCEBFA",
             "objects" : [
                {
@@ -3251,7 +3251,7 @@
          },
          "poste BP205:I00A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP205:I00A0:CBDA",
             "objects" : [
                {
@@ -3286,7 +3286,7 @@
          },
          "poste BP210:I00A0:-A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP210:I00A0:-A",
             "objects" : [
                {
@@ -3303,7 +3303,7 @@
          },
          "poste BP212:I30A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP212:I30A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -3328,7 +3328,7 @@
          },
          "poste BP215:I30A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP215:I30A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -3353,7 +3353,7 @@
          },
          "poste BP220:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP220:I00A0:DCEBFA",
             "objects" : [
                {
@@ -3400,7 +3400,7 @@
          },
          "poste BP230:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP230:I00A0:DCEBFA",
             "objects" : [
                {
@@ -3447,7 +3447,7 @@
          },
          "poste BP235:I00A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP235:I00A0:DCEBFA",
             "objects" : [
                {
@@ -3494,7 +3494,7 @@
          },
          "poste BP240:I0-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP240:I0-2A0:DCEBFA",
             "indicator_y" : -2,
             "objects" : [
@@ -3542,7 +3542,7 @@
          },
          "poste BP240:I00A9:GJHI" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP240:I00A9:GJHI",
             "indicator_a" : 9,
             "objects" : [
@@ -3626,7 +3626,7 @@
          },
          "poste BP250:I00A9:POMNLK" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste BP250:I00A9:POMNLK",
             "indicator_a" : 9,
             "objects" : [
@@ -3674,7 +3674,7 @@
          },
          "poste BP250:I40A4:HIGJ" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP250:I40A4:HIGJ",
             "indicator_a" : 4,
             "indicator_x" : 4,
@@ -3711,7 +3711,7 @@
          },
          "poste BP255:I00A0:BA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP255:I00A0:BA",
             "objects" : [
                {
@@ -3734,7 +3734,7 @@
          },
          "poste BP255:I00A9:C" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP255:I00A9:C",
             "indicator_a" : 9,
             "objects" : [
@@ -3752,7 +3752,7 @@
          },
          "poste BP260:I1-4A2:BA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP260:I1-4A2:BA",
             "indicator_a" : 2,
             "indicator_x" : 1,
@@ -3778,7 +3778,7 @@
          },
          "poste BP264:I14A6:-A" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste BP264:I14A6:-A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -3847,7 +3847,7 @@
          },
          "poste BP265:I00A9:BACD" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste BP265:I00A9:BACD",
             "indicator_a" : 9,
             "objects" : [
@@ -3883,7 +3883,7 @@
          },
          "poste CI200:I-0.3-1.5A0:CBDA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CI200:I-0.3-1.5A0:CBDA",
             "indicator_x" : -0.3,
             "indicator_y" : -1.5,
@@ -3944,7 +3944,7 @@
          },
          "poste CI203:I24.3A6:AB" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI203:I24.3A6:AB",
             "indicator_a" : 6,
             "indicator_x" : 2,
@@ -3970,7 +3970,7 @@
          },
          "poste CI205:I30.5A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI205:I30.5A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -3996,7 +3996,7 @@
          },
          "poste CI210:I3-1A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI210:I3-1A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -4022,7 +4022,7 @@
          },
          "poste CI220:I-0.62A0:GFHE" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI220:I-0.62A0:GFHE",
             "indicator_x" : -0.6,
             "indicator_y" : 2,
@@ -4059,7 +4059,7 @@
          },
          "poste CI220:I00A9:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI220:I00A9:CBDA",
             "indicator_a" : 9,
             "objects" : [
@@ -4121,7 +4121,7 @@
          },
          "poste CI225:I3-3.9A2:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CI225:I3-3.9A2:A",
             "indicator_a" : 2,
             "indicator_x" : 3,
@@ -4141,7 +4141,7 @@
          },
          "poste CI230:I-0.30A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI230:I-0.30A0:DCEBFA",
             "indicator_x" : -0.3,
             "objects" : [
@@ -4189,7 +4189,7 @@
          },
          "poste CI235:I-0.30A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI235:I-0.30A0:DCEBFA",
             "indicator_x" : -0.3,
             "objects" : [
@@ -4257,7 +4257,7 @@
          },
          "poste CI245:I-0.30A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI245:I-0.30A0:DCEBFA",
             "indicator_x" : -0.3,
             "objects" : [
@@ -4305,7 +4305,7 @@
          },
          "poste CI250:I-0.50A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI250:I-0.50A0:CBDA",
             "indicator_x" : -0.5,
             "objects" : [
@@ -4341,7 +4341,7 @@
          },
          "poste CI255:I2.70.5A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CI255:I2.70.5A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 2.7,
@@ -4367,7 +4367,7 @@
          },
          "poste CI258:I-0.22A0:FCED" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI258:I-0.22A0:FCED",
             "indicator_x" : -0.2,
             "indicator_y" : 2,
@@ -4404,7 +4404,7 @@
          },
          "poste CI258:I00A9:BA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CI258:I00A9:BA",
             "indicator_a" : 9,
             "objects" : [
@@ -4477,7 +4477,7 @@
          },
          "poste CI262:I00A9:JIGH" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CI262:I00A9:JIGH",
             "indicator_a" : 9,
             "objects" : [
@@ -4610,7 +4610,7 @@
          },
          "poste CI274:I-0.10A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CI274:I-0.10A0:DCEBFA",
             "indicator_x" : -0.1,
             "objects" : [
@@ -4658,7 +4658,7 @@
          },
          "poste CI285:I-0.2-3.5A0:CBDA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CI285:I-0.2-3.5A0:CBDA",
             "indicator_x" : -0.2,
             "indicator_y" : -3.5,
@@ -4695,7 +4695,7 @@
          },
          "poste CI285:I00A9:GFHE" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CI285:I00A9:GFHE",
             "indicator_a" : 9,
             "objects" : [
@@ -4731,7 +4731,7 @@
          },
          "poste CI290:I3.20.7A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CI290:I3.20.7A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3.2,
@@ -4807,7 +4807,7 @@
          },
          "poste CP202:I15.4A6:1G=C,1D=B,2C=A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP202:I15.4A6:1G=C,1D=B,2C=A",
             "indicator_a" : 6,
             "indicator_x" : 1,
@@ -4839,7 +4839,7 @@
          },
          "poste CP205:I-0.40A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CP205:I-0.40A0:DCEBFA",
             "indicator_x" : -0.4,
             "objects" : [
@@ -4887,7 +4887,7 @@
          },
          "poste CP210:I-0.30A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP210:I-0.30A0:CBDA",
             "indicator_x" : -0.3,
             "objects" : [
@@ -4923,7 +4923,7 @@
          },
          "poste CP215:I-0.70A0:GFHE" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP215:I-0.70A0:GFHE",
             "indicator_x" : -0.7,
             "objects" : [
@@ -4959,7 +4959,7 @@
          },
          "poste CP215:I-10A9:LKIJ" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CP215:I-10A9:LKIJ",
             "indicator_a" : 9,
             "indicator_x" : -1,
@@ -4996,7 +4996,7 @@
          },
          "poste CP215:I00A9:CBDA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP215:I00A9:CBDA",
             "indicator_a" : 9,
             "objects" : [
@@ -5032,7 +5032,7 @@
          },
          "poste CP225:I-0.40A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP225:I-0.40A0:DCEBFA",
             "indicator_x" : -0.4,
             "objects" : [
@@ -5080,7 +5080,7 @@
          },
          "poste CP230:I-0.4-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP230:I-0.4-2A0:DCEBFA",
             "indicator_x" : -0.4,
             "indicator_y" : -2,
@@ -5129,7 +5129,7 @@
          },
          "poste CP230:I00A9:1GX=G,2C=H" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP230:I00A9:1GX=G,2C=H",
             "indicator_a" : 9,
             "objects" : [
@@ -5153,7 +5153,7 @@
          },
          "poste CP235:I-0.30A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP235:I-0.30A0:DCEBFA",
             "indicator_x" : -0.3,
             "objects" : [
@@ -5201,7 +5201,7 @@
          },
          "poste CP240:I-0.4-2A0:DCEBFA" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP240:I-0.4-2A0:DCEBFA",
             "indicator_x" : -0.4,
             "indicator_y" : -2,
@@ -5250,7 +5250,7 @@
          },
          "poste CP240:I00A9:GH" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CP240:I00A9:GH",
             "indicator_a" : 9,
             "objects" : [
@@ -5274,7 +5274,7 @@
          },
          "poste CP243:I00A9:80X60:-@-@" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP243:I00A9:80X60:-@-@",
             "indicator_a" : 9,
             "objects" : [
@@ -5302,7 +5302,7 @@
          },
          "poste CP245:I31A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP245:I31A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5328,7 +5328,7 @@
          },
          "poste CP250:I00A9:A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP250:I00A9:A",
             "indicator_a" : 9,
             "objects" : [
@@ -5346,7 +5346,7 @@
          },
          "poste CP250:I2.43A6:BC" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CP250:I2.43A6:BC",
             "indicator_a" : 6,
             "indicator_x" : 2.4,
@@ -5372,7 +5372,7 @@
          },
          "poste CP255:I3.2-1.3A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "poste CP255:I3.2-1.3A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3.2,
@@ -5398,7 +5398,7 @@
          },
          "poste CP260:I-0.21.5A0:HCGDFE" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP260:I-0.21.5A0:HCGDFE",
             "indicator_x" : -0.2,
             "indicator_y" : 1.5,
@@ -5447,7 +5447,7 @@
          },
          "poste CP260:I00A9:BA" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste CP260:I00A9:BA",
             "indicator_a" : 9,
             "objects" : [
@@ -5471,7 +5471,7 @@
          },
          "poste CP265:I-0.4-0.5A0:CBDA" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP265:I-0.4-0.5A0:CBDA",
             "indicator_x" : -0.4,
             "indicator_y" : -0.5,
@@ -5532,7 +5532,7 @@
          },
          "poste CP270:I-0.30A0:1G=C,1D=B,2C=A" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste CP270:I-0.30A0:1G=C,1D=B,2C=A",
             "indicator_x" : -0.3,
             "objects" : [
@@ -5562,7 +5562,7 @@
          },
          "poste DI249:I30A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.11842673815942,
+            "direction" : 1.1184267381594193,
             "id" : "poste DI249:I30A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5587,7 +5587,7 @@
          },
          "poste DI251:I30A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.11842673815943,
+            "direction" : 1.1184267381594328,
             "id" : "poste DI251:I30A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5612,7 +5612,7 @@
          },
          "poste DI253:I30A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : 1.11842673815942,
+            "direction" : 1.118426738159422,
             "id" : "poste DI253:I30A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5637,7 +5637,7 @@
          },
          "poste DI278:I30A4:1DX=B,2C=A" : {
             "class" : "desks",
-            "direction" : 1.1503459509865,
+            "direction" : 1.1503459509865024,
             "id" : "poste DI278:I30A4:1DX=B,2C=A",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5662,7 +5662,7 @@
          },
          "poste DP242:I-0.20A9:BA" : {
             "class" : "desks",
-            "direction" : 1.54703710848002,
+            "direction" : 1.5470371084800203,
             "id" : "poste DP242:I-0.20A9:BA",
             "indicator_a" : 9,
             "indicator_x" : -0.2,
@@ -5687,7 +5687,7 @@
          },
          "poste DP251:I2.70A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.62071832767391,
+            "direction" : -1.6207183276739108,
             "id" : "poste DP251:I2.70A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 2.7,
@@ -5712,7 +5712,7 @@
          },
          "poste DP260:I2.50A4:1DX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -1.61925596034681,
+            "direction" : -1.6192559603468097,
             "id" : "poste DP260:I2.50A4:1DX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 2.5,
@@ -5737,7 +5737,7 @@
          },
          "poste DP280:I30A4:1GX=A,2C=B" : {
             "class" : "desks",
-            "direction" : -0.44135172159585,
+            "direction" : -0.4413517215958495,
             "id" : "poste DP280:I30A4:1GX=A,2C=B",
             "indicator_a" : 4,
             "indicator_x" : 3,
@@ -5764,7 +5764,7 @@
       "meeting" : {
          "SDR DI2 LUCKNOW:8" : {
             "class" : "meeting",
-            "direction" : -0.417756341457791,
+            "direction" : -0.4177563414577908,
             "id" : "SDR DI2 LUCKNOW:8",
             "objects" : [
                {
@@ -5823,7 +5823,7 @@
          },
          "SDR DI281 LUBLIN:4" : {
             "class" : "meeting",
-            "direction" : 1.36176837649705,
+            "direction" : 1.3617683764970474,
             "id" : "SDR DI281 LUBLIN:4",
             "objects" : [
                {
@@ -5858,7 +5858,7 @@
          },
          "SDR DI293:4" : {
             "class" : "meeting",
-            "direction" : -1.86945372137076,
+            "direction" : -1.8694537213707565,
             "id" : "SDR DI293:4",
             "objects" : [
                {
@@ -5893,7 +5893,7 @@
          },
          "SDR DI295 MILAN:20" : {
             "class" : "meeting",
-            "direction" : -1.82399856301975,
+            "direction" : -1.8239985630197468,
             "id" : "SDR DI295 MILAN:20",
             "objects" : [
                {
@@ -6024,7 +6024,7 @@
          },
          "SDR DP2 HANOVRE:8" : {
             "class" : "meeting",
-            "direction" : -0.0538524202071905,
+            "direction" : -0.053852420207190506,
             "id" : "SDR DP2 HANOVRE:8",
             "objects" : [
                {
@@ -6083,7 +6083,7 @@
          },
          "SDR DP283 KOCH:10" : {
             "class" : "meeting",
-            "direction" : 1.32645168589089,
+            "direction" : 1.3264516858908884,
             "id" : "SDR DP283 KOCH:10",
             "objects" : [
                {
@@ -6154,7 +6154,7 @@
          },
          "SDR DP286 GDANKS:8" : {
             "class" : "meeting",
-            "direction" : 2.89859355011012,
+            "direction" : 2.8985935501101205,
             "id" : "SDR DP286 GDANKS:8",
             "objects" : [
                {
@@ -6260,7 +6260,7 @@
          },
          "sdr MOSCOU:14" : {
             "class" : "meeting",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "sdr MOSCOU:14",
             "objects" : [
                {
@@ -6355,7 +6355,7 @@
          },
          "sdr ajaccio:6" : {
             "class" : "meeting",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "sdr ajaccio:6",
             "objects" : [
                {
@@ -6402,7 +6402,7 @@
          },
          "sdr astana:6" : {
             "class" : "meeting",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "sdr astana:6",
             "objects" : [
                {
@@ -6449,7 +6449,7 @@
          },
          "sdr berne:6" : {
             "class" : "meeting",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "sdr berne:6",
             "objects" : [
                {
@@ -6861,7 +6861,7 @@
          },
          "sdr pretoria:6" : {
             "class" : "meeting",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "sdr pretoria:6",
             "objects" : [
                {
@@ -7014,7 +7014,7 @@
          },
          "sdr vienne:18" : {
             "class" : "meeting",
-            "direction" : 1.5707963267949,
+            "direction" : 1.5707963267948966,
             "id" : "sdr vienne:18",
             "objects" : [
                {
@@ -7184,7 +7184,7 @@
       "borne-orientation" : {
          "meuble borne-orientation 1" : {
             "class" : "borne-orientation",
-            "direction" : -0.0538524202071926,
+            "direction" : -0.05385242020719264,
             "id" : "meuble borne-orientation 1",
             "objects" : [],
             "point" : [
@@ -7194,7 +7194,7 @@
          },
          "meuble borne-orientation 2" : {
             "class" : "borne-orientation",
-            "direction" : -0.417756341457799,
+            "direction" : -0.4177563414577991,
             "id" : "meuble borne-orientation 2",
             "objects" : [],
             "point" : [
@@ -7204,7 +7204,7 @@
          },
          "meuble borne-orientation A2" : {
             "class" : "borne-orientation",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble borne-orientation A2",
             "objects" : [],
             "point" : [
@@ -7224,7 +7224,7 @@
          },
          "meuble borne-orientation C2" : {
             "class" : "borne-orientation",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "meuble borne-orientation C2",
             "objects" : [],
             "point" : [
@@ -7236,7 +7236,7 @@
       "ecran-orientation" : {
          "meuble ecran-orientation 1" : {
             "class" : "ecran-orientation",
-            "direction" : -1.61007671158146,
+            "direction" : -1.6100767115814554,
             "id" : "meuble ecran-orientation 1",
             "objects" : [],
             "point" : [
@@ -7246,7 +7246,7 @@
          },
          "meuble ecran-orientation 2" : {
             "class" : "ecran-orientation",
-            "direction" : 1.51449023534546,
+            "direction" : 1.5144902353454648,
             "id" : "meuble ecran-orientation 2",
             "objects" : [],
             "point" : [
@@ -7256,7 +7256,7 @@
          },
          "meuble ecran-orientation 3" : {
             "class" : "ecran-orientation",
-            "direction" : -2.00471115284305,
+            "direction" : -2.0047111528430506,
             "id" : "meuble ecran-orientation 3",
             "objects" : [],
             "point" : [
@@ -7266,7 +7266,7 @@
          },
          "meuble ecran-orientation 4" : {
             "class" : "ecran-orientation",
-            "direction" : 1.13699418402376,
+            "direction" : 1.1369941840237616,
             "id" : "meuble ecran-orientation 4",
             "objects" : [],
             "point" : [
@@ -9322,7 +9322,7 @@
          "rtext Barlow-Regular 8 #000000 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000000",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000000 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -9336,7 +9336,7 @@
          "rtext Barlow-Regular 8 #000000 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000000",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000000 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -9350,7 +9350,7 @@
          "rtext Barlow-Regular 8 #000001 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000001",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000001 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -9364,7 +9364,7 @@
          "rtext Barlow-Regular 8 #000001 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000001",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000001 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -9378,7 +9378,7 @@
          "rtext Barlow-Regular 8 #000010 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000010",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000010 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -9392,7 +9392,7 @@
          "rtext Barlow-Regular 8 #000010 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000010",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "rtext Barlow-Regular 8 #000010 Aile PARIS",
             "objects" : [],
             "point" : [
@@ -9406,7 +9406,7 @@
          "rtext Barlow-Regular 8 #000011 Aile ISSY" : {
             "class" : "Barlow-Regular",
             "color" : "#000011",
-            "direction" : 2.68466079114265,
+            "direction" : 2.6846607911426488,
             "id" : "rtext Barlow-Regular 8 #000011 Aile ISSY",
             "objects" : [],
             "point" : [
@@ -9420,7 +9420,7 @@
          "rtext Barlow-Regular 8 #000011 Aile PARIS" : {
             "class" : "Barlow-Regular",
             "color" : "#000011",
-            "direction" : 3.09583196959094,
+            "direction" : 3.0958319695909413,
             "id" : "rtext Barlow-Regular 8 #000011 Aile PARIS",
             "objects" : [],
             "point" : [

@@ -11,7 +11,7 @@
       "desks" : {
          "poste B760:I-0.32A0:ECFD" : {
             "class" : "desks",
-            "direction" : -1.5707963267949,
+            "direction" : -1.5707963267948966,
             "id" : "poste B760:I-0.32A0:ECFD",
             "indicator_x" : -0.3,
             "indicator_y" : 2,
@@ -48,7 +48,7 @@
          },
          "poste B761:I1.2-3.6A2:A" : {
             "class" : "desks",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "poste B761:I1.2-3.6A2:A",
             "indicator_a" : 2,
             "indicator_x" : 1.2,
@@ -70,7 +70,7 @@
       "meeting" : {
          "sdr B7 CLEOPATRE:6" : {
             "class" : "meeting",
-            "direction" : 3.14159265358979,
+            "direction" : 3.141592653589793,
             "id" : "sdr B7 CLEOPATRE:6",
             "objects" : [
                {
