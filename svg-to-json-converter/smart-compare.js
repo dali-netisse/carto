@@ -195,6 +195,7 @@ function formatIssue(issue) {
       return `❌ TYPE MISMATCH at ${issue.path}: JS=${issue.jsType}, Perl=${issue.perlType}`;
     
     case 'STRING_MISMATCH':
+      return `❌ STRING MISMATCH at ${issue.path}:` 
       return `❌ STRING DIFF at ${issue.path}: JS="${issue.jsValue}", Perl="${issue.perlValue}"`;
     
     case 'COORDINATE_STRING_DIFF':

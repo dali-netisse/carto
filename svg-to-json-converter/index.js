@@ -530,6 +530,8 @@ async function processFile(filename, options) {
       const mappedId = mapRoomName(classification.name, meetingRoomsMap);
       if (mappedId) {
         obj.id = mappedId;
+        // For meeting rooms, use the mapped ID as the key (like Perl does)
+        classification.id = mappedId;
       } else {
         console.warn(
           `${ANSI.reverse}Warning: No mapping for meeting room: ${classification.name}${ANSI.normal}`
