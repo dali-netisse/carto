@@ -216,7 +216,7 @@ function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth
       if (match) {
         const [, position, side, desk] = match;
         const obj = {
-          position: +position, 
+          position: position, // Keep as string to match Perl output
           side: side.toUpperCase(),
           office: office,
           desk: desk,
