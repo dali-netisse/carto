@@ -19,25 +19,25 @@
                {
                   "desk" : "E",
                   "office" : "B760",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "B760",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "B760",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "B760",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -57,7 +57,7 @@
                {
                   "desk" : "A",
                   "office" : "B761",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -76,37 +76,37 @@
                {
                   "desk" : "A",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "B7 CLEOPATRE",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],

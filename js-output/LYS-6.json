@@ -25,13 +25,13 @@
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -49,13 +49,13 @@
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -73,37 +73,37 @@
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI603",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -121,19 +121,19 @@
                {
                   "desk" : "@",
                   "office" : "AI647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI647",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "AI647",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                }
             ],
@@ -151,25 +151,25 @@
                {
                   "desk" : "@",
                   "office" : "BI617",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI617",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "BI617",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI617",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -187,19 +187,19 @@
                {
                   "desk" : "@",
                   "office" : "BI647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI647",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI647",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                }
             ],
@@ -217,13 +217,13 @@
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -241,13 +241,13 @@
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -265,37 +265,37 @@
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "BI684",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -313,19 +313,19 @@
                {
                   "desk" : "@",
                   "office" : "CI658",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "CI658",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "@",
                   "office" : "CI658",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                }
             ],
@@ -342,25 +342,25 @@
                {
                   "desk" : "C",
                   "office" : "DI611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI611",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI611",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -377,25 +377,25 @@
                {
                   "desk" : "C",
                   "office" : "DI614",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI614",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI614",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI614",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -412,25 +412,25 @@
                {
                   "desk" : "C",
                   "office" : "DI617",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI617",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI617",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI617",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -449,13 +449,13 @@
                {
                   "desk" : "A",
                   "office" : "DI620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "DI620",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -472,31 +472,31 @@
                {
                   "desk" : "C",
                   "office" : "DI623",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI623",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI623",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI623",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI623",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                }
             ],
@@ -513,37 +513,37 @@
                {
                   "desk" : "D",
                   "office" : "DI630",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DI630",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI630",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI630",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DI630",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI630",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -560,19 +560,19 @@
                {
                   "desk" : "B",
                   "office" : "DI634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DI634",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -589,25 +589,25 @@
                {
                   "desk" : "C",
                   "office" : "DI644",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI644",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI644",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI644",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -626,13 +626,13 @@
                {
                   "desk" : "A",
                   "office" : "DI647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "DI647",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -649,25 +649,25 @@
                {
                   "desk" : "C",
                   "office" : "DI652",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI652",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI652",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI652",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -687,7 +687,7 @@
                {
                   "desk" : "A",
                   "office" : "DI654",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -704,19 +704,19 @@
                {
                   "desk" : "B",
                   "office" : "DI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -736,7 +736,7 @@
                {
                   "desk" : "A",
                   "office" : "DI656",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -756,7 +756,7 @@
                {
                   "desk" : "A",
                   "office" : "DI658",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -773,25 +773,25 @@
                {
                   "desk" : "C",
                   "office" : "DI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -808,25 +808,25 @@
                {
                   "desk" : "C",
                   "office" : "DI664",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI664",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI664",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI664",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -843,25 +843,25 @@
                {
                   "desk" : "C",
                   "office" : "DI667",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI667",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI667",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI667",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -881,7 +881,7 @@
                {
                   "desk" : "A",
                   "office" : "DI669",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -898,25 +898,25 @@
                {
                   "desk" : "C",
                   "office" : "DI672",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI672",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI672",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI672",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -933,31 +933,31 @@
                {
                   "desk" : "D",
                   "office" : "DI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI675",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI675",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "A",
                   "office" : "DI675",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -976,13 +976,13 @@
                {
                   "desk" : "A",
                   "office" : "DI677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "DI677",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -999,25 +999,25 @@
                {
                   "desk" : "C",
                   "office" : "DI680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1034,19 +1034,19 @@
                {
                   "desk" : "C",
                   "office" : "DI687",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI687",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "A",
                   "office" : "DI687",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1063,25 +1063,25 @@
                {
                   "desk" : "C",
                   "office" : "DI691",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI691",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DI691",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DI691",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1098,37 +1098,37 @@
                {
                   "desk" : "D",
                   "office" : "DP611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP611",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP611",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP611",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP611",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1145,37 +1145,37 @@
                {
                   "desk" : "D",
                   "office" : "DP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1194,13 +1194,13 @@
                {
                   "desk" : "A",
                   "office" : "DP618",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "DP618",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -1218,7 +1218,7 @@
                {
                   "desk" : "@",
                   "office" : "DP623",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1236,37 +1236,37 @@
                {
                   "desk" : "D",
                   "office" : "DP631",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP631",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP631",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP631",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP631",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP631",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1286,37 +1286,37 @@
                {
                   "desk" : "J",
                   "office" : "DP631",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "I",
                   "office" : "DP631",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "K",
                   "office" : "DP631",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DP631",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "L",
                   "office" : "DP631",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "DP631",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1334,13 +1334,13 @@
                {
                   "desk" : "G",
                   "office" : "DP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "H",
                   "office" : "DP632",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -1358,13 +1358,13 @@
                {
                   "desk" : "B",
                   "office" : "DP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1382,25 +1382,25 @@
                {
                   "desk" : "D",
                   "office" : "DP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP632",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DP632",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1418,37 +1418,37 @@
                {
                   "desk" : "D",
                   "office" : "DP646",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP646",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP646",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP646",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP646",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP646",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1468,13 +1468,13 @@
                {
                   "desk" : "A",
                   "office" : "DP651",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP651",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1492,25 +1492,25 @@
                {
                   "desk" : "C",
                   "office" : "DP653",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP653",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "DP653",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP653",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1527,37 +1527,37 @@
                {
                   "desk" : "D",
                   "office" : "DP664",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP664",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP664",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP664",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP664",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP664",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1574,37 +1574,37 @@
                {
                   "desk" : "D",
                   "office" : "DP667",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP667",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP667",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP667",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP667",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP667",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1621,13 +1621,13 @@
                {
                   "desk" : "C",
                   "office" : "DP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1645,13 +1645,13 @@
                {
                   "desk" : "A",
                   "office" : "DP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1669,7 +1669,7 @@
                {
                   "desk" : "@",
                   "office" : "DP672",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1686,37 +1686,37 @@
                {
                   "desk" : "D",
                   "office" : "DP678",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "DP678",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP678",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP678",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "DP678",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "DP678",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -1734,13 +1734,13 @@
                {
                   "desk" : "A",
                   "office" : "AI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "AI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1758,7 +1758,7 @@
                {
                   "desk" : "B",
                   "office" : "AI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -1778,13 +1778,13 @@
                {
                   "desk" : "D",
                   "office" : "AI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "AI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -1804,7 +1804,7 @@
                {
                   "desk" : "A",
                   "office" : "AI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1824,7 +1824,7 @@
                {
                   "desk" : "A",
                   "office" : "AI612",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -1841,25 +1841,25 @@
                {
                   "desk" : "H",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "AI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "AI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1877,13 +1877,13 @@
                {
                   "desk" : "I",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "L",
                   "office" : "AI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1901,25 +1901,25 @@
                {
                   "desk" : "B",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "AI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -1937,13 +1937,13 @@
                {
                   "desk" : "J",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "K",
                   "office" : "AI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1963,13 +1963,13 @@
                {
                   "desk" : "B",
                   "office" : "AI620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "AI620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -1989,7 +1989,7 @@
                {
                   "desk" : "A",
                   "office" : "AI625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2009,7 +2009,7 @@
                {
                   "desk" : "A",
                   "office" : "AI630",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2028,25 +2028,25 @@
                {
                   "desk" : "J",
                   "office" : "AI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "AI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "AI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "AI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2064,13 +2064,13 @@
                {
                   "desk" : "A",
                   "office" : "AI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "AI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2088,25 +2088,25 @@
                {
                   "desk" : "F",
                   "office" : "AI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "AI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2125,25 +2125,25 @@
                {
                   "desk" : "A",
                   "office" : "AI650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AI650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "AI650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AI650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2161,25 +2161,25 @@
                {
                   "desk" : "A",
                   "office" : "AI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "AI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2199,19 +2199,19 @@
                {
                   "desk" : "E",
                   "office" : "AI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "AI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "AI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -2229,25 +2229,25 @@
                {
                   "desk" : "G",
                   "office" : "AI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "AI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "AI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "AI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2267,25 +2267,25 @@
                {
                   "desk" : "A",
                   "office" : "AI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "AI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2303,13 +2303,13 @@
                {
                   "desk" : "D",
                   "office" : "AP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "AP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2327,7 +2327,7 @@
                {
                   "desk" : "A",
                   "office" : "AP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2347,7 +2347,7 @@
                {
                   "desk" : "B",
                   "office" : "AP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2364,7 +2364,7 @@
                {
                   "desk" : "A",
                   "office" : "AP601",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2383,13 +2383,13 @@
                {
                   "desk" : "A",
                   "office" : "AP605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "AP605",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2406,25 +2406,25 @@
                {
                   "desk" : "H",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "AP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "AP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2442,7 +2442,7 @@
                {
                   "desk" : "I",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2460,25 +2460,25 @@
                {
                   "desk" : "B",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "AP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2496,7 +2496,7 @@
                {
                   "desk" : "J",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2514,13 +2514,13 @@
                {
                   "desk" : "K",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "L",
                   "office" : "AP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2539,25 +2539,25 @@
                {
                   "desk" : "E",
                   "office" : "AP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "AP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2575,13 +2575,13 @@
                {
                   "desk" : "A",
                   "office" : "AP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "AP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2601,7 +2601,7 @@
                {
                   "desk" : "A",
                   "office" : "AP618",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2619,25 +2619,25 @@
                {
                   "desk" : "C",
                   "office" : "AP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "AP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "AP620",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "AP620",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2655,7 +2655,7 @@
                {
                   "desk" : "E",
                   "office" : "AP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2673,13 +2673,13 @@
                {
                   "desk" : "G",
                   "office" : "AP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "AP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -2699,7 +2699,7 @@
                {
                   "desk" : "A",
                   "office" : "AP625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2719,7 +2719,7 @@
                {
                   "desk" : "A",
                   "office" : "AP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2737,25 +2737,25 @@
                {
                   "desk" : "A",
                   "office" : "AP634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AP634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "AP634",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "AP634",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2775,25 +2775,25 @@
                {
                   "desk" : "E",
                   "office" : "AP634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "AP634",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "AP634",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "AP634",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2812,13 +2812,13 @@
                {
                   "desk" : "A",
                   "office" : "AP635",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "AP635",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2837,25 +2837,25 @@
                {
                   "desk" : "G",
                   "office" : "AP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "AP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "AP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "AP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2873,25 +2873,25 @@
                {
                   "desk" : "C",
                   "office" : "AP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "AP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "AP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "AP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2911,7 +2911,7 @@
                {
                   "desk" : "A",
                   "office" : "AP642",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -2930,25 +2930,25 @@
                {
                   "desk" : "F",
                   "office" : "AP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "AP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "AP645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "AP645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -2966,19 +2966,19 @@
                {
                   "desk" : "C",
                   "office" : "AP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "AP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "A",
                   "office" : "AP645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -2996,7 +2996,7 @@
                {
                   "desk" : "A",
                   "office" : "AP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3016,7 +3016,7 @@
                {
                   "desk" : "B",
                   "office" : "AP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3034,25 +3034,25 @@
                {
                   "desk" : "C",
                   "office" : "BI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3070,25 +3070,25 @@
                {
                   "desk" : "G",
                   "office" : "BI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "BI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "BI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "BI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3107,13 +3107,13 @@
                {
                   "desk" : "A",
                   "office" : "BI605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "BI605",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -3131,25 +3131,25 @@
                {
                   "desk" : "C",
                   "office" : "BI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3167,25 +3167,25 @@
                {
                   "desk" : "C",
                   "office" : "BI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3205,7 +3205,7 @@
                {
                   "desk" : "A",
                   "office" : "BI620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3225,7 +3225,7 @@
                {
                   "desk" : "A",
                   "office" : "BI625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3243,25 +3243,25 @@
                {
                   "desk" : "C",
                   "office" : "BI630",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI630",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI630",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI630",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3281,7 +3281,7 @@
                {
                   "desk" : "A",
                   "office" : "BI635",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3299,25 +3299,25 @@
                {
                   "desk" : "C",
                   "office" : "BI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3336,25 +3336,25 @@
                {
                   "desk" : "C",
                   "office" : "BI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3372,13 +3372,13 @@
                {
                   "desk" : "E",
                   "office" : "BI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "BI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3397,13 +3397,13 @@
                {
                   "desk" : "A",
                   "office" : "BI650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "BI650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -3421,25 +3421,25 @@
                {
                   "desk" : "C",
                   "office" : "BI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3457,25 +3457,25 @@
                {
                   "desk" : "E",
                   "office" : "BI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "BI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "BI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "BI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3492,25 +3492,25 @@
                {
                   "desk" : "C",
                   "office" : "BI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3530,7 +3530,7 @@
                {
                   "desk" : "A",
                   "office" : "BI665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3547,25 +3547,25 @@
                {
                   "desk" : "C",
                   "office" : "BI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3583,25 +3583,25 @@
                {
                   "desk" : "E",
                   "office" : "BI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "BI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "BI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "BI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3621,13 +3621,13 @@
                {
                   "desk" : "A",
                   "office" : "BI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3645,7 +3645,7 @@
                {
                   "desk" : "A",
                   "office" : "BI680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3665,7 +3665,7 @@
                {
                   "desk" : "A",
                   "office" : "BI685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -3682,25 +3682,25 @@
                {
                   "desk" : "C",
                   "office" : "BP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3719,7 +3719,7 @@
                {
                   "desk" : "C",
                   "office" : "BP601",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3737,7 +3737,7 @@
                {
                   "desk" : "D",
                   "office" : "BP601",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3756,7 +3756,7 @@
                {
                   "desk" : "B",
                   "office" : "BP601",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3775,7 +3775,7 @@
                {
                   "desk" : "A",
                   "office" : "BP601",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -3793,25 +3793,25 @@
                {
                   "desk" : "C",
                   "office" : "BP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3829,13 +3829,13 @@
                {
                   "desk" : "E",
                   "office" : "BP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "F",
                   "office" : "BP610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -3853,37 +3853,37 @@
                {
                   "desk" : "E",
                   "office" : "BP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "BP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "BP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "A",
                   "office" : "BP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -3903,37 +3903,37 @@
                {
                   "desk" : "L",
                   "office" : "BP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "K",
                   "office" : "BP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "BP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "BP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "BP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "BP615",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -3952,25 +3952,25 @@
                {
                   "desk" : "C",
                   "office" : "BP625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP625",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP625",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -3988,25 +3988,25 @@
                {
                   "desk" : "G",
                   "office" : "BP625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "BP625",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "BP625",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "BP625",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4026,13 +4026,13 @@
                {
                   "desk" : "A",
                   "office" : "BP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP632",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4051,25 +4051,25 @@
                {
                   "desk" : "C",
                   "office" : "BP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4087,25 +4087,25 @@
                {
                   "desk" : "E",
                   "office" : "BP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "BP640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "BP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "BP640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4125,13 +4125,13 @@
                {
                   "desk" : "B",
                   "office" : "BP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4151,13 +4151,13 @@
                {
                   "desk" : "B",
                   "office" : "BP647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4174,25 +4174,25 @@
                {
                   "desk" : "C",
                   "office" : "BP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4209,25 +4209,25 @@
                {
                   "desk" : "C",
                   "office" : "BP655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4247,13 +4247,13 @@
                {
                   "desk" : "A",
                   "office" : "BP660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4273,49 +4273,49 @@
                {
                   "desk" : "B",
                   "office" : "BP665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "BP665",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "BP665",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "BP665",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "BP665",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "BP665",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "BP665",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                }
             ],
@@ -4335,7 +4335,7 @@
                {
                   "desk" : "D",
                   "office" : "BP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4353,7 +4353,7 @@
                {
                   "desk" : "A",
                   "office" : "BP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4371,7 +4371,7 @@
                {
                   "desk" : "B",
                   "office" : "BP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4389,7 +4389,7 @@
                {
                   "desk" : "C",
                   "office" : "BP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4406,25 +4406,25 @@
                {
                   "desk" : "C",
                   "office" : "BP680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "BP680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "BP680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "BP680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4442,25 +4442,25 @@
                {
                   "desk" : "A",
                   "office" : "CI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "CI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "CI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4478,25 +4478,25 @@
                {
                   "desk" : "G",
                   "office" : "CI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "CI600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "CI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CI600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4516,13 +4516,13 @@
                {
                   "desk" : "A",
                   "office" : "CI605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CI605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4540,25 +4540,25 @@
                {
                   "desk" : "C",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CI610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI610",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4576,13 +4576,13 @@
                {
                   "desk" : "E",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4600,13 +4600,13 @@
                {
                   "desk" : "G",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "CI610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4623,25 +4623,25 @@
                {
                   "desk" : "C",
                   "office" : "CI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CI615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4659,13 +4659,13 @@
                {
                   "desk" : "A",
                   "office" : "CI635",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "CI635",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4685,13 +4685,13 @@
                {
                   "desk" : "D",
                   "office" : "CI635",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "CI635",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4709,13 +4709,13 @@
                {
                   "desk" : "A",
                   "office" : "CI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "CI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4735,13 +4735,13 @@
                {
                   "desk" : "D",
                   "office" : "CI640",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "CI640",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4759,13 +4759,13 @@
                {
                   "desk" : "A",
                   "office" : "CI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "CI645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4785,13 +4785,13 @@
                {
                   "desk" : "D",
                   "office" : "CI645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "CI645",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -4810,7 +4810,7 @@
                {
                   "desk" : "A",
                   "office" : "CI647",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4829,7 +4829,7 @@
                {
                   "desk" : "A",
                   "office" : "CI648",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4849,7 +4849,7 @@
                {
                   "desk" : "A",
                   "office" : "CI649",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4869,13 +4869,13 @@
                {
                   "desk" : "B",
                   "office" : "CI650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -4893,7 +4893,7 @@
                {
                   "desk" : "A",
                   "office" : "CI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -4911,25 +4911,25 @@
                {
                   "desk" : "I",
                   "office" : "CI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "CI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "H",
                   "office" : "CI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "CI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4948,25 +4948,25 @@
                {
                   "desk" : "C",
                   "office" : "CI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "CI655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "CI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CI655",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -4986,7 +4986,7 @@
                {
                   "desk" : "A",
                   "office" : "CI656",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -5004,13 +5004,13 @@
                {
                   "desk" : "B",
                   "office" : "CI665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5028,19 +5028,19 @@
                {
                   "desk" : "D",
                   "office" : "CI665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "CI665",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -5057,25 +5057,25 @@
                {
                   "desk" : "E",
                   "office" : "CI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "CI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5093,13 +5093,13 @@
                {
                   "desk" : "B",
                   "office" : "CI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5119,13 +5119,13 @@
                {
                   "desk" : "B",
                   "office" : "CI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5145,7 +5145,7 @@
                {
                   "desk" : "A",
                   "office" : "CI676",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5163,13 +5163,13 @@
                {
                   "desk" : "D",
                   "office" : "CI677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5189,13 +5189,13 @@
                {
                   "desk" : "B",
                   "office" : "CI677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5215,13 +5215,13 @@
                {
                   "desk" : "B",
                   "office" : "CI678",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI678",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5238,37 +5238,37 @@
                {
                   "desk" : "D",
                   "office" : "CI680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "CI680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CI680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "F",
                   "office" : "CI680",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI680",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -5286,13 +5286,13 @@
                {
                   "desk" : "B",
                   "office" : "CI685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5312,13 +5312,13 @@
                {
                   "desk" : "D",
                   "office" : "CI685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5338,7 +5338,7 @@
                {
                   "desk" : "A",
                   "office" : "CI689",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5356,19 +5356,19 @@
                {
                   "desk" : "F",
                   "office" : "CI690",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "CI690",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CI690",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5388,25 +5388,25 @@
                {
                   "desk" : "A",
                   "office" : "CI690",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "CI690",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "CI690",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "C",
                   "office" : "CI690",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5423,25 +5423,25 @@
                {
                   "desk" : "C",
                   "office" : "CI695",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CI695",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CI695",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CI695",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5459,7 +5459,7 @@
                {
                   "desk" : "A",
                   "office" : "CI698",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5479,7 +5479,7 @@
                {
                   "desk" : "B",
                   "office" : "CI698",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -5497,25 +5497,25 @@
                {
                   "desk" : "C",
                   "office" : "CP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5533,13 +5533,13 @@
                {
                   "desk" : "F",
                   "office" : "CP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5557,13 +5557,13 @@
                {
                   "desk" : "H",
                   "office" : "CP600",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "G",
                   "office" : "CP600",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                }
             ],
@@ -5580,25 +5580,25 @@
                {
                   "desk" : "D",
                   "office" : "CP605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP605",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "CP605",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP605",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5615,7 +5615,7 @@
                {
                   "desk" : "A",
                   "office" : "CP610",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -5635,13 +5635,13 @@
                {
                   "desk" : "B",
                   "office" : "CP611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP611",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5658,25 +5658,25 @@
                {
                   "desk" : "C",
                   "office" : "CP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP615",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP615",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5694,25 +5694,25 @@
                {
                   "desk" : "C",
                   "office" : "CP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP620",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP620",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5730,7 +5730,7 @@
                {
                   "desk" : "E",
                   "office" : "CP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -5748,13 +5748,13 @@
                {
                   "desk" : "G",
                   "office" : "CP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "CP620",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5771,25 +5771,25 @@
                {
                   "desk" : "C",
                   "office" : "CP641",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP641",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP641",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP641",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5807,7 +5807,7 @@
                {
                   "desk" : "A",
                   "office" : "CP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -5825,7 +5825,7 @@
                {
                   "desk" : "B",
                   "office" : "CP645",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5842,25 +5842,25 @@
                {
                   "desk" : "C",
                   "office" : "CP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP650",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP650",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5880,13 +5880,13 @@
                {
                   "desk" : "A",
                   "office" : "CP655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP655",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -5903,25 +5903,25 @@
                {
                   "desk" : "C",
                   "office" : "CP660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP660",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP660",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -5940,13 +5940,13 @@
                {
                   "desk" : "A",
                   "office" : "CP662",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "CP662",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -5964,25 +5964,25 @@
                {
                   "desk" : "C",
                   "office" : "CP665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP665",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP665",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP665",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -6000,31 +6000,31 @@
                {
                   "desk" : "C",
                   "office" : "CP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP670",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP670",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "CP670",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "C"
                }
             ],
@@ -6043,31 +6043,31 @@
                {
                   "desk" : "A",
                   "office" : "CP672",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CP672",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "B",
                   "office" : "CP672",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "CP672",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "CP672",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "C"
                }
             ],
@@ -6087,13 +6087,13 @@
                {
                   "desk" : "B",
                   "office" : "CP675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP675",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6113,13 +6113,13 @@
                {
                   "desk" : "B",
                   "office" : "CP676",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP676",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6138,13 +6138,13 @@
                {
                   "desk" : "A",
                   "office" : "CP677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP677",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6163,7 +6163,7 @@
                {
                   "desk" : "A",
                   "office" : "CP678",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6180,25 +6180,25 @@
                {
                   "desk" : "C",
                   "office" : "CP680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP680",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP680",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -6216,25 +6216,25 @@
                {
                   "desk" : "C",
                   "office" : "CP685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "CP685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "D",
                   "office" : "CP685",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP685",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
@@ -6252,13 +6252,13 @@
                {
                   "desk" : "H",
                   "office" : "CP685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "DX"
                },
                {
                   "desk" : "G",
                   "office" : "CP685",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "C"
                }
             ],
@@ -6276,13 +6276,13 @@
                {
                   "desk" : "F",
                   "office" : "CP685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "E",
                   "office" : "CP685",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6299,13 +6299,13 @@
                {
                   "desk" : "B",
                   "office" : "CP690",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "CP690",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6325,7 +6325,7 @@
                {
                   "desk" : "A",
                   "office" : "CP695",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -6344,49 +6344,49 @@
                {
                   "desk" : "A",
                   "office" : "4",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "4",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "4",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "4",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "4",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "4",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "4",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "4",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                }
             ],
@@ -6403,61 +6403,61 @@
                {
                   "desk" : "A",
                   "office" : "DI6 BREDA",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI6 BREDA",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DI6 BREDA",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DI6 BREDA",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI6 BREDA",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DI6 BREDA",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "DI6 BREDA",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DI6 BREDA",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "DI6 BREDA",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "DI6 BREDA",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                }
             ],
@@ -6474,37 +6474,37 @@
                {
                   "desk" : "A",
                   "office" : "DI693E",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI693E",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DI693E",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DI693E",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI693E",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DI693E",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -6521,121 +6521,121 @@
                {
                   "desk" : "A",
                   "office" : "DI695",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DI695",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DI695",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DI695",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DI695",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DI695",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "DI695",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DI695",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "DI695",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "DI695",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                },
                {
                   "desk" : "K",
                   "office" : "DI695",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "G"
                },
                {
                   "desk" : "L",
                   "office" : "DI695",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "D"
                },
                {
                   "desk" : "M",
                   "office" : "DI695",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "G"
                },
                {
                   "desk" : "N",
                   "office" : "DI695",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "D"
                },
                {
                   "desk" : "O",
                   "office" : "DI695",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "G"
                },
                {
                   "desk" : "P",
                   "office" : "DI695",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "D"
                },
                {
                   "desk" : "Q",
                   "office" : "DI695",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "G"
                },
                {
                   "desk" : "R",
                   "office" : "DI695",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "D"
                },
                {
                   "desk" : "S",
                   "office" : "DI695",
-                  "position" : "10",
+                  "position" : 10,
                   "side" : "G"
                },
                {
                   "desk" : "T",
                   "office" : "DI695",
-                  "position" : "10",
+                  "position" : 10,
                   "side" : "D"
                }
             ],
@@ -6652,61 +6652,61 @@
                {
                   "desk" : "A",
                   "office" : "DP6 GERONE",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP6 GERONE",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DP6 GERONE",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DP6 GERONE",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP6 GERONE",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DP6 GERONE",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "DP6 GERONE",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DP6 GERONE",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "DP6 GERONE",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "DP6 GERONE",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                }
             ],
@@ -6723,37 +6723,37 @@
                {
                   "desk" : "A",
                   "office" : "DP681",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP681",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DP681",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DP681",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP681",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DP681",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -6770,61 +6770,61 @@
                {
                   "desk" : "A",
                   "office" : "DP683",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP683",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DP683",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DP683",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP683",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DP683",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "DP683",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DP683",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "DP683",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "DP683",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                }
             ],
@@ -6841,49 +6841,49 @@
                {
                   "desk" : "A",
                   "office" : "DP686",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "DP686",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "DP686",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "DP686",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "DP686",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "DP686",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "DP686",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "DP686",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                }
             ],
@@ -6900,37 +6900,37 @@
                {
                   "desk" : "A",
                   "office" : "ankara",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "ankara",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "ankara",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "ankara",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "ankara",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "ankara",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -6947,109 +6947,109 @@
                {
                   "desk" : "A",
                   "office" : "cracovie",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "cracovie",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "cracovie",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "cracovie",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "cracovie",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "cracovie",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "cracovie",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "cracovie",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "cracovie",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "cracovie",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                },
                {
                   "desk" : "K",
                   "office" : "cracovie",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "G"
                },
                {
                   "desk" : "L",
                   "office" : "cracovie",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "D"
                },
                {
                   "desk" : "M",
                   "office" : "cracovie",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "G"
                },
                {
                   "desk" : "N",
                   "office" : "cracovie",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "D"
                },
                {
                   "desk" : "O",
                   "office" : "cracovie",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "G"
                },
                {
                   "desk" : "P",
                   "office" : "cracovie",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "D"
                },
                {
                   "desk" : "Q",
                   "office" : "cracovie",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "G"
                },
                {
                   "desk" : "R",
                   "office" : "cracovie",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "D"
                }
             ],
@@ -7066,37 +7066,37 @@
                {
                   "desk" : "A",
                   "office" : "karanganda",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "karanganda",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "karanganda",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "karanganda",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "karanganda",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "karanganda",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -7113,37 +7113,37 @@
                {
                   "desk" : "A",
                   "office" : "lecap",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "lecap",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "lecap",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "lecap",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "lecap",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "lecap",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -7160,49 +7160,49 @@
                {
                   "desk" : "A",
                   "office" : "lisbonne",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "lisbonne",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "lisbonne",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "lisbonne",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "lisbonne",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "lisbonne",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "lisbonne",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "lisbonne",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                }
             ],
@@ -7219,37 +7219,37 @@
                {
                   "desk" : "A",
                   "office" : "manchester",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "manchester",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "manchester",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "manchester",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "manchester",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "manchester",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],
@@ -7266,109 +7266,109 @@
                {
                   "desk" : "A",
                   "office" : "paris",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "paris",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "paris",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "paris",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "paris",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "paris",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                },
                {
                   "desk" : "G",
                   "office" : "paris",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "G"
                },
                {
                   "desk" : "H",
                   "office" : "paris",
-                  "position" : "4",
+                  "position" : 4,
                   "side" : "D"
                },
                {
                   "desk" : "I",
                   "office" : "paris",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "G"
                },
                {
                   "desk" : "J",
                   "office" : "paris",
-                  "position" : "5",
+                  "position" : 5,
                   "side" : "D"
                },
                {
                   "desk" : "K",
                   "office" : "paris",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "G"
                },
                {
                   "desk" : "L",
                   "office" : "paris",
-                  "position" : "6",
+                  "position" : 6,
                   "side" : "D"
                },
                {
                   "desk" : "M",
                   "office" : "paris",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "G"
                },
                {
                   "desk" : "N",
                   "office" : "paris",
-                  "position" : "7",
+                  "position" : 7,
                   "side" : "D"
                },
                {
                   "desk" : "O",
                   "office" : "paris",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "G"
                },
                {
                   "desk" : "P",
                   "office" : "paris",
-                  "position" : "8",
+                  "position" : 8,
                   "side" : "D"
                },
                {
                   "desk" : "Q",
                   "office" : "paris",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "G"
                },
                {
                   "desk" : "R",
                   "office" : "paris",
-                  "position" : "9",
+                  "position" : 9,
                   "side" : "D"
                }
             ],
@@ -7385,37 +7385,37 @@
                {
                   "desk" : "A",
                   "office" : "vilnius",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "vilnius",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "vilnius",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "vilnius",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                },
                {
                   "desk" : "E",
                   "office" : "vilnius",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "G"
                },
                {
                   "desk" : "F",
                   "office" : "vilnius",
-                  "position" : "3",
+                  "position" : 3,
                   "side" : "D"
                }
             ],

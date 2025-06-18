@@ -20,7 +20,7 @@
                {
                   "desk" : "A",
                   "office" : "Acc",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -40,7 +40,7 @@
                {
                   "desk" : "A",
                   "office" : "Acc1",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -60,7 +60,7 @@
                {
                   "desk" : "A",
                   "office" : "Acc2",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -80,7 +80,7 @@
                {
                   "desk" : "A",
                   "office" : "B002",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -100,13 +100,13 @@
                {
                   "desk" : "A",
                   "office" : "B004",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "B004",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -126,7 +126,7 @@
                {
                   "desk" : "A",
                   "office" : "B006",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -146,7 +146,7 @@
                {
                   "desk" : "A",
                   "office" : "B007",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -164,7 +164,7 @@
                {
                   "desk" : "A",
                   "office" : "B008",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -184,7 +184,7 @@
                {
                   "desk" : "A",
                   "office" : "B009",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -201,13 +201,13 @@
                {
                   "desk" : "B",
                   "office" : "B010",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "A",
                   "office" : "B010",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -224,7 +224,7 @@
                {
                   "desk" : "A",
                   "office" : "B011",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -243,7 +243,7 @@
                {
                   "desk" : "A",
                   "office" : "B012",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -263,7 +263,7 @@
                {
                   "desk" : "A",
                   "office" : "B013",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -283,7 +283,7 @@
                {
                   "desk" : "A",
                   "office" : "B014",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -303,7 +303,7 @@
                {
                   "desk" : "A",
                   "office" : "B015",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                }
             ],
@@ -323,7 +323,7 @@
                {
                   "desk" : "A",
                   "office" : "BM001",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                }
             ],
@@ -342,25 +342,25 @@
                {
                   "desk" : "A",
                   "office" : "005",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "G"
                },
                {
                   "desk" : "B",
                   "office" : "005",
-                  "position" : "1",
+                  "position" : 1,
                   "side" : "D"
                },
                {
                   "desk" : "C",
                   "office" : "005",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "G"
                },
                {
                   "desk" : "D",
                   "office" : "005",
-                  "position" : "2",
+                  "position" : 2,
                   "side" : "D"
                }
             ],
