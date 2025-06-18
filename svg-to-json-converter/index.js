@@ -971,6 +971,67 @@ function processDeskGeometryPerl(elem, calibrationTransform) {
     }
     point1 = points[0];
     point2 = points[1];
+  } else if (type === "path") {
+    // Handle path elements - extract points from path data
+    const pathData = processedElement.d;
+    console.log(`Path data: ${pathData}`);
+    
+    // Simple path parser for line-like paths (M x,y ... L x,y or C x,y x,y x,y)
+    // This handles the common case of furniture elements that are simple lines/curves
+    const pathPoints = [];
+    const commands = pathData.match(/[MLHVCSQTAZ][^MLHVCSQTAZ]*/gi);
+    
+    if (commands) {
+      let currentPoint = [0, 0];
+      
+      for (const command of commands) {
+        const cmd = command[0].toUpperCase();
+        const coords = command.slice(1).split(/[\s,]+/).filter(s => s.length > 0).map(Number);
+        
+        switch (cmd) {
+          case 'M': // MoveTo
+            if (coords.length >= 2) {
+              currentPoint = [coords[0], coords[1]];
+              pathPoints.push([...currentPoint]);
+            }
+            break;
+          case 'L': // LineTo
+            if (coords.length >= 2) {
+              currentPoint = [coords[0], coords[1]];
+              pathPoints.push([...currentPoint]);
+            }
+            break;
+          case 'C': // CurveTo - use the end point
+            if (coords.length >= 6) {
+              currentPoint = [coords[4], coords[5]];
+              pathPoints.push([...currentPoint]);
+            }
+            break;
+          case 'H': // Horizontal LineTo
+            if (coords.length >= 1) {
+              currentPoint = [coords[0], currentPoint[1]];
+              pathPoints.push([...currentPoint]);
+            }
+            break;
+          case 'V': // Vertical LineTo
+            if (coords.length >= 1) {
+              currentPoint = [currentPoint[0], coords[0]];
+              pathPoints.push([...currentPoint]);
+            }
+            break;
+        }
+      }
+    }
+    
+    console.log(`Path points extracted: ${JSON.stringify(pathPoints)}`);
+    
+    if (pathPoints.length >= 2) {
+      point1 = pathPoints[0];
+      point2 = pathPoints[pathPoints.length - 1]; // Use first and last point
+    } else {
+      console.warn(`Path has insufficient points (found ${pathPoints.length}). Ignoring.`);
+      return null;
+    }
   } else {
     console.warn(`Unsupported desk type after processing: ${type}`);
     return null;
