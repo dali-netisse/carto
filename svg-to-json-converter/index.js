@@ -532,8 +532,8 @@ async function processFile(filename, options) {
     if (!output.pois[classification.class]) {
       output.pois[classification.class] = {};
     }
-    // Use cleanId (without special attributes) as the key, like Perl does
-    output.pois[classification.class][cleanId] = obj;
+    // Use classification.id (the clean processed ID) as the key, like Perl does
+    output.pois[classification.class][classification.id] = obj;
   }
 
   // Process furniture
