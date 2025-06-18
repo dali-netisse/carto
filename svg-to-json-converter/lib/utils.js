@@ -172,8 +172,8 @@ export function extractSpecialAttributes(id) {
     cleanId = cleanId.replace(fullMatch, '');
   }
   
-  // Clean up any extra spaces
-  cleanId = cleanId.replace(/\s+/g, ' ').trim();
+  // Clean up any extra spaces - but preserve original spacing for exact Perl compatibility
+  cleanId = cleanId.trim();
   
   return { id: cleanId, attributes };
 }
