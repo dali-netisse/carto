@@ -49,7 +49,7 @@ function doActions(filename, actions) {
     //     `bash -c 'map-converter/svg-to-json-converter.pl -d "borne-${dest}/public/data" "${filename}"'`
     //   );
       execSync(
-        `bash -c 'node svg-to-json-converter/index.js "${filename}" -d js-output'`
+        `bash -c 'node svg-to-json-converter/index.js "${filename}" -d output-js'`
       );
     } catch (err) {
       console.error(`Error processing ${filename} for ${dest}:`, err.message);
