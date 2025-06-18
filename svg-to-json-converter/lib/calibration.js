@@ -101,14 +101,12 @@ export function parseFilename(filename) {
   // Convert floor codes to numbers
   if (floor === 'RDC') {
     floor = 0;
-  } else if (floor && floor.match(/^E(\d*)$/)) {
-    // Mezzanine levels
-    const level = match[1] || '0';
-    floor = `E${level}`;
-  } else if (floor && floor.match(/^P(\d*)$/)) {
-    // Parking levels
-    const level = match[1] || '';
-    floor = `P${level}`;
+  } else if (floor && floor.match(/^E\d*$/)) {
+    // Mezzanine levels - keep as-is (E0, E1, etc.)
+    floor = floor;
+  } else if (floor && floor.match(/^P\d*$/)) {
+    // Parking levels - keep as-is (P, P1, etc.)
+    floor = floor;
   } else if (floor === 'M') {
     // Mezzanine
     floor = 'M';
