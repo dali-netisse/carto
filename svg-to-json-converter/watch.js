@@ -8,11 +8,11 @@ import {glob} from "glob";
 
 // Define directories to monitor with their destination settings
 const dirs = {
-  "laposte-map-data/src/BRU": { dests: ["v3"] },
+  // "laposte-map-data/src/BRU": { dests: ["v3"] },
   "laposte-map-data/src/LYS": { dests: ["v3"] },
-  "laposte-map-data/src/STR": { dests: ["v3"] },
-  "laposte-map-data/src/*-*": { dests: ["v3"] },
-  "mapdata-*/src": { dests: ["v3"] },
+  // "laposte-map-data/src/STR": { dests: ["v3"] },
+  // "laposte-map-data/src/*-*": { dests: ["v3"] },
+  // "mapdata-*/src": { dests: ["v3"] },
 };
 
 // Terminal colors

@@ -192,6 +192,20 @@ function processAndClassifyId(id, inkscapeLabel, getParentIdCallback) {
   return null;
 }
 
+// Helper function to generate Excel-style column names (A, B, ..., Z, AA, AB, etc.)
+function generateDeskIdentifier(index) {
+  let result = '';
+  index++; // Convert 0-based to 1-based for Excel-style
+  
+  while (index > 0) {
+    index--; // Convert back to 0-based for modulo operation
+    result = String.fromCharCode(65 + (index % 26)) + result;
+    index = Math.floor(index / 26);
+  }
+  
+  return result;
+}
+
 // Helper function to parse desk ID strings based on Perl script logic
 function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth) {
   const objects = [];
@@ -228,14 +242,16 @@ function generateDeskObjectsInternal(deskIdsString, office, itemWidth, itemDepth
       let currentDeskCharCode = 'A'.charCodeAt(0);
 
       if (layout.toUpperCase() === 'Z') {
-        for (let i = 0; i < count; i++) deskChars.push(String.fromCharCode(currentDeskCharCode + i));
+        for (let i = 0; i < count; i++) deskChars.push(generateDeskIdentifier(i));
       } else if (layout.toUpperCase() === 'N') {
         for (let i = 0; i < count; i++) {
-          deskChars.push(String.fromCharCode('A'.charCodeAt(0) + (i % 2) * Math.floor(count / 2) + Math.floor(i / 2)));
+          const pos = (i % 2) * Math.floor(count / 2) + Math.floor(i / 2);
+          deskChars.push(generateDeskIdentifier(pos));
         }
       } else if (layout.toUpperCase() === 'R') {
          for (let i = 0; i < count; i++) {
-          deskChars.push(String.fromCharCode('A'.charCodeAt(0) + ((i + 1) % 2) * Math.floor(count / 2) + Math.floor(i / 2)));
+          const pos = ((i + 1) % 2) * Math.floor(count / 2) + Math.floor(i / 2);
+          deskChars.push(generateDeskIdentifier(pos));
         }
       } else { // Fallback to simple character split if layout is unknown but count is present
          deskChars = deskIdsString.split('');
