@@ -149,7 +149,8 @@ export function classifyObject(id, floor) {
   else if (
     /^(?:(?:ESPACE (?:DE )?)?CONVIVIALIT(?:E|é|  )|ECHANGES INFORMELS|ECH.? INF.?|(?:Espace|Salle) (?:d')?[eé]changes?|Tisanerie|Tisannerie|Espace salon)/i.test(
       classificationId
-    )
+    ) ||
+    /^Espace de convivialit/i.test(classificationId)
   ) {
     objectClass = "chat-area";
     if (/^Tisan*erie$/i.test(classificationId)) {
