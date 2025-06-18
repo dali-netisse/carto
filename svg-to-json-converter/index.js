@@ -522,7 +522,8 @@ async function processFile(filename, options) {
 
     // Add classification info
     obj.class = classification.class;
-    obj.id = classification.id;
+    // Normalize spaces in id field to match Perl output (but keep original spacing in key name)
+    obj.id = classification.id.replace(/\s+/g, ' ');
 
     // Handle meeting rooms
     if (classification.class === "meeting-room" && classification.name) {

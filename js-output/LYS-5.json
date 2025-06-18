@@ -7753,13 +7753,13 @@
          },
          "Espace de convivialit   A5" : {
             "class" : "chat-area",
-            "id" : "Espace de convivialit   A5",
+            "id" : "Espace de convivialit A5",
             "points" : "959.0907640779285,390.799999 995.9729034777348,390.799999 995.9729034777348,440.39999900000004 959.0907640779285,440.39999900000004",
             "type" : "polygon"
          },
          "Espace de convivialit   C53" : {
             "class" : "chat-area",
-            "id" : "Espace de convivialit   C53",
+            "id" : "Espace de convivialit C53",
             "points" : "385.26864403920615,400.699989 419.8518867061955,400.699989 419.85189670135526,434.900009 385.26864403920615,434.900009",
             "type" : "polygon"
          },

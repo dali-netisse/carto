@@ -121,7 +121,7 @@
    "itineraries" : [],
    "pois" : {
       "meeting-room" : {
-         "Salle de réunion B7 CLEOPATRE" : {
+         "B7 CLEOPATRE" : {
             "class" : "meeting-room",
             "id" : "74ef1a1c-359b-4ff4-895e-14871b07651f",
             "name" : "B7 CLEOPATRE",
@@ -130,7 +130,7 @@
          }
       },
       "office" : {
-         "Bureau B761" : {
+         "B761" : {
             "class" : "office",
             "id" : "B761",
             "points" : "1552.49,1634.5016 1585.5,1634.5016 1585.5,1684.6876 1552.49,1684.6876",
@@ -138,7 +138,7 @@
          }
       },
       "openspace" : {
-         "Openspace B760" : {
+         "B760" : {
             "class" : "openspace",
             "id" : "B760",
             "points" : "1585.5,1634.5016 1655.5,1634.5016 1655.5,1684.6876 1585.5,1684.6876",

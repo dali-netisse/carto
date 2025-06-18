@@ -26,7 +26,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "BP718",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "G",
                   "width" : 100
                },
@@ -34,7 +34,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "BP718",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "G",
                   "width" : 100
                },
@@ -42,7 +42,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "BP718",
-                  "position" : 3,
+                  "position" : "3",
                   "side" : "G",
                   "width" : 100
                },
@@ -50,7 +50,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "BP718",
-                  "position" : 4,
+                  "position" : "4",
                   "side" : "G",
                   "width" : 100
                }
@@ -973,13 +973,13 @@
                {
                   "desk" : "A",
                   "office" : "DP730",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "DP730",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1092,13 +1092,13 @@
                {
                   "desk" : "A",
                   "office" : "DP748",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "DP748",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1284,13 +1284,13 @@
                {
                   "desk" : "A",
                   "office" : "DP766",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "DP766",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1444,13 +1444,13 @@
                {
                   "desk" : "A",
                   "office" : "AI730",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "AI730",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1656,13 +1656,13 @@
                {
                   "desk" : "A",
                   "office" : "AP705",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "AP705",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1718,13 +1718,13 @@
                {
                   "desk" : "A",
                   "office" : "AP720",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "AP720",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1744,13 +1744,13 @@
                {
                   "desk" : "D",
                   "office" : "AP720",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "C",
                   "office" : "AP720",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -1769,13 +1769,13 @@
                {
                   "desk" : "A",
                   "office" : "AP725",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "AP725",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -2163,13 +2163,13 @@
                {
                   "desk" : "A",
                   "office" : "BI750",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "BI750",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -2737,13 +2737,13 @@
                {
                   "desk" : "A",
                   "office" : "BP748",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "BP748",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -2861,13 +2861,13 @@
                {
                   "desk" : "A",
                   "office" : "CI705",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "GX"
                },
                {
                   "desk" : "B",
                   "office" : "CI705",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -3182,7 +3182,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "CP728",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "G",
                   "width" : 100
                },
@@ -3190,7 +3190,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "CP728",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "D",
                   "width" : 100
                },
@@ -3198,7 +3198,7 @@
                   "depth" : 60,
                   "desk" : "@",
                   "office" : "CP728",
-                  "position" : 3,
+                  "position" : "3",
                   "side" : "G",
                   "width" : 100
                }
@@ -3279,13 +3279,13 @@
                {
                   "desk" : "A",
                   "office" : "CP735",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "CP735",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -3747,13 +3747,13 @@
                {
                   "desk" : "A",
                   "office" : "CP795",
-                  "position" : 1,
+                  "position" : "1",
                   "side" : "DX"
                },
                {
                   "desk" : "B",
                   "office" : "CP795",
-                  "position" : 2,
+                  "position" : "2",
                   "side" : "C"
                }
             ],
@@ -6342,6 +6342,18 @@
             "points" : "967.8730143444606,409.64371330166273 998.243599733914,409.64371330166273 998.243599733914,438.7440597980998 967.8730143444606,438.7440597980998",
             "type" : "polygon"
          },
+         "Espace de Convivialit   BP718" : {
+            "class" : "chat-area",
+            "id" : "Espace de Convivialit BP718",
+            "points" : "837.3993810595065,202.95440570071258 818.5176684325108,202.95440570071258 818.5176684325108,233.66983176959621 837.4992843009193,233.66983176959621",
+            "type" : "polygon"
+         },
+         "Espace de Convivialit   BP718-2" : {
+            "class" : "chat-area",
+            "id" : "Espace de Convivialit BP718-2",
+            "points" : "755.4787231011129,386.1527593230404 732.6008808176101,386.1527593230404 732.5009775761974,395.1425158551069 755.4787231011129,395.1425158551069",
+            "type" : "polygon"
+         },
          "Espace de convivialité" : {
             "class" : "chat-area",
             "id" : "Espace de convivialité",
@@ -6419,6 +6431,12 @@
             "id" : "Espace échange-6",
             "points" : "1396.1165506289308,162.5385845605701 1412.5924932994676,161.79041831947745 1413.2989091194968,177.34871805225654 1396.8230663522013,178.096891152019",
             "type" : "polygon"
+         },
+         "convivialit   A7" : {
+            "class" : "chat-area",
+            "id" : "convivialit A7",
+            "points" : "915.9233288098693,234.84560374109265 967.7731111030479,234.84560374109265 967.7731111030479,241.70427357482185 998.243599733914,241.70427357482185 998.243599733914,234.84560374109265 1045.6976394049348,234.84560374109265 1045.6976394049348,271.09856306413303 998.243599733914,271.09856306413303 998.243599733914,297.0635372327791 967.7731111030479,297.0635372327791 967.7731111030479,271.09856306413303 915.9233288098693,271.09856306413303",
+            "type" : "polygon"
          }
       },
       "elevator" : {
@@ -6470,20 +6488,6 @@
             "class" : "elevator",
             "id" : "Ascenseurs 53",
             "points" : "709.223522327044,384.3646061163896 709.3234255684566,355.3622308194775 673.1584521770679,355.3622308194775 673.1584521770679,384.3646061163896",
-            "type" : "polygon"
-         }
-      },
-      "espace" : {
-         "de Convivialit BP718" : {
-            "class" : "espace",
-            "id" : "de Convivialit BP718",
-            "points" : "837.3993810595065,202.95440570071258 818.5176684325108,202.95440570071258 818.5176684325108,233.66983176959621 837.4992843009193,233.66983176959621",
-            "type" : "polygon"
-         },
-         "de Convivialit BP718-2" : {
-            "class" : "espace",
-            "id" : "de Convivialit BP718-2",
-            "points" : "755.4787231011129,386.1527593230404 732.6008808176101,386.1527593230404 732.5009775761974,395.1425158551069 755.4787231011129,395.1425158551069",
             "type" : "polygon"
          }
       },
@@ -6540,6 +6544,16 @@
          }
       },
       "meeting-room" : {
+         "A7" : {
+            "class" : "meeting-room",
+            "height" : 37.13480005938237,
+            "id" : "A7",
+            "name" : "A7",
+            "type" : "rect",
+            "width" : 50.151428188195496,
+            "x" : 836.000735679729,
+            "y" : 445.9946634204276
+         },
          "A7 DUBLIN" : {
             "class" : "meeting-room",
             "id" : "LYS-A-L0098",
@@ -6624,6 +6638,16 @@
             "width" : 34.966134494436346,
             "x" : 383.3391688195453,
             "y" : 233.66983176959621
+         },
+         "CP762 MURCIE" : {
+            "class" : "meeting-room",
+            "height" : 19.30225751187652,
+            "id" : "bcbe1ee7-817f-438b-962c-e9a2fe57705f",
+            "name" : "CP762 MURCIE",
+            "type" : "rect",
+            "width" : 34.966134494436346,
+            "x" : 290.2293378326077,
+            "y" : 234.3556987529691
          },
          "DI7 LA COROGNE" : {
             "class" : "meeting-room",
@@ -7421,30 +7445,6 @@
             "class" : "other",
             "id" : "RANGEMENT",
             "points" : "755.4787231011129,483.227432719715 755.4787231011129,445.9946536223278 719.4136529511371,445.9946536223278 719.4136529511371,483.227432719715",
-            "type" : "polygon"
-         },
-         "Salle de r union A7" : {
-            "class" : "other",
-            "height" : 37.13480005938237,
-            "id" : "Salle de r union A7",
-            "type" : "rect",
-            "width" : 50.151428188195496,
-            "x" : 836.000735679729,
-            "y" : 445.9946634204276
-         },
-         "Salle de r union CP762 MURCIE" : {
-            "class" : "other",
-            "height" : 19.30225751187652,
-            "id" : "Salle de r union CP762 MURCIE",
-            "type" : "rect",
-            "width" : 34.966134494436346,
-            "x" : 290.2293378326077,
-            "y" : 234.3556987529691
-         },
-         "convivialit A7" : {
-            "class" : "other",
-            "id" : "convivialit A7",
-            "points" : "915.9233288098693,234.84560374109265 967.7731111030479,234.84560374109265 967.7731111030479,241.70427357482185 998.243599733914,241.70427357482185 998.243599733914,234.84560374109265 1045.6976394049348,234.84560374109265 1045.6976394049348,271.09856306413303 998.243599733914,271.09856306413303 998.243599733914,297.0635372327791 967.7731111030479,297.0635372327791 967.7731111030479,271.09856306413303 915.9233288098693,271.09856306413303",
             "type" : "polygon"
          },
          "polygon2286" : {
