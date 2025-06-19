@@ -872,6 +872,11 @@ function processElement(elem, calibrationTransform) {
         const absolute = pathToAbsolute(parsed);
 
         if (isPolygonPath(absolute.commands)) {
+          // Debug logging for Convivialité elements
+          if (originalId && originalId.includes('path82416-0-1')) {
+            console.log(`=== REGULAR PATH PROCESSING FOR ${originalId} ===`);
+          }
+          
           const pathPoints = pathToPoints(absolute.commands);
           if (pathPoints.length >= 2) { 
             const transformed = transformPoints(pathPoints, transform);
@@ -881,9 +886,12 @@ function processElement(elem, calibrationTransform) {
             if (transformed.length >= 2) {
               const first = transformed[0];
               const last = transformed[transformed.length - 1];
-              const threshold = 0.4;
+              // Use a much smaller threshold for truly duplicate points (0.01 instead of 0.4)
+              // The previous threshold of 0.4 was too large and incorrectly removed legitimate points
+              const threshold = 0.01;
               const dx = abs(last[0] - first[0]);
               const dy = abs(last[1] - first[1]);
+              
               if (dx <= threshold && dy <= threshold) {
                 transformed.pop(); // Remove redundant closing point
               }
@@ -1175,7 +1183,7 @@ function processElementItinerary(elem, calibrationTransform) {
         const threshold = 0.4;
         
         // If path was closed (last point near first), add explicit line to first point
-        if (abs(last[0] - first[0]) <= threshold && abs(last[1] - first[1]) <= threshold) {
+        if (Math.abs(last[0] - first[0]) <= threshold && Math.abs(last[1] - first[1]) <= threshold) {
           // Remove the duplicate close point and add explicit first point 
           transformedPoints.pop();
           transformedPoints.push(first);

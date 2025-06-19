@@ -51,6 +51,9 @@ function doActions(filename, actions) {
       execSync(
         `bash -c 'node svg-to-json-converter/index.js "${filename}" -d output-js'`
       );
+      execSync(
+        `bash -c 'node svg-to-json-converter/index.js "${filename}" -d js-output'`
+      );
     } catch (err) {
       console.error(`Error processing ${filename} for ${dest}:`, err.message);
     }

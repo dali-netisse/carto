@@ -117,7 +117,6 @@
          }
       }
    },
-   "furniture" : {},
    "itineraries" : [],
    "pois" : {
       "meeting-room" : {
@@ -145,7 +144,5 @@
             "type" : "polygon"
          }
       }
-   },
-   "tag" : {},
-   "text" : {}
+   }
 }
