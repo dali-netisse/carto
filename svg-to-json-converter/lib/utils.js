@@ -188,7 +188,9 @@ export function toCanonicalJSON(obj) {
   // Remove empty objects to match Perl's JSON output
   for (const key in sortedOutput) {
     if (Object.prototype.hasOwnProperty.call(sortedOutput, key) &&
-        typeof sortedOutput[key] === 'object' &&
+        typeof sortedOutput[key] === 'object' && 
+        // exclude arrays, only remove empty objects
+        !Array.isArray(sortedOutput[key]) &&
         Object.keys(sortedOutput[key]).length === 0) {
       delete sortedOutput[key];
     }
