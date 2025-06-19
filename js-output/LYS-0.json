@@ -40,7 +40,41 @@
       "meeting" : {}
    },
    "furniture" : {
+      "accueil" : {
+         "Meuble accueil" : {
+            "class" : "accueil",
+            "direction" : -0.13742096601875792,
+            "id" : "Meuble accueil",
+            "objects" : [],
+            "point" : [
+               1284.323892973635,
+               233.2046361110455
+            ]
+         }
+      },
+      "banquette-accueil" : {
+         "Meuble banquette-accueil" : {
+            "class" : "banquette-accueil",
+            "direction" : -0.05078364827783412,
+            "id" : "Meuble banquette-accueil",
+            "objects" : [],
+            "point" : [
+               1293.520130984623,
+               280.30477901104547
+            ]
+         }
+      },
       "borne-orientation" : {
+         "Meuble borne-orientation" : {
+            "class" : "borne-orientation",
+            "direction" : 3.0924685143671677,
+            "id" : "Meuble borne-orientation",
+            "objects" : [],
+            "point" : [
+               1421.5052512165576,
+               255.76941456492997
+            ]
+         },
          "meuble borne-orientation A0" : {
             "class" : "borne-orientation",
             "direction" : 3.141592653589793,
@@ -73,6 +107,16 @@
          }
       },
       "controle-acces" : {
+         "Meuble controle-acces" : {
+            "class" : "controle-acces",
+            "direction" : 1.5193934443001968,
+            "id" : "Meuble controle-acces",
+            "objects" : [],
+            "point" : [
+               1370.1928802969808,
+               254.0051646310455
+            ]
+         },
          "meuble controle-acces A1" : {
             "class" : "controle-acces",
             "direction" : -1.5707963267948966,
@@ -85,6 +129,86 @@
          }
       },
       "tree" : {
+         "Meuble tree 1" : {
+            "class" : "tree",
+            "direction" : 0.7665378135753033,
+            "id" : "Meuble tree 1",
+            "objects" : [],
+            "point" : [
+               1275.7503074579315,
+               106.56633427104546
+            ]
+         },
+         "Meuble tree 2" : {
+            "class" : "tree",
+            "direction" : -0.6225485883181535,
+            "id" : "Meuble tree 2",
+            "objects" : [],
+            "point" : [
+               1322.7030404974375,
+               104.43422327104547
+            ]
+         },
+         "Meuble tree 3" : {
+            "class" : "tree",
+            "direction" : 2.278593254083496,
+            "id" : "Meuble tree 3",
+            "objects" : [],
+            "point" : [
+               1373.4119921801043,
+               102.13154339104547
+            ]
+         },
+         "Meuble tree 4" : {
+            "class" : "tree",
+            "direction" : -2.437726098515358,
+            "id" : "Meuble tree 4",
+            "objects" : [],
+            "point" : [
+               1417.5475612372402,
+               100.12735905104546
+            ]
+         },
+         "Meuble tree 5" : {
+            "class" : "tree",
+            "direction" : 3.0513026764947706,
+            "id" : "Meuble tree 5",
+            "objects" : [],
+            "point" : [
+               1456.0488023296352,
+               98.37902803104546
+            ]
+         },
+         "Meuble tree 6" : {
+            "class" : "tree",
+            "direction" : -0.13742096601875792,
+            "id" : "Meuble tree 6",
+            "objects" : [],
+            "point" : [
+               1491.7328794396599,
+               96.75862367104547
+            ]
+         },
+         "Meuble tree 7" : {
+            "class" : "tree",
+            "direction" : -0.13742096601875792,
+            "id" : "Meuble tree 7",
+            "objects" : [],
+            "point" : [
+               1234.431902383166,
+               108.44259195104547
+            ]
+         },
+         "Meuble tree 8" : {
+            "class" : "tree",
+            "direction" : -0.7200958360460143,
+            "id" : "Meuble tree 8",
+            "objects" : [],
+            "point" : [
+               1200.6259345947217,
+               109.97771187104547
+            ]
+         },
          "meuble tree 1" : {
             "class" : "tree",
             "direction" : 3.141592653589793,
@@ -1306,6 +1430,7 @@
          }
       }
    },
+   "tag" : {},
    "text" : {
       "Barlow-Regular" : {
          "rtext Barlow-Regular 8 #000000 Aile ISSY" : {

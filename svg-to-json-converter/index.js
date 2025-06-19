@@ -161,13 +161,14 @@ function processAndClassifyId(id, inkscapeLabel, getParentIdCallback) {
     };
   }
 
-  // Tag pattern (Perl: $data->{tag}{$class}{$id}) - currently not in JS output structure
+  // Tag pattern (Perl: $data->{tag}{$class}{$id})
   match = processedId.match(/^tag\s+([-_\w]+)/i);
   if (match) {
-    console.warn(`${ANSI.yellow}Warning: 'tag' type furniture "${processedId}" found, but not explicitly handled in current JSON structure. Skipping.${ANSI.normal}`);
-    return null;
-    // If to be handled as generic furniture:
-    // return { processedId, where: "furniture", type: `tag-${match[1].toLowerCase()}` };
+    return {
+      processedId,
+      where: "tag",
+      type: match[1], // the class name after "tag "
+    };
   }
 
   // Text pattern (Perl: $data->{text}{$class}{$id})
@@ -435,6 +436,7 @@ async function processFile(filename, options) {
       meeting: {},
     },
     furniture: {},
+    tag: {},
     text: {},
   };
 
@@ -704,6 +706,29 @@ async function processFile(filename, options) {
       }
       output.text[classifiedType][processedId] = textOutputObject;
       console.log(`  -> Added to output.text.${classifiedType}.${processedId}`);
+
+    } else if (where === "tag") {
+      // Process tag elements exactly like furniture
+      const baseObj = processDeskGeometryPerl(elem, calibrationTransform);
+      if (!baseObj) {
+        console.warn(`  -> Could not process base geometry for tag: ${processedId}`);
+        continue;
+      }
+
+      const tagOutputObject = {
+        class: classifiedType, // The class name after "tag "
+        id: processedId,
+        point: [baseObj.point[0], baseObj.point[1]], // Use same format as furniture
+        direction: baseObj.direction, // Let Perl handle precision
+        objects: [], // Tag items have empty objects array like in Perl
+      };
+
+      // Ensure the category exists
+      if (!output.tag[classifiedType]) {
+        output.tag[classifiedType] = {};
+      }
+      output.tag[classifiedType][processedId] = tagOutputObject;
+      console.log(`  -> Added to output.tag.${classifiedType}.${processedId}`);
 
     } else {
       // This case should ideally be handled by processAndClassifyId returning null

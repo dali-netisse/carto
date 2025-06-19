@@ -121,7 +121,7 @@
    "itineraries" : [],
    "pois" : {
       "meeting-room" : {
-         "B7 CLEOPATRE" : {
+         "74ef1a1c-359b-4ff4-895e-14871b07651f" : {
             "class" : "meeting-room",
             "id" : "74ef1a1c-359b-4ff4-895e-14871b07651f",
             "name" : "B7 CLEOPATRE",
@@ -146,5 +146,6 @@
          }
       }
    },
+   "tag" : {},
    "text" : {}
 }
