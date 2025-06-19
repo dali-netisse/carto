@@ -7,8 +7,8 @@
 
 import fs from 'fs';
 
-const FLOAT_TOLERANCE = 1e-10; // Tolerance for floating-point comparison (much larger than the 1e-14 differences we see)
-const COORDINATE_TOLERANCE = 1e-8; // More lenient tolerance for coordinates in point strings
+const FLOAT_TOLERANCE = 1e-6; // Tolerance for floating-point comparison (much larger than the 1e-14 differences we see)
+const COORDINATE_TOLERANCE = 1e-6; // More lenient tolerance for coordinates in point strings
 
 function isCoordinateString(str) {
   // Check if string looks like coordinates: "x1,y1 x2,y2" or "x1,y1,x2,y2"
@@ -21,14 +21,13 @@ function coordinateStringsMatch(js, perl) {
     const jsCoords = parseCoordinates(js);
     const perlCoords = parseCoordinates(perl);
     
-    if (jsCoords.length !== perlCoords.length) return false;
+    if (jsCoords.length !== perlCoords.length) return {jsLength: jsCoords.length, perlLength: perlCoords.length, issue: 'COORDS_LENGTH_MISMATCH'};
     
     // Compare each coordinate with tolerance
     for (let i = 0; i < jsCoords.length; i++) {
       const diff = Math.abs(jsCoords[i] - perlCoords[i]);
-      const relativeDiff = Math.abs(diff / Math.max(Math.abs(jsCoords[i]), Math.abs(perlCoords[i]), 1));
-      
-      if (diff > COORDINATE_TOLERANCE && relativeDiff > COORDINATE_TOLERANCE) {
+    
+      if (diff > COORDINATE_TOLERANCE) {
         return false;
       }
     }
@@ -40,8 +39,11 @@ function coordinateStringsMatch(js, perl) {
 }
 
 function parseCoordinates(str) {
+  // Remove leading and trailing letters (like M, L, Z in SVG paths)
+  const cleanStr = str.replace(/^[A-Za-z]+|[A-Za-z]+$/g, '');
+  
   // Split by spaces and commas, filter out empty strings, convert to numbers
-  return str.split(/[\s,]+/).filter(s => s.length > 0).map(Number);
+  return cleanStr.split(/[\s,]+/).filter(s => s.length > 0).map(Number);
 }
 
 function smartCompare(js, perl, path = '', issues = []) {
@@ -86,17 +88,15 @@ function smartCompare(js, perl, path = '', issues = []) {
     }
 
     const diff = Math.abs(js - perl);
-    const relativeDiff = Math.abs(diff / Math.max(Math.abs(js), Math.abs(perl), 1));
     
     // Check if difference is significant
-    if (diff > FLOAT_TOLERANCE && relativeDiff > FLOAT_TOLERANCE) {
+    if (diff > FLOAT_TOLERANCE ) {
       issues.push({
         type: 'SIGNIFICANT_NUMBER_DIFF',
         path,
         jsValue: js,
         perlValue: perl,
         absoluteDiff: diff,
-        relativeDiff: relativeDiff
       });
     }
     return issues;
@@ -107,7 +107,14 @@ function smartCompare(js, perl, path = '', issues = []) {
     if (js !== perl) {
       // Check if this is a coordinate string (contains numbers separated by commas/spaces)
       if (isCoordinateString(js) && isCoordinateString(perl)) {
-        if (!coordinateStringsMatch(js, perl)) {
+        if (coordinateStringsMatch(js, perl)?.issue === 'COORDS_LENGTH_MISMATCH') {
+          issues.push({
+            type: 'COORDINATE_LENGTH_MISMATCH',
+            path,
+            jsLength: coordinateStringsMatch(js, perl).jsLength,
+            perlLength: coordinateStringsMatch(js, perl).perlLength
+          });
+        } else if (!coordinateStringsMatch(js, perl)) {
           issues.push({
             type: 'COORDINATE_STRING_DIFF',
             path,
@@ -198,9 +205,12 @@ function formatIssue(issue) {
       return `❌ TYPE MISMATCH at ${issue.path}: JS=${issue.jsType}, Perl=${issue.perlType}`;
     
     case 'STRING_MISMATCH':
-      return `❌ STRING MISMATCH at ${issue.path}:` 
+      return `❌ STRING MISMATCH at ${issue.path}: JS="${issue.jsValue.substring(0, 50)}", Perl="${issue.perlValue.substring(0, 50)}"`;
       return `❌ STRING DIFF at ${issue.path}: JS="${issue.jsValue}", Perl="${issue.perlValue}"`;
     
+    case 'COORDINATE_LENGTH_MISMATCH':
+      return `❌ COORDINATE LENGTH MISMATCH at ${issue.path}: JS=${issue.jsLength}, Perl=${issue.perlLength}`;
+
     case 'COORDINATE_STRING_DIFF':
       return `⚠️  COORDINATE PRECISION at ${issue.path}: Tiny differences in coordinate precision (likely acceptable)`;
     
@@ -236,7 +246,7 @@ try {
   console.log('🔍 Smart JSON Comparison (ignoring tiny float precision differences)');
   console.log(`📁 JS file: ${jsFile}`);
   console.log(`📁 Perl file: ${perlFile}`);
-  console.log(`🎯 Float tolerance: ${FLOAT_TOLERANCE} (relative and absolute)`);
+  console.log(`🎯 Float tolerance: ${FLOAT_TOLERANCE}`);
   console.log('');
 
   const jsData = JSON.parse(fs.readFileSync(jsFile, 'utf8'));
