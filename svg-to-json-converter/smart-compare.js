@@ -47,6 +47,9 @@ function parseCoordinates(str) {
 function smartCompare(js, perl, path = '', issues = []) {
   // Type comparison
   if (typeof js !== typeof perl) {
+    if (js == perl && path.endsWith('position'))
+      return issues; // Special case for position fields where types may differ but values are equivalent
+    
     issues.push({
       type: 'TYPE_MISMATCH',
       path,

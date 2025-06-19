@@ -185,6 +185,14 @@ export function extractSpecialAttributes(id) {
  */
 export function toCanonicalJSON(obj) {
   const sortedOutput = sortKeys(obj, {deep: true});
+  // Remove empty objects to match Perl's JSON output
+  for (const key in sortedOutput) {
+    if (Object.prototype.hasOwnProperty.call(sortedOutput, key) &&
+        typeof sortedOutput[key] === 'object' &&
+        Object.keys(sortedOutput[key]).length === 0) {
+      delete sortedOutput[key];
+    }
+  }
   const jsonString = JSON.stringify(sortedOutput, null, 3);
   // Match Perl's JSON formatting: add space before colon to match "key" : value format
   // Handle all types of keys including those with special characters
