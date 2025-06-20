@@ -46,7 +46,7 @@ function parseCoordinates(str) {
   return cleanStr.split(/[\s,]+/).filter(s => s.length > 0).map(Number);
 }
 
-function smartCompare(js, perl, path = '', issues = []) {
+function compare(js, perl, path = '', issues = []) {
   // Type comparison
   if (typeof js !== typeof perl) {
     if (js == perl && path.endsWith('position'))
@@ -147,7 +147,7 @@ function smartCompare(js, perl, path = '', issues = []) {
     }
 
     for (let i = 0; i < js.length; i++) {
-      smartCompare(js[i], perl[i], `${path}[${i}]`, issues);
+      compare(js[i], perl[i], `${path}[${i}]`, issues);
     }
     return issues;
   }
@@ -180,7 +180,7 @@ function smartCompare(js, perl, path = '', issues = []) {
     // Compare common keys
     const commonKeys = jsKeys.filter(key => perlKeys.includes(key));
     for (const key of commonKeys) {
-      smartCompare(js[key], perl[key], path ? `${path}.${key}` : key, issues);
+      compare(js[key], perl[key], path ? `${path}.${key}` : key, issues);
     }
 
     return issues;
@@ -252,7 +252,7 @@ try {
   const jsData = JSON.parse(fs.readFileSync(jsFile, 'utf8'));
   const perlData = JSON.parse(fs.readFileSync(perlFile, 'utf8'));
 
-  const issues = smartCompare(jsData, perlData);
+  const issues = compare(jsData, perlData);
 
   if (issues.length === 0) {
     console.log('✅ PERFECT MATCH! No meaningful differences found.');
